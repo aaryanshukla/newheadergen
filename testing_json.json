@@ -1,0 +1,889 @@
+{
+    "entries": [
+        {
+            "metadata": {
+                "formatVersion": {
+                    "major": 0,
+                    "minor": 5,
+                    "patch": 3
+                },
+                "generator": "clang version 19.0.0git (https://github.com/llvm/llvm-project.git 66db7c609cebb8aa7db17f83fbc9f79be0cd5af1)"
+            },
+            "module": {
+                "name": "Demo",
+                "platform": {
+                    "architecture": "x86_64",
+                    "operatingSystem": {
+                        "name": "linux"
+                    },
+                    "vendor": "unknown"
+                }
+            },
+            "relationships": [
+                {
+                    "kind": "memberOf",
+                    "source": "c:@N@LIBC_NAMESPACE@F@strncat#*C#*1C#l#",
+                    "target": "c:@N@LIBC_NAMESPACE",
+                    "targetFallback": "LIBC_NAMESPACE"
+                }
+            ],
+            "symbols": [
+                {
+                    "accessLevel": "public",
+                    "declarationFragments": [
+                        {
+                            "kind": "keyword",
+                            "spelling": "namespace"
+                        },
+                        {
+                            "kind": "text",
+                            "spelling": " "
+                        },
+                        {
+                            "kind": "identifier",
+                            "spelling": "LIBC_NAMESPACE"
+                        },
+                        {
+                            "kind": "text",
+                            "spelling": ";"
+                        }
+                    ],
+                    "identifier": {
+                        "interfaceLanguage": "c++",
+                        "precise": "c:@N@LIBC_NAMESPACE"
+                    },
+                    "kind": {
+                        "displayName": "Namespace",
+                        "identifier": "c++.namespace"
+                    },
+                    "location": {
+                        "position": {
+                            "character": 10,
+                            "line": 13
+                        },
+                        "uri": "file://./llvm-project/libc/src/string/strncat.h"
+                    },
+                    "names": {
+                        "navigator": [
+                            {
+                                "kind": "identifier",
+                                "spelling": "LIBC_NAMESPACE"
+                            }
+                        ],
+                        "subHeading": [
+                            {
+                                "kind": "identifier",
+                                "spelling": "LIBC_NAMESPACE"
+                            }
+                        ],
+                        "title": "LIBC_NAMESPACE"
+                    },
+                    "pathComponents": [
+                        "LIBC_NAMESPACE"
+                    ]
+                },
+                {
+                    "accessLevel": "public",
+                    "declarationFragments": [
+                        {
+                            "kind": "typeIdentifier",
+                            "preciseIdentifier": "c:C",
+                            "spelling": "char"
+                        },
+                        {
+                            "kind": "text",
+                            "spelling": " * "
+                        },
+                        {
+                            "kind": "identifier",
+                            "spelling": "strncat"
+                        },
+                        {
+                            "kind": "text",
+                            "spelling": "("
+                        },
+                        {
+                            "kind": "typeIdentifier",
+                            "preciseIdentifier": "c:C",
+                            "spelling": "char"
+                        },
+                        {
+                            "kind": "text",
+                            "spelling": " * "
+                        },
+                        {
+                            "kind": "keyword",
+                            "spelling": "restrict"
+                        },
+                        {
+                            "kind": "text",
+                            "spelling": " "
+                        },
+                        {
+                            "kind": "internalParam",
+                            "spelling": "dest"
+                        },
+                        {
+                            "kind": "text",
+                            "spelling": ", "
+                        },
+                        {
+                            "kind": "keyword",
+                            "spelling": "const"
+                        },
+                        {
+                            "kind": "text",
+                            "spelling": " "
+                        },
+                        {
+                            "kind": "typeIdentifier",
+                            "preciseIdentifier": "c:C",
+                            "spelling": "char"
+                        },
+                        {
+                            "kind": "text",
+                            "spelling": " * "
+                        },
+                        {
+                            "kind": "keyword",
+                            "spelling": "restrict"
+                        },
+                        {
+                            "kind": "text",
+                            "spelling": " "
+                        },
+                        {
+                            "kind": "internalParam",
+                            "spelling": "src"
+                        },
+                        {
+                            "kind": "text",
+                            "spelling": ", "
+                        },
+                        {
+                            "kind": "typeIdentifier",
+                            "preciseIdentifier": "c:@T@size_t",
+                            "spelling": "size_t"
+                        },
+                        {
+                            "kind": "text",
+                            "spelling": " "
+                        },
+                        {
+                            "kind": "internalParam",
+                            "spelling": "count"
+                        },
+                        {
+                            "kind": "text",
+                            "spelling": ");"
+                        }
+                    ],
+                    "functionSignature": {
+                        "parameters": [
+                            {
+                                "declarationFragments": [
+                                    {
+                                        "kind": "typeIdentifier",
+                                        "preciseIdentifier": "c:C",
+                                        "spelling": "char"
+                                    },
+                                    {
+                                        "kind": "text",
+                                        "spelling": " * "
+                                    },
+                                    {
+                                        "kind": "keyword",
+                                        "spelling": "restrict"
+                                    },
+                                    {
+                                        "kind": "text",
+                                        "spelling": " "
+                                    },
+                                    {
+                                        "kind": "internalParam",
+                                        "spelling": "dest"
+                                    }
+                                ],
+                                "name": "dest"
+                            },
+                            {
+                                "declarationFragments": [
+                                    {
+                                        "kind": "keyword",
+                                        "spelling": "const"
+                                    },
+                                    {
+                                        "kind": "text",
+                                        "spelling": " "
+                                    },
+                                    {
+                                        "kind": "typeIdentifier",
+                                        "preciseIdentifier": "c:C",
+                                        "spelling": "char"
+                                    },
+                                    {
+                                        "kind": "text",
+                                        "spelling": " * "
+                                    },
+                                    {
+                                        "kind": "keyword",
+                                        "spelling": "restrict"
+                                    },
+                                    {
+                                        "kind": "text",
+                                        "spelling": " "
+                                    },
+                                    {
+                                        "kind": "internalParam",
+                                        "spelling": "src"
+                                    }
+                                ],
+                                "name": "src"
+                            },
+                            {
+                                "declarationFragments": [
+                                    {
+                                        "kind": "typeIdentifier",
+                                        "preciseIdentifier": "c:@T@size_t",
+                                        "spelling": "size_t"
+                                    },
+                                    {
+                                        "kind": "text",
+                                        "spelling": " "
+                                    },
+                                    {
+                                        "kind": "internalParam",
+                                        "spelling": "count"
+                                    }
+                                ],
+                                "name": "count"
+                            }
+                        ],
+                        "returns": [
+                            {
+                                "kind": "typeIdentifier",
+                                "preciseIdentifier": "c:C",
+                                "spelling": "char"
+                            },
+                            {
+                                "kind": "text",
+                                "spelling": " *"
+                            }
+                        ]
+                    },
+                    "identifier": {
+                        "interfaceLanguage": "c++",
+                        "precise": "c:@N@LIBC_NAMESPACE@F@strncat#*C#*1C#l#"
+                    },
+                    "kind": {
+                        "displayName": "Function",
+                        "identifier": "c++.func"
+                    },
+                    "location": {
+                        "position": {
+                            "character": 6,
+                            "line": 15
+                        },
+                        "uri": "file://./llvm-project/libc/src/string/strncat.h"
+                    },
+                    "names": {
+                        "navigator": [
+                            {
+                                "kind": "identifier",
+                                "spelling": "strncat"
+                            }
+                        ],
+                        "subHeading": [
+                            {
+                                "kind": "identifier",
+                                "spelling": "strncat"
+                            }
+                        ],
+                        "title": "strncat"
+                    },
+                    "pathComponents": [
+                        "LIBC_NAMESPACE",
+                        "strncat"
+                    ]
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "formatVersion": {
+                    "major": 0,
+                    "minor": 5,
+                    "patch": 3
+                },
+                "generator": "clang version 19.0.0git (https://github.com/llvm/llvm-project.git 66db7c609cebb8aa7db17f83fbc9f79be0cd5af1)"
+            },
+            "module": {
+                "name": "Demo",
+                "platform": {
+                    "architecture": "x86_64",
+                    "operatingSystem": {
+                        "name": "linux"
+                    },
+                    "vendor": "unknown"
+                }
+            },
+            "relationships": [
+                {
+                    "kind": "memberOf",
+                    "source": "c:@N@LIBC_NAMESPACE@F@strsep#**C#*1C#",
+                    "target": "c:@N@LIBC_NAMESPACE",
+                    "targetFallback": "LIBC_NAMESPACE"
+                }
+            ],
+            "symbols": [
+                {
+                    "accessLevel": "public",
+                    "declarationFragments": [
+                        {
+                            "kind": "keyword",
+                            "spelling": "namespace"
+                        },
+                        {
+                            "kind": "text",
+                            "spelling": " "
+                        },
+                        {
+                            "kind": "identifier",
+                            "spelling": "LIBC_NAMESPACE"
+                        },
+                        {
+                            "kind": "text",
+                            "spelling": ";"
+                        }
+                    ],
+                    "identifier": {
+                        "interfaceLanguage": "c++",
+                        "precise": "c:@N@LIBC_NAMESPACE"
+                    },
+                    "kind": {
+                        "displayName": "Namespace",
+                        "identifier": "c++.namespace"
+                    },
+                    "location": {
+                        "position": {
+                            "character": 10,
+                            "line": 11
+                        },
+                        "uri": "file://./llvm-project/libc/src/string/strsep.h"
+                    },
+                    "names": {
+                        "navigator": [
+                            {
+                                "kind": "identifier",
+                                "spelling": "LIBC_NAMESPACE"
+                            }
+                        ],
+                        "subHeading": [
+                            {
+                                "kind": "identifier",
+                                "spelling": "LIBC_NAMESPACE"
+                            }
+                        ],
+                        "title": "LIBC_NAMESPACE"
+                    },
+                    "pathComponents": [
+                        "LIBC_NAMESPACE"
+                    ]
+                },
+                {
+                    "accessLevel": "public",
+                    "declarationFragments": [
+                        {
+                            "kind": "typeIdentifier",
+                            "preciseIdentifier": "c:C",
+                            "spelling": "char"
+                        },
+                        {
+                            "kind": "text",
+                            "spelling": " * "
+                        },
+                        {
+                            "kind": "identifier",
+                            "spelling": "strsep"
+                        },
+                        {
+                            "kind": "text",
+                            "spelling": "("
+                        },
+                        {
+                            "kind": "typeIdentifier",
+                            "preciseIdentifier": "c:C",
+                            "spelling": "char"
+                        },
+                        {
+                            "kind": "text",
+                            "spelling": " * * "
+                        },
+                        {
+                            "kind": "keyword",
+                            "spelling": "restrict"
+                        },
+                        {
+                            "kind": "text",
+                            "spelling": " "
+                        },
+                        {
+                            "kind": "internalParam",
+                            "spelling": "stringp"
+                        },
+                        {
+                            "kind": "text",
+                            "spelling": ", "
+                        },
+                        {
+                            "kind": "keyword",
+                            "spelling": "const"
+                        },
+                        {
+                            "kind": "text",
+                            "spelling": " "
+                        },
+                        {
+                            "kind": "typeIdentifier",
+                            "preciseIdentifier": "c:C",
+                            "spelling": "char"
+                        },
+                        {
+                            "kind": "text",
+                            "spelling": " * "
+                        },
+                        {
+                            "kind": "keyword",
+                            "spelling": "restrict"
+                        },
+                        {
+                            "kind": "text",
+                            "spelling": " "
+                        },
+                        {
+                            "kind": "internalParam",
+                            "spelling": "delim"
+                        },
+                        {
+                            "kind": "text",
+                            "spelling": ");"
+                        }
+                    ],
+                    "functionSignature": {
+                        "parameters": [
+                            {
+                                "declarationFragments": [
+                                    {
+                                        "kind": "typeIdentifier",
+                                        "preciseIdentifier": "c:C",
+                                        "spelling": "char"
+                                    },
+                                    {
+                                        "kind": "text",
+                                        "spelling": " * * "
+                                    },
+                                    {
+                                        "kind": "keyword",
+                                        "spelling": "restrict"
+                                    },
+                                    {
+                                        "kind": "text",
+                                        "spelling": " "
+                                    },
+                                    {
+                                        "kind": "internalParam",
+                                        "spelling": "stringp"
+                                    }
+                                ],
+                                "name": "stringp"
+                            },
+                            {
+                                "declarationFragments": [
+                                    {
+                                        "kind": "keyword",
+                                        "spelling": "const"
+                                    },
+                                    {
+                                        "kind": "text",
+                                        "spelling": " "
+                                    },
+                                    {
+                                        "kind": "typeIdentifier",
+                                        "preciseIdentifier": "c:C",
+                                        "spelling": "char"
+                                    },
+                                    {
+                                        "kind": "text",
+                                        "spelling": " * "
+                                    },
+                                    {
+                                        "kind": "keyword",
+                                        "spelling": "restrict"
+                                    },
+                                    {
+                                        "kind": "text",
+                                        "spelling": " "
+                                    },
+                                    {
+                                        "kind": "internalParam",
+                                        "spelling": "delim"
+                                    }
+                                ],
+                                "name": "delim"
+                            }
+                        ],
+                        "returns": [
+                            {
+                                "kind": "typeIdentifier",
+                                "preciseIdentifier": "c:C",
+                                "spelling": "char"
+                            },
+                            {
+                                "kind": "text",
+                                "spelling": " *"
+                            }
+                        ]
+                    },
+                    "identifier": {
+                        "interfaceLanguage": "c++",
+                        "precise": "c:@N@LIBC_NAMESPACE@F@strsep#**C#*1C#"
+                    },
+                    "kind": {
+                        "displayName": "Function",
+                        "identifier": "c++.func"
+                    },
+                    "location": {
+                        "position": {
+                            "character": 6,
+                            "line": 13
+                        },
+                        "uri": "file://./llvm-project/libc/src/string/strsep.h"
+                    },
+                    "names": {
+                        "navigator": [
+                            {
+                                "kind": "identifier",
+                                "spelling": "strsep"
+                            }
+                        ],
+                        "subHeading": [
+                            {
+                                "kind": "identifier",
+                                "spelling": "strsep"
+                            }
+                        ],
+                        "title": "strsep"
+                    },
+                    "pathComponents": [
+                        "LIBC_NAMESPACE",
+                        "strsep"
+                    ]
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "formatVersion": {
+                    "major": 0,
+                    "minor": 5,
+                    "patch": 3
+                },
+                "generator": "clang version 19.0.0git (https://github.com/llvm/llvm-project.git 66db7c609cebb8aa7db17f83fbc9f79be0cd5af1)"
+            },
+            "module": {
+                "name": "Demo",
+                "platform": {
+                    "architecture": "x86_64",
+                    "operatingSystem": {
+                        "name": "linux"
+                    },
+                    "vendor": "unknown"
+                }
+            },
+            "relationships": [
+                {
+                    "kind": "memberOf",
+                    "source": "c:@N@LIBC_NAMESPACE@F@strtoll#*1C#**C#I#",
+                    "target": "c:@N@LIBC_NAMESPACE",
+                    "targetFallback": "LIBC_NAMESPACE"
+                }
+            ],
+            "symbols": [
+                {
+                    "accessLevel": "public",
+                    "declarationFragments": [
+                        {
+                            "kind": "keyword",
+                            "spelling": "namespace"
+                        },
+                        {
+                            "kind": "text",
+                            "spelling": " "
+                        },
+                        {
+                            "kind": "identifier",
+                            "spelling": "LIBC_NAMESPACE"
+                        },
+                        {
+                            "kind": "text",
+                            "spelling": ";"
+                        }
+                    ],
+                    "identifier": {
+                        "interfaceLanguage": "c++",
+                        "precise": "c:@N@LIBC_NAMESPACE"
+                    },
+                    "kind": {
+                        "displayName": "Namespace",
+                        "identifier": "c++.namespace"
+                    },
+                    "location": {
+                        "position": {
+                            "character": 10,
+                            "line": 11
+                        },
+                        "uri": "file://./llvm-project/libc/src/stdlib/strtoll.h"
+                    },
+                    "names": {
+                        "navigator": [
+                            {
+                                "kind": "identifier",
+                                "spelling": "LIBC_NAMESPACE"
+                            }
+                        ],
+                        "subHeading": [
+                            {
+                                "kind": "identifier",
+                                "spelling": "LIBC_NAMESPACE"
+                            }
+                        ],
+                        "title": "LIBC_NAMESPACE"
+                    },
+                    "pathComponents": [
+                        "LIBC_NAMESPACE"
+                    ]
+                },
+                {
+                    "accessLevel": "public",
+                    "declarationFragments": [
+                        {
+                            "kind": "typeIdentifier",
+                            "preciseIdentifier": "c:K",
+                            "spelling": "long long"
+                        },
+                        {
+                            "kind": "text",
+                            "spelling": " "
+                        },
+                        {
+                            "kind": "identifier",
+                            "spelling": "strtoll"
+                        },
+                        {
+                            "kind": "text",
+                            "spelling": "("
+                        },
+                        {
+                            "kind": "keyword",
+                            "spelling": "const"
+                        },
+                        {
+                            "kind": "text",
+                            "spelling": " "
+                        },
+                        {
+                            "kind": "typeIdentifier",
+                            "preciseIdentifier": "c:C",
+                            "spelling": "char"
+                        },
+                        {
+                            "kind": "text",
+                            "spelling": " * "
+                        },
+                        {
+                            "kind": "keyword",
+                            "spelling": "restrict"
+                        },
+                        {
+                            "kind": "text",
+                            "spelling": " "
+                        },
+                        {
+                            "kind": "internalParam",
+                            "spelling": "str"
+                        },
+                        {
+                            "kind": "text",
+                            "spelling": ", "
+                        },
+                        {
+                            "kind": "typeIdentifier",
+                            "preciseIdentifier": "c:C",
+                            "spelling": "char"
+                        },
+                        {
+                            "kind": "text",
+                            "spelling": " * * "
+                        },
+                        {
+                            "kind": "keyword",
+                            "spelling": "restrict"
+                        },
+                        {
+                            "kind": "text",
+                            "spelling": " "
+                        },
+                        {
+                            "kind": "internalParam",
+                            "spelling": "str_end"
+                        },
+                        {
+                            "kind": "text",
+                            "spelling": ", "
+                        },
+                        {
+                            "kind": "typeIdentifier",
+                            "preciseIdentifier": "c:I",
+                            "spelling": "int"
+                        },
+                        {
+                            "kind": "text",
+                            "spelling": " "
+                        },
+                        {
+                            "kind": "internalParam",
+                            "spelling": "base"
+                        },
+                        {
+                            "kind": "text",
+                            "spelling": ");"
+                        }
+                    ],
+                    "functionSignature": {
+                        "parameters": [
+                            {
+                                "declarationFragments": [
+                                    {
+                                        "kind": "keyword",
+                                        "spelling": "const"
+                                    },
+                                    {
+                                        "kind": "text",
+                                        "spelling": " "
+                                    },
+                                    {
+                                        "kind": "typeIdentifier",
+                                        "preciseIdentifier": "c:C",
+                                        "spelling": "char"
+                                    },
+                                    {
+                                        "kind": "text",
+                                        "spelling": " * "
+                                    },
+                                    {
+                                        "kind": "keyword",
+                                        "spelling": "restrict"
+                                    },
+                                    {
+                                        "kind": "text",
+                                        "spelling": " "
+                                    },
+                                    {
+                                        "kind": "internalParam",
+                                        "spelling": "str"
+                                    }
+                                ],
+                                "name": "str"
+                            },
+                            {
+                                "declarationFragments": [
+                                    {
+                                        "kind": "typeIdentifier",
+                                        "preciseIdentifier": "c:C",
+                                        "spelling": "char"
+                                    },
+                                    {
+                                        "kind": "text",
+                                        "spelling": " * * "
+                                    },
+                                    {
+                                        "kind": "keyword",
+                                        "spelling": "restrict"
+                                    },
+                                    {
+                                        "kind": "text",
+                                        "spelling": " "
+                                    },
+                                    {
+                                        "kind": "internalParam",
+                                        "spelling": "str_end"
+                                    }
+                                ],
+                                "name": "str_end"
+                            },
+                            {
+                                "declarationFragments": [
+                                    {
+                                        "kind": "typeIdentifier",
+                                        "preciseIdentifier": "c:I",
+                                        "spelling": "int"
+                                    },
+                                    {
+                                        "kind": "text",
+                                        "spelling": " "
+                                    },
+                                    {
+                                        "kind": "internalParam",
+                                        "spelling": "base"
+                                    }
+                                ],
+                                "name": "base"
+                            }
+                        ],
+                        "returns": [
+                            {
+                                "kind": "typeIdentifier",
+                                "preciseIdentifier": "c:K",
+                                "spelling": "long long"
+                            }
+                        ]
+                    },
+                    "identifier": {
+                        "interfaceLanguage": "c++",
+                        "precise": "c:@N@LIBC_NAMESPACE@F@strtoll#*1C#**C#I#"
+                    },
+                    "kind": {
+                        "displayName": "Function",
+                        "identifier": "c++.func"
+                    },
+                    "location": {
+                        "position": {
+                            "character": 10,
+                            "line": 13
+                        },
+                        "uri": "file://./llvm-project/libc/src/stdlib/strtoll.h"
+                    },
+                    "names": {
+                        "navigator": [
+                            {
+                                "kind": "identifier",
+                                "spelling": "strtoll"
+                            }
+                        ],
+                        "subHeading": [
+                            {
+                                "kind": "identifier",
+                                "spelling": "strtoll"
+                            }
+                        ],
+                        "title": "strtoll"
+                    },
+                    "pathComponents": [
+                        "LIBC_NAMESPACE",
+                        "strtoll"
+                    ]
+                }
+            ]
+        }
+    ]
+}
