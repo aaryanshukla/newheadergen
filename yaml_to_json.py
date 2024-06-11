@@ -19,7 +19,8 @@ def generate_header(header_name, functions):
     header_content = "#ifndef {}_H\n".format(header_name.upper().replace('.', '_'))
     header_content += "#define {}_H\n\n".format(header_name.upper().replace('.', '_'))
     for func_name, return_type, params in functions:
-        header_content += "{} {}(\n    {}\n);\n\n".format(return_type, func_name, ",\n    ".join(params))
+        param_str = ", ".join(params)  # Use params directly
+        header_content += "{} {}(\n    {}\n);\n\n".format(return_type, func_name, param_str)
     header_content += "#endif // {}_H\n".format(header_name.upper().replace('.', '_'))
     return header_content
 
