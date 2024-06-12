@@ -12,74 +12,79 @@ macros:
   - name: FE_TOWARDZERO
   - name: FE_DFL_ENV
 types:
-  - name: fenv_t
-  - name: fexcept_t
+  - fenv_t
+  - fexcept_t
 enums: []
 functions:
   - name: feclearexcept
     return_type: int
-    arguments:
+    parameters:
       - type: int
     guard: null
   - name: fetestexcept
     return_type: int
-    arguments:
+    parameters:
       - type: int
     guard: null
   - name: fetestexceptflag
     return_type: int
-    arguments:
+    parameters:
       - type: const fexcept_t *
       - type: int
     guard: null
   - name: feraiseexcept
     return_type: int
-    arguments:
+    parameters:
       - type: int
     guard: null
   - name: fesetround
     return_type: int
-    arguments:
+    parameters:
       - type: int
     guard: null
   - name: fegetround
     return_type: int
+<<<<<<< Updated upstream
     arguments: []
     guard: null
+=======
+    parameters: []
+    is_guarded: false
+>>>>>>> Stashed changes
   - name: fegetenv
     return_type: int
-    arguments:
+    parameters:
       - type: fenv_t *
     guard: null
   - name: fesetenv
     return_type: int
-    arguments:
+    parameters:
       - type: const fenv_t *
     guard: null
   - name: fegetexceptflag
     return_type: int
-    arguments:
+    parameters:
       - type: fexcept_t *
       - type: int
     guard: null
   - name: fesetexcept
     return_type: int
-    arguments:
+    parameters:
       - type: int
     guard: null
   - name: fesetexceptflag
     return_type: int
-    arguments:
+    parameters:
       - type: const fexcept_t *
       - type: int
     guard: null
   - name: feholdexcept
     return_type: int
-    arguments:
+    parameters:
       - type: fenv_t *
     guard: null
   - name: feupdateenv
     return_type: int
-    arguments:
+    parameters:
       - type: const fenv_t *
     guard: null
