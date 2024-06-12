@@ -11,129 +11,154 @@ functions:
       - type: void *__restrict
       - type: const void *__restrict
       - type: size_t
+    is_guarded: false
   - name: memmove
     return_type: void *
     arguments:
       - type: void *
       - type: const void *
       - type: size_t
+    is_guarded: false
   - name: memcmp
     return_type: int
     arguments:
       - type: const void *
       - type: const void *
       - type: size_t
+    is_guarded: false
   - name: memchr
     return_type: void *
     arguments:
       - type: const void *
       - type: int
       - type: size_t
+    is_guarded: false
   - name: memset
     return_type: void *
     arguments:
       - type: void *
       - type: int
       - type: size_t
+    is_guarded: false
   - name: memset_explicit
     return_type: void *
     arguments:
       - type: void *
       - type: int
       - type: size_t
+    is_guarded: false
   - name: strcpy
     return_type: char
     arguments:
       - type: char *__restrict
       - type: const char *__restrict
+    is_guarded: false
   - name: strncpy
     return_type: char *
     arguments:
       - type: char *__restrict
       - type: const char *__restrict
       - type: size_t
+    is_guarded: false
   - name: strcat
     return_type: char *
     arguments:
       - type: char *__restrict
       - type: const char *__restrict
+    is_guarded: false
   - name: strncat
     return_type: char *
     arguments:
-        - type: char *
-        - type: const char *
-        - type: size_t
+      - type: char *
+      - type: const char *
+      - type: size_t
+    is_guarded: false
   - name: strcmp
     return_type: int
     arguments:
       - type: const char *
       - type: const char *
+    is_guarded: false
   - name: strcoll
     return_type: int
     arguments:
       - type: const char *
       - type: const char *
+    is_guarded: false
   - name: strncmp
     return_type: int
     arguments:
       - type: const char *
       - type: const char *
       - type: size_t
+    is_guarded: false
   - name: strxfrm
     return_type: size_t
     arguments:
       - type: char *__restrict
       - type: const char *__restrict
       - type: size_t
+    is_guarded: false
   - name: strchr
     return_type: char *
     arguments:
       - type: const char *
       - type: int
+    is_guarded: false
   - name: strcspn
     return_type: size_t
     arguments:
       - type: const char *
       - type: const char *
+    is_guarded: false
   - name: strdup
     return_type: char *
     arguments:
       - type: const char *
+    is_guarded: false
   - name: strndup
     return_type: char *
     arguments:
       - type: const char *
       - type: size_t
+    is_guarded: false
   - name: strpbrk
     return_type: char *
     arguments:
       - type: const char *
       - type: const char *
+    is_guarded: false
   - name: strrchr
     return_type: char *
     arguments:
       - type: const char *
       - type: int
+    is_guarded: false
   - name: strspn
     return_type: size_t
     arguments:
       - type: const char *
       - type: const char *
+    is_guarded: false
   - name: strstr
     return_type: char *
     arguments:
       - type: const char *
       - type: const char *
+    is_guarded: false
   - name: strtok
     return_type: char *
     arguments:
       - type: char *__restrict
       - type: const char *__restrict
+    is_guarded: false
   - name: strerror
     return_type: char *
     arguments:
       - type: int
+    is_guarded: false
   - name: strlen
     return_type: size_t
     arguments:
       - const char *
+    is_guarded: false
