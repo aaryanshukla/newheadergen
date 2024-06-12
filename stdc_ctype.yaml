@@ -9,68 +9,82 @@ functions:
     arguments:
       - type: int
     guard: null
+    attributes: []
   - name: isalpha
     return_type: int
     arguments:
       - type: int
     guard: null
+    attributes: []
   - name: isblank
     return_type: int
     arguments:
       - type: int
     guard: null
+    attributes: []
   - name: iscntrl
     return_type: int
     arguments:
       - type: int
     guard: null
+    attributes: []
   - name: isdigit
     return_type: int
     arguments:
       - type: int
     guard: null
+    attributes: []
   - name: isgraph
     return_type: int
     arguments:
       - type: int
     guard: null
+    attributes: []
   - name: islower
     return_type: int
     arguments:
       - type: int
     guard: null
+    attributes: []
   - name: isprint
     return_type: int
     arguments:
       - type: int
     guard: null
+    attributes: []
   - name: ispunct
     return_type: int
     arguments:
       - type: int
     guard: null
+    attributes: []
   - name: isspace
     return_type: int
     arguments:
       - type: int
     guard: null
+    attributes: []
   - name: isupper
     return_type: int
     arguments:
       - type: int
     guard: null
+    attributes: []
   - name: isxdigit
     return_type: int
     arguments:
       - type: int
     guard: null
+    attributes: []
   - name: tolower
     return_type: int
     arguments:
       - type: int
     guard: null
+    attributes: []
   - name: toupper
     return_type: int
     arguments:
       - type: int
     guard: null
+    attributes: []

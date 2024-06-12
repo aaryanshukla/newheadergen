@@ -19,73 +19,81 @@ objects: []
 functions:
   - name: feclearexcept
     return_type: int
-    parameters:
+    arguments:
       - type: int
     guard: null
+    attributes: []
   - name: fetestexcept
     return_type: int
-    parameters:
+    arguments:
       - type: int
     guard: null
+    attributes: []
   - name: fetestexceptflag
     return_type: int
-    parameters:
+    arguments:
       - type: const fexcept_t *
       - type: int
     guard: null
+    attributes: []
   - name: feraiseexcept
     return_type: int
-    parameters:
+    arguments:
       - type: int
     guard: null
+    attributes: []
   - name: fesetround
     return_type: int
-    parameters:
+    arguments:
       - type: int
     guard: null
+    attributes: []
   - name: fegetround
     return_type: int
-<<<<<<< Updated upstream
     arguments: []
     guard: null
-=======
-    parameters: []
-    is_guarded: false
->>>>>>> Stashed changes
+    attributes: []
   - name: fegetenv
     return_type: int
-    parameters:
+    arguments:
       - type: fenv_t *
     guard: null
+    attributes: []
   - name: fesetenv
     return_type: int
-    parameters:
+    arguments:
       - type: const fenv_t *
     guard: null
+    attributes: []
   - name: fegetexceptflag
     return_type: int
-    parameters:
+    arguments:
       - type: fexcept_t *
       - type: int
     guard: null
+    attributes: []
   - name: fesetexcept
     return_type: int
-    parameters:
+    arguments:
       - type: int
     guard: null
+    attributes: []
   - name: fesetexceptflag
     return_type: int
-    parameters:
+    arguments:
       - type: const fexcept_t *
       - type: int
     guard: null
+    attributes: []
   - name: feholdexcept
     return_type: int
-    parameters:
+    arguments:
       - type: fenv_t *
     guard: null
+    attributes: []
   - name: feupdateenv
     return_type: int
-    parameters:
+    arguments:
       - type: const fenv_t *
     guard: null
+    attributes: []

@@ -8,158 +8,183 @@ objects: []
 functions:
   - name: memcpy
     return_type: void *
-    parameters:
+    arguments:
       - type: void *__restrict
       - type: const void *__restrict
       - type: size_t
     guard: null
+    attributes: []
   - name: memmove
     return_type: void *
-    parameters:
+    arguments:
       - type: void *
       - type: const void *
       - type: size_t
     guard: null
+    attributes: []
   - name: memcmp
     return_type: int
-    parameters:
+    arguments:
       - type: const void *
       - type: const void *
       - type: size_t
     guard: null
+    attributes: []
   - name: memchr
     return_type: void *
-    parameters:
+    arguments:
       - type: const void *
       - type: int
       - type: size_t
     guard: null
+    attributes: []
   - name: memset
     return_type: void *
-    parameters:
+    arguments:
       - type: void *
       - type: int
       - type: size_t
     guard: null
+    attributes: []
   - name: memset_explicit
     return_type: void *
-    parameters:
+    arguments:
       - type: void *
       - type: int
       - type: size_t
     guard: null
+    attributes: []
   - name: strcpy
     return_type: char
-    parameters:
+    arguments:
       - type: char *__restrict
       - type: const char *__restrict
     guard: null
+    attributes: []
   - name: strncpy
     return_type: char *
-    parameters:
+    arguments:
       - type: char *__restrict
       - type: const char *__restrict
       - type: size_t
     guard: null
+    attributes: []
   - name: strcat
     return_type: char *
-    parameters:
+    arguments:
       - type: char *__restrict
       - type: const char *__restrict
     guard: null
+    attributes: []
   - name: strncat
     return_type: char *
-    parameters:
+    arguments:
       - type: char *
       - type: const char *
       - type: size_t
     guard: null
+    attributes: []
   - name: strcmp
     return_type: int
-    parameters:
+    arguments:
       - type: const char *
       - type: const char *
     guard: null
+    attributes: []
   - name: strcoll
     return_type: int
-    parameters:
+    arguments:
       - type: const char *
       - type: const char *
     guard: null
+    attributes: []
   - name: strncmp
     return_type: int
-    parameters:
+    arguments:
       - type: const char *
       - type: const char *
       - type: size_t
     guard: null
+    attributes: []
   - name: strxfrm
     return_type: size_t
-    parameters:
+    arguments:
       - type: char *__restrict
       - type: const char *__restrict
       - type: size_t
     guard: null
+    attributes: []
   - name: strchr
     return_type: char *
-    parameters:
+    arguments:
       - type: const char *
       - type: int
     guard: null
+    attributes: []
   - name: strcspn
     return_type: size_t
-    parameters:
+    arguments:
       - type: const char *
       - type: const char *
     guard: null
+    attributes: []
   - name: strdup
     return_type: char *
-    parameters:
+    arguments:
       - type: const char *
     guard: null
+    attributes: []
   - name: strndup
     return_type: char *
-    parameters:
+    arguments:
       - type: const char *
       - type: size_t
     guard: null
-  - name: strpbrk
+    attributes: []
+    - name: strpbrk
     return_type: char *
-    parameters:
+    arguments:
       - type: const char *
       - type: const char *
     guard: null
+    attributes: []
   - name: strrchr
     return_type: char *
-    parameters:
+    arguments:
       - type: const char *
       - type: int
     guard: null
+    attributes: []
   - name: strspn
     return_type: size_t
-    parameters:
+    arguments:
       - type: const char *
       - type: const char *
     guard: null
+    attributes: []
   - name: strstr
     return_type: char *
-    parameters:
+    arguments:
       - type: const char *
       - type: const char *
     guard: null
+    attributes: []
   - name: strtok
     return_type: char *
-    parameters:
+    arguments:
       - type: char *__restrict
       - type: const char *__restrict
     guard: null
+    attributes: []
   - name: strerror
     return_type: char *
-    parameters:
+    arguments:
       - type: int
     guard: null
+    attributes: []
   - name: strlen
     return_type: size_t
-    parameters:
+    arguments:
       - const char *
     guard: null
+    attributes: []
