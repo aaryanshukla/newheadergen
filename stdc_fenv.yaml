@@ -20,66 +20,66 @@ functions:
     return_type: int
     arguments:
       - type: int
-    is_guarded: false
+    guard: null
   - name: fetestexcept
     return_type: int
     arguments:
       - type: int
-    is_guarded: false
+    guard: null
   - name: fetestexceptflag
     return_type: int
     arguments:
       - type: const fexcept_t *
       - type: int
-    is_guarded: false
+    guard: null
   - name: feraiseexcept
     return_type: int
     arguments:
       - type: int
-    is_guarded: false
+    guard: null
   - name: fesetround
     return_type: int
     arguments:
       - type: int
-    is_guarded: false
+    guard: null
   - name: fegetround
     return_type: int
     arguments: []
-    is_guarded: false
+    guard: null
   - name: fegetenv
     return_type: int
     arguments:
       - type: fenv_t *
-    is_guarded: false
+    guard: null
   - name: fesetenv
     return_type: int
     arguments:
       - type: const fenv_t *
-    is_guarded: false
+    guard: null
   - name: fegetexceptflag
     return_type: int
     arguments:
       - type: fexcept_t *
       - type: int
-    is_guarded: false
+    guard: null
   - name: fesetexcept
     return_type: int
     arguments:
       - type: int
-    is_guarded: false
+    guard: null
   - name: fesetexceptflag
     return_type: int
     arguments:
       - type: const fexcept_t *
       - type: int
-    is_guarded: false
+    guard: null
   - name: feholdexcept
     return_type: int
     arguments:
       - type: fenv_t *
-    is_guarded: false
+    guard: null
   - name: feupdateenv
     return_type: int
     arguments:
       - type: const fenv_t *
-    is_guarded: false
+    guard: null

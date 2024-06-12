@@ -7,69 +7,69 @@ functions:
     return_type: int
     arguments:
       - type: int
-    is_guarded: false
+    guard: null
   - name: isalpha
     return_type: int
     arguments:
       - type: int
-    is_guarded: false
+    guard: null
   - name: isblank
     return_type: int
     arguments:
       - type: int
-    is_guarded: false
+    guard: null
   - name: iscntrl
     return_type: int
     arguments:
       - type: int
-    is_guarded: false
+    guard: null
   - name: isdigit
     return_type: int
     arguments:
       - type: int
-    is_guarded: false
+    guard: null
   - name: isgraph
     return_type: int
     arguments:
       - type: int
-    is_guarded: false
+    guard: null
   - name: islower
     return_type: int
     arguments:
       - type: int
-    is_guarded: false
+    guard: null
   - name: isprint
     return_type: int
     arguments:
       - type: int
-    is_guarded: false
+    guard: null
   - name: ispunct
     return_type: int
     arguments:
       - type: int
-    is_guarded: false
+    guard: null
   - name: isspace
     return_type: int
     arguments:
       - type: int
-    is_guarded: false
+    guard: null
   - name: isupper
     return_type: int
     arguments:
       - type: int
-    is_guarded: false
+    guard: null
   - name: isxdigit
     return_type: int
     arguments:
       - type: int
-    is_guarded: false
+    guard: null
   - name: tolower
     return_type: int
     arguments:
       - type: int
-    is_guarded: false
+    guard: null
   - name: toupper
     return_type: int
     arguments:
       - type: int
-    is_guarded: false
+    guard: null

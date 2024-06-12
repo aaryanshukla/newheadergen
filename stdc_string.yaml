@@ -1,6 +1,6 @@
 header: "string.h"
 macros:
-  - name: NULL #this might cause an issue due to YAML syntax
+  - name: "NULL"
 types:
   - SizeTType
 enums: []
@@ -11,154 +11,154 @@ functions:
       - type: void *__restrict
       - type: const void *__restrict
       - type: size_t
-    is_guarded: false
+    guard: null
   - name: memmove
     return_type: void *
     arguments:
       - type: void *
       - type: const void *
       - type: size_t
-    is_guarded: false
+    guard: null
   - name: memcmp
     return_type: int
     arguments:
       - type: const void *
       - type: const void *
       - type: size_t
-    is_guarded: false
+    guard: null
   - name: memchr
     return_type: void *
     arguments:
       - type: const void *
       - type: int
       - type: size_t
-    is_guarded: false
+    guard: null
   - name: memset
     return_type: void *
     arguments:
       - type: void *
       - type: int
       - type: size_t
-    is_guarded: false
+    guard: null
   - name: memset_explicit
     return_type: void *
     arguments:
       - type: void *
       - type: int
       - type: size_t
-    is_guarded: false
+    guard: null
   - name: strcpy
     return_type: char
     arguments:
       - type: char *__restrict
       - type: const char *__restrict
-    is_guarded: false
+    guard: null
   - name: strncpy
     return_type: char *
     arguments:
       - type: char *__restrict
       - type: const char *__restrict
       - type: size_t
-    is_guarded: false
+    guard: null
   - name: strcat
     return_type: char *
     arguments:
       - type: char *__restrict
       - type: const char *__restrict
-    is_guarded: false
+    guard: null
   - name: strncat
     return_type: char *
     arguments:
       - type: char *
       - type: const char *
       - type: size_t
-    is_guarded: false
+    guard: null
   - name: strcmp
     return_type: int
     arguments:
       - type: const char *
       - type: const char *
-    is_guarded: false
+    guard: null
   - name: strcoll
     return_type: int
     arguments:
       - type: const char *
       - type: const char *
-    is_guarded: false
+    guard: null
   - name: strncmp
     return_type: int
     arguments:
       - type: const char *
       - type: const char *
       - type: size_t
-    is_guarded: false
+    guard: null
   - name: strxfrm
     return_type: size_t
     arguments:
       - type: char *__restrict
       - type: const char *__restrict
       - type: size_t
-    is_guarded: false
+    guard: null
   - name: strchr
     return_type: char *
     arguments:
       - type: const char *
       - type: int
-    is_guarded: false
+    guard: null
   - name: strcspn
     return_type: size_t
     arguments:
       - type: const char *
       - type: const char *
-    is_guarded: false
+    guard: null
   - name: strdup
     return_type: char *
     arguments:
       - type: const char *
-    is_guarded: false
+    guard: null
   - name: strndup
     return_type: char *
     arguments:
       - type: const char *
       - type: size_t
-    is_guarded: false
+    guard: null
   - name: strpbrk
     return_type: char *
     arguments:
       - type: const char *
       - type: const char *
-    is_guarded: false
+    guard: null
   - name: strrchr
     return_type: char *
     arguments:
       - type: const char *
       - type: int
-    is_guarded: false
+    guard: null
   - name: strspn
     return_type: size_t
     arguments:
       - type: const char *
       - type: const char *
-    is_guarded: false
+    guard: null
   - name: strstr
     return_type: char *
     arguments:
       - type: const char *
       - type: const char *
-    is_guarded: false
+    guard: null
   - name: strtok
     return_type: char *
     arguments:
       - type: char *__restrict
       - type: const char *__restrict
-    is_guarded: false
+    guard: null
   - name: strerror
     return_type: char *
     arguments:
       - type: int
-    is_guarded: false
+    guard: null
   - name: strlen
     return_type: size_t
     arguments:
       - const char *
-    is_guarded: false
+    guard: null
