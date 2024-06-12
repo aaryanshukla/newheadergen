@@ -4,6 +4,7 @@ macros:
 types:
   - SizeTType
 enums: []
+objects: []
 functions:
   - name: memcpy
     return_type: void *

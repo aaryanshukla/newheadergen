@@ -4,4 +4,5 @@ macros:
   - name: assert
 types: []
 enums: []
+objects: []
 functions: []

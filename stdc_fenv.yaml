@@ -15,6 +15,7 @@ types:
   - fenv_t
   - fexcept_t
 enums: []
+objects: []
 functions:
   - name: feclearexcept
     return_type: int

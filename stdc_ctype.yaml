@@ -2,6 +2,7 @@ header: "ctype.h"
 macros: []
 types: []
 enums: []
+objects: []
 functions:
   - name: isalnum
     return_type: int
