@@ -185,6 +185,6 @@ functions:
   - name: strlen
     return_type: size_t
     arguments:
-      - type: const char
+      - type: const char *
     guard: null
     attributes: []
