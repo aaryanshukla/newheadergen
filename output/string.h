@@ -28,6 +28,6 @@ size_t strspn(const char *, const char *);
 char * strstr(const char *, const char *);
 char * strtok(char *__restrict, const char *__restrict);
 char * strerror(int);
-size_t strlen(const char *);
+size_t strlen(const char);
 
 #endif // STRING_H

@@ -141,7 +141,7 @@ functions:
       - type: size_t
     guard: null
     attributes: []
-    - name: strpbrk
+  - name: strpbrk
     return_type: char *
     arguments:
       - type: const char *
@@ -185,6 +185,6 @@ functions:
   - name: strlen
     return_type: size_t
     arguments:
-      - const char *
+      - type: const char
     guard: null
     attributes: []
