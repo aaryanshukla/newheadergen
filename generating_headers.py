@@ -50,11 +50,9 @@ def main(yaml_file):
     header, macros, types, enums, functions = parse_yaml(yaml_content)
     header_content = generate_header(header, macros, types, enums, functions)
 
-    # Ensure the output directory exists
     output_dir = os.path.join(os.path.dirname(__file__), 'output')
     os.makedirs(output_dir, exist_ok=True)
 
-    # Write the header file to the output directory
     output_file = os.path.join(output_dir, header)
     with open(output_file, "w") as header_file:
         header_file.write(header_content)
