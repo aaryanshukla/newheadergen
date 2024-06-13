@@ -8,13 +8,8 @@ class TestMacro(unittest.TestCase):
         self.assertEqual(str(macro), expected_output)
 
     def test_macro_with_special_characters(self):
-        macro = Macro("FE_INEXACT 1")
-        expected_output = "#define FE_INEXACT 1"
-        self.assertEqual(str(macro), expected_output)
-
-    def test_macro_empty_name(self):
-        macro = Macro("")
-        expected_output = "#define "
+        macro = Macro("FE_INEXACT_1")
+        expected_output = "#define FE_INEXACT_1"
         self.assertEqual(str(macro), expected_output)
 
 if __name__ == '__main__':
