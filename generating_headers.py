@@ -8,12 +8,14 @@ from macro import Macro
 from type import Type
 from function import Function
 from include import Include
+#from enum include Enumeration
 
 def parse_yaml(yaml_content):
     header_name = yaml_content.get('header', 'unknown.h')
     macros = [Macro(m['name']) for m in yaml_content.get('macros', [])]
     types = [Type(t) for t in yaml_content.get('types', [])]
-    enums = yaml_content.get('enums', [])
+    #Todo: need to add enums class for enums[value]
+    enums = [Enum(t) for t in yaml_content.get('enums', [])]
     functions = [Function(
         f['return_type'],
         f['name'],
@@ -22,7 +24,7 @@ def parse_yaml(yaml_content):
         f.get('attributes')
     ) for f in yaml_content.get('functions', [])]
     includes = [Include(i['name']) for i in yaml_content.get('includes', [])]
-    return header_name, macros, types, enums, functions, includes
+    return header_name, macros, types, enums, functions, includes 
 
 def main(yaml_file):
     with open(yaml_file, 'r') as f:
