@@ -9,7 +9,12 @@ class Function:
     def __str__(self):
         args_str = ", ".join(self.arguments)
         attributes_str = " ".join(self.attributes)
-        function_str = f"{self.return_type} {self.name}({args_str}) {attributes_str};".strip()
+        function_str = f"{self.return_type} {self.name}({args_str})".strip()
+        
+        if attributes_str:
+            function_str += f" {attributes_str}"
+        
+        function_str += ";"
         
         if self.guard:
             return f"#ifdef {self.guard}\n{function_str}\n#endif // {self.guard}\n"
