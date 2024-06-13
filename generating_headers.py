@@ -3,76 +3,62 @@
 import yaml
 import argparse
 import os
+from header import HeaderFile
+from macro import Macro
+from type import Type
+from function import Function
+from include import Include
 
 def parse_yaml(yaml_content):
-    header = yaml_content.get('header', 'unknown.h')
-    macros = yaml_content.get('macros', [])
-    types = yaml_content.get('types', [])
+    header_name = yaml_content.get('header', 'unknown.h')
+    macros = [Macro(m['name']) for m in yaml_content.get('macros', [])]
+    types = [Type(t) for t in yaml_content.get('types', [])]
     enums = yaml_content.get('enums', [])
-    functions = yaml_content.get('functions', [])
-    #TODO: Add logic for guarded functions
-    #Check if macro implemetation is corret
-    return header, macros, types, enums, functions
-
-def generate_header(header, macros, types, enums, functions):
-    header_guard = header.replace('.', '_').upper()
-    header_content = f"#ifndef {header_guard}\n"
-    header_content += f"#define {header_guard}\n\n"
-
-    for macro in macros:
-        header_content += f"#define {macro['name']}\n"
-
-    for type_ in types:
-        header_content += f"typedef {type_};\n"
-
-    header_content += "\n"
-
-    for func in functions:
-        return_type = func['return_type']
-        func_name = func['name']
-        params = []
-        for param in func['arguments']:
-            if isinstance(param, str):
-                params.append(param)
-            else:
-                type_ = param['type']
-                qualifiers = " ".join(param.get('qualifiers', []))
-                param_str = f"{type_} {qualifiers}".strip()
-                params.append(param_str)
-        params_str = ", ".join(params)
-        header_content += f"{return_type} {func_name}({params_str});\n"
-
-    header_content += f"\n#endif // {header_guard}\n"
-    return header_content
+    functions = [Function(
+        f['return_type'],
+        f['name'],
+        [arg['type'] for arg in f['arguments']],
+        f.get('guard'),
+        f.get('attributes')
+    ) for f in yaml_content.get('functions', [])]
+    includes = [Include(i['name']) for i in yaml_content.get('includes', [])]
+    return header_name, macros, types, enums, functions, includes
 
 def main(yaml_file):
     with open(yaml_file, 'r') as f:
         yaml_content = yaml.safe_load(f)
-    
-    header, macros, types, enums, functions = parse_yaml(yaml_content)
-    header_content = generate_header(header, macros, types, enums, functions)
 
-    # Make sure output folder works and exists if you are using it
+    header_name, macros, types, enums, functions, includes = parse_yaml(yaml_content)
+    header = HeaderFile(header_name)
+
+    for macro in macros:
+        header.add_macro(macro)
+
+    for type_ in types:
+        header.add_type(type_)
+
+    for enum in enums:
+        header.add_enumeration(enum)
+
+    for function in functions:
+        header.add_function(function)
+
+    for include in includes:
+        header.add_include(include)
+
     output_dir = os.path.join(os.path.dirname(__file__), 'output')
     os.makedirs(output_dir, exist_ok=True)
 
-    # This sends the header file to the output folder
-    output_file = os.path.join(output_dir, header)
+    output_file = os.path.join(output_dir, header_name)
     with open(output_file, "w") as header_file:
-        header_file.write(header_content)
-    
-    print(f"Generated header for {header}")
-    print(header_content)
+        header_file.write(str(header))
+
+    print(f"Generated header for {header_name}")
+    print(str(header))
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate header files from YAML")
     parser.add_argument("yaml_file", help="Path to the YAML file containing header specification")
     args = parser.parse_args()
-    
-    main(args.yaml_file)
 
-class TestFunction(some unittest.testcase):
-    def test_function_without_guard(self):
-        func = Function("int", "myFunction", ["int a", "float b"])
-        expected_output = "int myFunction(int a, float b);\n"
-        self.assertEqual(str(func), expected_output)
+    main(args.yaml_file)
