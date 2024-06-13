@@ -7,6 +7,11 @@ class TestType(unittest.TestCase):
         expected_output = "#include <llvm-libc-types/float_t.h>"
         self.assertEqual(str(type), expected_output)
 
+    def test_type_lowercase_simple(self):
+        type = Type("fenv_t")
+        expected_output = "#include <llvm-libc-types/fenv_t.h>"
+        self.assertEqual(str(type), expected_output)
+
     def test_type_capitalized(self):
         type = Type("OnceFlagType")
         expected_output = "#include <llvm-libc-types/once_flag.h>"
