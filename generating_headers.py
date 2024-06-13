@@ -10,6 +10,8 @@ def parse_yaml(yaml_content):
     types = yaml_content.get('types', [])
     enums = yaml_content.get('enums', [])
     functions = yaml_content.get('functions', [])
+    #TODO: Add logic for guarded functions
+    #Check if macro implemetation is corret
     return header, macros, types, enums, functions
 
 def generate_header(header, macros, types, enums, functions):
@@ -68,3 +70,9 @@ if __name__ == "__main__":
     args = parser.parse_args()
     
     main(args.yaml_file)
+
+class TestFunction(some unittest.testcase):
+    def test_function_without_guard(self):
+        func = Function("int", "myFunction", ["int a", "float b"])
+        expected_output = "int myFunction(int a, float b);\n"
+        self.assertEqual(str(func), expected_output)
