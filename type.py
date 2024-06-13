@@ -55,7 +55,16 @@ type_dict = {
     "UnsignedType": "unsigned",
     "ActionType": "ACTION",
     "EntryType": "ENTRY",
-    "MBStateTType": "mbstate_t"
+    "MBStateTType": "mbstate_t",
+    "StructTmType": "struct tm",
+    "ClockT": "clock_t",
+    "DivTType": "div_t",
+    "LDivTType": "ldiv_t",
+    "LLDivTType": "lldiv_t",
+    "JmpBuf": "jmp_buf",
+    "TssTType": "tss_t",
+    "TssDtorTType": "tss_dtor_t",
+    "FEnvT": "fenv_t"
 }
 class Type:
     def __init__(self, name):
