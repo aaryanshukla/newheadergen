@@ -69,7 +69,7 @@ class Type:
         self.name = name
 
     def __str__(self):
-        return f"#include <llvm-libc-types/{type_dict[self.name]};"
+        return f"#include <llvm-libc-types/{type_dict[self.name]}.h>"
 
 class Enumeration:
     def __init__(self, name, values):
