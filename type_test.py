@@ -27,14 +27,14 @@ class TestType(unittest.TestCase):
         expected_output = "#include <llvm-libc-types/__call_once_func_t.h>"
         self.assertEqual(str(type), expected_output)
 
-    def test_double_underscore(self):
+    def test_type_double_underscore(self):
         type = Type("QSortRCompareT")
         expected_output = "#include <llvm-libc-types/__qsortcompare_t.h>"
         self.assertEqual(str(type), expected_output)
 
-    def test_type_empty_name(self):
-        type = Type("")
-        expected_output = "#include "
+    def test_type_all_caps(self):
+        type = Type("FILE")
+        expected_output = "#include <llvm-libc-types/FILE.h>"
         self.assertEqual(str(type), expected_output)
 
 if __name__ == '__main__':
