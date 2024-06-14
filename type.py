@@ -45,6 +45,7 @@ type_dict = {
     "StructTimeSpec": "struct timespec",
     "BSearchCompareT": "__bsearchcompare_t",
     "QSortCompareT": "__qsortcompare_t",
+    "QSortRCompareT": "__qsortrcompare_t",
     "AtexitHandlerT": "__atexithandler_t",
     "FILE": "FILE",
     "PThreadTType": "pthread_t",
@@ -64,7 +65,10 @@ type_dict = {
     "JmpBuf": "jmp_buf",
     "TssTType": "tss_t",
     "TssDtorTType": "tss_dtor_t",
-    "FEnvT": "fenv_t"
+    "FEnvT": "fenv_t",
+    "FExceptT": "fexcept_t",
+    "IMaxDivTType": "imaxdiv_t",
+    "SigAtomicT": "sig_atomic_t"
 }
 class Type:
     def __init__(self, name):
