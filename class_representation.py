@@ -5,6 +5,7 @@ class Macro:
     def __str__(self):
         return f"#define {self.name}"
 
+# full dictionary in type.py
 type_dict = {
     # Builtin types
     "VarArgType": "...",
