@@ -1,7 +1,7 @@
 header: "assert.h"
 macros:
-  - name: static_assert
-  - name: assert
+  - static_assert
+  - assert
 types: []
 enums: []
 objects: []

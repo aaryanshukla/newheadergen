@@ -22,6 +22,11 @@ type_dict = {
     "Float16Type": "_Float16",
     "Float128Type": "float128",
 
+    # math.h but can't find the NamedType anywhere
+    "float_t": "float_t",
+    "double_t": "double_t",
+    "float128": "float128",
+
     "SizeTType": "size_t",
     "Char8TType": "char8_t",
     "Char16TType": "char16_t",
