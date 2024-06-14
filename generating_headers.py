@@ -8,7 +8,7 @@ from macro import Macro
 from type import Type
 from function import Function
 from include import Include
-#from enum include Enumeration
+from enum import Enumeration
 
 def parse_yaml(yaml_content):
     header_name = yaml_content.get('header', 'unknown.h')

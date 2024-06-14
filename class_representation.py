@@ -72,14 +72,21 @@ class Type:
     def __str__(self):
         return f"#include <llvm-libc-types/{type_dict[self.name]}.h>"
 
+# class Enumeration:
+#     def __init__(self, name, values):
+#         self.name = name
+#         self.values = values
+
+#     def __str__(self):
+#         values_str = ", ".join([f"{name} = {value}" for name, value in self.values.items()])
+#         return f"enum {self.name} {{{values_str}}};"
+
 class Enumeration:
-    def __init__(self, name, values):
+    def __init__(self, name):
         self.name = name
-        self.values = values
 
     def __str__(self):
-        values_str = ", ".join([f"{name} = {value}" for name, value in self.values.items()])
-        return f"enum {self.name} {{{values_str}}};"
+        return f"{self.name}"
     
 class Function: 
     def __init__(self, return_type, name, arguments, guard=None, attributes=None):
@@ -124,8 +131,11 @@ class HeaderFile:
         for type_ in self.types:
             content.append(str(type_))
 
-        for enum in self.enumerations:
-            content.append(str(enum))
+        if len(self.enumerations) != 0:
+            content.append("enum {")
+            for enum in self.enumerations:
+                content.append(f"\tstr(enum),")
+            content.append("};")
 
         for function in self.functions:
             content.append(str(function))
