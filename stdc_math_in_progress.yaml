@@ -337,6 +337,7 @@ functions:
       - FloatType
     guard: null
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     attributes: []
   - name: fmaximum_magl
     return_type: LongDoubleType
@@ -633,6 +634,9 @@ functions:
   #     - IntType
   #     - UnsignedIntType
   
+=======
+    attributes: []
+>>>>>>> Stashed changes
 =======
     attributes: []
 >>>>>>> Stashed changes
