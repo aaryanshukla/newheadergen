@@ -1,15 +1,15 @@
 header: "fenv.h"
 macros:
-  - name: FE_DIVBYZERO
-  - name: FE_INEXACT
-  - name: FE_INVALID
-  - name: FE_OVERFLOW
-  - name: FE_UNDERFLOW
-  - name: FE_ALL_EXCEPT
-  - name: FE_DOWNWARD
-  - name: FE_TONEAREST
-  - name: FE_TOWARDZERO
-  - name: FE_DFL_ENV
+  - FE_DIVBYZERO
+  - FE_INEXACT
+  - FE_INVALID
+  - FE_OVERFLOW
+  - FE_UNDERFLOW
+  - FE_ALL_EXCEPT
+  - FE_DOWNWARD
+  - FE_TONEAREST
+  - FE_TOWARDZERO
+  - FE_DFL_ENV
 types:
   - fenv_t
   - fexcept_t
@@ -19,32 +19,32 @@ functions:
   - name: feclearexcept
     return_type: int
     arguments:
-      - type: int
+      - int
     guard: null
     attributes: []
   - name: fetestexcept
     return_type: int
     arguments:
-      - type: int
+      - int
     guard: null
     attributes: []
   - name: fetestexceptflag
     return_type: int
     arguments:
-      - type: const fexcept_t *
-      - type: int
+      - const fexcept_t *
+      - int
     guard: null
     attributes: []
   - name: feraiseexcept
     return_type: int
     arguments:
-      - type: int
+      - int
     guard: null
     attributes: []
   - name: fesetround
     return_type: int
     arguments:
-      - type: int
+      - int
     guard: null
     attributes: []
   - name: fegetround
@@ -55,44 +55,44 @@ functions:
   - name: fegetenv
     return_type: int
     arguments:
-      - type: fenv_t *
+      - fenv_t *
     guard: null
     attributes: []
   - name: fesetenv
     return_type: int
     arguments:
-      - type: const fenv_t *
+      - const fenv_t *
     guard: null
     attributes: []
   - name: fegetexceptflag
     return_type: int
     arguments:
-      - type: fexcept_t *
-      - type: int
+      - fexcept_t *
+      - int
     guard: null
     attributes: []
   - name: fesetexcept
     return_type: int
     arguments:
-      - type: int
+      - int
     guard: null
     attributes: []
   - name: fesetexceptflag
     return_type: int
     arguments:
-      - type: const fexcept_t *
-      - type: int
+      - const fexcept_t *
+      - int
     guard: null
     attributes: []
   - name: feholdexcept
     return_type: int
     arguments:
-      - type: fenv_t *
+      - fenv_t *
     guard: null
     attributes: []
   - name: feupdateenv
     return_type: int
     arguments:
-      - type: const fenv_t *
+      - const fenv_t *
     guard: null
     attributes: []

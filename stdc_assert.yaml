@@ -1,6 +1,6 @@
 header: "assert.h"
 macros:
-  - static_assert
+  - static_assert # not in assert.h but in .td file dunno why
   - assert
 types: []
 enums: []

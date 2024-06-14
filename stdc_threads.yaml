@@ -1,6 +1,6 @@
 header: "threads.h"
 macros:
-  - ONCE_FLAG_INIT {0}
+  - ONCE_FLAG_INIT #{0}
 types:
   - OnceFlagType
   - CallOnceFuncType
