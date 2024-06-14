@@ -1,0 +1,25 @@
+import json 
+#Need to add if guards, enums, and change the way types are added 
+
+def ir_to_json(header):
+    json_data = {
+        'header': header.name,
+        'macros': [{'name': macro.name} for macro in header.macros],
+        'types': [{'name': type_.name} for type_ in header.types],
+        'functions': [
+            {
+                'name': func.name,
+                'return_type': func.return_type,
+                'arguments': [{'type': arg} for arg in func.arguments],
+                'guard': func.guard,
+                'attributes': func.attributes
+            } for func in header.functions
+        ],
+        'includes': [{'name': include.name} for include in header.includes]
+    }
+    return json_data
+
+def save_json_file(header, json_file):
+    json_data = ir_to_json(header)
+    with open(json_file, 'w') as f:
+        json.dump(json_data, f, indent=4)

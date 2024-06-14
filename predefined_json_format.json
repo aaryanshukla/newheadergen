@@ -1,0 +1,33 @@
+{
+    "header": "example.h",
+    "macros": [
+        {"name": "EXAMPLE_MACRO"}
+    ],
+    "types": [
+        {"name": "#include_example_type_t"}
+    ],
+    "enums": [
+        {
+            "name": "ExampleEnum",
+            "values": {
+                "VALUE1": 1,
+                "VALUE2": 2
+            }
+        }
+    ],
+    "functions": [
+        {
+            "name": "example_function",
+            "return_type": "void",
+            "arguments": [
+                {"type": "int", "name": "arg1"},
+                {"type": "float", "name": "arg2"}
+            ],
+            "guard": "EXAMPLE_GUARD",
+            "attributes": ["__attribute__((example))"]
+        }
+    ],
+    "includes": [
+        {"name": "example.h"}
+    ]
+}
