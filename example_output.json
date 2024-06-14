@@ -1,337 +1,276 @@
-enums: []
-functions:
-- arguments:
-  - DoubleType
-  - DoubleType
-  attributes: []
-  guard: null
-  name: copysign
-  return_type: DoubleType
-- arguments:
-  - FloatType
-  - FloatType
-  attributes: []
-  guard: null
-  name: copysignf
-  return_type: FloatType
-- arguments:
-  - LongDoubleType
-  - LongDoubleType
-  attributes: []
-  guard: null
-  name: copysignl
-  return_type: LongDoubleType
-- arguments:
-  - Float16Type
-  - Float16Type
-  attributes: []
-  guard: LIBC_TYPES_HAS_FLOAT16
-  name: copysignf16
-  return_type: Float16Type
-- arguments:
-  - Float128Type
-  - Float128Type
-  attributes: []
-  guard: LIBC_TYPES_HAS_FLOAT128
-  name: copysignf128
-  return_type: Float128Type
-- arguments:
-  - DoubleType
-  attributes: []
-  guard: null
-  name: ceil
-  return_type: DoubleType
-- arguments:
-  - FloatType
-  attributes: []
-  guard: null
-  name: ceilf
-  return_type: FloatType
-- arguments:
-  - LongDoubleType
-  attributes: []
-  guard: null
-  name: ceill
-  return_type: LongDoubleType
-- arguments:
-  - Float16Type
-  attributes: []
-  guard: LIBC_TYPES_HAS_FLOAT16
-  name: ceilf16
-  return_type: Float16Type
-- arguments:
-  - Float128Type
-  attributes: []
-  guard: LIBC_TYPES_HAS_FLOAT128
-  name: ceilf128
-  return_type: Float128Type
-- arguments:
-  - DoubleType
-  attributes:
-  - __LIBC_CONST_ATTR
-  guard: null
-  name: fabs
-  return_type: DoubleType
-- arguments:
-  - FloatType
-  attributes: []
-  guard: null
-  name: fabsf
-  return_type: FloatType
-- arguments:
-  - LongDoubleType
-  attributes: []
-  guard: null
-  name: fabsl
-  return_type: LongDoubleType
-- arguments:
-  - Float16Type
-  attributes: []
-  guard: LIBC_TYPES_HAS_FLOAT16
-  name: fabsf16
-  return_type: Float16Type
-- arguments:
-  - Float128Type
-  attributes: []
-  guard: LIBC_TYPES_HAS_FLOAT128
-  name: fabsf128
-  return_type: Float128Type
-- arguments:
-  - DoubleType
-  - DoubleType
-  attributes: []
-  guard: null
-  name: fdim
-  return_type: DoubleType
-- arguments:
-  - FloatType
-  - FloatType
-  attributes: []
-  guard: null
-  name: fdimf
-  return_type: FloatType
-- arguments:
-  - LongDoubleType
-  - LongDoubleType
-  attributes: []
-  guard: null
-  name: fdiml
-  return_type: LongDoubleType
-- arguments:
-  - Float16Type
-  - Float16Type
-  attributes: []
-  guard: LIBC_TYPES_HAS_FLOAT16
-  name: fdimf16
-  return_type: Float16Type
-- arguments:
-  - Float128Type
-  - Float128Type
-  attributes: []
-  guard: LIBC_TYPES_HAS_FLOAT128
-  name: fdimf128
-  return_type: Float128Type
-- arguments:
-  - DoubleType
-  attributes: []
-  guard: null
-  name: floor
-  return_type: DoubleType
-- arguments:
-  - FloatType
-  attributes: []
-  guard: null
-  name: floorf
-  return_type: FloatType
-- arguments:
-  - LongDoubleType
-  attributes: []
-  guard: null
-  name: floorl
-  return_type: LongDoubleType
-- arguments:
-  - Float16Type
-  attributes: []
-  guard: LIBC_TYPES_HAS_FLOAT16
-  name: floorf16
-  return_type: Float16Type
-- arguments:
-  - Float128Type
-  attributes: []
-  guard: LIBC_TYPES_HAS_FLOAT128
-  name: floorf128
-  return_type: Float128Type
-- arguments:
-  - DoubleType
-  - DoubleType
-  attributes: []
-  guard: null
-  name: fmin
-  return_type: DoubleType
-- arguments:
-  - FloatType
-  - FloatType
-  attributes: []
-  guard: null
-  name: fminf
-  return_type: FloatType
-- arguments:
-  - LongDoubleType
-  - LongDoubleType
-  attributes: []
-  guard: null
-  name: fminl
-  return_type: LongDoubleType
-- arguments:
-  - Float16Type
-  - Float16Type
-  attributes: []
-  guard: LIBC_TYPES_HAS_FLOAT16
-  name: fminf16
-  return_type: Float16Type
-- arguments:
-  - Float128Type
-  - Float128Type
-  attributes: []
-  guard: null
-  name: fminf128
-  return_type: Float128Type
-- arguments:
-  - DoubleType
-  - DoubleType
-  attributes: []
-  guard: null
-  name: fmax
-  return_type: DoubleType
-- arguments:
-  - FloatType
-  - FloatType
-  attributes: []
-  guard: null
-  name: fmaxf
-  return_type: FloatType
-- arguments:
-  - LongDoubleType
-  - LongDoubleType
-  attributes: []
-  guard: null
-  name: fmaxl
-  return_type: LongDoubleType
-- arguments:
-  - Float16Type
-  - Float16Type
-  attributes: []
-  guard: LIBC_TYPES_HAS_FLOAT16
-  name: fmaxf16
-  return_type: Float16Type
-- arguments:
-  - Float128Type
-  - Float128Type
-  attributes: []
-  guard: null
-  name: fmaxf128
-  return_type: Float128Type
-- arguments:
-  - DoubleType
-  - DoubleType
-  attributes: []
-  guard: null
-  name: fmaximum
-  return_type: DoubleType
-- arguments:
-  - FloatType
-  - FloatType
-  attributes: []
-  guard: null
-  name: fmaximumf
-  return_type: FloatType
-- arguments:
-  - LongDoubleType
-  - LongDoubleType
-  attributes: []
-  guard: null
-  name: fmaximuml
-  return_type: LongDoubleType
-- arguments:
-  - Float16Type
-  - Float16Type
-  attributes: []
-  guard: LIBC_TYPES_HAS_FLOAT16
-  name: fmaximumf16
-  return_type: Float16Type
-- arguments:
-  - Float128Type
-  - Float128Type
-  attributes: []
-  guard: LIBC_TYPES_HAS_FLOAT128
-  name: fmaximumf128
-  return_type: Float128Type
-- arguments:
-  - DoubleType
-  - DoubleType
-  attributes: []
-  guard: null
-  name: fmaximum_num
-  return_type: DoubleType
-- arguments:
-  - FloatType
-  - FloatType
-  attributes: []
-  guard: null
-  name: fmaximum_numf
-  return_type: FloatType
-- arguments:
-  - LongDoubleType
-  - LongDoubleType
-  attributes: []
-  guard: null
-  name: fmaximum_numl
-  return_type: LongDoubleType
-- arguments:
-  - Float16Type
-  - Float16Type
-  attributes: []
-  guard: LIBC_TYPES_HAS_FLOAT16
-  name: fmaximum_numf16
-  return_type: Float16Type
-- arguments:
-  - Float128Type
-  - Float128Type
-  attributes: []
-  guard: LIBC_TYPES_HAS_FLOAT128
-  name: fmaximum_numf128
-  return_type: Float128Type
-- arguments:
-  - DoubleType
-  - DoubleType
-  attributes: []
-  guard: null
-  name: fmaximum_mag
-  return_type: DoubleType
-- arguments:
-  - FloatType
-  - FloatType
-  attributes: []
-  guard: null
-  name: fmaximum_magf
-  return_type: FloatType
-header: math.h
-includes: []
-macros:
-- MATH_ERRNO
-- MATH_ERREXCEPT
-- math_errhandling
-- HUGE_VAL
-- INFINITY
-- NAN
-- FP_INT_UPWARD
-- FP_INT_DOWNWARD
-- FP_INT_TOWARDZERO
-- FP_INT_TONEARESTFROMZERO
-- FP_INT_TONEAREST
-- FP_ILOGB0
-- FP_ILOGBNAN
-- isfinite
-- isinf
-- isnan
-types: []
+{
+    "header": "ctype.h",
+    "macros": [],
+    "types": [],
+    "enums": [],
+    "functions": [
+        {
+            "return_type": "int",
+            "name": [
+                {
+                    "type": "int"
+                }
+            ],
+            "arguments": [
+                "i",
+                "s",
+                "a",
+                "l",
+                "n",
+                "u",
+                "m"
+            ],
+            "guard": null,
+            "attributes": []
+        },
+        {
+            "return_type": "int",
+            "name": [
+                {
+                    "type": "int"
+                }
+            ],
+            "arguments": [
+                "i",
+                "s",
+                "a",
+                "l",
+                "p",
+                "h",
+                "a"
+            ],
+            "guard": null,
+            "attributes": []
+        },
+        {
+            "return_type": "int",
+            "name": [
+                {
+                    "type": "int"
+                }
+            ],
+            "arguments": [
+                "i",
+                "s",
+                "b",
+                "l",
+                "a",
+                "n",
+                "k"
+            ],
+            "guard": null,
+            "attributes": []
+        },
+        {
+            "return_type": "int",
+            "name": [
+                {
+                    "type": "int"
+                }
+            ],
+            "arguments": [
+                "i",
+                "s",
+                "c",
+                "n",
+                "t",
+                "r",
+                "l"
+            ],
+            "guard": null,
+            "attributes": []
+        },
+        {
+            "return_type": "int",
+            "name": [
+                {
+                    "type": "int"
+                }
+            ],
+            "arguments": [
+                "i",
+                "s",
+                "d",
+                "i",
+                "g",
+                "i",
+                "t"
+            ],
+            "guard": null,
+            "attributes": []
+        },
+        {
+            "return_type": "int",
+            "name": [
+                {
+                    "type": "int"
+                }
+            ],
+            "arguments": [
+                "i",
+                "s",
+                "g",
+                "r",
+                "a",
+                "p",
+                "h"
+            ],
+            "guard": null,
+            "attributes": []
+        },
+        {
+            "return_type": "int",
+            "name": [
+                {
+                    "type": "int"
+                }
+            ],
+            "arguments": [
+                "i",
+                "s",
+                "l",
+                "o",
+                "w",
+                "e",
+                "r"
+            ],
+            "guard": null,
+            "attributes": []
+        },
+        {
+            "return_type": "int",
+            "name": [
+                {
+                    "type": "int"
+                }
+            ],
+            "arguments": [
+                "i",
+                "s",
+                "p",
+                "r",
+                "i",
+                "n",
+                "t"
+            ],
+            "guard": null,
+            "attributes": []
+        },
+        {
+            "return_type": "int",
+            "name": [
+                {
+                    "type": "int"
+                }
+            ],
+            "arguments": [
+                "i",
+                "s",
+                "p",
+                "u",
+                "n",
+                "c",
+                "t"
+            ],
+            "guard": null,
+            "attributes": []
+        },
+        {
+            "return_type": "int",
+            "name": [
+                {
+                    "type": "int"
+                }
+            ],
+            "arguments": [
+                "i",
+                "s",
+                "s",
+                "p",
+                "a",
+                "c",
+                "e"
+            ],
+            "guard": null,
+            "attributes": []
+        },
+        {
+            "return_type": "int",
+            "name": [
+                {
+                    "type": "int"
+                }
+            ],
+            "arguments": [
+                "i",
+                "s",
+                "u",
+                "p",
+                "p",
+                "e",
+                "r"
+            ],
+            "guard": null,
+            "attributes": []
+        },
+        {
+            "return_type": "int",
+            "name": [
+                {
+                    "type": "int"
+                }
+            ],
+            "arguments": [
+                "i",
+                "s",
+                "x",
+                "d",
+                "i",
+                "g",
+                "i",
+                "t"
+            ],
+            "guard": null,
+            "attributes": []
+        },
+        {
+            "return_type": "int",
+            "name": [
+                {
+                    "type": "int"
+                }
+            ],
+            "arguments": [
+                "t",
+                "o",
+                "l",
+                "o",
+                "w",
+                "e",
+                "r"
+            ],
+            "guard": null,
+            "attributes": []
+        },
+        {
+            "return_type": "int",
+            "name": [
+                {
+                    "type": "int"
+                }
+            ],
+            "arguments": [
+                "t",
+                "o",
+                "u",
+                "p",
+                "p",
+                "e",
+                "r"
+            ],
+            "guard": null,
+            "attributes": []
+        }
+    ],
+    "includes": []
+}

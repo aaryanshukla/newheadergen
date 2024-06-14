@@ -24,8 +24,8 @@ def yaml_to_ir(yaml_data):
         arguments = [arg for arg in function_data['arguments']]
         header.add_function(Function(
             function_data['return_type'],
-            function_data['name'],
             arguments,
+            function_data['name'],
             function_data.get('guard'),
             function_data.get('attributes')
         ))

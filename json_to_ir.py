@@ -15,8 +15,8 @@ def parse_ir_json(json_content):
     enums = [Enumeration(e['name'], e['value']) for e in json_content.get('enums', [])]
     functions = [Function(
         f['return_type'],
-        f['name'],
         [arg for arg in f['arguments']],
+        f['name'],
         f.get('guard'),
         f.get('attributes', [])
     ) for f in json_content.get('functions', [])]
