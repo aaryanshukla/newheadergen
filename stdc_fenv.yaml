@@ -1,4 +1,3 @@
-name: HeaderSpec_Fenv
 header: "fenv.h"
 macros:
   - name: FE_DIVBYZERO

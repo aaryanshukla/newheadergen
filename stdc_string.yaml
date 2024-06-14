@@ -1,6 +1,6 @@
 header: "string.h"
 macros:
-  - name: "NULL"
+  - "NULL"
 types:
   - SizeTType
 enums: []

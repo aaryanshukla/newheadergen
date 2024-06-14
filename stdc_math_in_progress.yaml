@@ -577,55 +577,58 @@ header: "math.h"
       - Float128Type
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
-  - name: frexp
-    return_type: DoubleType
-    arguments:
-      - IntPtr
-      - DoubleType
-  - name: frexpf
-    return_type: FloatType
-    arguments:
-      - IntPtr
-      - FloatType
-  - name: frexpl
-    return_type: LongDoubleType
-    arguments:
-      - IntPtr
-      - LongDoubleType
-  - name: frexpf128
-    return_type: Float128Type
-    arguments:
-      - IntPtr
-      - Float128Type
 
-  - name: fromfp
-    return_type: DoubleType
-    arguments:
-      - DoubleType
-      - IntType
-      - UnsignedIntType
-  - name: fromfpf
-    return_type: FloatType
-    arguments:
-      - FloatType
-      - IntType
-      - UnsignedIntType
-  - name: fromfpl
-    return_type: LongDoubleType
-    arguments:
-      - LongDoubleType
-      - IntType
-      - UnsignedIntType
-  - name: fromfpf16
-    return_type: Float16Type
-    arguments:
-      - Float16Type
-      - IntType
-      - UnsignedIntType
-  - name: fromfpf128
-    return_type: Float128Type
-    arguments:
-      - Float128Type
-      - IntType
-      - UnsignedIntType
+
+
+  # - name: frexp
+  #   return_type: DoubleType
+  #   arguments:
+  #     - IntPtr
+  #     - DoubleType
+  # - name: frexpf
+  #   return_type: FloatType
+  #   arguments:
+  #     - IntPtr
+  #     - FloatType
+  # - name: frexpl
+  #   return_type: LongDoubleType
+  #   arguments:
+  #     - IntPtr
+  #     - LongDoubleType
+  # - name: frexpf128
+  #   return_type: Float128Type
+  #   arguments:
+  #     - IntPtr
+  #     - Float128Type
+
+  # - name: fromfp
+  #   return_type: DoubleType
+  #   arguments:
+  #     - DoubleType
+  #     - IntType
+  #     - UnsignedIntType
+  # - name: fromfpf
+  #   return_type: FloatType
+  #   arguments:
+  #     - FloatType
+  #     - IntType
+  #     - UnsignedIntType
+  # - name: fromfpl
+  #   return_type: LongDoubleType
+  #   arguments:
+  #     - LongDoubleType
+  #     - IntType
+  #     - UnsignedIntType
+  # - name: fromfpf16
+  #   return_type: Float16Type
+  #   arguments:
+  #     - Float16Type
+  #     - IntType
+  #     - UnsignedIntType
+  # - name: fromfpf128
+  #   return_type: Float128Type
+  #   arguments:
+  #     - Float128Type
+  #     - IntType
+  #     - UnsignedIntType
   
