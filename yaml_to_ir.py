@@ -18,7 +18,7 @@ def yaml_to_ir(yaml_data):
         header.add_type(Type(type_data))
 
     for enum_data in yaml_data.get('enums', []):
-        header.add_enumeration(Enumeration(enum_data['name'], enum_data['values']))
+        header.add_enumeration(Enumeration(enum_data['name'], enum_data['value']))
 
     for function_data in yaml_data.get('functions', []):
         arguments = [arg for arg in function_data['arguments']]

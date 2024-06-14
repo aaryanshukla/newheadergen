@@ -11,14 +11,22 @@ types:
   - TssTType
   - TssDtorTType
 enums:
-  - mtx_plain
-  - mtx_recursive
-  - mtx_timed
-  - thrd_timedout
-  - thrd_success
-  - thrd_busy
-  - thrd_error
-  - thrd_nomem
+  - name: mtx_plain
+    value: null
+  - name: mtx_recursive
+    value: null
+  - name: mtx_timed
+    value: null
+  - name: thrd_timedout
+    value: null
+  - name: thrd_success
+    value: null
+  - name: thrd_busy
+    value: null
+  - name: thrd_error
+    value: null
+  - name: thrd_nomem
+    value: null
 functions:
   - name: call_once
     return_type: VoidType

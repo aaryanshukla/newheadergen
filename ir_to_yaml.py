@@ -8,6 +8,12 @@ def ir_to_yaml(header):
         'header': header.name,
         'macros': [{'name': macro.name} for macro in header.macros],
         'types': [type_.name for type_ in header.types],
+        'enums': [
+            {
+                'name': enums.name,
+                'value': enums.value or 'null'
+            } for enums in header.enumerations
+        ],
         'functions': [
             { 
                 'name': func.name,

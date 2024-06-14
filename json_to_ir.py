@@ -12,7 +12,7 @@ def parse_ir_json(json_content):
     header_name = json_content.get('header', 'unknown.h')
     macros = [Macro(m) for m in json_content.get('macros', [])]
     types = [Type(t) for t in json_content.get('types', [])]
-    enums = [Enumeration(e['name'], e['values']) for e in json_content.get('enums', [])]
+    enums = [Enumeration(e['name'], e['value']) for e in json_content.get('enums', [])]
     functions = [Function(
         f['return_type'],
         f['name'],
