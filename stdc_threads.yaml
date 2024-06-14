@@ -1,0 +1,138 @@
+header: "threads.h"
+macros:
+  - ONCE_FLAG_INIT {0}
+types:
+  - OnceFlagType
+  - CallOnceFuncType
+  - CndTType
+  - MtxTType
+  - ThrdStartTType
+  - ThrdTType
+  - TssTType
+  - TssDtorTType
+enums:
+  - mtx_plain
+  - mtx_recursive
+  - mtx_timed
+  - thrd_timedout
+  - thrd_success
+  - thrd_busy
+  - thrd_error
+  - thrd_nomem
+functions:
+  - name: call_once
+    return_type: VoidType
+    arguments:
+      - OnceFlagTypePtr
+      - CallOnceFuncType
+    guard: null
+    attributes: []
+  - name: cnd_broadcast
+    return_type: IntType
+    arguments:
+      - CndTTypePtr
+    guard: null
+    attributes: []
+  - name: cnd_destroy
+    return_type: VoidType
+    arguments:
+      - CndTTypePtr
+    guard: null
+    attributes: []
+  - name: cnd_init
+    return_type: IntType
+    arguments:
+      - CndTTypePtr
+    guard: null
+    attributes: []
+  - name: cnd_signal
+    return_type: IntType
+    arguments:
+      - CndTTypePtr
+    guard: null
+    attributes: []
+  - name: cnd_wait
+    return_type: IntType
+    arguments:
+      - CndTTypePtr
+      - MtxTTypePtr
+    guard: null
+    attributes: []
+  - name: mtx_init
+    return_type: IntType
+    arguments:
+      - MtxTTypePtr
+      - IntType
+    guard: null
+    attributes: []
+  - name: mtx_destroy
+    return_type: IntType
+    arguments:
+      - VoidType
+    guard: null
+    attributes: []
+  - name: mtx_lock
+    return_type: IntType
+    arguments:
+      - MtxTTypePtr
+    guard: null
+    attributes: []
+  - name: mtx_unlock
+    return_type: IntType
+    arguments:
+      - MtxTTypePtr
+    guard: null
+    attributes: []
+  - name: thrd_create
+    return_type: IntType
+    arguments:
+      - ThrdTTypePtr
+      - ThrdStartTType
+      - VoidPtr
+    guard: null
+    attributes: []
+  - name: thrd_join
+    return_type: IntType
+    arguments:
+      - ThrdTType
+      - IntPtr
+    guard: null
+    attributes: []
+  - name: thrd_detach
+    return_type: IntType
+    arguments:
+      - ThrdTType
+    guard: null
+    attributes: []
+  - name: thrd_current
+    return_type: ThrdTType
+    arguments:
+      - VoidType
+    guard: null
+    attributes: []
+  - name: thrd_equal
+    return_type: IntType
+    arguments:
+      - ThrdTType
+      - ThrdTType
+    guard: null
+    attributes: []
+  - name: thrd_exit
+    return_type: VoidType
+    arguments:
+      - IntType
+    guard: null
+    attributes: []
+  - name: tss_create
+    return_type: IntType
+    arguments:
+      - TssTPtr
+      - TssDtorTType
+    guard: null
+    attributes: []
+  - name: tss_delete
+    return_type: IntType
+    arguments:
+      - TssTType
+    guard: null
+    attributes: []

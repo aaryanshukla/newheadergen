@@ -81,6 +81,20 @@ class Type:
 #         values_str = ", ".join([f"{name} = {value}" for name, value in self.values.items()])
 #         return f"enum {self.name} {{{values_str}}};"
 
+<<<<<<< Updated upstream
+=======
+class Enumeration:
+    def __init__(self, name, value=None):
+        self.name = name
+        self.value = value
+
+    def __str__(self):
+        if self.value != None:
+            return f"{self.name} = {self.value}"
+        else:
+            return f"{self.name}"
+    
+>>>>>>> Stashed changes
 class Function: 
     def __init__(self, return_type, name, arguments, guard=None, attributes=None):
         self.return_type = return_type
@@ -127,7 +141,7 @@ class HeaderFile:
         if len(self.enumerations) != 0:
             content.append("enum {")
             for enum in self.enumerations:
-                content.append(f"\tstr(enum),")
+                content.append(f"\tstr(enum)")
             content.append("};")
 
         for function in self.functions:

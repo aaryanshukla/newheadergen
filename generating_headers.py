@@ -15,7 +15,7 @@ def parse_yaml(yaml_content):
     macros = [Macro(m['name']) for m in yaml_content.get('macros', [])]
     types = [Type(t) for t in yaml_content.get('types', [])]
     #Todo: need to add enums class for enums[value]
-    enums = [Enum(t) for t in yaml_content.get('enums', [])]
+    enums = [Enumeration(t) for t in yaml_content.get('enums', [])]
     functions = [Function(
         f['return_type'],
         f['name'],
