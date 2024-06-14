@@ -1,0 +1,386 @@
+{
+    "header": "string.h",
+    "macros": [
+        {
+            "name": "NULL"
+        }
+    ],
+    "types": [
+        "SizeTType"
+    ],
+    "enums": [],
+    "functions": [
+        {
+            "return_type": "void *",
+            "name": "memcpy",
+            "arguments": [
+                {
+                    "type": "void *__restrict"
+                },
+                {
+                    "type": "const void *__restrict"
+                },
+                {
+                    "type": "size_t"
+                }
+            ],
+            "guard": null,
+            "attributes": []
+        },
+        {
+            "return_type": "void *",
+            "name": "memmove",
+            "arguments": [
+                {
+                    "type": "void *"
+                },
+                {
+                    "type": "const void *"
+                },
+                {
+                    "type": "size_t"
+                }
+            ],
+            "guard": null,
+            "attributes": []
+        },
+        {
+            "return_type": "int",
+            "name": "memcmp",
+            "arguments": [
+                {
+                    "type": "const void *"
+                },
+                {
+                    "type": "const void *"
+                },
+                {
+                    "type": "size_t"
+                }
+            ],
+            "guard": null,
+            "attributes": []
+        },
+        {
+            "return_type": "void *",
+            "name": "memchr",
+            "arguments": [
+                {
+                    "type": "const void *"
+                },
+                {
+                    "type": "int"
+                },
+                {
+                    "type": "size_t"
+                }
+            ],
+            "guard": null,
+            "attributes": []
+        },
+        {
+            "return_type": "void *",
+            "name": "memset",
+            "arguments": [
+                {
+                    "type": "void *"
+                },
+                {
+                    "type": "int"
+                },
+                {
+                    "type": "size_t"
+                }
+            ],
+            "guard": null,
+            "attributes": []
+        },
+        {
+            "return_type": "void *",
+            "name": "memset_explicit",
+            "arguments": [
+                {
+                    "type": "void *"
+                },
+                {
+                    "type": "int"
+                },
+                {
+                    "type": "size_t"
+                }
+            ],
+            "guard": null,
+            "attributes": []
+        },
+        {
+            "return_type": "char",
+            "name": "strcpy",
+            "arguments": [
+                {
+                    "type": "char *__restrict"
+                },
+                {
+                    "type": "const char *__restrict"
+                }
+            ],
+            "guard": null,
+            "attributes": []
+        },
+        {
+            "return_type": "char *",
+            "name": "strncpy",
+            "arguments": [
+                {
+                    "type": "char *__restrict"
+                },
+                {
+                    "type": "const char *__restrict"
+                },
+                {
+                    "type": "size_t"
+                }
+            ],
+            "guard": null,
+            "attributes": []
+        },
+        {
+            "return_type": "char *",
+            "name": "strcat",
+            "arguments": [
+                {
+                    "type": "char *__restrict"
+                },
+                {
+                    "type": "const char *__restrict"
+                }
+            ],
+            "guard": null,
+            "attributes": []
+        },
+        {
+            "return_type": "char *",
+            "name": "strncat",
+            "arguments": [
+                {
+                    "type": "char *"
+                },
+                {
+                    "type": "const char *"
+                },
+                {
+                    "type": "size_t"
+                }
+            ],
+            "guard": null,
+            "attributes": []
+        },
+        {
+            "return_type": "int",
+            "name": "strcmp",
+            "arguments": [
+                {
+                    "type": "const char *"
+                },
+                {
+                    "type": "const char *"
+                }
+            ],
+            "guard": null,
+            "attributes": []
+        },
+        {
+            "return_type": "int",
+            "name": "strcoll",
+            "arguments": [
+                {
+                    "type": "const char *"
+                },
+                {
+                    "type": "const char *"
+                }
+            ],
+            "guard": null,
+            "attributes": []
+        },
+        {
+            "return_type": "int",
+            "name": "strncmp",
+            "arguments": [
+                {
+                    "type": "const char *"
+                },
+                {
+                    "type": "const char *"
+                },
+                {
+                    "type": "size_t"
+                }
+            ],
+            "guard": null,
+            "attributes": []
+        },
+        {
+            "return_type": "size_t",
+            "name": "strxfrm",
+            "arguments": [
+                {
+                    "type": "char *__restrict"
+                },
+                {
+                    "type": "const char *__restrict"
+                },
+                {
+                    "type": "size_t"
+                }
+            ],
+            "guard": null,
+            "attributes": []
+        },
+        {
+            "return_type": "char *",
+            "name": "strchr",
+            "arguments": [
+                {
+                    "type": "const char *"
+                },
+                {
+                    "type": "int"
+                }
+            ],
+            "guard": null,
+            "attributes": []
+        },
+        {
+            "return_type": "size_t",
+            "name": "strcspn",
+            "arguments": [
+                {
+                    "type": "const char *"
+                },
+                {
+                    "type": "const char *"
+                }
+            ],
+            "guard": null,
+            "attributes": []
+        },
+        {
+            "return_type": "char *",
+            "name": "strdup",
+            "arguments": [
+                {
+                    "type": "const char *"
+                }
+            ],
+            "guard": null,
+            "attributes": []
+        },
+        {
+            "return_type": "char *",
+            "name": "strndup",
+            "arguments": [
+                {
+                    "type": "const char *"
+                },
+                {
+                    "type": "size_t"
+                }
+            ],
+            "guard": null,
+            "attributes": []
+        },
+        {
+            "return_type": "char *",
+            "name": "strpbrk",
+            "arguments": [
+                {
+                    "type": "const char *"
+                },
+                {
+                    "type": "const char *"
+                }
+            ],
+            "guard": null,
+            "attributes": []
+        },
+        {
+            "return_type": "char *",
+            "name": "strrchr",
+            "arguments": [
+                {
+                    "type": "const char *"
+                },
+                {
+                    "type": "int"
+                }
+            ],
+            "guard": null,
+            "attributes": []
+        },
+        {
+            "return_type": "size_t",
+            "name": "strspn",
+            "arguments": [
+                {
+                    "type": "const char *"
+                },
+                {
+                    "type": "const char *"
+                }
+            ],
+            "guard": null,
+            "attributes": []
+        },
+        {
+            "return_type": "char *",
+            "name": "strstr",
+            "arguments": [
+                {
+                    "type": "const char *"
+                },
+                {
+                    "type": "const char *"
+                }
+            ],
+            "guard": null,
+            "attributes": []
+        },
+        {
+            "return_type": "char *",
+            "name": "strtok",
+            "arguments": [
+                {
+                    "type": "char *__restrict"
+                },
+                {
+                    "type": "const char *__restrict"
+                }
+            ],
+            "guard": null,
+            "attributes": []
+        },
+        {
+            "return_type": "char *",
+            "name": "strerror",
+            "arguments": [
+                {
+                    "type": "int"
+                }
+            ],
+            "guard": null,
+            "attributes": []
+        },
+        {
+            "return_type": "size_t",
+            "name": "strlen",
+            "arguments": [
+                {
+                    "type": "const char *"
+                }
+            ],
+            "guard": null,
+            "attributes": []
+        }
+    ],
+    "includes": []
+}

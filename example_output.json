@@ -1,388 +1,337 @@
-{
-    "header": "string.h",
-    "macros": [
-        {
-            "name": "NULL"
-        }
-    ],
-    "types": [
-        {
-            "name": "SizeTType"
-        }
-    ],
-    "enums": [],
-    "functions": [
-        {
-            "return_type": "void *",
-            "name": "memcpy",
-            "arguments": [
-                {
-                    "type": "void *__restrict"
-                },
-                {
-                    "type": "const void *__restrict"
-                },
-                {
-                    "type": "size_t"
-                }
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "void *",
-            "name": "memmove",
-            "arguments": [
-                {
-                    "type": "void *"
-                },
-                {
-                    "type": "const void *"
-                },
-                {
-                    "type": "size_t"
-                }
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "int",
-            "name": "memcmp",
-            "arguments": [
-                {
-                    "type": "const void *"
-                },
-                {
-                    "type": "const void *"
-                },
-                {
-                    "type": "size_t"
-                }
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "void *",
-            "name": "memchr",
-            "arguments": [
-                {
-                    "type": "const void *"
-                },
-                {
-                    "type": "int"
-                },
-                {
-                    "type": "size_t"
-                }
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "void *",
-            "name": "memset",
-            "arguments": [
-                {
-                    "type": "void *"
-                },
-                {
-                    "type": "int"
-                },
-                {
-                    "type": "size_t"
-                }
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "void *",
-            "name": "memset_explicit",
-            "arguments": [
-                {
-                    "type": "void *"
-                },
-                {
-                    "type": "int"
-                },
-                {
-                    "type": "size_t"
-                }
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "char",
-            "name": "strcpy",
-            "arguments": [
-                {
-                    "type": "char *__restrict"
-                },
-                {
-                    "type": "const char *__restrict"
-                }
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "char *",
-            "name": "strncpy",
-            "arguments": [
-                {
-                    "type": "char *__restrict"
-                },
-                {
-                    "type": "const char *__restrict"
-                },
-                {
-                    "type": "size_t"
-                }
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "char *",
-            "name": "strcat",
-            "arguments": [
-                {
-                    "type": "char *__restrict"
-                },
-                {
-                    "type": "const char *__restrict"
-                }
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "char *",
-            "name": "strncat",
-            "arguments": [
-                {
-                    "type": "char *"
-                },
-                {
-                    "type": "const char *"
-                },
-                {
-                    "type": "size_t"
-                }
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "int",
-            "name": "strcmp",
-            "arguments": [
-                {
-                    "type": "const char *"
-                },
-                {
-                    "type": "const char *"
-                }
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "int",
-            "name": "strcoll",
-            "arguments": [
-                {
-                    "type": "const char *"
-                },
-                {
-                    "type": "const char *"
-                }
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "int",
-            "name": "strncmp",
-            "arguments": [
-                {
-                    "type": "const char *"
-                },
-                {
-                    "type": "const char *"
-                },
-                {
-                    "type": "size_t"
-                }
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "size_t",
-            "name": "strxfrm",
-            "arguments": [
-                {
-                    "type": "char *__restrict"
-                },
-                {
-                    "type": "const char *__restrict"
-                },
-                {
-                    "type": "size_t"
-                }
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "char *",
-            "name": "strchr",
-            "arguments": [
-                {
-                    "type": "const char *"
-                },
-                {
-                    "type": "int"
-                }
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "size_t",
-            "name": "strcspn",
-            "arguments": [
-                {
-                    "type": "const char *"
-                },
-                {
-                    "type": "const char *"
-                }
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "char *",
-            "name": "strdup",
-            "arguments": [
-                {
-                    "type": "const char *"
-                }
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "char *",
-            "name": "strndup",
-            "arguments": [
-                {
-                    "type": "const char *"
-                },
-                {
-                    "type": "size_t"
-                }
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "char *",
-            "name": "strpbrk",
-            "arguments": [
-                {
-                    "type": "const char *"
-                },
-                {
-                    "type": "const char *"
-                }
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "char *",
-            "name": "strrchr",
-            "arguments": [
-                {
-                    "type": "const char *"
-                },
-                {
-                    "type": "int"
-                }
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "size_t",
-            "name": "strspn",
-            "arguments": [
-                {
-                    "type": "const char *"
-                },
-                {
-                    "type": "const char *"
-                }
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "char *",
-            "name": "strstr",
-            "arguments": [
-                {
-                    "type": "const char *"
-                },
-                {
-                    "type": "const char *"
-                }
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "char *",
-            "name": "strtok",
-            "arguments": [
-                {
-                    "type": "char *__restrict"
-                },
-                {
-                    "type": "const char *__restrict"
-                }
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "char *",
-            "name": "strerror",
-            "arguments": [
-                {
-                    "type": "int"
-                }
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "size_t",
-            "name": "strlen",
-            "arguments": [
-                {
-                    "type": "const char *"
-                }
-            ],
-            "guard": null,
-            "attributes": []
-        }
-    ],
-    "includes": []
-}
+enums: []
+functions:
+- arguments:
+  - DoubleType
+  - DoubleType
+  attributes: []
+  guard: null
+  name: copysign
+  return_type: DoubleType
+- arguments:
+  - FloatType
+  - FloatType
+  attributes: []
+  guard: null
+  name: copysignf
+  return_type: FloatType
+- arguments:
+  - LongDoubleType
+  - LongDoubleType
+  attributes: []
+  guard: null
+  name: copysignl
+  return_type: LongDoubleType
+- arguments:
+  - Float16Type
+  - Float16Type
+  attributes: []
+  guard: LIBC_TYPES_HAS_FLOAT16
+  name: copysignf16
+  return_type: Float16Type
+- arguments:
+  - Float128Type
+  - Float128Type
+  attributes: []
+  guard: LIBC_TYPES_HAS_FLOAT128
+  name: copysignf128
+  return_type: Float128Type
+- arguments:
+  - DoubleType
+  attributes: []
+  guard: null
+  name: ceil
+  return_type: DoubleType
+- arguments:
+  - FloatType
+  attributes: []
+  guard: null
+  name: ceilf
+  return_type: FloatType
+- arguments:
+  - LongDoubleType
+  attributes: []
+  guard: null
+  name: ceill
+  return_type: LongDoubleType
+- arguments:
+  - Float16Type
+  attributes: []
+  guard: LIBC_TYPES_HAS_FLOAT16
+  name: ceilf16
+  return_type: Float16Type
+- arguments:
+  - Float128Type
+  attributes: []
+  guard: LIBC_TYPES_HAS_FLOAT128
+  name: ceilf128
+  return_type: Float128Type
+- arguments:
+  - DoubleType
+  attributes:
+  - __LIBC_CONST_ATTR
+  guard: null
+  name: fabs
+  return_type: DoubleType
+- arguments:
+  - FloatType
+  attributes: []
+  guard: null
+  name: fabsf
+  return_type: FloatType
+- arguments:
+  - LongDoubleType
+  attributes: []
+  guard: null
+  name: fabsl
+  return_type: LongDoubleType
+- arguments:
+  - Float16Type
+  attributes: []
+  guard: LIBC_TYPES_HAS_FLOAT16
+  name: fabsf16
+  return_type: Float16Type
+- arguments:
+  - Float128Type
+  attributes: []
+  guard: LIBC_TYPES_HAS_FLOAT128
+  name: fabsf128
+  return_type: Float128Type
+- arguments:
+  - DoubleType
+  - DoubleType
+  attributes: []
+  guard: null
+  name: fdim
+  return_type: DoubleType
+- arguments:
+  - FloatType
+  - FloatType
+  attributes: []
+  guard: null
+  name: fdimf
+  return_type: FloatType
+- arguments:
+  - LongDoubleType
+  - LongDoubleType
+  attributes: []
+  guard: null
+  name: fdiml
+  return_type: LongDoubleType
+- arguments:
+  - Float16Type
+  - Float16Type
+  attributes: []
+  guard: LIBC_TYPES_HAS_FLOAT16
+  name: fdimf16
+  return_type: Float16Type
+- arguments:
+  - Float128Type
+  - Float128Type
+  attributes: []
+  guard: LIBC_TYPES_HAS_FLOAT128
+  name: fdimf128
+  return_type: Float128Type
+- arguments:
+  - DoubleType
+  attributes: []
+  guard: null
+  name: floor
+  return_type: DoubleType
+- arguments:
+  - FloatType
+  attributes: []
+  guard: null
+  name: floorf
+  return_type: FloatType
+- arguments:
+  - LongDoubleType
+  attributes: []
+  guard: null
+  name: floorl
+  return_type: LongDoubleType
+- arguments:
+  - Float16Type
+  attributes: []
+  guard: LIBC_TYPES_HAS_FLOAT16
+  name: floorf16
+  return_type: Float16Type
+- arguments:
+  - Float128Type
+  attributes: []
+  guard: LIBC_TYPES_HAS_FLOAT128
+  name: floorf128
+  return_type: Float128Type
+- arguments:
+  - DoubleType
+  - DoubleType
+  attributes: []
+  guard: null
+  name: fmin
+  return_type: DoubleType
+- arguments:
+  - FloatType
+  - FloatType
+  attributes: []
+  guard: null
+  name: fminf
+  return_type: FloatType
+- arguments:
+  - LongDoubleType
+  - LongDoubleType
+  attributes: []
+  guard: null
+  name: fminl
+  return_type: LongDoubleType
+- arguments:
+  - Float16Type
+  - Float16Type
+  attributes: []
+  guard: LIBC_TYPES_HAS_FLOAT16
+  name: fminf16
+  return_type: Float16Type
+- arguments:
+  - Float128Type
+  - Float128Type
+  attributes: []
+  guard: null
+  name: fminf128
+  return_type: Float128Type
+- arguments:
+  - DoubleType
+  - DoubleType
+  attributes: []
+  guard: null
+  name: fmax
+  return_type: DoubleType
+- arguments:
+  - FloatType
+  - FloatType
+  attributes: []
+  guard: null
+  name: fmaxf
+  return_type: FloatType
+- arguments:
+  - LongDoubleType
+  - LongDoubleType
+  attributes: []
+  guard: null
+  name: fmaxl
+  return_type: LongDoubleType
+- arguments:
+  - Float16Type
+  - Float16Type
+  attributes: []
+  guard: LIBC_TYPES_HAS_FLOAT16
+  name: fmaxf16
+  return_type: Float16Type
+- arguments:
+  - Float128Type
+  - Float128Type
+  attributes: []
+  guard: null
+  name: fmaxf128
+  return_type: Float128Type
+- arguments:
+  - DoubleType
+  - DoubleType
+  attributes: []
+  guard: null
+  name: fmaximum
+  return_type: DoubleType
+- arguments:
+  - FloatType
+  - FloatType
+  attributes: []
+  guard: null
+  name: fmaximumf
+  return_type: FloatType
+- arguments:
+  - LongDoubleType
+  - LongDoubleType
+  attributes: []
+  guard: null
+  name: fmaximuml
+  return_type: LongDoubleType
+- arguments:
+  - Float16Type
+  - Float16Type
+  attributes: []
+  guard: LIBC_TYPES_HAS_FLOAT16
+  name: fmaximumf16
+  return_type: Float16Type
+- arguments:
+  - Float128Type
+  - Float128Type
+  attributes: []
+  guard: LIBC_TYPES_HAS_FLOAT128
+  name: fmaximumf128
+  return_type: Float128Type
+- arguments:
+  - DoubleType
+  - DoubleType
+  attributes: []
+  guard: null
+  name: fmaximum_num
+  return_type: DoubleType
+- arguments:
+  - FloatType
+  - FloatType
+  attributes: []
+  guard: null
+  name: fmaximum_numf
+  return_type: FloatType
+- arguments:
+  - LongDoubleType
+  - LongDoubleType
+  attributes: []
+  guard: null
+  name: fmaximum_numl
+  return_type: LongDoubleType
+- arguments:
+  - Float16Type
+  - Float16Type
+  attributes: []
+  guard: LIBC_TYPES_HAS_FLOAT16
+  name: fmaximum_numf16
+  return_type: Float16Type
+- arguments:
+  - Float128Type
+  - Float128Type
+  attributes: []
+  guard: LIBC_TYPES_HAS_FLOAT128
+  name: fmaximum_numf128
+  return_type: Float128Type
+- arguments:
+  - DoubleType
+  - DoubleType
+  attributes: []
+  guard: null
+  name: fmaximum_mag
+  return_type: DoubleType
+- arguments:
+  - FloatType
+  - FloatType
+  attributes: []
+  guard: null
+  name: fmaximum_magf
+  return_type: FloatType
+header: math.h
+includes: []
+macros:
+- MATH_ERRNO
+- MATH_ERREXCEPT
+- math_errhandling
+- HUGE_VAL
+- INFINITY
+- NAN
+- FP_INT_UPWARD
+- FP_INT_DOWNWARD
+- FP_INT_TOWARDZERO
+- FP_INT_TONEARESTFROMZERO
+- FP_INT_TONEAREST
+- FP_ILOGB0
+- FP_ILOGBNAN
+- isfinite
+- isinf
+- isnan
+types: []

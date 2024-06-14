@@ -10,19 +10,24 @@ from json_to_ir import load_json_file
 def save_yaml_file(header, output_file):
     yaml_data = {
         'header': header.name,
-        'macros': [{'name': macro.name} for macro in header.macros],
+        'macros': [macro.name for macro in header.macros],
         'types': [type_.name for type_ in header.types],
-        'enums': [],  # Fill in enumeration serialization if you have this
+        'enums': [
+            {
+                'name': enum.name,
+                'values': enum.values
+            } for enum in header.enumerations
+        ],
         'functions': [
             {
                 'return_type': func.return_type,
                 'name': func.name,
-                'arguments': [{'type': arg} for arg in func.arguments],
+                'arguments': [arg for arg in func.arguments],
                 'guard': func.guard,
                 'attributes': func.attributes
             } for func in header.functions
         ],
-        'includes': [{'name': include.name} for include in header.includes]
+        'includes': [include.name for include in header.includes]
     }
     with open(output_file, 'w') as f:
         yaml.safe_dump(yaml_data, f)
@@ -30,19 +35,24 @@ def save_yaml_file(header, output_file):
 def save_json_file(header, output_file):
     json_data = {
         'header': header.name,
-        'macros': [{'name': macro.name} for macro in header.macros],
-        'types': [{'name': type_.name} for type_ in header.types],
-        'enums': [],  # need to add 
+        'macros': [macro.name for macro in header.macros],
+        'types': [type_.name for type_ in header.types],
+        'enums': [
+            {
+                'name': enum.name,
+                'values': enum.values
+            } for enum in header.enumerations
+        ],
         'functions': [
             {
                 'return_type': func.return_type,
                 'name': func.name,
-                'arguments': [{'type': arg} for arg in func.arguments],
+                'arguments': [arg for arg in func.arguments],
                 'guard': func.guard,
                 'attributes': func.attributes
             } for func in header.functions
         ],
-        'includes': [{'name': include.name} for include in header.includes]
+        'includes': [include.name for include in header.includes]
     }
     with open(output_file, 'w') as f:
         json.dump(json_data, f, indent=4)
@@ -70,6 +80,5 @@ if __name__ == "__main__":
         save_json_file(header, args.output_file)
     else:
         raise ValueError("Output format must be 'yaml' or 'json'")
-
 
 #command line argument: python convert_ir.py path/to/input_file.yaml path/to/output_file.json --format json

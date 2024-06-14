@@ -2,6 +2,7 @@ from macro import Macro
 from type import Type
 from function import Function
 from include import Include
+from enums import Enumeration
 
 class HeaderFile:
     def __init__(self, name):
@@ -40,8 +41,11 @@ class HeaderFile:
         for type_ in self.types:
             content.append(str(type_))
 
-        for enum in self.enumerations:
-            content.append(str(enum))
+        if len(self.enumerations) != 0:
+            content.append("enum {")
+            for enum in self.enumerations:
+                content.append(f"\t{str(enum)},")
+            content.append("};")
 
         for function in self.functions:
             content.append(str(function))

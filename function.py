@@ -2,21 +2,14 @@ class Function:
     def __init__(self, return_type, name, arguments, guard=None, attributes=None):
         self.return_type = return_type
         self.name = name
-        self.arguments = arguments
+        self.arguments = [arg if isinstance(arg, str) else arg['type'] for arg in arguments]
         self.guard = guard
         self.attributes = attributes or []
 
     def __str__(self):
         args_str = ", ".join(self.arguments)
         attributes_str = " ".join(self.attributes)
-        function_str = f"{self.return_type} {self.name}({args_str})".strip()
-        
-        if attributes_str:
-            function_str += f" {attributes_str}"
-        
-        function_str += ";"
-        
+        result = f"{self.return_type} {self.name}({args_str}){attributes_str};"
         if self.guard:
-            return f"#ifdef {self.guard}\n{function_str}\n#endif // {self.guard}\n"
-        
-        return function_str + "\n"
+            result = f"#ifdef {self.guard}\n{result}\n#endif // {self.guard}"
+        return result

@@ -1,259 +1,259 @@
 header: "math.h"
-  macros:
-    - MATH_ERRNO
-    - MATH_ERREXCEPT
-    - math_errhandling
-    - HUGE_VAL
-    - INFINITY
-    - NAN
-    - FP_INT_UPWARD
-    - FP_INT_DOWNWARD
-    - FP_INT_TOWARDZERO
-    - FP_INT_TONEARESTFROMZERO
-    - FP_INT_TONEAREST
-    - FP_ILOGB0
-    - FP_ILOGBNAN
-    - isfinite
-    - isinf
-    - isnan
-  named_types:
-    - float_t
-    - double_t
-    - float128
-  enums: []
-  functions:
-    - name: copysign
-      return_type: DoubleType
-      arguments:
-        - DoubleType
-        - DoubleType
-      guard: null
-      attributes: []
-    - name: copysignf
-      return_type: FloatType
-      arguments:
-        - FloatType
-        - FloatType
-      guard: null
-      attributes: []
-    - name: copysignl
-      return_type: LongDoubleType
-      arguments:
-        - LongDoubleType
-        - LongDoubleType
-      guard: null
-      attributes: []
-    - name: copysignf16
-      return_type: Float16Type
-      arguments:
-        - Float16Type
-        - Float16Type
-      guard: LIBC_TYPES_HAS_FLOAT16
-      attributes: []
-    - name: copysignf128
-      return_type: Float128Type
-      arguments:
-        - Float128Type
-        - Float128Type
-      guard: LIBC_TYPES_HAS_FLOAT128
-      attributes: []
-    - name: ceil
-      return_type: DoubleType
-      arguments:
-        - DoubleType
-      guard: null
-      attributes: []
-    - name: ceilf
-      return_type: FloatType
-      arguments:
-        - FloatType
-      guard: null
-      attributes: []
-    - name: ceill
-      return_type: LongDoubleType
-      arguments:
-        - LongDoubleType
-      guard: null
-      attributes: []
-    - name: ceilf16
-      return_type: Float16Type
-      arguments:
-        - Float16Type
-      guard: LIBC_TYPES_HAS_FLOAT16
-      attributes: []
-    - name: ceilf128
-      return_type: Float128Type
-      arguments:
-        - Float128Type
-      guard: LIBC_TYPES_HAS_FLOAT128
-      attributes: []
-    - name: fabs
-      return_type: DoubleType
-      arguments:
-        - DoubleType
-      attributes:
-        - __LIBC_CONST_ATTR
-      guard: null
-    - name: fabsf
-      return_type: FloatType
-      arguments:
-        - FloatType
-      guard: null
-      attributes: []
-    - name: fabsl
-      return_type: LongDoubleType
-      arguments:
-        - LongDoubleType
-      guard: null
-      attributes: []
-    - name: fabsf16
-      return_type: Float16Type
-      arguments:
-        - Float16Type
-      guard: LIBC_TYPES_HAS_FLOAT16
-      attributes: []
-    - name: fabsf128
-      return_type: Float128Type
-      arguments:
-        - Float128Type
-      guard: LIBC_TYPES_HAS_FLOAT128
-      attributes: []
-    - name: fdim
-      return_type: DoubleType
-      arguments:
-        - DoubleType
-        - DoubleType
-      guard: null
-      attributes: []
-    - name: fdimf
-      return_type: FloatType
-      arguments:
-        - FloatType
-        - FloatType
-      guard: null
-      attributes: []
-    - name: fdiml
-      return_type: LongDoubleType
-      arguments:
-        - LongDoubleType
-        - LongDoubleType
-      guard: null
-      attributes: []
-    - name: fdimf16
-      return_type: Float16Type
-      arguments:
-        - Float16Type
-        - Float16Type
-      guard: LIBC_TYPES_HAS_FLOAT16
-      attributes: []
-    - name: fdimf128
-      return_type: Float128Type
-      arguments:
-        - Float128Type
-        - Float128Type
-      guard: LIBC_TYPES_HAS_FLOAT128
-      attributes: []
-    - name: floor
-      return_type: DoubleType
-      arguments:
-        - DoubleType
-      guard: null
-      attributes: []
-    - name: floorf
-      return_type: FloatType
-      arguments:
-        - FloatType
-      guard: null
-      attributes: []
-    - name: floorl
-      return_type: LongDoubleType
-      arguments:
-        - LongDoubleType
-      guard: null
-      attributes: []
-    - name: floorf16
-      return_type: Float16Type
-      arguments:
-        - Float16Type
-      guard: LIBC_TYPES_HAS_FLOAT16
-      attributes: []
-    - name: floorf128
-      return_type: Float128Type
-      arguments:
-        - Float128Type
-      guard: LIBC_TYPES_HAS_FLOAT128
-      attributes: []
-    - name: fmin
-      return_type: DoubleType
-      arguments:
-        - DoubleType
-        - DoubleType
-      guard: null
-      attributes: []
-    - name: fminf
-      return_type: FloatType
-      arguments:
-        - FloatType
-        - FloatType
-      guard: null
-      attributes: []
-    - name: fminl
-      return_type: LongDoubleType
-      arguments:
-        - LongDoubleType
-        - LongDoubleType
-      guard: null
-      attributes: []
-    - name: fminf16
-      return_type: Float16Type
-      arguments:
-        - Float16Type
-        - Float16Type
-      guard: LIBC_TYPES_HAS_FLOAT16
-      attributes: []
-    - name: fminf128
-      return_type: Float128Type
-      arguments:
-        - Float128Type
-        - Float128Type
-      guard: null
-      attributes: []
-    - name: fmax
-      return_type: DoubleType
-      arguments:
-        - DoubleType
-        - DoubleType
-      guard: null
-      attributes: []
-    - name: fmaxf
-      return_type: FloatType
-      arguments:
-        - FloatType
-        - FloatType
-      guard: null
-      attributes: []
-    - name: fmaxl
-      return_type: LongDoubleType
-      arguments:
-        - LongDoubleType
-        - LongDoubleType
-      guard: null
-      attributes: []
-    - name: fmaxf16
-      return_type: Float16Type
-      arguments:
-        - Float16Type
-        - Float16Type
-      guard: LIBC_TYPES_HAS_FLOAT16
-      attributes: []
-    - name: fmaxf128
-      return_type: Float128Type
-      arguments:
-        - Float128Type
-        - Float128Type
-      guard: null
-      attributes: []
-    - name: fmaximum
+macros:
+  - MATH_ERRNO
+  - MATH_ERREXCEPT
+  - math_errhandling
+  - HUGE_VAL
+  - INFINITY
+  - NAN
+  - FP_INT_UPWARD
+  - FP_INT_DOWNWARD
+  - FP_INT_TOWARDZERO
+  - FP_INT_TONEARESTFROMZERO
+  - FP_INT_TONEAREST
+  - FP_ILOGB0
+  - FP_ILOGBNAN
+  - isfinite
+  - isinf
+  - isnan
+named_types:
+  - float_t
+  - double_t
+  - float128
+enums: []
+functions:
+  - name: copysign
+    return_type: DoubleType
+    arguments:
+      - DoubleType
+      - DoubleType
+    guard: null
+    attributes: []
+  - name: copysignf
+    return_type: FloatType
+    arguments:
+      - FloatType
+      - FloatType
+    guard: null
+    attributes: []
+  - name: copysignl
+    return_type: LongDoubleType
+    arguments:
+      - LongDoubleType
+      - LongDoubleType
+    guard: null
+    attributes: []
+  - name: copysignf16
+    return_type: Float16Type
+    arguments:
+      - Float16Type
+      - Float16Type
+    guard: LIBC_TYPES_HAS_FLOAT16
+    attributes: []
+  - name: copysignf128
+    return_type: Float128Type
+    arguments:
+      - Float128Type
+      - Float128Type
+    guard: LIBC_TYPES_HAS_FLOAT128
+    attributes: []
+  - name: ceil
+    return_type: DoubleType
+    arguments:
+      - DoubleType
+    guard: null
+    attributes: []
+  - name: ceilf
+    return_type: FloatType
+    arguments:
+      - FloatType
+    guard: null
+    attributes: []
+  - name: ceill
+    return_type: LongDoubleType
+    arguments:
+      - LongDoubleType
+    guard: null
+    attributes: []
+  - name: ceilf16
+    return_type: Float16Type
+    arguments:
+      - Float16Type
+    guard: LIBC_TYPES_HAS_FLOAT16
+    attributes: []
+  - name: ceilf128
+    return_type: Float128Type
+    arguments:
+      - Float128Type
+    guard: LIBC_TYPES_HAS_FLOAT128
+    attributes: []
+  - name: fabs
+    return_type: DoubleType
+    arguments:
+      - DoubleType
+    attributes:
+      - __LIBC_CONST_ATTR
+    guard: null
+  - name: fabsf
+    return_type: FloatType
+    arguments:
+      - FloatType
+    guard: null
+    attributes: []
+  - name: fabsl
+    return_type: LongDoubleType
+    arguments:
+      - LongDoubleType
+    guard: null
+    attributes: []
+  - name: fabsf16
+    return_type: Float16Type
+    arguments:
+      - Float16Type
+    guard: LIBC_TYPES_HAS_FLOAT16
+    attributes: []
+  - name: fabsf128
+    return_type: Float128Type
+    arguments:
+      - Float128Type
+    guard: LIBC_TYPES_HAS_FLOAT128
+    attributes: []
+  - name: fdim
+    return_type: DoubleType
+    arguments:
+      - DoubleType
+      - DoubleType
+    guard: null
+    attributes: []
+  - name: fdimf
+    return_type: FloatType
+    arguments:
+      - FloatType
+      - FloatType
+    guard: null
+    attributes: []
+  - name: fdiml
+    return_type: LongDoubleType
+    arguments:
+      - LongDoubleType
+      - LongDoubleType
+    guard: null
+    attributes: []
+  - name: fdimf16
+    return_type: Float16Type
+    arguments:
+      - Float16Type
+      - Float16Type
+    guard: LIBC_TYPES_HAS_FLOAT16
+    attributes: []
+  - name: fdimf128
+    return_type: Float128Type
+    arguments:
+      - Float128Type
+      - Float128Type
+    guard: LIBC_TYPES_HAS_FLOAT128
+    attributes: []
+  - name: floor
+    return_type: DoubleType
+    arguments:
+      - DoubleType
+    guard: null
+    attributes: []
+  - name: floorf
+    return_type: FloatType
+    arguments:
+      - FloatType
+    guard: null
+    attributes: []
+  - name: floorl
+    return_type: LongDoubleType
+    arguments:
+      - LongDoubleType
+    guard: null
+    attributes: []
+  - name: floorf16
+    return_type: Float16Type
+    arguments:
+      - Float16Type
+    guard: LIBC_TYPES_HAS_FLOAT16
+    attributes: []
+  - name: floorf128
+    return_type: Float128Type
+    arguments:
+      - Float128Type
+    guard: LIBC_TYPES_HAS_FLOAT128
+    attributes: []
+  - name: fmin
+    return_type: DoubleType
+    arguments:
+      - DoubleType
+      - DoubleType
+    guard: null
+    attributes: []
+  - name: fminf
+    return_type: FloatType
+    arguments:
+      - FloatType
+      - FloatType
+    guard: null
+    attributes: []
+  - name: fminl
+    return_type: LongDoubleType
+    arguments:
+      - LongDoubleType
+      - LongDoubleType
+    guard: null
+    attributes: []
+  - name: fminf16
+    return_type: Float16Type
+    arguments:
+      - Float16Type
+      - Float16Type
+    guard: LIBC_TYPES_HAS_FLOAT16
+    attributes: []
+  - name: fminf128
+    return_type: Float128Type
+    arguments:
+      - Float128Type
+      - Float128Type
+    guard: null
+    attributes: []
+  - name: fmax
+    return_type: DoubleType
+    arguments:
+      - DoubleType
+      - DoubleType
+    guard: null
+    attributes: []
+  - name: fmaxf
+    return_type: FloatType
+    arguments:
+      - FloatType
+      - FloatType
+    guard: null
+    attributes: []
+  - name: fmaxl
+    return_type: LongDoubleType
+    arguments:
+      - LongDoubleType
+      - LongDoubleType
+    guard: null
+    attributes: []
+  - name: fmaxf16
+    return_type: Float16Type
+    arguments:
+      - Float16Type
+      - Float16Type
+    guard: LIBC_TYPES_HAS_FLOAT16
+    attributes: []
+  - name: fmaxf128
+    return_type: Float128Type
+    arguments:
+      - Float128Type
+      - Float128Type
+    guard: null
+    attributes: []
+  - name: fmaximum
     return_type: DoubleType
     arguments:
       - DoubleType
@@ -336,6 +336,7 @@ header: "math.h"
       - FloatType
       - FloatType
     guard: null
+<<<<<<< Updated upstream
     attributes: []
   - name: fmaximum_magl
     return_type: LongDoubleType
@@ -632,3 +633,6 @@ header: "math.h"
   #     - IntType
   #     - UnsignedIntType
   
+=======
+    attributes: []
+>>>>>>> Stashed changes
