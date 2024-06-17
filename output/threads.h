@@ -1,7 +1,7 @@
 #ifndef THREADS_H
 #define THREADS_H
 
-#define ONCE_FLAG_INIT {0}
+#define ONCE_FLAG_INIT
 #include <llvm-libc-types/once_flag.h>
 #include <llvm-libc-types/__call_once_func_t.h>
 #include <llvm-libc-types/cnd_t.h>
@@ -20,22 +20,22 @@ enum {
 	thrd_error,
 	thrd_nomem,
 };
-VoidType call_once(OnceFlagTypePtr, CallOnceFuncType);
-IntType cnd_broadcast(CndTTypePtr);
-VoidType cnd_destroy(CndTTypePtr);
-IntType cnd_init(CndTTypePtr);
-IntType cnd_signal(CndTTypePtr);
-IntType cnd_wait(CndTTypePtr, MtxTTypePtr);
-IntType mtx_init(MtxTTypePtr, IntType);
-IntType mtx_destroy(VoidType);
-IntType mtx_lock(MtxTTypePtr);
-IntType mtx_unlock(MtxTTypePtr);
-IntType thrd_create(ThrdTTypePtr, ThrdStartTType, VoidPtr);
-IntType thrd_join(ThrdTType, IntPtr);
-IntType thrd_detach(ThrdTType);
-ThrdTType thrd_current(VoidType);
-IntType thrd_equal(ThrdTType, ThrdTType);
-VoidType thrd_exit(IntType);
-IntType tss_create(TssTPtr, TssDtorTType);
-IntType tss_delete(TssTType);
+VoidType ['OnceFlagTypePtr', 'CallOnceFuncType'](c, a, l, l, _, o, n, c, e);
+IntType ['CndTTypePtr'](c, n, d, _, b, r, o, a, d, c, a, s, t);
+VoidType ['CndTTypePtr'](c, n, d, _, d, e, s, t, r, o, y);
+IntType ['CndTTypePtr'](c, n, d, _, i, n, i, t);
+IntType ['CndTTypePtr'](c, n, d, _, s, i, g, n, a, l);
+IntType ['CndTTypePtr', 'MtxTTypePtr'](c, n, d, _, w, a, i, t);
+IntType ['MtxTTypePtr', 'IntType'](m, t, x, _, i, n, i, t);
+IntType ['VoidType'](m, t, x, _, d, e, s, t, r, o, y);
+IntType ['MtxTTypePtr'](m, t, x, _, l, o, c, k);
+IntType ['MtxTTypePtr'](m, t, x, _, u, n, l, o, c, k);
+IntType ['ThrdTTypePtr', 'ThrdStartTType', 'VoidPtr'](t, h, r, d, _, c, r, e, a, t, e);
+IntType ['ThrdTType', 'IntPtr'](t, h, r, d, _, j, o, i, n);
+IntType ['ThrdTType'](t, h, r, d, _, d, e, t, a, c, h);
+ThrdTType ['VoidType'](t, h, r, d, _, c, u, r, r, e, n, t);
+IntType ['ThrdTType', 'ThrdTType'](t, h, r, d, _, e, q, u, a, l);
+VoidType ['IntType'](t, h, r, d, _, e, x, i, t);
+IntType ['TssTPtr', 'TssDtorTType'](t, s, s, _, c, r, e, a, t, e);
+IntType ['TssTType'](t, s, s, _, d, e, l, e, t, e);
 #endif // THREADS_H

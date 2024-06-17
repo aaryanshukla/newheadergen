@@ -4,8 +4,8 @@ import argparse
 import os
 import yaml
 import json
-from json_yaml_to_ir.yaml_to_ir import load_yaml_file
-from json_yaml_to_ir.json_to_ir import load_json_file
+from yaml_to_ir import load_yaml_file
+from json_to_ir import load_json_file
 
 def save_yaml_file(header, output_file):
     yaml_data = {

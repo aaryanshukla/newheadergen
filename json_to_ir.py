@@ -1,12 +1,13 @@
 import json
 import os
 import argparse
-from header import HeaderFile
 from class_implementation.classes.macro import Macro
 from class_implementation.classes.type import Type
 from class_implementation.classes.function import Function
 from class_implementation.classes.include import Include
 from class_implementation.classes.enums import Enumeration
+from header import HeaderFile
+
 
 def parse_ir_json(json_content):
     header_name = json_content.get('header', 'unknown.h')
