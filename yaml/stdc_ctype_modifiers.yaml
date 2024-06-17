@@ -1,0 +1,147 @@
+header: "ctype.h"
+standard: "stdc"
+macros: []
+types: []
+enums: []
+objects: []
+functions:
+  - name: isalnum
+    return_type: int
+    return_prefix: []
+    return_suffix: []
+    arguments:
+      - type: int
+        prefix: []
+        suffix: []
+    guard: null
+    attributes: []
+  - name: isalpha
+    return_type: int
+    return_prefix: []
+    return_suffix: []
+    arguments:
+      - type: int
+      prefix: []
+      suffix: []
+    guard: null
+    attributes: []
+  - name: isblank
+    return_type: int
+    return_prefix: []
+    return_suffix: []
+    arguments:
+      - type: int
+      prefix: []
+      suffix: []
+    guard: null
+    attributes: []
+  - name: iscntrl
+    return_type: int
+    return_prefix: []
+    return_suffix: []
+    arguments:
+      - type: int
+      prefix: []
+      suffix: []
+    guard: null
+    attributes: []
+  - name: isdigit
+    return_type: int
+    return_prefix: []
+    return_suffix: []
+    arguments:
+      - type: int
+      prefix: []
+      suffix: []
+    guard: null
+    attributes: []
+  - name: isgraph
+    return_type: int
+    return_prefix: []
+    return_suffix: []
+    arguments:
+      - type: int
+      prefix: []
+      suffix: []
+    guard: null
+    attributes: []
+  - name: islower
+    return_type: int
+    return_prefix: []
+    return_suffix: []
+    arguments:
+      - type: int
+      prefix: []
+      suffix: []
+    guard: null
+    attributes: []
+  - name: isprint
+    return_type: int
+    return_prefix: []
+    return_suffix: []
+    arguments:
+      - type: int
+      prefix: []
+      suffix: []
+    guard: null
+    attributes: []
+  - name: ispunct
+    return_type: int
+    return_prefix: []
+    return_suffix: []
+    arguments:
+      - type: int
+      prefix: []
+      suffix: []
+    guard: null
+    attributes: []
+  - name: isspace
+    return_type: int
+    return_prefix: []
+    return_suffix: []
+    arguments:
+      - type: int
+      prefix: []
+      suffix: []
+    guard: null
+    attributes: []
+  - name: isupper
+    return_type: int
+    return_prefix: []
+    return_suffix: []
+    arguments:
+      - type: int
+      prefix: []
+      suffix: []
+    guard: null
+    attributes: []
+  - name: isxdigit
+    return_type: int
+    return_prefix: []
+    return_suffix: []
+    arguments:
+      - type: int
+      prefix: []
+      suffix: []
+    guard: null
+    attributes: []
+  - name: tolower
+    return_type: int
+    return_prefix: []
+    return_suffix: []
+    arguments:
+      - type: int
+      prefix: []
+      suffix: []
+    guard: null
+    attributes: []
+  - name: toupper
+    return_type: int
+    return_prefix: []
+    return_suffix: []
+    arguments:
+      - type: int
+      prefix: []
+      suffix: []
+    guard: null
+    attributes: []
