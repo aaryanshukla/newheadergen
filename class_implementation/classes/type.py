@@ -73,8 +73,8 @@ type_dict = {
     "JmpBuf": "jmp_buf",
     "TssTType": "tss_t",
     "TssDtorTType": "tss_dtor_t",
-    "FEnvT": "fenv_t",
-    "FExceptT": "fexcept_t",
+    "fenv_t": "FEnvT",
+    "fexcept_t": "FExceptT",
     "IMaxDivTType": "imaxdiv_t",
     "SigAtomicT": "sig_atomic_t",
 

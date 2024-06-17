@@ -11,9 +11,8 @@
 #define FE_TONEAREST
 #define FE_TOWARDZERO
 #define FE_DFL_ENV
-typedef fenv_t;
-typedef fexcept_t;
-
+#include <llvm-libc-types/FEnvT.h>
+#include <llvm-libc-types/FExceptT.h>
 int feclearexcept(int);
 int fetestexcept(int);
 int fetestexceptflag(const fexcept_t *, int);
@@ -27,5 +26,4 @@ int fesetexcept(int);
 int fesetexceptflag(const fexcept_t *, int);
 int feholdexcept(fenv_t *);
 int feupdateenv(const fenv_t *);
-
 #endif // FENV_H

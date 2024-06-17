@@ -1,382 +1,137 @@
 {
-    "header": "string.h",
+    "header": "fenv.h",
     "macros": [
-        {
-            "name": "NULL"
-        }
+        "FE_DIVBYZERO",
+        "FE_INEXACT",
+        "FE_INVALID",
+        "FE_OVERFLOW",
+        "FE_UNDERFLOW",
+        "FE_ALL_EXCEPT",
+        "FE_DOWNWARD",
+        "FE_TONEAREST",
+        "FE_TOWARDZERO",
+        "FE_DFL_ENV"
     ],
     "types": [
-        "SizeTType"
+        "fenv_t",
+        "fexcept_t"
     ],
     "enums": [],
     "functions": [
         {
-            "return_type": "void *",
-            "name": "memcpy",
+            "return_type": "int",
+            "name": "feclearexcept",
             "arguments": [
-                {
-                    "type": "void *__restrict"
-                },
-                {
-                    "type": "const void *__restrict"
-                },
-                {
-                    "type": "size_t"
-                }
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "void *",
-            "name": "memmove",
-            "arguments": [
-                {
-                    "type": "void *"
-                },
-                {
-                    "type": "const void *"
-                },
-                {
-                    "type": "size_t"
-                }
+                "int"
             ],
             "guard": null,
             "attributes": []
         },
         {
             "return_type": "int",
-            "name": "memcmp",
+            "name": "fetestexcept",
             "arguments": [
-                {
-                    "type": "const void *"
-                },
-                {
-                    "type": "const void *"
-                },
-                {
-                    "type": "size_t"
-                }
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "void *",
-            "name": "memchr",
-            "arguments": [
-                {
-                    "type": "const void *"
-                },
-                {
-                    "type": "int"
-                },
-                {
-                    "type": "size_t"
-                }
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "void *",
-            "name": "memset",
-            "arguments": [
-                {
-                    "type": "void *"
-                },
-                {
-                    "type": "int"
-                },
-                {
-                    "type": "size_t"
-                }
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "void *",
-            "name": "memset_explicit",
-            "arguments": [
-                {
-                    "type": "void *"
-                },
-                {
-                    "type": "int"
-                },
-                {
-                    "type": "size_t"
-                }
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "char",
-            "name": "strcpy",
-            "arguments": [
-                {
-                    "type": "char *__restrict"
-                },
-                {
-                    "type": "const char *__restrict"
-                }
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "char *",
-            "name": "strncpy",
-            "arguments": [
-                {
-                    "type": "char *__restrict"
-                },
-                {
-                    "type": "const char *__restrict"
-                },
-                {
-                    "type": "size_t"
-                }
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "char *",
-            "name": "strcat",
-            "arguments": [
-                {
-                    "type": "char *__restrict"
-                },
-                {
-                    "type": "const char *__restrict"
-                }
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "char *",
-            "name": "strncat",
-            "arguments": [
-                {
-                    "type": "char *"
-                },
-                {
-                    "type": "const char *"
-                },
-                {
-                    "type": "size_t"
-                }
+                "int"
             ],
             "guard": null,
             "attributes": []
         },
         {
             "return_type": "int",
-            "name": "strcmp",
+            "name": "fetestexceptflag",
             "arguments": [
-                {
-                    "type": "const char *"
-                },
-                {
-                    "type": "const char *"
-                }
+                "const fexcept_t *",
+                "int"
             ],
             "guard": null,
             "attributes": []
         },
         {
             "return_type": "int",
-            "name": "strcoll",
+            "name": "feraiseexcept",
             "arguments": [
-                {
-                    "type": "const char *"
-                },
-                {
-                    "type": "const char *"
-                }
+                "int"
             ],
             "guard": null,
             "attributes": []
         },
         {
             "return_type": "int",
-            "name": "strncmp",
+            "name": "fesetround",
             "arguments": [
-                {
-                    "type": "const char *"
-                },
-                {
-                    "type": "const char *"
-                },
-                {
-                    "type": "size_t"
-                }
+                "int"
             ],
             "guard": null,
             "attributes": []
         },
         {
-            "return_type": "size_t",
-            "name": "strxfrm",
+            "return_type": "int",
+            "name": "fegetround",
+            "arguments": [],
+            "guard": null,
+            "attributes": []
+        },
+        {
+            "return_type": "int",
+            "name": "fegetenv",
             "arguments": [
-                {
-                    "type": "char *__restrict"
-                },
-                {
-                    "type": "const char *__restrict"
-                },
-                {
-                    "type": "size_t"
-                }
+                "fenv_t *"
             ],
             "guard": null,
             "attributes": []
         },
         {
-            "return_type": "char *",
-            "name": "strchr",
+            "return_type": "int",
+            "name": "fesetenv",
             "arguments": [
-                {
-                    "type": "const char *"
-                },
-                {
-                    "type": "int"
-                }
+                "const fenv_t *"
             ],
             "guard": null,
             "attributes": []
         },
         {
-            "return_type": "size_t",
-            "name": "strcspn",
+            "return_type": "int",
+            "name": "fegetexceptflag",
             "arguments": [
-                {
-                    "type": "const char *"
-                },
-                {
-                    "type": "const char *"
-                }
+                "fexcept_t *",
+                "int"
             ],
             "guard": null,
             "attributes": []
         },
         {
-            "return_type": "char *",
-            "name": "strdup",
+            "return_type": "int",
+            "name": "fesetexcept",
             "arguments": [
-                {
-                    "type": "const char *"
-                }
+                "int"
             ],
             "guard": null,
             "attributes": []
         },
         {
-            "return_type": "char *",
-            "name": "strndup",
+            "return_type": "int",
+            "name": "fesetexceptflag",
             "arguments": [
-                {
-                    "type": "const char *"
-                },
-                {
-                    "type": "size_t"
-                }
+                "const fexcept_t *",
+                "int"
             ],
             "guard": null,
             "attributes": []
         },
         {
-            "return_type": "char *",
-            "name": "strpbrk",
+            "return_type": "int",
+            "name": "feholdexcept",
             "arguments": [
-                {
-                    "type": "const char *"
-                },
-                {
-                    "type": "const char *"
-                }
+                "fenv_t *"
             ],
             "guard": null,
             "attributes": []
         },
         {
-            "return_type": "char *",
-            "name": "strrchr",
+            "return_type": "int",
+            "name": "feupdateenv",
             "arguments": [
-                {
-                    "type": "const char *"
-                },
-                {
-                    "type": "int"
-                }
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "size_t",
-            "name": "strspn",
-            "arguments": [
-                {
-                    "type": "const char *"
-                },
-                {
-                    "type": "const char *"
-                }
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "char *",
-            "name": "strstr",
-            "arguments": [
-                {
-                    "type": "const char *"
-                },
-                {
-                    "type": "const char *"
-                }
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "char *",
-            "name": "strtok",
-            "arguments": [
-                {
-                    "type": "char *__restrict"
-                },
-                {
-                    "type": "const char *__restrict"
-                }
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "char *",
-            "name": "strerror",
-            "arguments": [
-                {
-                    "type": "int"
-                }
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "size_t",
-            "name": "strlen",
-            "arguments": [
-                {
-                    "type": "const char *"
-                }
+                "const fenv_t *"
             ],
             "guard": null,
             "attributes": []
