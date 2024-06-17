@@ -2,11 +2,11 @@ import json
 import os
 import argparse
 from header import HeaderFile
-from macro import Macro
-from type import Type
-from function import Function
-from include import Include
-from enums import Enumeration
+from class_implementation.classes.macro import Macro
+from class_implementation.classes.type import Type
+from class_implementation.classes.function import Function
+from class_implementation.classes.include import Include
+from class_implementation.classes.enums import Enumeration
 
 def parse_ir_json(json_content):
     header_name = json_content.get('header', 'unknown.h')
@@ -15,26 +15,34 @@ def parse_ir_json(json_content):
     enums = [Enumeration(e['name'], e['value']) for e in json_content.get('enums', [])]
     functions = [Function(
         f['return_type'],
-        [arg for arg in f['arguments']],
         f['name'],
+        [arg for arg in f['arguments']],
         f.get('guard'),
         f.get('attributes', [])
     ) for f in json_content.get('functions', [])]
     includes = [Include(i) for i in json_content.get('includes', [])]
-    return header_name, macros, types, enums, functions, includes
+    
+    header = HeaderFile(header_name)
+    for macro in macros:
+        header.add_macro(macro)
+    for type_ in types:
+        header.add_type(type_)
+    for enum in enums:
+        header.add_enumeration(enum)
+    for function in functions:
+        header.add_function(function)
+    for include in includes:
+        header.add_include(include)
+    
+    return header
 
 def load_json_file(json_file):
     with open(json_file, 'r') as f:
         json_content = json.load(f)
     return parse_ir_json(json_content)
 
-
-
 def main(input_file):
-    with open(input_file, 'r') as f:
-        content = json.load(f)
-    
-    header = parse_ir_json(content)
+    header = load_json_file(input_file)
     
     output_dir = os.path.join(os.path.dirname(__file__), 'output')
     os.makedirs(output_dir, exist_ok=True)

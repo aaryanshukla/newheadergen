@@ -1,5 +1,5 @@
 import unittest
-from type import Type
+from class_implementation.classes.type import Type
 
 class TestType(unittest.TestCase):
     # def test_type_definition(self):

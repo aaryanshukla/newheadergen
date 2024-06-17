@@ -4,7 +4,7 @@ class Enumeration:
         self.value = value
      def __str__(self):
          if self.value != None:
-            return f"{self.name} = {self.value},"
+            return f"{self.name} = {self.value}"
          else:
-            return f"{self.name},"
+            return f"{self.name}"
          

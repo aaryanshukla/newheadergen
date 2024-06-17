@@ -1,5 +1,5 @@
 import unittest
-from macro import Macro
+from class_implementation.classes.macro import Macro
 
 class TestMacro(unittest.TestCase):
     def test_macro_definition(self):

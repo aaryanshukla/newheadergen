@@ -4,10 +4,10 @@ import yaml
 import argparse
 import os
 from header import HeaderFile
-from macro import Macro
-from type import Type
-from function import Function
-from include import Include
+from class_implementation.classes.macro import Macro
+from class_implementation.classes.type import Type
+from class_implementation.classes.function import Function
+from class_implementation.classes.include import Include
 from enum import Enumeration
 
 def parse_yaml(yaml_content):

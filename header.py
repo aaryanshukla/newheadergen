@@ -1,8 +1,8 @@
-from macro import Macro
-from type import Type
-from function import Function
-from include import Include
-from enums import Enumeration
+from class_implementation.classes.macro import Macro
+from class_implementation.classes.type import Type
+from class_implementation.classes.function import Function
+from class_implementation.classes.include import Include
+from class_implementation.classes.enums import Enumeration
 
 class HeaderFile:
     def __init__(self, name):

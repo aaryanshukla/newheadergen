@@ -1,5 +1,5 @@
 import unittest
-from function import Function
+from class_implementation.classes.function import Function
 
 class TestFunction(unittest.TestCase):
     def test_function_without_guard(self):

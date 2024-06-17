@@ -1,5 +1,5 @@
 import unittest
-from arg_type import ArgType
+from class_implementation.classes.arg_type import ArgType
 
 class TestArgType(unittest.TestCase):
     def test_arg_type_definition(self):

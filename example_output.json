@@ -1,276 +1,189 @@
-{
-    "header": "ctype.h",
-    "macros": [],
-    "types": [],
-    "enums": [],
-    "functions": [
-        {
-            "return_type": "int",
-            "name": [
-                {
-                    "type": "int"
-                }
-            ],
-            "arguments": [
-                "i",
-                "s",
-                "a",
-                "l",
-                "n",
-                "u",
-                "m"
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "int",
-            "name": [
-                {
-                    "type": "int"
-                }
-            ],
-            "arguments": [
-                "i",
-                "s",
-                "a",
-                "l",
-                "p",
-                "h",
-                "a"
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "int",
-            "name": [
-                {
-                    "type": "int"
-                }
-            ],
-            "arguments": [
-                "i",
-                "s",
-                "b",
-                "l",
-                "a",
-                "n",
-                "k"
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "int",
-            "name": [
-                {
-                    "type": "int"
-                }
-            ],
-            "arguments": [
-                "i",
-                "s",
-                "c",
-                "n",
-                "t",
-                "r",
-                "l"
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "int",
-            "name": [
-                {
-                    "type": "int"
-                }
-            ],
-            "arguments": [
-                "i",
-                "s",
-                "d",
-                "i",
-                "g",
-                "i",
-                "t"
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "int",
-            "name": [
-                {
-                    "type": "int"
-                }
-            ],
-            "arguments": [
-                "i",
-                "s",
-                "g",
-                "r",
-                "a",
-                "p",
-                "h"
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "int",
-            "name": [
-                {
-                    "type": "int"
-                }
-            ],
-            "arguments": [
-                "i",
-                "s",
-                "l",
-                "o",
-                "w",
-                "e",
-                "r"
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "int",
-            "name": [
-                {
-                    "type": "int"
-                }
-            ],
-            "arguments": [
-                "i",
-                "s",
-                "p",
-                "r",
-                "i",
-                "n",
-                "t"
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "int",
-            "name": [
-                {
-                    "type": "int"
-                }
-            ],
-            "arguments": [
-                "i",
-                "s",
-                "p",
-                "u",
-                "n",
-                "c",
-                "t"
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "int",
-            "name": [
-                {
-                    "type": "int"
-                }
-            ],
-            "arguments": [
-                "i",
-                "s",
-                "s",
-                "p",
-                "a",
-                "c",
-                "e"
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "int",
-            "name": [
-                {
-                    "type": "int"
-                }
-            ],
-            "arguments": [
-                "i",
-                "s",
-                "u",
-                "p",
-                "p",
-                "e",
-                "r"
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "int",
-            "name": [
-                {
-                    "type": "int"
-                }
-            ],
-            "arguments": [
-                "i",
-                "s",
-                "x",
-                "d",
-                "i",
-                "g",
-                "i",
-                "t"
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "int",
-            "name": [
-                {
-                    "type": "int"
-                }
-            ],
-            "arguments": [
-                "t",
-                "o",
-                "l",
-                "o",
-                "w",
-                "e",
-                "r"
-            ],
-            "guard": null,
-            "attributes": []
-        },
-        {
-            "return_type": "int",
-            "name": [
-                {
-                    "type": "int"
-                }
-            ],
-            "arguments": [
-                "t",
-                "o",
-                "u",
-                "p",
-                "p",
-                "e",
-                "r"
-            ],
-            "guard": null,
-            "attributes": []
-        }
-    ],
-    "includes": []
-}
+enums: []
+functions:
+- arguments:
+  - void *__restrict
+  - const void *__restrict
+  - size_t
+  attributes: []
+  guard: null
+  name: memcpy
+  return_type: void *
+- arguments:
+  - void *
+  - const void *
+  - size_t
+  attributes: []
+  guard: null
+  name: memmove
+  return_type: void *
+- arguments:
+  - const void *
+  - const void *
+  - size_t
+  attributes: []
+  guard: null
+  name: memcmp
+  return_type: int
+- arguments:
+  - const void *
+  - int
+  - size_t
+  attributes: []
+  guard: null
+  name: memchr
+  return_type: void *
+- arguments:
+  - void *
+  - int
+  - size_t
+  attributes: []
+  guard: null
+  name: memset
+  return_type: void *
+- arguments:
+  - void *
+  - int
+  - size_t
+  attributes: []
+  guard: null
+  name: memset_explicit
+  return_type: void *
+- arguments:
+  - char *__restrict
+  - const char *__restrict
+  attributes: []
+  guard: null
+  name: strcpy
+  return_type: char
+- arguments:
+  - char *__restrict
+  - const char *__restrict
+  - size_t
+  attributes: []
+  guard: null
+  name: strncpy
+  return_type: char *
+- arguments:
+  - char *__restrict
+  - const char *__restrict
+  attributes: []
+  guard: null
+  name: strcat
+  return_type: char *
+- arguments:
+  - char *
+  - const char *
+  - size_t
+  attributes: []
+  guard: null
+  name: strncat
+  return_type: char *
+- arguments:
+  - const char *
+  - const char *
+  attributes: []
+  guard: null
+  name: strcmp
+  return_type: int
+- arguments:
+  - const char *
+  - const char *
+  attributes: []
+  guard: null
+  name: strcoll
+  return_type: int
+- arguments:
+  - const char *
+  - const char *
+  - size_t
+  attributes: []
+  guard: null
+  name: strncmp
+  return_type: int
+- arguments:
+  - char *__restrict
+  - const char *__restrict
+  - size_t
+  attributes: []
+  guard: null
+  name: strxfrm
+  return_type: size_t
+- arguments:
+  - const char *
+  - int
+  attributes: []
+  guard: null
+  name: strchr
+  return_type: char *
+- arguments:
+  - const char *
+  - const char *
+  attributes: []
+  guard: null
+  name: strcspn
+  return_type: size_t
+- arguments:
+  - const char *
+  attributes: []
+  guard: null
+  name: strdup
+  return_type: char *
+- arguments:
+  - const char *
+  - size_t
+  attributes: []
+  guard: null
+  name: strndup
+  return_type: char *
+- arguments:
+  - const char *
+  - const char *
+  attributes: []
+  guard: null
+  name: strpbrk
+  return_type: char *
+- arguments:
+  - const char *
+  - int
+  attributes: []
+  guard: null
+  name: strrchr
+  return_type: char *
+- arguments:
+  - const char *
+  - const char *
+  attributes: []
+  guard: null
+  name: strspn
+  return_type: size_t
+- arguments:
+  - const char *
+  - const char *
+  attributes: []
+  guard: null
+  name: strstr
+  return_type: char *
+- arguments:
+  - char *__restrict
+  - const char *__restrict
+  attributes: []
+  guard: null
+  name: strtok
+  return_type: char *
+- arguments:
+  - int
+  attributes: []
+  guard: null
+  name: strerror
+  return_type: char *
+- arguments:
+  - const char *
+  attributes: []
+  guard: null
+  name: strlen
+  return_type: size_t
+header: string.h
+includes: []
+macros:
+- 'NULL'
+types: []
