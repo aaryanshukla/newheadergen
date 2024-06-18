@@ -1,0 +1,162 @@
+header: fenv.h
+standard: stdc
+macros:
+  - FE_DIVBYZERO
+  - FE_INEXACT
+  - FE_INVALID
+  - FE_OVERFLOW
+  - FE_UNDERFLOW
+  - FE_ALL_EXCEPT
+  - FE_DOWNWARD
+  - FE_TONEAREST
+  - FE_TOWARDZERO
+  - FE_DFL_ENV
+types:
+  - fenv_t
+  - fexcept_t
+enums: []
+objects: []
+functions:
+  - name: feclearexcept
+    return_type: int
+    return_prefix: []
+    return_suffix: []
+    arguments:
+      - type: int
+      prefix: []
+      suffix: []
+    guard: null
+    attributes: []
+  - name: fetestexcept
+    return_type: int
+    return_prefix: []
+    return_suffix: []
+    arguments:
+      - type: int
+      prefix: []
+      suffix: []
+    guard: null
+    attributes: []
+  - name: fetestexceptflag
+    return_type: int
+    return_prefix: []
+    return_suffix: []
+    arguments:
+      - type: fexcept_t
+      prefix:
+        - modifier: const
+      suffix:
+        - modifier: "*"
+      - type: int
+      prefix: []
+      suffix: []
+    guard: null
+    attributes: []
+  - name: feraiseexcept
+    return_type: int
+    return_prefix: []
+    return_suffix: []
+    arguments:
+      - type: int
+      prefix: []
+      suffix: []
+    guard: null
+    attributes: []
+  - name: fesetround
+    return_type: int
+    return_prefix: []
+    return_suffix: []
+    arguments:
+      - type: int
+      prefix: []
+      suffix: []
+    guard: null
+    attributes: []
+  - name: fegetround
+    return_type: int
+    return_prefix: []
+    return_suffix: []
+    arguments: []
+    guard: null
+    attributes: []
+  - name: fegetenv
+    return_type: int
+    return_prefix: []
+    return_suffix: []
+    arguments:
+      - type: fenv_t
+      prefix: []
+      suffix:
+        - modifier: "*"
+    guard: null
+    attributes: []
+  - name: fesetenv
+    return_type: int
+    return_prefix: []
+    return_suffix: []
+    arguments:
+      - type: fenv_t
+      prefix:
+        - modifier: const
+      suffix:
+        - modifier: "*"
+    guard: null
+    attributes: []
+  - name: fegetexceptflag
+    return_type: int
+    return_prefix: []
+    return_suffix: []
+    arguments:
+      - type: fexcept_t
+      prefix: []
+      suffix:
+        - modifier: "*"
+      - type: int
+    guard: null
+    attributes: []
+  - name: fesetexcept
+    return_type: int
+    return_prefix: []
+    return_suffix: []
+    arguments:
+      - type: int
+      prefix: []
+      suffix: []
+    guard: null
+    attributes: []
+  - name: fesetexceptflag
+    return_type: int
+    return_prefix: []
+    return_suffix: []
+    arguments:
+      - type: fexcept_t
+      prefix:
+        - modifier: const
+      suffix:
+        - modifier: "*"
+      - type: int
+    guard: null
+    attributes: []
+  - name: feholdexcept
+    return_type: int
+    return_prefix: []
+    return_suffix: []
+    arguments:
+      - type: fenv_t
+      prefix: []
+      suffix:
+        - modifier: "*"
+    guard: null
+    attributes: []
+  - name: feupdateenv
+    return_type: int
+    return_prefix: []
+    return_suffix: []
+    arguments:
+      - type: const fenv_t *
+      prefix:
+        - modifier: const
+      suffix:
+        - modifier: "*"
+    guard: null
+    attributes: []
