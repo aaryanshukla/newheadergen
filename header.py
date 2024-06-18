@@ -1,9 +1,4 @@
-from class_implementation.classes.macro import Macro
-from class_implementation.classes.type import Type
-from class_implementation.classes.function import Function
-from class_implementation.classes.include import Include
-from class_implementation.classes.enums import Enumeration
-
+# class_implementation/classes/header.py
 class HeaderFile:
     def __init__(self, name):
         self.name = name
@@ -30,7 +25,7 @@ class HeaderFile:
 
     def __str__(self):
         header_guard = self.name.replace('.', '_').upper()
-        content = [f"#ifndef {header_guard}", f"#define {header_guard}", ""]
+        content = [f"#ifndef LLVM_LIBC_{header_guard}", f"#define LLVM_LIBC_{header_guard}", "", '#include "__llvm-libc-common.h"', ""]
 
         for include in self.includes:
             content.append(str(include))
@@ -41,14 +36,18 @@ class HeaderFile:
         for type_ in self.types:
             content.append(str(type_))
 
-        if len(self.enumerations) != 0:
+        if self.enumerations:
             content.append("enum {")
             for enum in self.enumerations:
                 content.append(f"\t{str(enum)},")
             content.append("};")
 
-        for function in self.functions:
-            content.append(str(function))
+        if self.functions:
+            content.append("__BEGIN_C_DECLS\n")
+            for function in self.functions:
+                content.append(str(function))
+                content.append("")  
+            content.append("__END_C_DECLS\n")
 
         content.append(f"#endif // {header_guard}")
         return "\n".join(content)

@@ -336,8 +336,6 @@ functions:
       - FloatType
       - FloatType
     guard: null
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
     attributes: []
   - name: fmaximum_magl
     return_type: LongDoubleType

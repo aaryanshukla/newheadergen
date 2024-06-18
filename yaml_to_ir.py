@@ -40,24 +40,45 @@ def load_yaml_file(yaml_file):
         yaml_data = yaml.safe_load(f)
     return yaml_to_ir(yaml_data)
 
-def main(yaml_file):
-    header = load_yaml_file(yaml_file)
+def filter_functions(header, function_names):
+    filtered_functions = []
+    function_name_set = set(function_names)
+    for func in header.functions:
+        if func.name in function_name_set:
+            filtered_functions.append(func)
+    return filtered_functions
 
-    output_dir = os.path.join(os.path.dirname(__file__), 'output')
-    os.makedirs(output_dir, exist_ok=True)
+def main(yaml_files, function_names):
+    combined_headers = []
 
-    output_file = os.path.join(output_dir, header.name)
-    with open(output_file, "w") as header_file:
-        header_file.write(str(header))
+    for yaml_file in yaml_files:
+        header = load_yaml_file(yaml_file)
+        combined_headers.append(header)
 
-    print(f"Generated header for {header.name}")
-    print(str(header))
+    filtered_headers = []
+
+    for header in combined_headers:
+        if function_names:
+            header.functions = filter_functions(header, function_names)
+        filtered_headers.append(header)
+
+    for header in filtered_headers:
+        output_dir = os.path.join(os.path.dirname(__file__), 'output')
+        os.makedirs(output_dir, exist_ok=True)
+
+        output_file = os.path.join(output_dir, header.name)
+        with open(output_file, "w") as header_file:
+            header_file.write(str(header))
+
+        print(f"Generated header for {header.name}")
+        print(str(header))
 
 if __name__ == "__main__":
     import argparse
 
     parser = argparse.ArgumentParser(description="Generate header files from YAML")
-    parser.add_argument("yaml_file", help="Path to the YAML file containing header specification")
+    parser.add_argument("yaml_files", nargs='+', help="Paths to the YAML files containing header specification")
+    parser.add_argument("--functions", nargs='*', help="List of function names to include in the header")
     args = parser.parse_args()
 
-    main(args.yaml_file)
+    main(args.yaml_files, args.functions)
