@@ -1,4 +1,5 @@
-header: "math.h"
+header: math.h
+standard: stdc
   macros:
     - name: MATH_ERRNO
     - name: MATH_ERREXCEPT

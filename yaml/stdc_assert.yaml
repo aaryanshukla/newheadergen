@@ -1,4 +1,5 @@
-header: "assert.h"
+header: assert.h
+standard: stdc
 macros:
   - static_assert # not in assert.h but in .td file dunno why
   - assert

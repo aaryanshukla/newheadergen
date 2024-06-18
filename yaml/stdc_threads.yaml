@@ -1,15 +1,16 @@
-header: "threads.h"
+header: threads.h
+stanard: stdc
 macros:
   - ONCE_FLAG_INIT #{0}
 types:
-  - OnceFlagType
-  - CallOnceFuncType
-  - CndTType
-  - MtxTType
-  - ThrdStartTType
-  - ThrdTType
-  - TssTType
-  - TssDtorTType
+  - once_flag
+  - __call_once_func_t
+  - cnd_t
+  - mtx_t
+  - thrd_start_t
+  - thrd_t
+  - tss_t
+  - tss_dtor_t
 enums:
   - name: mtx_plain
     value: null
@@ -29,118 +30,118 @@ enums:
     value: null
 functions:
   - name: call_once
-    return_type: VoidType
+    return_type: void
     arguments:
-      - OnceFlagTypePtr
-      - CallOnceFuncType
+      - type: once_flag *
+      - type: __call_once_func_t
     guard: null
     attributes: []
   - name: cnd_broadcast
-    return_type: IntType
+    return_type: int
     arguments:
-      - CndTTypePtr
+      - type: cnd_t *
     guard: null
     attributes: []
   - name: cnd_destroy
-    return_type: VoidType
+    return_type: void
     arguments:
-      - CndTTypePtr
+      - type: cnd_t *
     guard: null
     attributes: []
   - name: cnd_init
-    return_type: IntType
+    return_type: int
     arguments:
-      - CndTTypePtr
+      - type: cnd_t *
     guard: null
     attributes: []
   - name: cnd_signal
-    return_type: IntType
+    return_type: int
     arguments:
-      - CndTTypePtr
+      - type: cnd_t *
     guard: null
     attributes: []
   - name: cnd_wait
-    return_type: IntType
+    return_type: int
     arguments:
-      - CndTTypePtr
-      - MtxTTypePtr
+      - type: cnd_t *
+      - type: mtx_t *
     guard: null
     attributes: []
   - name: mtx_init
-    return_type: IntType
+    return_type: int
     arguments:
-      - MtxTTypePtr
-      - IntType
+      - type: mtx_t *
+      - type: int
     guard: null
     attributes: []
   - name: mtx_destroy
-    return_type: IntType
+    return_type: int
     arguments:
-      - VoidType
+      - type: void
     guard: null
     attributes: []
   - name: mtx_lock
-    return_type: IntType
+    return_type: int
     arguments:
-      - MtxTTypePtr
+      - type: mtx_t *
     guard: null
     attributes: []
   - name: mtx_unlock
-    return_type: IntType
+    return_type: int
     arguments:
-      - MtxTTypePtr
+      - type: mtx_t *
     guard: null
     attributes: []
   - name: thrd_create
-    return_type: IntType
+    return_type: int
     arguments:
-      - ThrdTTypePtr
-      - ThrdStartTType
-      - VoidPtr
+      - type: thrd_t *
+      - type: thrd_start_t
+      - type: void *
     guard: null
     attributes: []
   - name: thrd_join
-    return_type: IntType
+    return_type: int
     arguments:
-      - ThrdTType
-      - IntPtr
+      - type: thrd_t
+      - type: int *
     guard: null
     attributes: []
   - name: thrd_detach
-    return_type: IntType
+    return_type: int
     arguments:
-      - ThrdTType
+      - type: thrd_t
     guard: null
     attributes: []
   - name: thrd_current
-    return_type: ThrdTType
+    return_type: thrd_t
     arguments:
-      - VoidType
+      - type: void
     guard: null
     attributes: []
   - name: thrd_equal
-    return_type: IntType
+    return_type: int
     arguments:
-      - ThrdTType
-      - ThrdTType
+      - type: thrd_t
+      - type: thrd_t
     guard: null
     attributes: []
   - name: thrd_exit
-    return_type: VoidType
+    return_type: void
     arguments:
-      - IntType
+      - type: int
     guard: null
     attributes: []
   - name: tss_create
-    return_type: IntType
+    return_type: int
     arguments:
-      - TssTPtr
-      - TssDtorTType
+      - type: tss_t *
+      - type: tss_dtor_t
     guard: null
     attributes: []
   - name: tss_delete
-    return_type: IntType
+    return_type: int
     arguments:
-      - TssTType
+      - type: tss_t
     guard: null
     attributes: []

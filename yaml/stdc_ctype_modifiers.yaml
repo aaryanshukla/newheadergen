@@ -1,5 +1,5 @@
-header: "ctype.h"
-standard: "stdc"
+header: ctype.h
+standard: stdc
 macros: []
 types: []
 enums: []
