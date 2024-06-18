@@ -1,22 +1,10 @@
 header: math.h
 standard: stdc
-  macros:
-    - name: MATH_ERRNO
-    - name: MATH_ERREXCEPT
-    - name: math_errhandling
-    - name: HUGE_VAL
-    - name: INFINITY
-    - name: NAN
-    - name: FP_INT_UPWARD
-    - name: FP_INT_DOWNWARD
-    - name: FP_INT_TOWARDZERO
-    - name: FP_INT_TONEARESTFROMZERO
-    - name: FP_INT_TONEAREST
-    - name: FP_ILOGB0
-    - name: FP_ILOGBNAN
-    - name: isfinite
-    - name: isinf
-    - name: isnan
+macros: []
+types:
+  - type_name: float_t
+  - type_name: double_t
+  - type_name: float128
   named_types:
     - type: float_t
     - type: double_t

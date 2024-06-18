@@ -1,19 +1,9 @@
 header: fenv.h
 standard: stdc
-macros:
-  - FE_DIVBYZERO
-  - FE_INEXACT
-  - FE_INVALID
-  - FE_OVERFLOW
-  - FE_UNDERFLOW
-  - FE_ALL_EXCEPT
-  - FE_DOWNWARD
-  - FE_TONEAREST
-  - FE_TOWARDZERO
-  - FE_DFL_ENV
+macros: []
 types:
-  - fenv_t
-  - fexcept_t
+  - type_name: fenv_t
+  - type_name: fexcept_t
 enums: []
 objects: []
 functions:

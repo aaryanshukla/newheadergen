@@ -1,9 +1,8 @@
 header: string.h
 standard: stdc
-macros:
-  - "NULL"
+macros: []
 types:
-  - size_t
+  - type_name: size_t
 enums: []
 objects: []
 functions:
