@@ -11,27 +11,27 @@ class TestType(unittest.TestCase):
     #     self.assertEqual(str(thing), expected_output)
 
     def test_type_lowercase_simple(self):
-        type = Type("FEnvT")
+        type = Type("fenv_t")
         expected_output = "#include <llvm-libc-types/fenv_t.h>"
         self.assertEqual(str(type), expected_output)
 
     def test_type_capitalized(self):
-        type = Type("OnceFlagType")
+        type = Type("once_flag")
         expected_output = "#include <llvm-libc-types/once_flag.h>"
         self.assertEqual(str(type), expected_output)
 
     def test_type_ttype(self):
-        type = Type("ThrdTType")
+        type = Type("thrd_t")
         expected_output = "#include <llvm-libc-types/thrd_t.h>"
         self.assertEqual(str(type), expected_output)
 
     def test_type_many_words(self):
-        type = Type("CallOnceFuncType")
+        type = Type("__call_once_func_t")
         expected_output = "#include <llvm-libc-types/__call_once_func_t.h>"
         self.assertEqual(str(type), expected_output)
 
     def test_type_double_underscore(self):
-        type = Type("QSortRCompareT")
+        type = Type("__qsortrcompare_t")
         expected_output = "#include <llvm-libc-types/__qsortrcompare_t.h>"
         self.assertEqual(str(type), expected_output)
 
