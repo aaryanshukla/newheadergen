@@ -5,7 +5,8 @@ class Type:
     def __str__(self):
         return f"#include <llvm-libc-types/{self.type_name}.h>"
     
-    
+# Underscores used for include statement
+# For some of these, when used in an argument type, underscores may be spaces
 # type_dict = {
 #     # spec.td
 #     # Builtin types, don't have to be a NamedType
@@ -57,7 +58,7 @@ class Type:
 #     "ThrdTType": "thrd_t",
 #     "SigHandlerT": "__sighandler_t",
 #     "TimeTType": "time_t",
-#     "StructTimeSpec": "struct timespec",
+#     "StructTimeSpec": "struct_timespec",
 #     "BSearchCompareT": "__bsearchcompare_t",
 #     "QSortCompareT": "__qsortcompare_t",
 #     "AtexitHandlerT": "__atexithandler_t",

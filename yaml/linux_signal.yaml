@@ -1,5 +1,5 @@
-header: float.h
-standard: stdc
+header: signal.h
+standard: linux
 macros: []
 types: []
 enums: []
