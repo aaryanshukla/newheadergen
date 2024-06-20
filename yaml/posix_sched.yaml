@@ -24,6 +24,7 @@ functions:
       - type: int
     guard: null
     attributes: []
+  #this function is from gnu extensionsd
   - name: sched_getaffinity
     return_type: int
     arguments:
@@ -54,6 +55,7 @@ functions:
       - type: struct timespec *
     guard: null
     attributes: []
+  #this function is from gnu extension
   - name: sched_setaffinity
     return_type: int
     arguments:

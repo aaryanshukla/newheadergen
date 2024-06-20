@@ -95,6 +95,7 @@ functions:
       - type: __qsortcompare_t
     guard: null
     attributes: []
+  # this function is from gnu extension 
   - name: qsort_r
     return_type: void
     arguments:

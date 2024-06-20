@@ -198,6 +198,7 @@ functions:
     guard: null
     attributes:
       - noreturn
+    # this function is from gnu extension 
   - name: pthread_getname_np
     return_type: int
     arguments:
@@ -237,6 +238,7 @@ functions:
     arguments: []
     guard: null
     attributes: []
+  # this function is from gnu extension 
   - name: pthread_setname_np
     return_type: int
     arguments:

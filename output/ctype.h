@@ -35,6 +35,8 @@ int toupper(int);
 
 int isascii(int);
 
+int toascii(int);
+
 __END_C_DECLS
 
  #endif // LLVM_LIBC_CTYPE_H

@@ -240,12 +240,12 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fmaximum
-  return_type: double
-  arguments:
-    - type: double
-    - type: double
-  guard: null
-  attributes: []
+    return_type: double
+    arguments:
+      - type: double
+      - type: double
+    guard: null
+    attributes: []
   - name: fmaximumf
     return_type: float
     arguments:
@@ -870,6 +870,7 @@ functions: # math.h file has alphabetical order
     attributes: []
   - name: ldexpf128
     return_type: float128
+    arguments:
       - type: float128
       - type: int
     guard: LIBC_TYPES_HAS_FLOAT128
@@ -1003,6 +1004,15 @@ functions: # math.h file has alphabetical order
     return_type: double
     arguments:
       - type: double
+    guard: null
+    attributes: []
+  #this function is part of gnu extensions
+  - name: sincosf
+    return type: void 
+    arugments: 
+    - type: float
+    - type: float *
+    - type: float *
     guard: null
     attributes: []
   - name: sinf

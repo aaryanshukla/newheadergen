@@ -87,3 +87,19 @@ functions:
       - type: const fenv_t *
     guard: null
     attributes: []
+  # these are functions from gnu extension
+  - name: fedisableexcept
+    return_type: int 
+    arguments: 
+      - type: int 
+    guard: null
+  - name: feenableexcept
+    return_type: int 
+    arguments:
+      - type: int
+    attributes: []
+  - name: fegetexcept
+    return_type: int
+    arguments: []
+    guard: null
+    attributes: []

@@ -15,6 +15,7 @@ functions:
       - type: size_t
     guard: null
     attributes: []
+  # this is function is from gnu extension
   - name: hcreate_r
     return_type: int
     arguments:
@@ -29,6 +30,7 @@ functions:
       - type: ACTION
     guard: null
     attributes: []
+  # this function is from gnu extenson 
   - name: hsearch_r
     return_type: int
     arguments:
@@ -38,6 +40,7 @@ functions:
       - type: struct hsearch_data *
     guard: null
     attributes: []
+  # this function is from gnu extension 
   - name: hdestroy
     return_type: void
     arguments: []

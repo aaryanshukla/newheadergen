@@ -134,6 +134,7 @@ functions:
       - type: FILE *
     guard: null
     attributes: []
+  # this function is from gnu extension 
   - name: clearerr_unlocked
     return_type: void
     arguments:
@@ -159,6 +160,7 @@ functions:
       - type: FILE *
     guard: null
     attributes: []
+  # this function is from gnu extension 
   - name: feof_unlocked
     return_type: int
     arguments:
@@ -171,6 +173,7 @@ functions:
       - type: FILE *
     guard: null
     attributes: []
+  # this function is from gnu extension 
   - name: ferror_unlocked
     return_type: int
     arguments:
@@ -183,6 +186,7 @@ functions:
       - type: FILE *
     guard: null
     attributes: []
+  # this function is from gnu extension 
   - name: fgetc_unlocked
     return_type: int
     arguments:
@@ -224,6 +228,7 @@ functions:
       - type: FILE * __restrict
     guard: null
     attributes: []
+  # this function is from gnu extension 
   - name: fopencookie
     return_type: FILE *
     arguments:
@@ -241,6 +246,7 @@ functions:
       - type: FILE * __restrict
     guard: null
     attributes: []
+  # this function is from gnu extension 
   - name: fread_unlocked
     return_type: size_t
     arguments:
@@ -280,6 +286,7 @@ functions:
       - type: FILE * __restrict
     guard: null
     attributes: []
+  # this function is from gnu extension 
   - name: fwrite_unlocked
     return_type: size_t
     arguments:

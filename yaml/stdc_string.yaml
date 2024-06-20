@@ -242,3 +242,52 @@ functions:
       - type: int
     guard: null
     attributes: []
+  # this is a function from gnu extension 
+  - name: memmem
+    return_type: void *
+    arguments:
+      - type: const void *
+      - type: size_t
+      - type: const void *
+      - type: size_t
+    guard: null
+    attributes: []
+  # this is a function from gnu extension
+  - name: memrchr
+    return_type: void *
+    arguments:
+      - type: const void *
+      - type: int
+      - type: size_t
+    guard: null
+    attributes: []
+  # this is a function from gnu extension
+  - name: strerror_r
+    return_type: char *
+    arguments:
+      - type: int
+      - type: char *
+      - type: size_t
+    guard: null
+    attributes: []
+  # this is a function from gnu extension
+  - name: strcasestr
+    return_type: char *
+    arguments:
+      - type: const char *
+      - type: const char *
+    guard: null
+    attributes: []
+  # this is a function from gnu extension
+  - name: strchrnul
+    return_type: char *
+    arguments:
+      - type: const char *
+      - type: int
+    guard: null
+    attributes: []
+
+
+
+
+

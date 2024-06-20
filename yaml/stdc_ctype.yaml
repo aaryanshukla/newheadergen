@@ -97,4 +97,12 @@ functions:
       - type: int
     guard: null
     attributes: []
+  # this is a gnu extension function
+  - name: toascii
+    return_type: int
+    arguments:
+      - type: int
+    guard: null
+    attributes: []
+
 

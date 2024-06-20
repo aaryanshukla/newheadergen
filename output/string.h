@@ -70,6 +70,16 @@ char * strtok_r(char * __restrict, const char * __restrict, char ** __restrict);
 
 char * strsignal(int);
 
+void * memmem(const void *, size_t, const void *, size_t);
+
+void * memrchr(const void *, int, size_t);
+
+char * strerror_r(int, char *, size_t);
+
+char * strcasestr(const char *, const char *);
+
+char * strchrnul(const char *, int);
+
 __END_C_DECLS
 
  #endif // LLVM_LIBC_STRING_H

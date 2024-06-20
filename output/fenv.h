@@ -33,6 +33,12 @@ int feholdexcept(fenv_t *);
 
 int feupdateenv(const fenv_t *);
 
+int fedisableexcept(int);
+
+int feenableexcept(int);
+
+int fegetexcept();
+
 __END_C_DECLS
 
  #endif // LLVM_LIBC_FENV_H
