@@ -49,5 +49,5 @@ class HeaderFile:
                 content.append("")  
             content.append("__END_C_DECLS\n")
 
-        content.append(f"#endif // {header_guard}")
+        content.append(f" #endif // LLVM_LIBC_{header_guard}")
         return "\n".join(content)

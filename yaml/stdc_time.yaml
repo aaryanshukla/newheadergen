@@ -1,0 +1,81 @@
+header: time.h
+standard: stdc
+types:
+  - struct timeval
+  - clockid_t
+  - struct timespec
+  - struct tm
+  - time_t
+  - clock_t
+functions:
+  - name: asctime
+    return_type: char *
+    arguments:
+      - type: struct tm *
+    guard: null
+    attributes: []
+  - name: asctime_r
+    return_type: char *
+    arguments:
+      - type: struct tm *
+      - type: char *
+    guard: null
+    attributes: []
+  - name: clock_gettime
+    return_type: int
+    arguments:
+      - type: clockid_t
+      - type: struct timespec *
+    guard: null
+    attributes: []
+  - name: clock
+    return_type: clock_t
+    arguments: []
+    guard: null
+    attributes: []
+  - name: difftime
+    return_type: double
+    arguments:
+      - type: time_t
+      - type: time_t
+    guard: null
+    attributes: []
+  - name: gettimeofday
+    return_type: int
+    arguments:
+      - type: struct timeval *
+      - type: void *
+    guard: null
+    attributes: []
+  - name: gmtime
+    return_type: struct tm *
+    arguments:
+      - type: time_t *
+    guard: null
+    attributes: []
+  - name: gmtime_r
+    return_type: struct tm *
+    arguments:
+      - type: time_t *
+      - type: struct tm *
+    guard: null
+    attributes: []
+  - name: mktime
+    return_type: time_t
+    arguments:
+      - type: struct tm *
+    guard: null
+    attributes: []
+  - name: nanosleep
+    return_type: int
+    arguments:
+      - type: const struct timespec *
+      - type: struct timespec *
+    guard: null
+    attributes: []
+  - name: time
+    return_type: time_t
+    arguments:
+      - type: time_t *
+    guard: null
+    attributes: []

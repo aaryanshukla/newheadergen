@@ -1,65 +1,65 @@
-#ifndef DEMO_H
-#define DEMO_H
+#ifndef LLVM_LIBC_DEMO_H
+#define LLVM_LIBC_DEMO_H
 
 #include "__llvm-libc-common.h"
 
 #include "__llvm-libc-common.h"
 __BEGIN_C_DECLS
 
-int  (int  ); feraiseexcept(int);
+int feraiseexcept(int);
 
-double  (double  , double  ); copysign(double x, double y);
+double copysign(double, double);
 
-void  * (void  * ,  void  * , size_t  ); memmove(void * dst, const void * src, size_t count);
+size_t memmove(void *, const void *, size_t);
 
-char  * ( char  * , int  ); strchrnul(const char * src, int c);
+int strchrnul(const char *, int);
 
-size_t  ( char  * ,  char  * ); strcspn(const char * src, const char * segment);
+char strcspn(const char *, const char *);
 
-void  * (void  *  ,  void  *  , size_t  ); memcpy(void * __restrict, const void * __restrict, size_t);
+size_t memcpy(void * __restrict, const void * __restrict, size_t);
 
-int  ( void  * ,  void  * , size_t  ); memcmp(const void * lhs, const void * rhs, size_t count);
+size_t memcmp(const void *, const void *, size_t);
 
-void  * ( void  * , int  , size_t  ); memchr(const void * src, int c, size_t n);
+size_t memchr(const void *, int, size_t);
 
-void  * (void  * , int  , size_t  ); memset(void * ptr, int value, size_t count);
+size_t memset(void *, int, size_t);
 
-void  * (void  * , int  , size_t  ); memset_explicit(void * ptr, int value, size_t count);
+size_t memset_explicit(void *, int, size_t);
 
-char  * (char  *  ,  char  *  ); strcpy(char * __restrict dest, const char * __restrict src);
+char strcpy(char * __restrict, const char * __restrict);
 
-char  * (char  *  ,  char  *  , size_t  ); strncpy(char * __restrict dest, const char * __restrict src, size_t n);
+size_t strncpy(char * __restrict, const char * __restrict, size_t);
 
-char  * (char  *  ,  char  *  , size_t  ); strncat(char * __restrict dest, const char * __restrict src, size_t count);
+size_t strncat(char * __restrict, const char * __restrict, size_t);
 
-int  ( char  * ,  char  * ); strcmp(const char * left, const char * right);
+char strcmp(const char *, const char *);
 
-size_t  (char  *  ,  char  *  , size_t  ); strxfrm(char * __restrict dest, const char * __restrict src, size_t n);
+size_t strxfrm(char * __restrict, const char * __restrict, size_t);
 
-char  * ( char  * ); strdup(const char * src);
+char strdup(const char *);
 
-char  * ( char  * , size_t  ); strndup(const char * src, size_t size);
+size_t strndup(const char *, size_t);
 
-int  ( char  * ,  char  * ); strcoll(const char * left, const char * right);
+char strcoll(const char *, const char *);
 
-int  ( char  * ,  char  * , size_t  ); strncmp(const char * left, const char * right, size_t n);
+size_t strncmp(const char *, const char *, size_t);
 
-char  * ( char  * , int  ); strchr(const char * src, int c);
+int strchr(const char *, int);
 
-char  * ( char  * ,  char  * ); strpbrk(const char * src, const char * breakset);
+char strpbrk(const char *, const char *);
 
-char  * ( char  * , int  ); strrchr(const char * src, int c);
+int strrchr(const char *, int);
 
-size_t  ( char  * ,  char  * ); strspn(const char * src, const char * segment);
+char strspn(const char *, const char *);
 
-char  * ( char  * ,  char  * ); strstr(const char * haystack, const char * needle);
+char strstr(const char *, const char *);
 
-char  * (char  *  ,  char  *  ); strtok(char * __restrict src, const char * __restrict delimiter_string);
+char strtok(char * __restrict, const char * __restrict);
 
-char  * (int  ); strerror(int err_num);
+int strerror(int);
 
-size_t  ( char  * ); strlen(const char * src);
+char strlen(const char *);
 
 __END_C_DECLS
 
-#endif // DEMO_H
+ #endif // LLVM_LIBC_DEMO_H

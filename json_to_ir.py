@@ -22,28 +22,24 @@ def extract_api_to_ir(api_data):
                 declaration_fragments = symbol.get("declarationFragments", [])
                 return_type = ""
                 name = ""
-                is_identifier_found = False
+                arguments = []
 
                 for frag in declaration_fragments:
                     if frag["kind"] == "typeIdentifier":
-                        return_type += frag["spelling"] + " "
-                    elif frag["kind"] == "identifier" and not is_identifier_found:
+                        return_type = frag["spelling"]
+                    elif frag["kind"] == "identifier":
                         name = frag["spelling"]
-                        is_identifier_found = True
-                    elif frag["kind"] == "text":
-                        return_type += frag["spelling"]
-
-                return_type = return_type.strip()
-                arguments = []
 
                 for param in symbol.get("functionSignature", {}).get("parameters", []):
-                    param_fragments = "".join(frag["spelling"] for frag in param["declarationFragments"])
-                    param_fragments = param_fragments.replace("restrict", "__restrict")
-                    arguments.append(param_fragments.strip())
+                    param_type = "".join(frag["spelling"] for frag in param["declarationFragments"] if frag["kind"] != "internalParam")
+                    param_type = param_type.replace("restrict", "__restrict")
+                    arguments.append(param_type.strip())
 
                 guard = None  
                 attributes = [] 
                 header.add_function(Function(return_type, name, arguments, guard, attributes))
+
+   
 
     return headers.values()
 
