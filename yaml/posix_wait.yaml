@@ -1,0 +1,33 @@
+#this is in sys/wait for posix
+header: wait.h
+standard: posix
+macros: []
+types:
+  - type_name: siginfo_t
+  - type_name: struct rusage
+  - type_name: pid_t
+enums: []
+functions:
+  - name: wait
+    return_type: pid_t
+    arguments:
+      - type: int *
+    guard: null
+    attributes: []
+  - name: wait4
+    return_type: pid_t
+    arguments:
+      - type: pid_t
+      - type: int *
+      - type: int
+      - type: struct rusage *
+    guard: null
+    attributes: []
+  - name: waitpid
+    return_type: pid_t
+    arguments:
+      - type: pid_t
+      - type: int *
+      - type: int
+    guard: null
+    attributes: []

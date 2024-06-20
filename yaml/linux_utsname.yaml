@@ -1,0 +1,14 @@
+#this is sys/utsname in the linux library
+header: utsname.h
+standard: linux
+macros: []
+types:
+  - type_name: struct utsname
+enums: []
+functions:
+  - name: uname
+    return_type: int
+    arguments:
+      - type: struct utsname *
+    guard: null
+    attributes: []

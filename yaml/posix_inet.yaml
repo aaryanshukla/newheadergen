@@ -1,0 +1,34 @@
+#part of posix: arpa/inet
+header: inet.h
+standard: posix
+macros: []
+types:
+  - type_name: uint32_t
+  - type_name: uint16_t
+  - type_name: inttypes.h
+enums: []
+functions:
+  - name: htonl
+    return_type: uint32_t
+    arguments:
+      - type: uint32_t
+    guard: null
+    attributes: []
+  - name: htons
+    return_type: uint16_t
+    arguments:
+      - type: uint16_t
+    guard: null
+    attributes: []
+  - name: ntohl
+    return_type: uint32_t
+    arguments:
+      - type: uint32_t
+    guard: null
+    attributes: []
+  - name: ntohs
+    return_type: uint16_t
+    arguments:
+      - type: uint16_t
+    guard: null
+    attributes: []

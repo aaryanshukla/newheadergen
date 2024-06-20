@@ -24,6 +24,7 @@ functions:
       - type: char *
     guard: null
     attributes: []
+  #posix function 
   - name: clock_gettime
     return_type: int
     arguments:
@@ -43,6 +44,7 @@ functions:
       - type: time_t
     guard: null
     attributes: []
+  #posix function
   - name: gettimeofday
     return_type: int
     arguments:
@@ -69,6 +71,7 @@ functions:
       - type: struct tm *
     guard: null
     attributes: []
+  #posix function
   - name: nanosleep
     return_type: int
     arguments:
@@ -82,3 +85,4 @@ functions:
       - type: time_t *
     guard: null
     attributes: []
+

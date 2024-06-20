@@ -1,0 +1,28 @@
+#this is in sys/socket in the posix library
+header: socket.h
+standard: posix
+macros:
+  - sys-socket-macros
+types:
+  - type_name: struct_sockaddr_un
+  - type_name: struct_sockaddr
+  - type_name: socklen_t
+  - type_name: sa_family_t
+enums: []
+functions:
+  - name: socket
+    return_type: int
+    arguments:
+      - type: int
+      - type: int
+      - type: int
+    guard: null
+    attributes: []
+  - name: bind
+    return_type: int
+    arguments:
+      - type: int
+      - type: const struct sockaddr *
+      - type: socklen_t
+    guard: null
+    attributes: []
