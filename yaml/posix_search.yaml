@@ -1,0 +1,64 @@
+header: search.h
+standard: posix
+macros: []
+types:
+  - type_name: size_t
+  - type_name: struct_hsearch_data
+  - type_name: ENTRY
+  - type_name: ACTION
+enums: []
+objects: []
+functions:
+  - name: hcreate
+    return_type: int
+    arguments:
+      - type: size_t
+    guard: null
+    attributes: []
+  - name: hcreate_r
+    return_type: int
+    arguments:
+      - type: size_t
+      - type: struct hsearch_data *
+    guard: null
+    attributes: []
+  - name: hsearch
+    return_type: ENTRY *
+    arguments:
+      - type: ENTRY
+      - type: ACTION
+    guard: null
+    attributes: []
+  - name: hsearch_r
+    return_type: int
+    arguments:
+      - type: ENTRY
+      - type: ACTION
+      - type: ENTRY * *
+      - type: struct hsearch_data *
+    guard: null
+    attributes: []
+  - name: hdestroy
+    return_type: void
+    arguments: []
+    guard: null
+    attributes: []
+  - name: hdestroy_r
+    return_type: void
+    arguments:
+      - type: struct hsearch_data *
+    guard: null
+    attributes: []
+  - name: insque
+    return_type: void
+    arguments:
+      - type: void *
+      - type: void *
+    guard: null
+    attributes: []
+  - name: remque
+    return_type: void
+    arguments:
+      - type: void *
+    guard: null
+    attributes: []

@@ -52,6 +52,7 @@ functions:
       - type: int
     guard: null
     attributes: []
+  # this is a linux function
   - name: mincore
     return_type: int
     arguments:
@@ -67,6 +68,7 @@ functions:
       - type: size_t
     guard: null
     attributes: []
+  #this is a linux function
   - name: mlock2
     return_type: int
     arguments:
@@ -115,3 +117,30 @@ functions:
       - type: const char *
     guard: null
     attributes: []
+
+  HeaderSpec SysMMan = HeaderSpec<
+      "sys/mman.h",
+      [Macro<"MAP_ANONYMOUS">],
+      [], // Types
+      [], // Enumerations
+      [
+        FunctionSpec<
+            "mincore",
+            RetValSpec<IntType>,
+            [
+              ArgSpec<VoidPtr>,
+              ArgSpec<SizeTType>,
+              ArgSpec<UnsignedCharPtr>,
+            ]
+        >,
+        FunctionSpec<
+          "mlock2",
+          RetValSpec<IntType>,
+          [
+            ArgSpec<VoidPtr>,
+            ArgSpec<SizeTType>,
+            ArgSpec<UnsignedIntType>,
+          ]
+        >,
+      ]  // Functions
+  >;

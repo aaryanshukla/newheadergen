@@ -1,0 +1,18 @@
+# this is sys/random from the linux library
+header: random.h
+standard: linux
+macros:
+  - sys-random-macros
+types:
+  - type_name: ssize_t
+  - type_name: size_t
+enums: []
+functions:
+  - name: getrandom
+    return_type: ssize_t
+    arguments:
+      - type: void *
+      - type: size_t
+      - type: unsigned int
+    guard: null
+    attributes: []

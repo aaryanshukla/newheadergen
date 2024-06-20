@@ -121,6 +121,7 @@ functions:
       - type: ...
     guard: null
     attributes: []
+  #this is a posix function  
   - name: fileno
     return_type: int
     arguments:
@@ -145,6 +146,7 @@ functions:
       - type: FILE *
     guard: null
     attributes: []
+  # this is a posix function
   - name: flockfile
     return_type: void
     arguments:
@@ -262,6 +264,7 @@ functions:
       - type: FILE *
     guard: null
     attributes: []
+  # this is a posix function
   - name: funlockfile
     return_type: void
     arguments:
@@ -292,6 +295,7 @@ functions:
       - type: FILE *
     guard: null
     attributes: []
+  #this is a posix function
   - name: getc_unlocked
     return_type: int
     arguments:
@@ -303,6 +307,7 @@ functions:
     arguments: []
     guard: null
     attributes: []
+  #this is a posix function
   - name: getchar_unlocked
     return_type: int
     arguments: []
@@ -365,6 +370,3 @@ functions:
     arguments: []
     guard: null
     attributes: []
-
-    
-

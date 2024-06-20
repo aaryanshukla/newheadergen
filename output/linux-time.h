@@ -1,5 +1,5 @@
-#ifndef LLVM_LIBC_TIME_H
-#define LLVM_LIBC_TIME_H
+#ifndef LLVM_LIBC_LINUX-TIME_H
+#define LLVM_LIBC_LINUX-TIME_H
 
 #include "__llvm-libc-common.h"
 
@@ -13,4 +13,4 @@ __BEGIN_C_DECLS
 
 __END_C_DECLS
 
- #endif // LLVM_LIBC_TIME_H
+ #endif // LLVM_LIBC_LINUX-TIME_H

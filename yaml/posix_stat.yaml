@@ -18,6 +18,7 @@ types:
   - type_name: mode_t
 objects: []
 enums: []
+objects: []
 functions:
   - name: chmod
     return_type: int

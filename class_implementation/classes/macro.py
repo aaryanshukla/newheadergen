@@ -4,5 +4,5 @@ class Macro:
 
     def __str__(self):
         if self.name.endswith("-macros"):
-            return f'#include "llvm-libc-macros/{self.name}"'
+            return f'#include "llvm-libc-macros/{self.name}.h"'
         return f"#define {self.name}"

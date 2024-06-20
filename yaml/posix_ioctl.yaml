@@ -1,0 +1,9 @@
+#this is in sys/ioctl in the posix library
+header: ioctl.h
+standard: posix
+macros:
+  - sys-ioctl-macros
+types: []
+enums: []
+functions: []
+

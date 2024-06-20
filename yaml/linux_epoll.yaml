@@ -1,0 +1,61 @@
+header: epoll.h
+standard: linux
+macros: []
+types:
+  - type_name: struct epoll_event
+  - type_name: struct epoll_data
+  - type_name: sigset_t
+  - type_name: struct timespec
+enums: []
+objects: []
+functions:
+  - name: epoll_create
+    return_type: int
+    arguments:
+      - type: int
+    guard: null
+    attributes: []
+  - name: epoll_create1
+    return_type: int
+    arguments:
+      - type: int
+    guard: null
+    attributes: []
+  - name: epoll_ctl
+    return_type: int
+    arguments:
+      - type: int
+      - type: int
+      - type: int
+      - type: struct epoll_event *
+    guard: null
+    attributes: []
+  - name: epoll_wait
+    return_type: int
+    arguments:
+      - type: int
+      - type: struct epoll_event *
+      - type: int
+      - type: int
+    guard: null
+    attributes: []
+  - name: epoll_pwait
+    return_type: int
+    arguments:
+      - type: int
+      - type: struct epoll_event *
+      - type: int
+      - type: int
+      - type: sigset_t *
+    guard: null
+    attributes: []
+  - name: epoll_pwait2
+    return_type: int
+    arguments:
+      - type: int
+      - type: struct epoll_event *
+      - type: int
+      - type: const struct timespec *
+      - type: sigset_t *
+    guard: null
+    attributes: []
