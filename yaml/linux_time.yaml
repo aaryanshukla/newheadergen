@@ -1,0 +1,10 @@
+# this is sys/time from the linux library
+header: sys-time.h
+standard: posix
+macros:
+  - sys-time-macros
+types:
+  - type_name: struct timeval
+enums: []
+functions: []
+objects: []
