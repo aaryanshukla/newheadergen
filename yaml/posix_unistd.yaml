@@ -13,6 +13,7 @@ types:
   - type_name: __exec_envp_t
   - type_name: __exec_argv_t
 enums: []
+objects: []
 functions:
   - name: access
     return_type: int

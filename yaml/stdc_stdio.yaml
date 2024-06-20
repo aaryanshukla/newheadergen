@@ -13,7 +13,13 @@ types:
   - type_name: cookie_io_functions_t
   - type_name: FILE
 enums: []
-objects: []
+objects:
+  - field_1: stdin
+    field_2: FILE * # what does this even do? Don't see on stdio.h file
+  - field_1: stdout
+    field_2: FILE *
+  - field_1: stderr
+    field_2: FILE *
 functions:
   - name: remove
     return_type: int

@@ -1,5 +1,5 @@
 header: threads.h
-stanard: stdc
+standard: stdc
 macros:
   - ONCE_FLAG_INIT {0}
 types:
@@ -28,6 +28,7 @@ enums:
     value: null
   - name: thrd_nomem
     value: null
+objects: []
 functions:
   - name: call_once
     return_type: void

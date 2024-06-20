@@ -16,6 +16,7 @@ types:
   - type_name: struct_timespec
   - type_name: ino_t
   - type_name: mode_t
+objects: []
 enums: []
 functions:
   - name: chmod

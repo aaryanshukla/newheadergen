@@ -7,6 +7,7 @@ types:
   - type_name: struct_rlimit
   - type_name: rlim_t
 enums: []
+objects: []
 functions:
   - name: getrlimit
     return_type: int

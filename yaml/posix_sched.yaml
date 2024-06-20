@@ -10,6 +10,7 @@ types:
   - type_name: cpu_set_t
   - type_name: pid_t
 enums: []
+objects: []
 functions:
   - name: sched_get_priority_max
     return_type: int

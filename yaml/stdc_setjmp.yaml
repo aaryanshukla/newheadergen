@@ -3,6 +3,7 @@ macros: []
 types:
   - type_name: JmpBuf
 enums: []
+objects: []
 functions:
   - name: longjmp
     return_type: void

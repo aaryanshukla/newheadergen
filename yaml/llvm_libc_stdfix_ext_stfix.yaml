@@ -1,0 +1,67 @@
+header: stdfix.h # can't actually find, only has stdfix.h.def
+standard: llvm_libc_stdfix_ext
+macros: []
+types: []
+enums: []
+objects: []
+functions:
+  - name: exphk
+    return_type: short accum
+    arguments:
+      - type: short accum
+    guard: LIBC_COMPILER_HAS_FIXED_POINT
+    attributes: []
+  - name: expk
+    return_type: accum
+    arguments:
+      - type: accum
+    guard: LIBC_COMPILER_HAS_FIXED_POINT
+    attributes: []
+  - name: sqrtuhr
+    return_type: unsigned short fract
+    arguments:
+      - type: unsigned short fract
+    guard: LIBC_COMPILER_HAS_FIXED_POINT
+    attributes: []
+  - name: sqrtur
+    return_type: unsigned fract
+    arguments:
+      - type: unsigned fract
+    guard: LIBC_COMPILER_HAS_FIXED_POINT
+    attributes: []
+  - name: sqrtulr
+    return_type: unsigned long fract
+    arguments:
+      - type: unsigned long fract
+    guard: LIBC_COMPILER_HAS_FIXED_POINT
+    attributes: []
+  - name: sqrtuhk
+    return_type: unsigned short accum
+    arguments:
+      - type: unsigned short accum
+    guard: LIBC_COMPILER_HAS_FIXED_POINT
+    attributes: []
+  - name: sqrtuk
+    return_type: unsigned accum
+    arguments:
+      - type: unsigned accum
+    guard: LIBC_COMPILER_HAS_FIXED_POINT
+    attributes: []
+  - name: sqrtulk
+    return_type: unsigned long accum
+    arguments:
+      - type: unsigned long accum
+    guard: LIBC_COMPILER_HAS_FIXED_POINT
+    attributes: []
+  - name: uhksqrtus
+    return_type: unsigned short accum
+    arguments:
+      - type: unsigned short
+    guard: LIBC_COMPILER_HAS_FIXED_POINT
+    attributes: []
+  - name: uksqrtui
+    return_type: unsigned accum
+    arguments:
+      - type: unsigned int
+    guard: LIBC_COMPILER_HAS_FIXED_POINT
+    attributes: []

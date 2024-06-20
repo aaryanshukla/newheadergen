@@ -1,5 +1,6 @@
 header: time.h
 standard: stdc
+macros: []
 types:
   - struct timeval
   - clockid_t
@@ -7,6 +8,8 @@ types:
   - struct tm
   - time_t
   - clock_t
+enums: []
+objects: []
 functions:
   - name: asctime
     return_type: char *
