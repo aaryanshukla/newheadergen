@@ -1,5 +1,3 @@
-#need to add logic for anotgher parameter that could have macros
-
 header: fcntl.h
 standard: posix
 macros: 
