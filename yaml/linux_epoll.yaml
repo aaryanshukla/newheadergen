@@ -2,10 +2,10 @@ header: epoll.h
 standard: linux
 macros: []
 types:
-  - type_name: struct epoll_event
-  - type_name: struct epoll_data
+  - type_name: struct_epoll_event
+  - type_name: struct_epoll_data
   - type_name: sigset_t
-  - type_name: struct timespec
+  - type_name: struct_timespec
 enums: []
 objects: []
 functions:
@@ -46,7 +46,7 @@ functions:
       - type: struct epoll_event *
       - type: int
       - type: int
-      - type: sigset_t *
+      - type: const sigset_t *
     guard: null
     attributes: []
   - name: epoll_pwait2
@@ -56,6 +56,6 @@ functions:
       - type: struct epoll_event *
       - type: int
       - type: const struct timespec *
-      - type: sigset_t *
+      - type: const sigset_t *
     guard: null
     attributes: []
