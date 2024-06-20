@@ -1,0 +1,12 @@
+#need to fix formatting compared to errno.h in the llvm-project
+header: errno.h
+standard: stdc
+macros: 
+  - ENOTSUP
+  - EOPNOTSUPP
+  - linux/error-number-macros
+  - generic-error-number-macros
+types: []
+enums: []
+objects: []
+functions: []

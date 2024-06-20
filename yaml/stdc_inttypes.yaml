@@ -1,0 +1,38 @@
+header: inttypes.h
+standard: stdc
+macros: []
+types:
+  - imaxdiv_t
+  - inttypes-macros # this should go in macros, but we put types in includes so it makes it easier 
+enums: []
+objects: []
+functions:
+  - name: imaxabs
+    return_type: intmax_t
+    arguments:
+      - type: intmax_t
+    guard: null
+    attributes: []
+  - name: imaxdiv
+    return_type: imaxdiv_t
+    arguments:
+      - type: intmax_t
+      - type: intmax_t
+    guard: null
+    attributes: []
+  - name: strtoimax
+    return_type: intmax_t
+    arguments:
+      - type: const char *__restrict
+      - type: char * *__restrict
+      - type: int
+    guard: null
+    attributes: []
+  - name: strtoumax
+    return_type: uintmax_t
+    arguments:
+      - type: const char *__restrict
+      - type: char * *__restrict
+      - type: int
+    guard: null
+    attributes: []

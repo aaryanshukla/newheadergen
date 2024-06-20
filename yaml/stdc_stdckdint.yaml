@@ -1,0 +1,10 @@
+#Need to fix some of the formatting for this 
+header: stdckdint.h
+standard: stdc
+macros:
+  - stdckdint-macros
+types:
+  - stdckdint-macros
+enums: []
+objects: []
+functions: []

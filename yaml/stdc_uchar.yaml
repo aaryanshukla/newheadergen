@@ -1,0 +1,11 @@
+header: uchar.h
+standard: stdc
+macros: []
+types:
+  - char32_t
+  - char16_t
+  - char8_t
+  - mbstate_t
+enums: []
+objects: []
+functions: []

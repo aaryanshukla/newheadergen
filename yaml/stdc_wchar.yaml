@@ -1,0 +1,18 @@
+#moved wchar-macros to types to get include formatting 
+header: wchar.h
+standard: stdc
+macros: []
+types:
+  - wchar-macros
+  - size_t
+  - wint_t
+  - wchar_t
+enums: []
+objects: []
+functions:
+  - name: wctob
+    return_type: int
+    arguments:
+      - type: wint_t
+    guard: null
+    attributes: []

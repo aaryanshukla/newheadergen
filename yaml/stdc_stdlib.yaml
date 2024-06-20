@@ -1,0 +1,272 @@
+header: stdlib.h
+standard: stdc
+macros: []
+types:
+  - __atexithandler_t
+  - __qsortrcompare_t
+  - __qsortcompare_t
+  - __bsearchcompare_t
+  - size_t
+  - lldiv_t
+  - ldiv_t
+  - div_t
+enums: []
+objects: []
+functions:
+  - name: abs
+    return_type: int
+    arguments:
+      - type: int
+    guard: null
+    attributes: []
+  - name: atoi
+    return_type: int
+    arguments:
+      - type: const char *
+    guard: null
+    attributes: []
+  - name: atof
+    return_type: double
+    arguments:
+      - type: const char * __restrict
+    guard: null
+    attributes: []
+  - name: atol
+    return_type: long
+    arguments:
+      - type: const char *
+    guard: null
+    attributes: []
+  - name: atoll
+    return_type: long long
+    arguments:
+      - type: const char *
+    guard: null
+    attributes: []
+  - name: bsearch
+    return_type: void *
+    arguments:
+      - type: const void *
+      - type: const void *
+      - type: size_t
+      - type: size_t
+      - type: __bsearchcompare_t
+    guard: null
+    attributes: []
+  - name: div
+    return_type: div_t
+    arguments:
+      - type: int
+      - type: int
+    guard: null
+    attributes: []
+  - name: labs
+    return_type: long
+    arguments:
+      - type: long
+    guard: null
+    attributes: []
+  - name: ldiv
+    return_type: ldiv_t
+    arguments:
+      - type: long
+      - type: long
+    guard: null
+    attributes: []
+  - name: llabs
+    return_type: long long
+    arguments:
+      - type: long long
+    guard: null
+    attributes: []
+  - name: lldiv
+    return_type: lldiv_t
+    arguments:
+      - type: long long
+      - type: long long
+    guard: null
+    attributes: []
+  - name: qsort
+    return_type: void
+    arguments:
+      - type: void *
+      - type: size_t
+      - type: size_t
+      - type: __qsortcompare_t
+    guard: null
+    attributes: []
+  - name: qsort_r
+    return_type: void
+    arguments:
+      - type: void *
+      - type: size_t
+      - type: size_t
+      - type: __qsortrcompare_t
+      - type: void *
+    guard: null
+    attributes: []
+  - name: rand
+    return_type: int
+    arguments: []
+    guard: null
+    attributes: []
+  - name: srand
+    return_type: void
+    arguments:
+      - type: unsigned int
+    guard: null
+    attributes: []
+  - name: strfromd
+    return_type: int
+    arguments:
+      - type: char * __restrict
+      - type: size_t
+      - type: const char * __restrict
+      - type: double
+    guard: null
+    attributes: []
+  - name: strfromf
+    return_type: int
+    arguments:
+      - type: char * __restrict
+      - type: size_t
+      - type: const char * __restrict
+      - type: float
+    guard: null
+    attributes: []
+  - name: strfroml
+    return_type: int
+    arguments:
+      - type: char * __restrict
+      - type: size_t
+      - type: const char * __restrict
+      - type: long double
+    guard: null
+    attributes: []
+  - name: strtod
+    return_type: double
+    arguments:
+      - type: const char * __restrict
+      - type: char * * __restrict
+    guard: null
+    attributes: []
+  - name: strtof
+    return_type: float
+    arguments:
+      - type: const char * __restrict
+      - type: char * * __restrict
+    guard: null
+    attributes: []
+  - name: strtol
+    return_type: long
+    arguments:
+      - type: const char * __restrict
+      - type: char * * __restrict
+      - type: int
+    guard: null
+    attributes: []
+  - name: strtold
+    return_type: long double
+    arguments:
+      - type: const char * __restrict
+      - type: char * * __restrict
+    guard: null
+    attributes: []
+  - name: strtoll
+    return_type: long long
+    arguments:
+      - type: const char * __restrict
+      - type: char * * __restrict
+      - type: int
+    guard: null
+    attributes: []
+  - name: strtoul
+    return_type: unsigned long
+    arguments:
+      - type: const char * __restrict
+      - type: char * * __restrict
+      - type: int
+    guard: null
+    attributes: []
+  - name: strtoull
+    return_type: unsigned long long
+    arguments:
+      - type: const char * __restrict
+      - type: char * * __restrict
+      - type: int
+    guard: null
+    attributes: []
+  - name: malloc
+    return_type: void *
+    arguments:
+      - type: size_t
+    guard: null
+    attributes: []
+  - name: calloc
+    return_type: void *
+    arguments:
+      - type: size_t
+      - type: size_t
+    guard: null
+    attributes: []
+  - name: realloc
+    return_type: void *
+    arguments:
+      - type: void *
+      - type: size_t
+    guard: null
+    attributes: []
+  - name: aligned_alloc
+    return_type: void *
+    arguments:
+      - type: size_t
+      - type: size_t
+    guard: null
+    attributes: []
+  - name: free
+    return_type: void
+    arguments:
+      - type: void *
+    guard: null
+    attributes: []
+  - name: _Exit
+    return_type: _Noreturn void
+    arguments:
+      - type: int
+    guard: null
+    attributes: []
+  - name: abort
+    return_type: _Noreturn void
+    arguments: []
+    guard: null
+    attributes: []
+  - name: at_quick_exit
+    return_type: int
+    arguments:
+      - type: __atexithandler_t
+    guard: null
+    attributes: []
+  - name: atexit
+    return_type: int
+    arguments:
+      - type: __atexithandler_t
+    guard: null
+    attributes: []
+  - name: exit
+    return_type: _Noreturn void
+    arguments:
+      - type: int
+    guard: null
+    attributes: []
+  - name: getenv
+    return_type: char *
+    arguments:
+      - type: const char *
+    guard: null
+    attributes: []
+  - name: quick_exit
+    return_type: _Noreturn void
+    arguments:
+      - type: int
+    guard: null
+    attributes: []
