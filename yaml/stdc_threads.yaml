@@ -1,8 +1,7 @@
 header: threads.h
 stanard: stdc
 macros:
-  - macro_name: ONCE_FLAG_INIT
-    macro_value: "{0}"
+  - ONCE_FLAG_INIT {0}
 types:
   - type_name: once_flag
   - type_name: __call_once_func_t

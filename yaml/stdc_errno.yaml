@@ -1,4 +1,5 @@
 #need to fix formatting compared to errno.h in the llvm-project
+#moved linux and generic macros to types to get include format 
 header: errno.h
 standard: stdc
 macros: 

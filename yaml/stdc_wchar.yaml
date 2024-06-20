@@ -1,12 +1,12 @@
 #moved wchar-macros to types to get include formatting 
 header: wchar.h
 standard: stdc
-macros: []
-types:
+macros:
   - wchar-macros
-  - size_t
-  - wint_t
-  - wchar_t
+types:
+  - type_name: size_t
+  - type_name:
+  - type_name:
 enums: []
 objects: []
 functions:

@@ -41,13 +41,13 @@ class HeaderFile:
             for enum in self.enumerations:
                 content.append(f"\t{str(enum)},")
             content.append("};")
-
+        
+        content.append("__BEGIN_C_DECLS\n")
         if self.functions:
-            content.append("__BEGIN_C_DECLS\n")
             for function in self.functions:
                 content.append(str(function))
                 content.append("")  
-            content.append("__END_C_DECLS\n")
+        content.append("__END_C_DECLS\n")
 
         content.append(f" #endif // LLVM_LIBC_{header_guard}")
         return "\n".join(content)

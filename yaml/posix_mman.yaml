@@ -1,0 +1,116 @@
+header: mman.h
+standard: posix
+macros:
+  - sys-mman-macros
+types:
+  - type_name: mode_t
+  - type_name: size_t
+  - type_name: off_t
+enums: []
+objects: []
+functions:
+  - name: madvise
+    return_type: int
+    arguments:
+      - type: void *
+      - type: size_t
+      - type: int
+    guard: null
+    attributes: []
+  - name: mmap
+    return_type: void *
+    arguments:
+      - type: void *
+      - type: size_t
+      - type: int
+      - type: int
+      - type: int
+      - type: off_t
+    guard: null
+    attributes: []
+  - name: mprotect
+    return_type: int
+    arguments:
+      - type: void *
+      - type: size_t
+      - type: int
+    guard: null
+    attributes: []
+  - name: munmap
+    return_type: int
+    arguments:
+      - type: void *
+      - type: size_t
+    guard: null
+    attributes: []
+  - name: posix_madvise
+    return_type: int
+    arguments:
+      - type: void *
+      - type: size_t
+      - type: int
+    guard: null
+    attributes: []
+  - name: mincore
+    return_type: int
+    arguments:
+      - type: void *
+      - type: size_t
+      - type: unsigned char *
+    guard: null
+    attributes: []
+  - name: mlock
+    return_type: int
+    arguments:
+      - type: void *
+      - type: size_t
+    guard: null
+    attributes: []
+  - name: mlock2
+    return_type: int
+    arguments:
+      - type: void *
+      - type: size_t
+      - type: unsigned int
+    guard: null
+    attributes: []
+  - name: munlock
+    return_type: int
+    arguments:
+      - type: void *
+      - type: size_t
+    guard: null
+    attributes: []
+  - name: mlockall
+    return_type: int
+    arguments:
+      - type: int
+    guard: null
+    attributes: []
+  - name: munlockall
+    return_type: int
+    arguments: []
+    guard: null
+    attributes: []
+  - name: msync
+    return_type: int
+    arguments:
+      - type: void *
+      - type: size_t
+      - type: int
+    guard: null
+    attributes: []
+  - name: shm_open
+    return_type: int
+    arguments:
+      - type: const char *
+      - type: int
+      - type: mode_t
+    guard: null
+    attributes: []
+  - name: shm_unlink
+    return_type: int
+    arguments:
+      - type: const char *
+    guard: null
+    attributes: []

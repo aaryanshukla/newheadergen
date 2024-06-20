@@ -3,7 +3,7 @@
 
 #include "__llvm-libc-common.h"
 
-#define ONCE_FLAG_INIT
+#define ONCE_FLAG_INIT {0}
 #include <llvm-libc-types/once_flag.h>
 #include <llvm-libc-types/__call_once_func_t.h>
 #include <llvm-libc-types/cnd_t.h>

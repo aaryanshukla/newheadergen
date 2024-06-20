@@ -1,0 +1,182 @@
+header: stdfix.h
+standard: stdc_ext
+macros:
+  - macros/stdfix-macros
+types: []
+enums: []
+objects: []
+functions:
+  - name: abshk
+    return_type: short accum
+    arguments:
+      - type: short accum
+    guard: LIBC_COMPILER_HAS_FIXED_POINT
+    attributes: []
+  - name: abshr
+    return_type: short fract
+    arguments:
+      - type: short fract
+    guard: LIBC_COMPILER_HAS_FIXED_POINT
+    attributes: []
+  - name: absk
+    return_type: accum
+    arguments:
+      - type: accum
+    guard: LIBC_COMPILER_HAS_FIXED_POINT
+    attributes: []
+  - name: absr
+    return_type: fract
+    arguments:
+      - type: fract
+    guard: LIBC_COMPILER_HAS_FIXED_POINT
+    attributes: []
+  - name: abslk
+    return_type: long accum
+    arguments:
+      - type: long accum
+    guard: LIBC_COMPILER_HAS_FIXED_POINT
+    attributes: []
+  - name: abslr
+    return_type: long fract
+    arguments:
+      - type: long fract
+    guard: LIBC_COMPILER_HAS_FIXED_POINT
+    attributes: []
+  - name: exphk
+    return_type: short accum
+    arguments:
+      - type: short accum
+    guard: LIBC_COMPILER_HAS_FIXED_POINT
+    attributes: []
+  - name: expk
+    return_type: accum
+    arguments:
+      - type: accum
+    guard: LIBC_COMPILER_HAS_FIXED_POINT
+    attributes: []
+  - name: roundhk
+    return_type: short accum
+    arguments:
+      - type: short accum
+      - type: int
+    guard: LIBC_COMPILER_HAS_FIXED_POINT
+    attributes: []
+  - name: roundhr
+    return_type: short fract
+    arguments:
+      - type: short fract
+      - type: int
+    guard: LIBC_COMPILER_HAS_FIXED_POINT
+    attributes: []
+  - name: roundk
+    return_type: accum
+    arguments:
+      - type: accum
+      - type: int
+    guard: LIBC_COMPILER_HAS_FIXED_POINT
+    attributes: []
+  - name: roundr
+    return_type: fract
+    arguments:
+      - type: fract
+      - type: int
+    guard: LIBC_COMPILER_HAS_FIXED_POINT
+    attributes: []
+  - name: roundlk
+    return_type: long accum
+    arguments:
+      - type: long accum
+      - type: int
+    guard: LIBC_COMPILER_HAS_FIXED_POINT
+    attributes: []
+  - name: roundlr
+    return_type: long fract
+    arguments:
+      - type: long fract
+      - type: int
+    guard: LIBC_COMPILER_HAS_FIXED_POINT
+    attributes: []
+  - name: rounduhk
+    return_type: unsigned short accum
+    arguments:
+      - type: unsigned short accum
+      - type: int
+    guard: LIBC_COMPILER_HAS_FIXED_POINT
+    attributes: []
+  - name: rounduhr
+    return_type: unsigned short fract
+    arguments:
+      - type: unsigned short fract
+      - type: int
+    guard: LIBC_COMPILER_HAS_FIXED_POINT
+    attributes: []
+  - name: rounduk
+    return_type: unsigned accum
+    arguments:
+      - type: unsigned accum
+      - type: int
+    guard: LIBC_COMPILER_HAS_FIXED_POINT
+    attributes: []
+  - name: roundur
+    return_type: unsigned fract
+    arguments:
+      - type: unsigned fract
+      - type: int
+    guard: LIBC_COMPILER_HAS_FIXED_POINT
+    attributes: []
+  - name: roundulk
+    return_type: unsigned long accum
+    arguments:
+      - type: unsigned long accum
+      - type: int
+    guard: LIBC_COMPILER_HAS_FIXED_POINT
+    attributes: []
+  - name: roundulr
+    return_type: unsigned long fract
+    arguments:
+      - type: unsigned long fract
+      - type: int
+    guard: LIBC_COMPILER_HAS_FIXED_POINT
+    attributes: []
+  - name: sqrtuhk
+    return_type: unsigned short accum
+    arguments:
+      - type: unsigned short accum
+    guard: LIBC_COMPILER_HAS_FIXED_POINT
+    attributes: []
+  - name: sqrtuhr
+    return_type: unsigned short fract
+    arguments:
+      - type: unsigned short fract
+    guard: LIBC_COMPILER_HAS_FIXED_POINT
+    attributes: []
+  - name: sqrtuk
+    return_type: unsigned accum
+    arguments:
+      - type: unsigned accum
+    guard: LIBC_COMPILER_HAS_FIXED_POINT
+    attributes: []
+  - name: sqrtur
+    return_type: unsigned fract
+    arguments:
+      - type: unsigned fract
+    guard: LIBC_COMPILER_HAS_FIXED_POINT
+    attributes: []
+  - name: sqrtulr
+    return_type: unsigned long fract
+    arguments:
+      - type: unsigned long fract
+    guard: LIBC_COMPILER_HAS_FIXED_POINT
+    attributes: []
+  - name: uhksqrtus
+    return_type: unsigned short accum
+    arguments:
+      - type: unsigned short
+    guard: LIBC_COMPILER_HAS_FIXED_POINT
+    attributes: []
+  - name: uksqrtui
+    return_type: unsigned accum
+    arguments:
+      - type: unsigned int
+    guard: LIBC_COMPILER_HAS_FIXED_POINT
+    attributes: []

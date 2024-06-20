@@ -15,7 +15,7 @@ def yaml_to_ir(yaml_data):
         header.add_macro(Macro(macro_data))
 
     for type_data in yaml_data.get('types', []):
-        header.add_type(Type(type_data))
+        header.add_type(Type(type_data['type_name']))
 
     for enum_data in yaml_data.get('enums', []):
         header.add_enumeration(Enumeration(enum_data['name'], enum_data['value']))

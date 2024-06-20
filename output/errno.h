@@ -5,6 +5,10 @@
 
 #define ENOTSUP
 #define EOPNOTSUPP
-#define linux/error-number-macros
-#define generic-error-number-macros
+#include "llvm-libc-macros/linux/error-number-macros"
+#include "llvm-libc-macros/generic-error-number-macros"
+__BEGIN_C_DECLS
+
+__END_C_DECLS
+
  #endif // LLVM_LIBC_ERRNO_H
