@@ -188,3 +188,57 @@ functions:
       - type: const char *
     guard: null
     attributes: []
+    #below are posix functions
+  - name: memccpy
+    return_type: void *
+    arguments:
+      - type: void * __restrict
+      - type: const void * __restrict
+      - type: int
+      - type: size_t
+    guard: null
+    attributes: []
+  - name: mempcpy
+    return_type: void *
+    arguments:
+      - type: void * __restrict
+      - type: const void * __restrict
+      - type: size_t
+    guard: null
+    attributes: []
+  - name: stpcpy
+    return_type: char *
+    arguments:
+      - type: char * __restrict
+      - type: const char * __restrict
+    guard: null
+    attributes: []
+  - name: stpncpy
+    return_type: char *
+    arguments:
+      - type: char * __restrict
+      - type: const char * __restrict
+      - type: size_t
+    guard: null
+    attributes: []
+  - name: strnlen
+    return_type: size_t
+    arguments:
+      - type: const char *
+      - type: size_t
+    guard: null
+    attributes: []
+  - name: strtok_r
+    return_type: char *
+    arguments:
+      - type: char * __restrict
+      - type: const char * __restrict
+      - type: char ** __restrict
+    guard: null
+    attributes: []
+  - name: strsignal
+    return_type: char *
+    arguments:
+      - type: int
+    guard: null
+    attributes: []

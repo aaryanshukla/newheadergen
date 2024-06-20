@@ -1,3 +1,4 @@
+// getenv is part of posix library
 #ifndef LLVM_LIBC_STDLIB_H
 #define LLVM_LIBC_STDLIB_H
 

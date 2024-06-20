@@ -1,3 +1,4 @@
+#known as sys/mman in posix 
 header: mman.h
 standard: posix
 macros:

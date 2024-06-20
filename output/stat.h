@@ -1,0 +1,39 @@
+#ifndef LLVM_LIBC_STAT_H
+#define LLVM_LIBC_STAT_H
+
+#include "__llvm-libc-common.h"
+
+#include "llvm-libc-macros/sys-stat-macros"
+#include <llvm-libc-types/blkcnt_t.h>
+#include <llvm-libc-types/blksize_t.h>
+#include <llvm-libc-types/off_t.h>
+#include <llvm-libc-types/struct_timeval.h>
+#include <llvm-libc-types/gid_t.h>
+#include <llvm-libc-types/struct_stat.h>
+#include <llvm-libc-types/uid_t.h>
+#include <llvm-libc-types/nlink_t.h>
+#include <llvm-libc-types/dev_t.h>
+#include <llvm-libc-types/struct_timespec.h>
+#include <llvm-libc-types/ino_t.h>
+#include <llvm-libc-types/mode_t.h>
+__BEGIN_C_DECLS
+
+int chmod(const char *, mode_t);
+
+int fchmod(int, mode_t);
+
+int fchmodat(int, const char *, mode_t, int);
+
+int fstat(int, struct stat *);
+
+int lstat(const char *__restrict, struct stat *__restrict);
+
+int mkdir(const char *, mode_t);
+
+int mkdirat(int, const char *, mode_t);
+
+int stat(const char *__restrict, struct stat *__restrict);
+
+__END_C_DECLS
+
+ #endif // LLVM_LIBC_STAT_H

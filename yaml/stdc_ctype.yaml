@@ -89,3 +89,12 @@ functions:
       - type: int
     guard: null
     attributes: []
+    # below is the only posix function
+    functions:
+  - name: isascii
+    return_type: int
+    arguments:
+      - type: int
+    guard: null
+    attributes: []
+

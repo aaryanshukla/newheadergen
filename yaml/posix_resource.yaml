@@ -1,0 +1,22 @@
+# known as sys/resource within posix 
+header: resource.h
+standard: posix
+macros:
+  - sys-resource-macros
+types:
+  - type_name: struct_rlimit
+  - type_name: rlim_t
+enums: []
+functions:
+  - name: getrlimit
+    return_type: int
+    arguments:
+      - type: struct rlimit *
+    guard: null
+    attributes: []
+  - name: setrlimit
+    return_type: int
+    arguments:
+      - type: const struct rlimit
+    guard: null
+    attributes: []
