@@ -2,12 +2,12 @@ header: stdbit.h
 standard: stdc
 macros: []
 types:
-  - unsigned char
-  - unsigned short
-  - unsigned int
-  - unsigned long
-  - unsigned long long
-  - bool
+  - type_name: unsigned char
+  - type_name: unsigned short
+  - type_name: unsigned int
+  - type_name: unsigned long
+  - type_name: unsigned long long
+  - type_name: bool
 enums: []
 objects: []
 functions:

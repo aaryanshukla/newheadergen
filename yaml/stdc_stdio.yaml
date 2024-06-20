@@ -8,10 +8,10 @@ macros:
   - stdin
   - stderr
 types:
-  - size_t
-  - off_t
-  - cookie_io_functions_t
-  - FILE
+  - type_name: size_t
+  - type_name: off_t
+  - type_name: cookie_io_functions_t
+  - type_name: FILE
 enums: []
 objects: []
 functions:

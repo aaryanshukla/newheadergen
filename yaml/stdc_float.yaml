@@ -1,0 +1,10 @@
+header: float.h
+standard: stdc
+macros:
+  - FLT_MANT_DIG
+  - DBL_MANT_DIG
+  - LDBL_MANT_DIG
+types: []
+enums: []
+objects: []
+functions: []

@@ -2,8 +2,8 @@ header: inttypes.h
 standard: stdc
 macros: []
 types:
-  - imaxdiv_t
-  - inttypes-macros # this should go in macros, but we put types in includes so it makes it easier 
+  - type_name: imaxdiv_t
+  - type_name: inttypes-macros # this should go in macros, but we put types in includes so it makes it easier 
 enums: []
 objects: []
 functions:

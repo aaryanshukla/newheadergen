@@ -4,14 +4,14 @@ standard: stdc
 macros:
   - __need_size_t
 types:
-  - size_t
-  - pid_t
-  - stack_t
-  - siginfo_t
-  - struct sigaction
-  - sigset_t
-  - union sigval
-  - sig_atomic_t
+  - type_name: size_t
+  - type_name: pid_t
+  - type_name: stack_t
+  - type_name: siginfo_t
+  - type_name: struct sigaction
+  - type_name: sigset_t
+  - type_name: union sigval
+  - type_name: sig_atomic_t
 enums: []
 objects: []
 functions:

@@ -4,7 +4,7 @@ standard: stdc
 macros:
   - stdckdint-macros
 types:
-  - stdckdint-macros
+  - type_name: stdckdint-macros
 enums: []
 objects: []
 functions: []

@@ -1,7 +1,7 @@
 header: setjmp.h
 macros: []
 types:
-  - JmpBuf
+  - type_name: JmpBuf
 enums: []
 functions:
   - name: longjmp
