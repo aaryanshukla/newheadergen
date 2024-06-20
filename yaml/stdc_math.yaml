@@ -8,1748 +8,1748 @@ types:
 enums: []
 functions:
   - name: copysign
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
-      - type: DoubleType
+      - type: double
+      - type: double
     guard: null
     attributes: []
   - name: copysignf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
-      - type: FloatType
+      - type: float
+      - type: float
     guard: null
     attributes: []
   - name: copysignl
-    return_type: LongDoubleType
+    return_type: long double
     arguments:
-      - type: LongDoubleType
-      - type: LongDoubleType
+      - type: long double
+      - type: long double
     guard: null
     attributes: []
   - name: copysignf16
-    return_type: Float16Type
+    return_type: _Float16
     arguments:
-      - type: Float16Type
-      - type: Float16Type
+      - type: _Float16
+      - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: copysignf128
-    return_type: Float128Type
+    return_type: float128
     arguments:
-      - type: Float128Type
-      - type: Float128Type
+      - type: float128
+      - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: ceil
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
+      - type: double
     guard: null
     attributes: []
   - name: ceilf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
+      - type: float
     guard: null
     attributes: []
   - name: ceill
-    return_type: LongDoubleType
+    return_type: long double
     arguments:
-      - type: LongDoubleType
+      - type: long double
     guard: null
     attributes: []
   - name: ceilf16
-    return_type: Float16Type
+    return_type: _Float16
     arguments:
-      - type: Float16Type
+      - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: ceilf128
-    return_type: Float128Type
+    return_type: float128
     arguments:
-      - type: Float128Type
+      - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: fabs
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
+      - type: double
     attributes:
       - name: __LIBC_CONST_ATTR
     guard: null
   - name: fabsf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
+      - type: float
     guard: null
     attributes: []
   - name: fabsl
-    return_type: LongDoubleType
+    return_type: long double
     arguments:
-      - type: LongDoubleType
+      - type: long double
     guard: null
     attributes: []
   - name: fabsf16
-    return_type: Float16Type
+    return_type: _Float16
     arguments:
-      - type: Float16Type
+      - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: fabsf128
-    return_type: Float128Type
+    return_type: float128
     arguments:
-      - type: Float128Type
+      - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: fdim
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
-      - type: DoubleType
+      - type: double
+      - type: double
     guard: null
     attributes: []
   - name: fdimf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
-      - type: FloatType
+      - type: float
+      - type: float
     guard: null
     attributes: []
   - name: fdiml
-    return_type: LongDoubleType
+    return_type: long double
     arguments:
-      - type: LongDoubleType
-      - type: LongDoubleType
+      - type: long double
+      - type: long double
     guard: null
     attributes: []
   - name: fdimf16
-    return_type: Float16Type
+    return_type: _Float16
     arguments:
-      - type: Float16Type
-      - type: Float16Type
+      - type: _Float16
+      - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: fdimf128
-    return_type: Float128Type
+    return_type: float128
     arguments:
-      - type: Float128Type
-      - type: Float128Type
+      - type: float128
+      - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: floor
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
+      - type: double
     guard: null
     attributes: []
   - name: floorf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
+      - type: float
     guard: null
     attributes: []
   - name: floorl
-    return_type: LongDoubleType
+    return_type: long double
     arguments:
-      - type: LongDoubleType
+      - type: long double
     guard: null
     attributes: []
   - name: floorf16
-    return_type: Float16Type
+    return_type: _Float16
     arguments:
-      - type: Float16Type
+      - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: floorf128
-    return_type: Float128Type
+    return_type: float128
     arguments:
-      - type: Float128Type
+      - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: fmin
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
-      - type: DoubleType
+      - type: double
+      - type: double
     guard: null
     attributes: []
   - name: fminf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
-      - type: FloatType
+      - type: float
+      - type: float
     guard: null
     attributes: []
   - name: fminl
-    return_type: LongDoubleType
+    return_type: long double
     arguments:
-      - type: LongDoubleType
-      - type: LongDoubleType
+      - type: long double
+      - type: long double
     guard: null
     attributes: []
   - name: fminf16
-    return_type: Float16Type
+    return_type: _Float16
     arguments:
-      - type: Float16Type
-      - type: Float16Type
+      - type: _Float16
+      - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: fminf128
-    return_type: Float128Type
+    return_type: float128
     arguments:
-      - type: Float128Type
-      - type: Float128Type
+      - type: float128
+      - type: float128
     guard: null
     attributes: []
   - name: fmax
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
-      - type: DoubleType
+      - type: double
+      - type: double
     guard: null
     attributes: []
   - name: fmaxf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
-      - type: FloatType
+      - type: float
+      - type: float
     guard: null
     attributes: []
   - name: fmaxl
-    return_type: LongDoubleType
+    return_type: long double
     arguments:
-      - type: LongDoubleType
-      - type: LongDoubleType
+      - type: long double
+      - type: long double
     guard: null
     attributes: []
   - name: fmaxf16
-    return_type: Float16Type
+    return_type: _Float16
     arguments:
-      - type: Float16Type
-      - type: Float16Type
+      - type: _Float16
+      - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: fmaxf128
-    return_type: Float128Type
+    return_type: float128
     arguments:
-      - type: Float128Type
-      - type: Float128Type
+      - type: float128
+      - type: float128
     guard: null
     attributes: []
   - name: fmaximum
-  return_type: DoubleType
+  return_type: double
   arguments:
-    - type: DoubleType
-    - type: DoubleType
+    - type: double
+    - type: double
   guard: null
   attributes: []
   - name: fmaximumf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
-      - type: FloatType
+      - type: float
+      - type: float
     guard: null
     attributes: []
   - name: fmaximuml
-    return_type: LongDoubleType
+    return_type: long double
     arguments:
-      - type: LongDoubleType
-      - type: LongDoubleType
+      - type: long double
+      - type: long double
     guard: null
     attributes: []
   - name: fmaximumf16
-    return_type: Float16Type
+    return_type: _Float16
     arguments:
-      - type: Float16Type
-      - type: Float16Type
+      - type: _Float16
+      - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: fmaximumf128
-    return_type: Float128Type
+    return_type: float128
     arguments:
-      - type: Float128Type
-      - type: Float128Type
+      - type: float128
+      - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: fmaximum_num
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
-      - type: DoubleType
+      - type: double
+      - type: double
     guard: null
     attributes: []
   - name: fmaximum_numf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
-      - type: FloatType
+      - type: float
+      - type: float
     guard: null
     attributes: []
   - name: fmaximum_numl
-    return_type: LongDoubleType
+    return_type: long double
     arguments:
-      - type: LongDoubleType
-      - type: LongDoubleType
+      - type: long double
+      - type: long double
     guard: null
     attributes: []
   - name: fmaximum_numf16
-    return_type: Float16Type
+    return_type: _Float16
     arguments:
-      - type: Float16Type
-      - type: Float16Type
+      - type: _Float16
+      - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: fmaximum_numf128
-    return_type: Float128Type
+    return_type: float128
     arguments:
-      - type: Float128Type
-      - type: Float128Type
+      - type: float128
+      - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: fmaximum_mag
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
-      - type: DoubleType
+      - type: double
+      - type: double
     guard: null
     attributes: []
   - name: fmaximum_magf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
-      - type: FloatType
+      - type: float
+      - type: float
     guard: null
     attributes: []
   - name: fmaximum_magl
-    return_type: LongDoubleType
+    return_type: long double
     arguments:
-      - type: LongDoubleType
-      - type: LongDoubleType
+      - type: long double
+      - type: long double
     guard: null
     attributes: []
   - name: fmaximum_magf16
-    return_type: Float16Type
+    return_type: _Float16
     arguments:
-      - type: Float16Type
-      - type: Float16Type
+      - type: _Float16
+      - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: fmaximum_magf128
-    return_type: Float128Type
+    return_type: float128
     arguments:
-      - type: Float128Type
-      - type: Float128Type
+      - type: float128
+      - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: fmaximum_mag_num
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
-      - type: DoubleType
+      - type: double
+      - type: double
     guard: null
     attributes: []
   - name: fmaximum_mag_numf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
-      - type: FloatType
+      - type: float
+      - type: float
     guard: null
     attributes: []
   - name: fmaximum_mag_numl
-    return_type: LongDoubleType
+    return_type: long double
     arguments:
-      - type: LongDoubleType
-      - type: LongDoubleType
+      - type: long double
+      - type: long double
     guard: null
     attributes: []
   - name: fmaximum_mag_numf16
-    return_type: Float16Type
+    return_type: _Float16
     arguments:
-      - type: Float16Type
-      - type: Float16Type
+      - type: _Float16
+      - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: fmaximum_mag_numf128
-    return_type: Float128Type
+    return_type: float128
     arguments:
-      - type: Float128Type
-      - type: Float128Type
+      - type: float128
+      - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: fminimum
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
-      - type: DoubleType
+      - type: double
+      - type: double
     guard: null
     attributes: []
   - name: fminimumf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
-      - type: FloatType
+      - type: float
+      - type: float
     guard: null
     attributes: []
   - name: fminimuml
-    return_type: LongDoubleType
+    return_type: long double
     arguments:
-      - type: LongDoubleType
-      - type: LongDoubleType
+      - type: long double
+      - type: long double
     guard: null
     attributes: []
   - name: fminimumf16
-    return_type: Float16Type
+    return_type: _Float16
     arguments:
-      - type: Float16Type
-      - type: Float16Type
+      - type: _Float16
+      - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: fminimumf128
-    return_type: Float128Type
+    return_type: float128
     arguments:
-      - type: Float128Type
-      - type: Float128Type
+      - type: float128
+      - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: fminimum_num
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
-      - type: DoubleType
+      - type: double
+      - type: double
     guard: null
     attributes: []
   - name: fminimum_numf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
-      - type: FloatType
+      - type: float
+      - type: float
     guard: null
     attributes: []
   - name: fmaximum_numl
-    return_type: LongDoubleType
+    return_type: long double
     arguments:
-      - type: LongDoubleType
-      - type: LongDoubleType
+      - type: long double
+      - type: long double
     guard: null
     attributes: []
   - name: fminimum_numf16
-    return_type: Float16Type
+    return_type: _Float16
     arguments:
-      - type: Float16Type
-      - type: Float16Type
+      - type: _Float16
+      - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: fminimum_numf128
-    return_type: Float128Type
+    return_type: float128
     arguments:
-      - type: Float128Type
-      - type: Float128Type
+      - type: float128
+      - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: fminimum_mag
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
-      - type: DoubleType
+      - type: double
+      - type: double
     guard: null
     attributes: []
   - name: fminimum_magf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
-      - type: FloatType
+      - type: float
+      - type: float
     guard: null
     attributes: []
   - name: fminimum_magl
-    return_type: LongDoubleType
+    return_type: long double
     arguments:
-      - type: LongDoubleType
-      - type: LongDoubleType
+      - type: long double
+      - type: long double
     guard: null
     attributes: []
   - name: fminimum_magf16
-    return_type: Float16Type
+    return_type: _Float16
     arguments:
-      - type: Float16Type
-      - type: Float16Type
+      - type: _Float16
+      - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: fminimum_magf128
-    return_type: Float128Type
+    return_type: float128
     arguments:
-      - type: Float128Type
-      - type: Float128Type
+      - type: float128
+      - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: fminimum_mag_num
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
-      - type: DoubleType
+      - type: double
+      - type: double
     guard: null
     attributes: []
   - name: fminimum_mag_numf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
-      - type: FloatType
+      - type: float
+      - type: float
     guard: null
     attributes: []
   - name: fminimum_mag_numl
-    return_type: LongDoubleType
+    return_type: long double
     arguments:
-      - type: LongDoubleType
-      - type: LongDoubleType
+      - type: long double
+      - type: long double
     guard: null
     attributes: []
   - name: fminimum_mag_numf16
-    return_type: Float16Type
+    return_type: _Float16
     arguments:
-      - type: Float16Type
-      - type: Float16Type
+      - type: _Float16
+      - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: fminimum_mag_numf128
-    return_type: Float128Type
+    return_type: float128
     arguments:
-      - type: Float128Type
-      - type: Float128Type
+      - type: float128
+      - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: fma
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
-      - type: DoubleType
-      - type: DoubleType
+      - type: double
+      - type: double
+      - type: double
     guard: null
     attributes: []
   - name: fmaf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
-      - type: FloatType
-      - type: FloatType
+      - type: float
+      - type: float
+      - type: float
     guard: null
     attributes: []
   - name: f16fmaf
-    return_type: Float16Type
+    return_type: _Float16
     arguments:
-      - type: FloatType
-      - type: FloatType
-      - type: FloatType
+      - type: float
+      - type: float
+      - type: float
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: fmod
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
-      - type: DoubleType
+      - type: double
+      - type: double
     guard: null
     attributes: []
   - name: fmodf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
-      - type: FloatType
+      - type: float
+      - type: float
     guard: null
     attributes: []
   - name: fmodl
-    return_type: LongDoubleType
+    return_type: long double
     arguments:
-      - type: LongDoubleType
-      - type: LongDoubleType
+      - type: long double
+      - type: long double
     guard: null
     attributes: []
   - name: fmodf16
-    return_type: Float16Type
+    return_type: _Float16
     arguments:
-      - type: Float16Type
-      - type: Float16Type
+      - type: _Float16
+      - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: fmodf128
-    return_type: Float128Type
+    return_type: float128
     arguments:
-      - type: Float128Type
-      - type: Float128Type
+      - type: float128
+      - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: frexp
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - DoubleType
-      - IntPtr
+      - type: double
+      - type: int *
     guard: null
     attributes: []
   - name: frexpf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - FloatType
-      - IntPtr
+      - type: float
+      - type: int *
     guard: null
     attributes: []
   - name: frexpl
-    return_type: LongDoubleType
+    return_type: long double
     arguments:
-      - LongDoubleType
-      - IntPtr
+      - type: long double
+      - type: int *
     guard: null
     attributes: []
   - name: frexpf16
-    return_type: Float16Type
+    return_type: _Float16
     arguments:
-      - Float16Type
-      - IntPtr
+      - type: _Float16
+      - type: int *
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: frexpf128
-    return_type: Float128Type
+    return_type: float128
     arguments:
-      - Float128Type
-      - IntPtr
+      - type: float128
+      - type: int *
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: fromfp
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - DoubleType
-      - IntType
-      - UnsignedIntType
+      - type: double
+      - type: int
+      - type: unsigned int
     guard: null
     attributes: []
   - name: fromfpf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - FloatType
-      - IntType
-      - UnsignedIntType
+      - type: float
+      - type: int
+      - type: unsigned int
     guard: null
     attributes: []
   - name: fromfpl
-    return_type: LongDoubleType
+    return_type: long double
     arguments:
-      - LongDoubleType
-      - IntType
-      - UnsignedIntType
+      - type: long double
+      - type: int
+      - type: unsigned int
     guard: null
     attributes: []
   - name: fromfpf16
-    return_type: Float16Type
+    return_type: _Float16
     arguments:
-      - Float16Type
-      - IntType
-      - UnsignedIntType
+      - type: _Float16
+      - type: int
+      - type: unsigned int
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: fromfpf128
-    return_type: Float128Type
+    return_type: float128
     arguments:
-      - Float128Type
-      - IntType
-      - UnsignedIntType
+      - type: float128
+      - type: int
+      - type: unsigned int
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: fromfpx
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
-      - type: IntType
-      - type: UnsignedIntType
+      - type: double
+      - type: int
+      - type: unsigned int
     guard: null
     attributes: []
   - name: fromfpxf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
-      - type: IntType
-      - type: UnsignedIntType
+      - type: float
+      - type: int
+      - type: unsigned int
     guard: null
     attributes: []
   - name: fromfpxl
-    return_type: LongDoubleType
+    return_type: long double
     arguments:
-      - type: LongDoubleType
-      - type: IntType
-      - type: UnsignedIntType
+      - type: long double
+      - type: int
+      - type: unsigned int
     guard: null
     attributes: []
   - name: fromfpxf16
-    return_type: Float16Type
+    return_type: _Float16
     arguments:
-      - type: Float16Type
-      - type: IntType
-      - type: UnsignedIntType
+      - type: _Float16
+      - type: int
+      - type: unsigned int
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: fromfpxf128
-    return_type: Float128Type
+    return_type: float128
     arguments:
-      - type: Float128Type
-      - type: IntType
-      - type: UnsignedIntType
+      - type: float128
+      - type: int
+      - type: unsigned int
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: ufromfp
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
-      - type: IntType
-      - type: UnsignedIntType
+      - type: double
+      - type: int
+      - type: unsigned int
     guard: null
     attributes: []
   - name: ufromfpf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
-      - type: IntType
-      - type: UnsignedIntType
+      - type: float
+      - type: int
+      - type: unsigned int
     guard: null
     attributes: []
   - name: ufromfpl
-    return_type: LongDoubleType
+    return_type: long double
     arguments:
-      - type: LongDoubleType
-      - type: IntType
-      - type: UnsignedIntType
+      - type: long double
+      - type: int
+      - type: unsigned int
     guard: null
     attributes: []
   - name: ufromfpf16
-    return_type: Float16Type
+    return_type: _Float16
     arguments:
-      - type: Float16Type
-      - type: IntType
-      - type: UnsignedIntType
+      - type: _Float16
+      - type: int
+      - type: unsigned int
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: ufromfpf128
-    return_type: Float128Type
+    return_type: float128
     arguments:
-      - type: Float128Type
-      - type: IntType
-      - type: UnsignedIntType
+      - type: float128
+      - type: int
+      - type: unsigned int
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: ufromfpx
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
-      - type: IntType
-      - type: UnsignedIntType
+      - type: double
+      - type: int
+      - type: unsigned int
     guard: null
     attributes: []
   - name: ufromfpxf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
-      - type: IntType
-      - type: UnsignedIntType
+      - type: float
+      - type: int
+      - type: unsigned int
     guard: null
     attributes: []
   - name: ufromfpxl
-    return_type: LongDoubleType
+    return_type: long double
     arguments:
-      - type: LongDoubleType
-      - type: IntType
-      - type: UnsignedIntType
+      - type: long double
+      - type: int
+      - type: unsigned int
     guard: null
     attributes: []
   - name: ufromfpxf16
-    return_type: Float16Type
+    return_type: _Float16
     arguments:
-      - type: Float16Type
-      - type: IntType
-      - type: UnsignedIntType
+      - type: _Float16
+      - type: int
+      - type: unsigned int
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: ufromfpxf128
-    return_type: Float128Type
+    return_type: float128
     arguments:
-      - type: Float128Type
-      - type: IntType
-      - type: UnsignedIntType
+      - type: float128
+      - type: int
+      - type: unsigned int
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: hypot
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
-      - type: DoubleType
+      - type: double
+      - type: double
     guard: null
     attributes: []
   - name: hypotf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
-      - type: FloatType
+      - type: float
+      - type: float
     guard: null
     attributes: []
   - name: ilogb
-    return_type: IntType
+    return_type: int
     arguments:
-      - type: DoubleType
+      - type: double
     guard: null
     attributes: []
   - name: ilogbf
-    return_type: IntType
+    return_type: int
     arguments:
-      - type: FloatType
+      - type: float
     guard: null
     attributes: []
   - name: ilogbl
-    return_type: IntType
+    return_type: int
     arguments:
-      - type: LongDoubleType
+      - type: long double
     guard: null
     attributes: []
   - name: ilogbf16
-    return_type: IntType
+    return_type: int
     arguments:
-      - type: Float16Type
+      - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: ilogbf128
-    return_type: IntType
+    return_type: int
     arguments:
-      - type: Float128Type
+      - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: llogb
-    return_type: LongType
+    return_type: long
     arguments:
-      - type: DoubleType
+      - type: double
     guard: null
     attributes: []
   - name: llogbf
-    return_type: LongType
+    return_type: long
     arguments:
-      - type: FloatType
+      - type: float
     guard: null
     attributes: []
   - name: llogbl
-    return_type: LongType
+    return_type: long
     arguments:
-      - type: LongDoubleType
+      - type: long double
     guard: null
     attributes: []
   - name: llogbf16
-    return_type: LongType
+    return_type: long
     arguments:
-      - type: Float16Type
+      - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: llogbf128
-    return_type: LongType
+    return_type: long
     arguments:
-      - type: Float128Type
+      - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: ldexp
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
-      - type: IntType
+      - type: double
+      - type: int
     guard: null
     attributes: []
   - name: ldexpf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
-      - type: IntType
+      - type: float
+      - type: int
     guard: null
     attributes: []
   - name: ldexpl
-    return_type: LongDoubleType
+    return_type: long double
     arguments:
-      - type: LongDoubleType
-      - type: IntType
+      - type: long double
+      - type: int
     guard: null
     attributes: []
   - name: ldexpf128
-    return_type: Float128Type
-      - type: Float128Type
-      - type: IntType
+    return_type: float128
+      - type: float128
+      - type: int
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: log10
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
+      - type: double
     guard: null
     attributes: []
   - name: log10f
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
+      - type: float
     guard: null
     attributes: []
   - name: log1p
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
+      - type: double
     guard: null
     attributes: []
   - name: log1pf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
+      - type: float
     guard: null
     attributes: []
   - name: log2
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
+      - type: double
     guard: null
     attributes: []
   - name: log2f
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
+      - type: float
     guard: null
     attributes: []
   - name: log
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
+      - type: double
     guard: null
     attributes: []
   - name: logf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
+      - type: float
     guard: null
     attributes: []
   - name: logb
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
+      - type: double
     guard: null
     attributes: []
   - name: logbf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
+      - type: float
     guard: null
     attributes: []
   - name: logbl
-    return_type: LongDoubleType
+    return_type: long double
     arguments:
-      - type: LongDoubleType
+      - type: long double
     guard: null
     attributes: []
   - name: logbf16
-    return_type: Float16Type
+    return_type: _Float16
     arguments:
-      - type: Float16Type
+      - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: logbf128
-    return_type: Float128Type
+    return_type: float128
     arguments:
-      - type: Float128Type
+      - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: modf
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
-      - type: DoublePtr
+      - type: double
+      - type: double *
     guard: null
     attributes: []
   - name: modff
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
-      - type: FloatPtr
+      - type: float
+      - type: float *
     guard: null
     attributes: []
   - name: modfl
-    return_type: LongDoubleType
+    return_type: long double
     arguments:
-      - type: LongDoubleType
-      - type: LongDoublePtr
+      - type: long double
+      - type: long double *
     guard: null
     attributes: []
   - name: modff16
-    return_type: Float16Type
+    return_type: _Float16
     arguments:
-      - type: Float16Type
-      - type: Float16Ptr
+      - type: _Float16
+      - type: _Float16 *
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: modff128
-    return_type: Float128Type
+    return_type: float128
     arguments:
-      - type: Float128Type
-      - type: Float128Ptr
+      - type: float128
+      - type: float128 *
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: cos
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
+      - type: double
     guard: null
     attributes: []
   - name: cosf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
+      - type: float
     guard: null
     attributes: []
   - name: sin
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
+      - type: double
     guard: null
     attributes: []
   - name: sinf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
+      - type: float
     guard: null
     attributes: []
   - name: tan
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
+      - type: double
     guard: null
     attributes: []
   - name: tanf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
+      - type: float
     guard: null
     attributes: []
   - name: erff
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
+      - type: float
     guard: null
     attributes: []
   - name: exp
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
+      - type: double
     guard: null
     attributes: []
   - name: expf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
+      - type: float
     guard: null
     attributes: []
   - name: exp2
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
+      - type: double
     guard: null
     attributes: []
   - name: exp2f
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
+      - type: float
     guard: null
     attributes: []
   - name: exp2m1f
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
+      - type: float
     guard: null
     attributes: []
   - name: expm1
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
+      - type: double
     guard: null
     attributes: []
   - name: expm1f
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
+      - type: float
     guard: null
     attributes: []
   - name: exp10
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
+      - type: double
     guard: null
     attributes: []
   - name: exp10f
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
+      - type: float
     guard: null
     attributes: []
   - name: remainder
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
-      - type: DoubleType
+      - type: double
+      - type: double
     guard: null
     attributes: []
   - name: remainderf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
-      - type: FloatType
+      - type: float
+      - type: float
     guard: null
     attributes: []
   - name: remainderl
-    return_type: LongDoubleType
+    return_type: long double
     arguments:
-      - type: LongDoubleType
-      - type: LongDoubleType
+      - type: long double
+      - type: long double
     guard: null
     attributes: []
   - name: remainderf16
-    return_type: Float16Type
+    return_type: _Float16
     arguments:
-      - type: Float16Type
-      - type: Float16Type
+      - type: _Float16
+      - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: remquo
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
-      - type: DoubleType
-      - type: IntPtr
+      - type: double
+      - type: double
+      - type: int *
     guard: null
     attributes: []
   - name: remquof
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
-      - type: FloatType
-      - type: IntPtr
+      - type: float
+      - type: float
+      - type: int *
     guard: null
     attributes: []
   - name: remquol
-    return_type: LongDoubleType
+    return_type: long double
     arguments:
-      - type: LongDoubleType
-      - type: LongDoubleType
-      - type: IntPtr
+      - type: long double
+      - type: long double
+      - type: int *
     guard: null
     attributes: []
   - name: remquof16
-    return_type: Float16Type
+    return_type: _Float16
     arguments:
-      - type: Float16Type
-      - type: Float16Type
-      - type: IntPtr
+      - type: _Float16
+      - type: _Float16
+      - type: int *
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: remquof128
-    return_type: Float128Type
+    return_type: float128
     arguments:
-      - type: Float128Type
-      - type: Float128Type
-      - type: IntPtr
+      - type: float128
+      - type: float128
+      - type: int *
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: round
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
+      - type: double
     guard: null
     attributes: []
   - name: roundf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
+      - type: float
     guard: null
     attributes: []
   - name: roundl
-    return_type: LongDoubleType
+    return_type: long double
     arguments:
-      - type: LongDoubleType
+      - type: long double
     guard: null
     attributes: []
   - name: roundf16
-    return_type: Float16Type
+    return_type: _Float16
     arguments:
-      - type: Float16Type
+      - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
   - name: roundf128
-    return_type: Float128Type
+    return_type: float128
     arguments:
-      - type: Float128Type
+      - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
   - name: roundeven
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
+      - type: double
     guard: null
     attributes: []
   - name: roundevenf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
+      - type: float
     guard: null
     attributes: []
   - name: roundevenl
-    return_type: LongDoubleType
+    return_type: long double
     arguments:
-      - type: LongDoubleType
+      - type: long double
     guard: null
     attributes: []
   - name: roundevenf16
-    return_type: Float16Type
+    return_type: _Float16
     arguments:
-      - type: Float16Type
+      - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
   - name: roundevenf128
-    return_type: Float128Type
+    return_type: float128
     arguments:
-      - type: Float128Type
+      - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
   - name: lround
-    return_type: LongType
+    return_type: long
     arguments:
-      - type: DoubleType
+      - type: double
     guard: null
     attributes: []
   - name: lroundf
-    return_type: LongType
+    return_type: long
     arguments:
-      - type: FloatType
+      - type: float
     guard: null
     attributes: []
   - name: lroundl
-    return_type: LongType
+    return_type: long
     arguments:
-      - type: LongDoubleType
+      - type: long double
     guard: null
     attributes: []
   - name: lroundf16
-    return_type: LongType
+    return_type: long
     arguments:
-      - type: Float16Type
+      - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: lroundf128
-    return_type: LongType
+    return_type: long
     arguments:
-      - type: Float128Type
+      - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: llround
-    return_type: LongLongType
+    return_type: Longlong
     arguments:
-      - type: DoubleType
+      - type: double
     guard: null
     attributes: []
   - name: llroundf
-    return_type: LongLongType
+    return_type: Longlong
     arguments:
-      - type: FloatType
+      - type: float
     guard: null
     attributes: []
   - name: llroundl
-    return_type: LongLongType
+    return_type: Longlong
     arguments:
-      - type: LongDoubleType
+      - type: long double
     guard: null
     attributes: []
   - name: llroundf16
-    return_type: LongLongType
+    return_type: Longlong
     arguments:
-      - type: Float16Type
+      - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: llroundf128
-    return_type: LongLongType
+    return_type: Longlong
     arguments:
-      - type: Float128Type
+      - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: rint
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
+      - type: double
     guard: null
     attributes: []
   - name: rintf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
+      - type: float
     guard: null
     attributes: []
   - name: rintl
-    return_type: LongDoubleType
+    return_type: long double
     arguments:
-      - type: LongDoubleType
+      - type: long double
     guard: null
     attributes: []
   - name: rintf16
-    return_type: Float16Type
+    return_type: _Float16
     arguments:
-      - type: Float16Type
+      - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: rintf128
-    return_type: Float128Type
+    return_type: float128
     arguments:
-      - type: Float128Type
+      - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: lrint
-    return_type: LongType
+    return_type: long
     arguments:
-      - type: DoubleType
+      - type: double
     guard: null
     attributes: []
   - name: lrintf
-    return_type: LongType
+    return_type: long
     arguments:
-      - type: FloatType
+      - type: float
     guard: null
     attributes: []
   - name: lrintl
-    return_type: LongType
+    return_type: long
     arguments:
-      - type: LongDoubleType
+      - type: long double
     guard: null
     attributes: []
   - name: lrintf16
-    return_type: LongType
+    return_type: long
     arguments:
-      - type: Float16Type
+      - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: lrintf128
-    return_type: LongType
+    return_type: long
     arguments:
-      - type: Float128Type
+      - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: llrint
-    return_type: LongLongType
+    return_type: Longlong
     arguments:
-      - type: DoubleType
+      - type: double
     guard: null
     attributes: []
   - name: llrintf
-    return_type: LongLongType
+    return_type: Longlong
     arguments:
-      - type: FloatType
+      - type: float
     guard: null
     attributes: []
   - name: llrintl
-    return_type: LongLongType
+    return_type: Longlong
     arguments:
-      - type: LongDoubleType
+      - type: long double
     guard: null
     attributes: []
   - name: llrintf16
-    return_type: LongLongType
+    return_type: Longlong
     arguments:
-      - type: Float16Type
+      - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: llrintf128
-    return_type: LongLongType
+    return_type: Longlong
     arguments:
-      - type: Float128Type
+      - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: sqrt
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
+      - type: double
     guard: null
     attributes: []
   - name: sqrtf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
+      - type: float
     guard: null
     attributes: []
   - name: sqrtl
-    return_type: LongDoubleType
+    return_type: long double
     arguments:
-      - type: LongDoubleType
+      - type: long double
     guard: null
     attributes: []
   - name: sqrtf128
-    return_type: Float128Type
+    return_type: float128
     arguments:
-      - type: Float128Type
+      - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: trunc
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
+      - type: double
     guard: null
     attributes: []
   - name: truncf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
+      - type: float
     guard: null
     attributes: []
   - name: truncl
-    return_type: LongDoubleType
+    return_type: long double
     arguments:
-      - type: LongDoubleType
+      - type: long double
     guard: null
     attributes: []
   - name: truncf16
-    return_type: Float16Type
+    return_type: _Float16
     arguments:
-      - type: Float16Type
+      - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: truncf128
-    return_type: Float128Type
+    return_type: float128
     arguments:
-      - type: Float128Type
+      - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: nearbyint
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
+      - type: double
     guard: null
     attributes: []
   - name: nearbyintf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
+      - type: float
     guard: null
     attributes: []
   - name: nearbyintl
-    return_type: LongDoubleType
+    return_type: long double
     arguments:
-      - type: LongDoubleType
+      - type: long double
     guard: null
     attributes: []
   - name: nearbyintf16
-    return_type: Float16Type
+    return_type: _Float16
     arguments:
-      - type: Float16Type
+      - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: nearbyintf128
-    return_type: Float128Type
+    return_type: float128
     arguments:
-      - type: Float128Type
+      - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: nextafterf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
-      - type: FloatType
+      - type: float
+      - type: float
     guard: null
     attributes: []
   - name: nextafter
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
-      - type: DoubleType
+      - type: double
+      - type: double
     guard: null
     attributes: []
   - name: nextafterl
-    return_type: LongDoubleType
+    return_type: long double
     arguments:
-      - type: LongDoubleType
-      - type: LongDoubleType
+      - type: long double
+      - type: long double
     guard: null
     attributes: []
   - name: nextafterf16
-    return_type: Float16Type
+    return_type: _Float16
     arguments:
-      - type: Float16Type
-      - type: Float16Type
+      - type: _Float16
+      - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: nextafterf128
-    return_type: Float128Type
+    return_type: float128
     arguments:
-      - type: Float128Type
-      - type: Float128Type
+      - type: float128
+      - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
   - name: nexttowardf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
-      - type: LongDoubleType
+      - type: float
+      - type: long double
     guard: null
     attributes: []
   - name: nexttoward
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
-      - type: LongDoubleType
+      - type: double
+      - type: long double
     guard: null
     attributes: []
   - name: nexttowardl
-    return_type: LongDoubleType
+    return_type: long double
     arguments:
-      - type: LongDoubleType
-      - type: LongDoubleType
+      - type: long double
+      - type: long double
     guard: null
     attributes: []
   - name: nexttowardf16
-    return_type: Float16Type
+    return_type: _Float16
     arguments:
-      - type: Float16Type
-      - type: Float16Type
+      - type: _Float16
+      - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
   - name: nextdown
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
+      - type: double
     guard: null
     attributes: []
   - name: nextdownf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
+      - type: float
     guard: null
     attributes: []
   - name: nextdownl
-    return_type: LongDoubleType
+    return_type: long double
     arguments:
-      - type: LongDoubleType
+      - type: long double
     guard: null
     attributes: []
   - name: nextdownf16
-    return_type: Float16Type
+    return_type: _Float16
     arguments:
-      - type: Float16Type
+      - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: nextdownf128
-    return_type: Float128Type
+    return_type: float128
     arguments:
-      - type: Float128Type
+      - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: nextup
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
+      - type: double
     guard: null
     attributes: []
   - name: nextupf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
+      - type: float
     guard: null
     attributes: []
   - name: nextupl
-    return_type: LongDoubleType
+    return_type: long double
     arguments:
-      - type: LongDoubleType
+      - type: long double
     guard: null
     attributes: []
   - name: nextupf16
-    return_type: Float16Type
+    return_type: _Float16
     arguments:
-      - type: Float16Type
+      - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: nextupf128
-    return_type: Float128Type
-    arguments: Floast128Type
+    return_type: float128
+    arguments: floast128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: powf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
-      - type: FloatType
+      - type: float
+      - type: float
     guard: null
     attributes: []
   - name: pow
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
-      - type: DoubleType
+      - type: double
+      - type: double
     guard: null
     attributes: []
   - name: coshf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
+      - type: float
     guard: null
     attributes: []
   - name: sinhf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
+      - type: float
     guard: null
     attributes: []
   - name: tanhf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
+      - type: float
     guard: null
     attributes: []
   - name: acosf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
+      - type: float
     guard: null
     attributes: []
   - name: asinf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
+      - type: float
     guard: null
     attributes: []
   - name: asin
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
+      - type: double
     guard: null
     attributes: []
   - name: atanf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
+      - type: float
     guard: null
     attributes: []
   - name: atan2f
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
-      - type: FloatType
+      - type: float
+      - type: float
     guard: null
     attributes: []
   - name: acoshf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
+      - type: float
     guard: null
     attributes: []
   - name: asinhf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
+      - type: float
     guard: null
     attributes: []
   - name: atanhf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
+      - type: float
     guard: null
     attributes: []
   - name: scalbn
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: DoubleType
-      - type: IntType
+      - type: double
+      - type: int
     guard: null
     attributes: []
   - name: scalbnf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: FloatType
-      - type: IntType
+      - type: float
+      - type: int
     guard: null
     attributes: []
   - name: scalbnl
-    return_type: LongDoubleType
+    return_type: long double
     arguments:
-      - type: LongDoubleType
-      - type: IntType
+      - type: long double
+      - type: int
     guard: null
     attributes: []
   - name: scalbnf128
-    return_type: Float128Type
+    return_type: float128
     arguments:
-      - type: Float128Type
-      - type: IntType
+      - type: float128
+      - type: int
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: nanf
-    return_type: FloatType
+    return_type: float
     arguments:
-      - type: ConstCharPtr
+      - type: const char *
     guard: null
     attributes: []
   - name: nan
-    return_type: DoubleType
+    return_type: double
     arguments:
-      - type: ConstCharPtr
+      - type: const char *
     guard: null
     attributes: []
   - name: nanl
-    return_type: LongDoubleType
+    return_type: long double
     arguments:
-      - type: ConstCharPtr
+      - type: const char *
     guard: null
     attributes: []
   - name: nanf16
-    return_type: Float16Type
+    return_type: _Float16
     arguments:
-      - type: ConstCharPtr
+      - type: const char *
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: nanf128
-    return_type: Float128Type
+    return_type: float128
     arguments:
-      - type: ConstCharPtr
+      - type: const char *
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: canonicalize
-    return_type: IntType
+    return_type: int
     arguments:
-      - type: DoubleType
-      - type: DoubleType
+      - type: double
+      - type: double
     guard: null
     attributes: []
   - name: canonicalizef
-    return_type: IntType
+    return_type: int
     arguments:
-      - type: FloatType
-      - type: FloatType
+      - type: float
+      - type: float
     guard: null
     attributes: []
   - name: canonicalizel
-    return_type: IntType
+    return_type: int
     arguments:
-      - type: LongDoubleType
-      - type: LongDoubleType
+      - type: long double
+      - type: long double
     guard: null
     attributes: []
   - name: canonicalizef16
-    return_type: IntType
+    return_type: int
     arguments:
-      - type: Float16Type
-      - type: Float16Type
+      - type: _Float16
+      - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: canonicalizef128
-    return_type: IntType
+    return_type: int
     arguments:
-      - type: Float128Type
-      - type: Float128Type
+      - type: float128
+      - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
   - name: totalorderf16
-    return_type: IntType
+    return_type: int
     arguments:
-      - type: Float16Ptr
-      - type: Float16Ptr
+      - type: _Float16 *
+      - type: _Float16 *
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: totalordermagf16
-    return_type: IntType
+    return_type: int
     arguments:
-      - type: Float16Ptr
-      - type: Float16Ptr
+      - type: _Float16 *
+      - type: _Float16 *
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: f16sqrtf
-    return_type: Float16Type
+    return_type: _Float16
     arguments:
-      - type: FloatType
+      - type: float
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
