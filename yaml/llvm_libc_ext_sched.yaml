@@ -1,0 +1,17 @@
+header: sched.h # not actually a file?
+standard: llvm_libc_ext
+macros: []
+types:
+  - type_name: pid_t
+  - type_name: size_t
+  - type_name: cpu_set_t
+enums: []
+objects: []
+functions:
+# actual function header file is just sched_getcpucount.h,
+# but the function in the header file is still __sched_getcpucount
+  - name: __sched_getcpucount
+    return_type: int
+    arguments:
+      - type: size_t
+      - type: const cpu_set_t *

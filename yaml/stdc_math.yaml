@@ -7,7 +7,7 @@ types:
   - type_name: float128
 enums: []
 objects: []
-functions:
+functions: # math.h file has alphabetical order
   - name: copysign
     return_type: double
     arguments:

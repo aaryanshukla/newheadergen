@@ -1,0 +1,30 @@
+header: strings.h
+standard: llvm_libc_ext
+macros: []
+types: []
+enums: []
+objects: []
+functions:
+  - name: bcopy
+    return_type: void
+    arguments:
+      - type: const void *
+      - type: void *
+      - type: size_t
+    guard: null
+    attributes: []
+  - name: bzero
+    return_type: void
+    arguments:
+      - type: void *
+      - type: size_t
+    guard: null
+    attributes: []
+  - name: bcmp
+    return_type: int
+    arguments:
+      - type: const void *
+      - type: const void *
+      - type: size_t
+    guard: null
+    attributes: []
