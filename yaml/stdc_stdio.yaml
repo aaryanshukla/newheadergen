@@ -17,12 +17,12 @@ types:
   - type_name: FILE
 enums: []
 objects:
-  - field_1: stdin
-    field_2: FILE *
-  - field_1: stdout
-    field_2: FILE *
-  - field_1: stderr
-    field_2: FILE *
+  - object_name: stdin
+    object_type: FILE *
+  - object_name: stdout
+    object_type: FILE *
+  - object_name: stderr
+    object_type: FILE *
 functions:
   - name: remove
     standard: stdc
