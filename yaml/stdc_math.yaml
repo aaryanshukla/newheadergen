@@ -1,5 +1,4 @@
 header: math.h
-standard: stdc
 macros: []
 types:
   - type_name: float_t
@@ -7,8 +6,9 @@ types:
   - type_name: float128
 enums: []
 objects: []
-functions: # math.h file has alphabetical order
+functions:
   - name: copysign
+    standard: stdc
     return_type: double
     arguments:
       - type: double
@@ -16,6 +16,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: copysignf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
@@ -23,6 +24,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: copysignl
+    standard: stdc
     return_type: long double
     arguments:
       - type: long double
@@ -30,6 +32,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: copysignf16
+    standard: stdc
     return_type: _Float16
     arguments:
       - type: _Float16
@@ -37,6 +40,7 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: copysignf128
+    standard: stdc
     return_type: float128
     arguments:
       - type: float128
@@ -44,36 +48,42 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: ceil
+    standard: stdc
     return_type: double
     arguments:
       - type: double
     guard: null
     attributes: []
   - name: ceilf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
     guard: null
     attributes: []
   - name: ceill
+    standard: stdc
     return_type: long double
     arguments:
       - type: long double
     guard: null
     attributes: []
   - name: ceilf16
+    standard: stdc
     return_type: _Float16
     arguments:
       - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: ceilf128
+    standard: stdc
     return_type: float128
     arguments:
       - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: fabs
+    standard: stdc
     return_type: double
     arguments:
       - type: double
@@ -81,30 +91,35 @@ functions: # math.h file has alphabetical order
       - name: __LIBC_CONST_ATTR
     guard: null
   - name: fabsf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
     guard: null
     attributes: []
   - name: fabsl
+    standard: stdc
     return_type: long double
     arguments:
       - type: long double
     guard: null
     attributes: []
   - name: fabsf16
+    standard: stdc
     return_type: _Float16
     arguments:
       - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: fabsf128
+    standard: stdc
     return_type: float128
     arguments:
       - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: fdim
+    standard: stdc
     return_type: double
     arguments:
       - type: double
@@ -112,6 +127,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fdimf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
@@ -119,6 +135,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fdiml
+    standard: stdc
     return_type: long double
     arguments:
       - type: long double
@@ -126,6 +143,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fdimf16
+    standard: stdc
     return_type: _Float16
     arguments:
       - type: _Float16
@@ -133,6 +151,7 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: fdimf128
+    standard: stdc
     return_type: float128
     arguments:
       - type: float128
@@ -140,36 +159,42 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: floor
+    standard: stdc
     return_type: double
     arguments:
       - type: double
     guard: null
     attributes: []
   - name: floorf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
     guard: null
     attributes: []
   - name: floorl
+    standard: stdc
     return_type: long double
     arguments:
       - type: long double
     guard: null
     attributes: []
   - name: floorf16
+    standard: stdc
     return_type: _Float16
     arguments:
       - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: floorf128
+    standard: stdc
     return_type: float128
     arguments:
       - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: fmin
+    standard: stdc
     return_type: double
     arguments:
       - type: double
@@ -177,6 +202,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fminf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
@@ -184,6 +210,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fminl
+    standard: stdc
     return_type: long double
     arguments:
       - type: long double
@@ -191,6 +218,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fminf16
+    standard: stdc
     return_type: _Float16
     arguments:
       - type: _Float16
@@ -198,6 +226,7 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: fminf128
+    standard: stdc
     return_type: float128
     arguments:
       - type: float128
@@ -205,6 +234,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fmax
+    standard: stdc
     return_type: double
     arguments:
       - type: double
@@ -212,6 +242,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fmaxf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
@@ -219,6 +250,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fmaxl
+    standard: stdc
     return_type: long double
     arguments:
       - type: long double
@@ -226,6 +258,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fmaxf16
+    standard: stdc
     return_type: _Float16
     arguments:
       - type: _Float16
@@ -233,6 +266,7 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: fmaxf128
+    standard: stdc
     return_type: float128
     arguments:
       - type: float128
@@ -240,6 +274,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fmaximum
+    standard: stdc
     return_type: double
     arguments:
       - type: double
@@ -247,6 +282,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fmaximumf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
@@ -254,6 +290,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fmaximuml
+    standard: stdc
     return_type: long double
     arguments:
       - type: long double
@@ -261,6 +298,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fmaximumf16
+    standard: stdc
     return_type: _Float16
     arguments:
       - type: _Float16
@@ -268,6 +306,7 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: fmaximumf128
+    standard: stdc
     return_type: float128
     arguments:
       - type: float128
@@ -275,6 +314,7 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: fmaximum_num
+    standard: stdc
     return_type: double
     arguments:
       - type: double
@@ -282,6 +322,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fmaximum_numf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
@@ -289,6 +330,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fmaximum_numl
+    standard: stdc
     return_type: long double
     arguments:
       - type: long double
@@ -296,6 +338,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fmaximum_numf16
+    standard: stdc
     return_type: _Float16
     arguments:
       - type: _Float16
@@ -303,6 +346,7 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: fmaximum_numf128
+    standard: stdc
     return_type: float128
     arguments:
       - type: float128
@@ -310,6 +354,7 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: fmaximum_mag
+    standard: stdc
     return_type: double
     arguments:
       - type: double
@@ -317,6 +362,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fmaximum_magf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
@@ -324,6 +370,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fmaximum_magl
+    standard: stdc
     return_type: long double
     arguments:
       - type: long double
@@ -331,6 +378,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fmaximum_magf16
+    standard: stdc
     return_type: _Float16
     arguments:
       - type: _Float16
@@ -338,6 +386,7 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: fmaximum_magf128
+    standard: stdc
     return_type: float128
     arguments:
       - type: float128
@@ -345,6 +394,7 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: fmaximum_mag_num
+    standard: stdc
     return_type: double
     arguments:
       - type: double
@@ -352,6 +402,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fmaximum_mag_numf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
@@ -359,6 +410,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fmaximum_mag_numl
+    standard: stdc
     return_type: long double
     arguments:
       - type: long double
@@ -366,6 +418,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fmaximum_mag_numf16
+    standard: stdc
     return_type: _Float16
     arguments:
       - type: _Float16
@@ -373,6 +426,7 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: fmaximum_mag_numf128
+    standard: stdc
     return_type: float128
     arguments:
       - type: float128
@@ -380,6 +434,7 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: fminimum
+    standard: stdc
     return_type: double
     arguments:
       - type: double
@@ -387,6 +442,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fminimumf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
@@ -394,6 +450,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fminimuml
+    standard: stdc
     return_type: long double
     arguments:
       - type: long double
@@ -401,6 +458,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fminimumf16
+    standard: stdc
     return_type: _Float16
     arguments:
       - type: _Float16
@@ -408,6 +466,7 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: fminimumf128
+    standard: stdc
     return_type: float128
     arguments:
       - type: float128
@@ -415,6 +474,7 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: fminimum_num
+    standard: stdc
     return_type: double
     arguments:
       - type: double
@@ -422,13 +482,15 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fminimum_numf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
       - type: float
     guard: null
     attributes: []
-  - name: fmaximum_numl
+  - name: fminimum_numl
+    standard: stdc
     return_type: long double
     arguments:
       - type: long double
@@ -436,6 +498,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fminimum_numf16
+    standard: stdc
     return_type: _Float16
     arguments:
       - type: _Float16
@@ -443,6 +506,7 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: fminimum_numf128
+    standard: stdc
     return_type: float128
     arguments:
       - type: float128
@@ -450,6 +514,7 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: fminimum_mag
+    standard: stdc
     return_type: double
     arguments:
       - type: double
@@ -457,6 +522,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fminimum_magf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
@@ -464,6 +530,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fminimum_magl
+    standard: stdc
     return_type: long double
     arguments:
       - type: long double
@@ -471,6 +538,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fminimum_magf16
+    standard: stdc
     return_type: _Float16
     arguments:
       - type: _Float16
@@ -478,6 +546,7 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: fminimum_magf128
+    standard: stdc
     return_type: float128
     arguments:
       - type: float128
@@ -485,6 +554,7 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: fminimum_mag_num
+    standard: stdc
     return_type: double
     arguments:
       - type: double
@@ -492,6 +562,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fminimum_mag_numf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
@@ -499,6 +570,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fminimum_mag_numl
+    standard: stdc
     return_type: long double
     arguments:
       - type: long double
@@ -506,6 +578,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fminimum_mag_numf16
+    standard: stdc
     return_type: _Float16
     arguments:
       - type: _Float16
@@ -513,6 +586,7 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: fminimum_mag_numf128
+    standard: stdc
     return_type: float128
     arguments:
       - type: float128
@@ -520,6 +594,7 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: fma
+    standard: stdc
     return_type: double
     arguments:
       - type: double
@@ -528,6 +603,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fmaf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
@@ -536,6 +612,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: f16fmaf
+    standard: stdc
     return_type: _Float16
     arguments:
       - type: float
@@ -544,6 +621,7 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: fmod
+    standard: stdc
     return_type: double
     arguments:
       - type: double
@@ -551,6 +629,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fmodf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
@@ -558,6 +637,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fmodl
+    standard: stdc
     return_type: long double
     arguments:
       - type: long double
@@ -565,6 +645,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fmodf16
+    standard: stdc
     return_type: _Float16
     arguments:
       - type: _Float16
@@ -572,6 +653,7 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: fmodf128
+    standard: stdc
     return_type: float128
     arguments:
       - type: float128
@@ -579,6 +661,7 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: frexp
+    standard: stdc
     return_type: double
     arguments:
       - type: double
@@ -586,6 +669,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: frexpf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
@@ -593,6 +677,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: frexpl
+    standard: stdc
     return_type: long double
     arguments:
       - type: long double
@@ -600,6 +685,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: frexpf16
+    standard: stdc
     return_type: _Float16
     arguments:
       - type: _Float16
@@ -607,6 +693,7 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: frexpf128
+    standard: stdc
     return_type: float128
     arguments:
       - type: float128
@@ -614,6 +701,7 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: fromfp
+    standard: stdc
     return_type: double
     arguments:
       - type: double
@@ -622,6 +710,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fromfpf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
@@ -630,6 +719,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fromfpl
+    standard: stdc
     return_type: long double
     arguments:
       - type: long double
@@ -638,6 +728,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fromfpf16
+    standard: stdc
     return_type: _Float16
     arguments:
       - type: _Float16
@@ -646,6 +737,7 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: fromfpf128
+    standard: stdc
     return_type: float128
     arguments:
       - type: float128
@@ -654,6 +746,7 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: fromfpx
+    standard: stdc
     return_type: double
     arguments:
       - type: double
@@ -662,6 +755,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fromfpxf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
@@ -670,6 +764,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fromfpxl
+    standard: stdc
     return_type: long double
     arguments:
       - type: long double
@@ -678,6 +773,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: fromfpxf16
+    standard: stdc
     return_type: _Float16
     arguments:
       - type: _Float16
@@ -686,6 +782,7 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: fromfpxf128
+    standard: stdc
     return_type: float128
     arguments:
       - type: float128
@@ -694,6 +791,7 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: ufromfp
+    standard: stdc
     return_type: double
     arguments:
       - type: double
@@ -702,6 +800,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: ufromfpf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
@@ -710,6 +809,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: ufromfpl
+    standard: stdc
     return_type: long double
     arguments:
       - type: long double
@@ -718,6 +818,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: ufromfpf16
+    standard: stdc
     return_type: _Float16
     arguments:
       - type: _Float16
@@ -726,6 +827,7 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: ufromfpf128
+    standard: stdc
     return_type: float128
     arguments:
       - type: float128
@@ -734,6 +836,7 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: ufromfpx
+    standard: stdc
     return_type: double
     arguments:
       - type: double
@@ -742,6 +845,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: ufromfpxf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
@@ -750,6 +854,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: ufromfpxl
+    standard: stdc
     return_type: long double
     arguments:
       - type: long double
@@ -758,6 +863,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: ufromfpxf16
+    standard: stdc
     return_type: _Float16
     arguments:
       - type: _Float16
@@ -766,6 +872,7 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: ufromfpxf128
+    standard: stdc
     return_type: float128
     arguments:
       - type: float128
@@ -774,6 +881,7 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: hypot
+    standard: stdc
     return_type: double
     arguments:
       - type: double
@@ -781,6 +889,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: hypotf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
@@ -788,66 +897,77 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: ilogb
+    standard: stdc
     return_type: int
     arguments:
       - type: double
     guard: null
     attributes: []
   - name: ilogbf
+    standard: stdc
     return_type: int
     arguments:
       - type: float
     guard: null
     attributes: []
   - name: ilogbl
+    standard: stdc
     return_type: int
     arguments:
       - type: long double
     guard: null
     attributes: []
   - name: ilogbf16
+    standard: stdc
     return_type: int
     arguments:
       - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: ilogbf128
+    standard: stdc
     return_type: int
     arguments:
       - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: llogb
+    standard: stdc
     return_type: long
     arguments:
       - type: double
     guard: null
     attributes: []
   - name: llogbf
+    standard: stdc
     return_type: long
     arguments:
       - type: float
     guard: null
     attributes: []
   - name: llogbl
+    standard: stdc
     return_type: long
     arguments:
       - type: long double
     guard: null
     attributes: []
   - name: llogbf16
+    standard: stdc
     return_type: long
     arguments:
       - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: llogbf128
+    standard: stdc
     return_type: long
     arguments:
       - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: ldexp
+    standard: stdc
     return_type: double
     arguments:
       - type: double
@@ -855,6 +975,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: ldexpf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
@@ -862,6 +983,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: ldexpl
+    standard: stdc
     return_type: long double
     arguments:
       - type: long double
@@ -869,6 +991,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: ldexpf128
+    standard: stdc
     return_type: float128
     arguments:
       - type: float128
@@ -876,84 +999,126 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: log10
+    standard: stdc
     return_type: double
     arguments:
       - type: double
     guard: null
     attributes: []
   - name: log10f
+    standard: stdc
     return_type: float
     arguments:
       - type: float
     guard: null
     attributes: []
   - name: log1p
+    standard: stdc
     return_type: double
     arguments:
       - type: double
     guard: null
     attributes: []
   - name: log1pf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
     guard: null
     attributes: []
   - name: log2
+    standard: stdc
     return_type: double
     arguments:
       - type: double
     guard: null
     attributes: []
   - name: log2f
+    standard: stdc
     return_type: float
     arguments:
       - type: float
     guard: null
     attributes: []
-  - name: log
+   - name: log
+    standard: stdc
     return_type: double
     arguments:
       - type: double
     guard: null
     attributes: []
   - name: logf
+    standard: stdc
+    return_type: float
+    arguments:
+      - type: float
+    guard: null
+    attributes: []
+  - name: log1p
+    standard: stdc
+    return_type: double
+    arguments:
+      - type: double
+    guard: null
+    attributes: []
+  - name: log1pf
+    standard: stdc
+    return_type: float
+    arguments:
+      - type: float
+    guard: null
+    attributes: []
+  - name: log2
+    standard: stdc
+    return_type: double
+    arguments:
+      - type: double
+    guard: null
+    attributes: []
+  - name: log2f
+    standard: stdc
     return_type: float
     arguments:
       - type: float
     guard: null
     attributes: []
   - name: logb
+    standard: stdc
     return_type: double
     arguments:
       - type: double
     guard: null
     attributes: []
   - name: logbf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
     guard: null
     attributes: []
   - name: logbl
+    standard: stdc
     return_type: long double
     arguments:
       - type: long double
     guard: null
     attributes: []
   - name: logbf16
+    standard: stdc
     return_type: _Float16
     arguments:
       - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: logbf128
+    standard: stdc
     return_type: float128
     arguments:
       - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: modf
+    standard: stdc
     return_type: double
     arguments:
       - type: double
@@ -961,6 +1126,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: modff
+    standard: stdc
     return_type: float
     arguments:
       - type: float
@@ -968,6 +1134,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: modfl
+    standard: stdc
     return_type: long double
     arguments:
       - type: long double
@@ -975,6 +1142,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: modff16
+    standard: stdc
     return_type: _Float16
     arguments:
       - type: _Float16
@@ -982,6 +1150,7 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: modff128
+    standard: stdc
     return_type: float128
     arguments:
       - type: float128
@@ -989,111 +1158,128 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: cos
+    standard: stdc
     return_type: double
     arguments:
       - type: double
     guard: null
     attributes: []
   - name: cosf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
     guard: null
     attributes: []
   - name: sin
+    standard: stdc
     return_type: double
     arguments:
       - type: double
     guard: null
     attributes: []
-  #this function is part of gnu extensions
   - name: sincosf
-    return type: void 
-    arugments: 
-    - type: float
-    - type: float *
-    - type: float *
+    standard: gnu
+    return_type: void
+    arguments:
+      - type: float
+      - type: float *
+      - type: float *
     guard: null
     attributes: []
   - name: sinf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
     guard: null
     attributes: []
   - name: tan
+    standard: stdc
     return_type: double
     arguments:
       - type: double
     guard: null
     attributes: []
   - name: tanf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
     guard: null
     attributes: []
   - name: erff
+    standard: stdc
     return_type: float
     arguments:
       - type: float
     guard: null
     attributes: []
   - name: exp
+    standard: stdc
     return_type: double
     arguments:
       - type: double
     guard: null
     attributes: []
   - name: expf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
     guard: null
     attributes: []
   - name: exp2
+    standard: stdc
     return_type: double
     arguments:
       - type: double
     guard: null
     attributes: []
   - name: exp2f
+    standard: stdc
     return_type: float
     arguments:
       - type: float
     guard: null
     attributes: []
   - name: exp2m1f
+    standard: stdc
     return_type: float
     arguments:
       - type: float
     guard: null
     attributes: []
   - name: expm1
+    standard: stdc
     return_type: double
     arguments:
       - type: double
     guard: null
     attributes: []
   - name: expm1f
+    standard: stdc
     return_type: float
     arguments:
       - type: float
     guard: null
     attributes: []
   - name: exp10
+    standard: stdc
     return_type: double
     arguments:
       - type: double
     guard: null
     attributes: []
   - name: exp10f
+    standard: stdc
     return_type: float
     arguments:
       - type: float
     guard: null
     attributes: []
   - name: remainder
+    standard: stdc
     return_type: double
     arguments:
       - type: double
@@ -1101,6 +1287,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: remainderf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
@@ -1108,6 +1295,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: remainderl
+    standard: stdc
     return_type: long double
     arguments:
       - type: long double
@@ -1115,6 +1303,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: remainderf16
+    standard: stdc
     return_type: _Float16
     arguments:
       - type: _Float16
@@ -1122,6 +1311,7 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: remquo
+    standard: stdc
     return_type: double
     arguments:
       - type: double
@@ -1130,6 +1320,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: remquof
+    standard: stdc
     return_type: float
     arguments:
       - type: float
@@ -1138,6 +1329,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: remquol
+    standard: stdc
     return_type: long double
     arguments:
       - type: long double
@@ -1146,6 +1338,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: remquof16
+    standard: stdc
     return_type: _Float16
     arguments:
       - type: _Float16
@@ -1154,6 +1347,7 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: remquof128
+    standard: stdc
     return_type: float128
     arguments:
       - type: float128
@@ -1162,296 +1356,348 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: round
+    standard: stdc
     return_type: double
     arguments:
       - type: double
     guard: null
     attributes: []
   - name: roundf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
     guard: null
     attributes: []
   - name: roundl
+    standard: stdc
     return_type: long double
     arguments:
       - type: long double
     guard: null
     attributes: []
   - name: roundf16
+    standard: stdc
     return_type: _Float16
     arguments:
       - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
+    attributes: []
   - name: roundf128
+    standard: stdc
     return_type: float128
     arguments:
       - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
+    attributes: []
   - name: roundeven
+    standard: stdc
     return_type: double
     arguments:
       - type: double
     guard: null
     attributes: []
   - name: roundevenf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
     guard: null
     attributes: []
   - name: roundevenl
+    standard: stdc
     return_type: long double
     arguments:
       - type: long double
     guard: null
     attributes: []
   - name: roundevenf16
+    standard: stdc
     return_type: _Float16
     arguments:
       - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
   - name: roundevenf128
+    standard: stdc
     return_type: float128
     arguments:
       - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
   - name: lround
+    standard: stdc
     return_type: long
     arguments:
       - type: double
     guard: null
     attributes: []
   - name: lroundf
+    standard: stdc
     return_type: long
     arguments:
       - type: float
     guard: null
     attributes: []
   - name: lroundl
+    standard: stdc
     return_type: long
     arguments:
       - type: long double
     guard: null
     attributes: []
   - name: lroundf16
+    standard: stdc
     return_type: long
     arguments:
       - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: lroundf128
+    standard: stdc
     return_type: long
     arguments:
       - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: llround
+    standard: stdc
     return_type: Longlong
     arguments:
       - type: double
     guard: null
     attributes: []
   - name: llroundf
+    standard: stdc
     return_type: Longlong
     arguments:
       - type: float
     guard: null
     attributes: []
   - name: llroundl
+    standard: stdc
     return_type: Longlong
     arguments:
       - type: long double
     guard: null
     attributes: []
   - name: llroundf16
+    standard: stdc
     return_type: Longlong
     arguments:
       - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: llroundf128
+    standard: stdc
     return_type: Longlong
     arguments:
       - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: rint
+    standard: stdc
     return_type: double
     arguments:
       - type: double
     guard: null
     attributes: []
   - name: rintf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
     guard: null
     attributes: []
   - name: rintl
+    standard: stdc
     return_type: long double
     arguments:
       - type: long double
     guard: null
     attributes: []
   - name: rintf16
+    standard: stdc
     return_type: _Float16
     arguments:
       - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: rintf128
+    standard: stdc
     return_type: float128
     arguments:
       - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: lrint
+    standard: stdc
     return_type: long
     arguments:
       - type: double
     guard: null
     attributes: []
   - name: lrintf
+    standard: stdc
     return_type: long
     arguments:
       - type: float
     guard: null
     attributes: []
   - name: lrintl
+    standard: stdc
     return_type: long
     arguments:
       - type: long double
     guard: null
     attributes: []
   - name: lrintf16
+    standard: stdc
     return_type: long
     arguments:
       - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: lrintf128
+    standard: stdc
     return_type: long
     arguments:
       - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: llrint
+    standard: stdc
     return_type: Longlong
     arguments:
       - type: double
     guard: null
     attributes: []
   - name: llrintf
+    standard: stdc
     return_type: Longlong
     arguments:
       - type: float
     guard: null
     attributes: []
   - name: llrintl
+    standard: stdc
     return_type: Longlong
     arguments:
       - type: long double
     guard: null
     attributes: []
   - name: llrintf16
+    standard: stdc
     return_type: Longlong
     arguments:
       - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: llrintf128
+    standard: stdc
     return_type: Longlong
     arguments:
       - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: sqrt
+    standard: stdc
     return_type: double
     arguments:
       - type: double
     guard: null
     attributes: []
   - name: sqrtf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
     guard: null
     attributes: []
   - name: sqrtl
+    standard: stdc
     return_type: long double
     arguments:
       - type: long double
     guard: null
     attributes: []
   - name: sqrtf128
+    standard: stdc
     return_type: float128
     arguments:
       - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: trunc
+    standard: stdc
     return_type: double
     arguments:
       - type: double
     guard: null
     attributes: []
   - name: truncf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
     guard: null
     attributes: []
   - name: truncl
+    standard: stdc
     return_type: long double
     arguments:
       - type: long double
     guard: null
     attributes: []
   - name: truncf16
+    standard: stdc
     return_type: _Float16
     arguments:
       - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: truncf128
+    standard: stdc
     return_type: float128
     arguments:
       - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: nearbyint
+    standard: stdc
     return_type: double
     arguments:
       - type: double
     guard: null
     attributes: []
   - name: nearbyintf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
     guard: null
     attributes: []
   - name: nearbyintl
+    standard: stdc
     return_type: long double
     arguments:
       - type: long double
     guard: null
     attributes: []
   - name: nearbyintf16
+    standard: stdc
     return_type: _Float16
     arguments:
       - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: nearbyintf128
+    standard: stdc
     return_type: float128
     arguments:
       - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: nextafterf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
@@ -1459,6 +1705,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: nextafter
+    standard: stdc
     return_type: double
     arguments:
       - type: double
@@ -1466,6 +1713,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: nextafterl
+    standard: stdc
     return_type: long double
     arguments:
       - type: long double
@@ -1473,6 +1721,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: nextafterf16
+    standard: stdc
     return_type: _Float16
     arguments:
       - type: _Float16
@@ -1480,12 +1729,14 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: nextafterf128
+    standard: stdc
     return_type: float128
     arguments:
       - type: float128
       - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
   - name: nexttowardf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
@@ -1493,6 +1744,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: nexttoward
+    standard: stdc
     return_type: double
     arguments:
       - type: double
@@ -1500,6 +1752,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: nexttowardl
+    standard: stdc
     return_type: long double
     arguments:
       - type: long double
@@ -1507,71 +1760,84 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: nexttowardf16
+    standard: stdc
     return_type: _Float16
     arguments:
       - type: _Float16
       - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
   - name: nextdown
+    standard: stdc
     return_type: double
     arguments:
       - type: double
     guard: null
     attributes: []
   - name: nextdownf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
     guard: null
     attributes: []
   - name: nextdownl
+    standard: stdc
     return_type: long double
     arguments:
       - type: long double
     guard: null
     attributes: []
   - name: nextdownf16
+    standard: stdc
     return_type: _Float16
     arguments:
       - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: nextdownf128
+    standard: stdc
     return_type: float128
     arguments:
       - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: nextup
+    standard: stdc
     return_type: double
     arguments:
       - type: double
     guard: null
     attributes: []
   - name: nextupf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
     guard: null
     attributes: []
   - name: nextupl
+    standard: stdc
     return_type: long double
     arguments:
       - type: long double
     guard: null
     attributes: []
   - name: nextupf16
+    standard: stdc
     return_type: _Float16
     arguments:
       - type: _Float16
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: nextupf128
+    standard: stdc
     return_type: float128
-    arguments: floast128
+    arguments:
+      - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: powf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
@@ -1579,6 +1845,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: pow
+    standard: stdc
     return_type: double
     arguments:
       - type: double
@@ -1586,48 +1853,56 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: coshf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
     guard: null
     attributes: []
   - name: sinhf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
     guard: null
     attributes: []
   - name: tanhf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
     guard: null
     attributes: []
   - name: acosf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
     guard: null
     attributes: []
   - name: asinf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
     guard: null
     attributes: []
   - name: asin
+    standard: stdc
     return_type: double
     arguments:
       - type: double
     guard: null
     attributes: []
   - name: atanf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
     guard: null
     attributes: []
   - name: atan2f
+    standard: stdc
     return_type: float
     arguments:
       - type: float
@@ -1635,24 +1910,28 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: acoshf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
     guard: null
     attributes: []
   - name: asinhf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
     guard: null
     attributes: []
   - name: atanhf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
     guard: null
     attributes: []
   - name: scalbn
+    standard: stdc
     return_type: double
     arguments:
       - type: double
@@ -1660,6 +1939,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: scalbnf
+    standard: stdc
     return_type: float
     arguments:
       - type: float
@@ -1667,6 +1947,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: scalbnl
+    standard: stdc
     return_type: long double
     arguments:
       - type: long double
@@ -1674,6 +1955,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: scalbnf128
+    standard: stdc
     return_type: float128
     arguments:
       - type: float128
@@ -1681,36 +1963,42 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: nanf
+    standard: stdc
     return_type: float
     arguments:
       - type: const char *
     guard: null
     attributes: []
   - name: nan
+    standard: stdc
     return_type: double
     arguments:
       - type: const char *
     guard: null
     attributes: []
   - name: nanl
+    standard: stdc
     return_type: long double
     arguments:
       - type: const char *
     guard: null
     attributes: []
   - name: nanf16
+    standard: stdc
     return_type: _Float16
     arguments:
       - type: const char *
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: nanf128
+    standard: stdc
     return_type: float128
     arguments:
       - type: const char *
     guard: LIBC_TYPES_HAS_FLOAT128
     attributes: []
   - name: canonicalize
+    standard: stdc
     return_type: int
     arguments:
       - type: double
@@ -1718,6 +2006,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: canonicalizef
+    standard: stdc
     return_type: int
     arguments:
       - type: float
@@ -1725,6 +2014,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: canonicalizel
+    standard: stdc
     return_type: int
     arguments:
       - type: long double
@@ -1732,6 +2022,7 @@ functions: # math.h file has alphabetical order
     guard: null
     attributes: []
   - name: canonicalizef16
+    standard: stdc
     return_type: int
     arguments:
       - type: _Float16
@@ -1739,12 +2030,14 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: canonicalizef128
+    standard: stdc
     return_type: int
     arguments:
       - type: float128
       - type: float128
     guard: LIBC_TYPES_HAS_FLOAT128
   - name: totalorderf16
+    standard: stdc
     return_type: int
     arguments:
       - type: _Float16 *
@@ -1752,6 +2045,7 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: totalordermagf16
+    standard: stdc
     return_type: int
     arguments:
       - type: _Float16 *
@@ -1759,6 +2053,7 @@ functions: # math.h file has alphabetical order
     guard: LIBC_TYPES_HAS_FLOAT16
     attributes: []
   - name: f16sqrtf
+    standard: stdc
     return_type: _Float16
     arguments:
       - type: float

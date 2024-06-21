@@ -27,7 +27,8 @@ def yaml_to_ir(yaml_data):
             function_data['name'],
             arguments,
             function_data.get('guard'),
-            function_data.get('attributes')
+            function_data.get('attributes'),
+            function_data.get('standard')
         ))
 
     for include_data in yaml_data.get('includes', []):

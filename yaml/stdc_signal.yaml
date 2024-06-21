@@ -1,6 +1,4 @@
-#This is a combination of both posix and stdc headers, we can seperate at the end
 header: signal.h
-standard: stdc
 macros:
   - __need_size_t
 types:
@@ -16,12 +14,14 @@ enums: []
 objects: []
 functions:
   - name: raise
+    standard: stdc 
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: kill
+    standard: posix 
     return_type: int
     arguments:
       - type: pid_t
@@ -29,6 +29,7 @@ functions:
     guard: null
     attributes: []
   - name: sigaction
+    standard: posix
     return_type: int
     arguments:
       - type: int
@@ -37,6 +38,7 @@ functions:
     guard: null
     attributes: []
   - name: sigaltstack
+    standard: posix 
     return_type: int
     arguments:
       - type: const stack_t * __restrict
@@ -44,6 +46,7 @@ functions:
     guard: null
     attributes: []
   - name: sigdelset
+    standard: posix 
     return_type: int
     arguments:
       - type: sigset_t *
@@ -51,6 +54,7 @@ functions:
     guard: null
     attributes: []
   - name: sigaddset
+    standard: posix
     return_type: int
     arguments:
       - type: sigset_t *
@@ -58,12 +62,14 @@ functions:
     guard: null
     attributes: []
   - name: sigemptyset
+    standard: posix
     return_type: int
     arguments:
       - type: sigset_t *
     guard: null
     attributes: []
   - name: sigprocmask
+    standard: posix 
     return_type: int
     arguments:
       - type: int
@@ -72,15 +78,21 @@ functions:
     guard: null
     attributes: []
   - name: sigfillset
+    standard: posix 
     return_type: int
     arguments:
       - type: sigset_t *
     guard: null
     attributes: []
   - name: signal
+    standard: stdc
     return_type: __sighandler_t
     arguments:
       - type: int
       - type: __sighandler_t
     guard: null
     attributes: []
+
+
+
+ 
