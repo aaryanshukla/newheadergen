@@ -1,6 +1,6 @@
-#this is in sys/wait for posix
+#this is in sys/wait for POSIX
 header: sys-wait.h
-standard: posix
+standard: POSIX
 macros: []
 types:
   - type_name: siginfo_t
@@ -10,14 +10,14 @@ enums: []
 objects: []
 functions:
   - name: wait
-    standard: posix
+    standard: POSIX
     return_type: pid_t
     arguments:
       - type: int *
     guard: null
     attributes: []
   - name: wait4
-    standard: posix
+    standard: POSIX
     return_type: pid_t
     arguments:
       - type: pid_t
@@ -27,7 +27,7 @@ functions:
     guard: null
     attributes: []
   - name: waitpid
-    standard: posix
+    standard: POSIX
     return_type: pid_t
     arguments:
       - type: pid_t

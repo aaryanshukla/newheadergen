@@ -1,0 +1,18 @@
+header: sys-wait.h #sys/wait.h
+standard: BSDExtensions
+macros: []
+types:
+  - type_name: struct_rusage
+enums: []
+objects: []
+functions:
+  - name: wait4
+    standard: BSDExtensions
+    return_type: pid_t
+    arguments:
+      - type: pid_t
+      - type: int *
+      - type: int
+      - type: struct rusage *
+    guard: null
+    attributes: []
