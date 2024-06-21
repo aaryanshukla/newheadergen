@@ -3,10 +3,10 @@
 header: errno.h
 standard: stdc
 macros: 
-  - ENOTSUP
-  - EOPNOTSUPP
-  - linux/error-number-macros
-  - generic-error-number-macros
+  - macro_name: ENOTSUP # not on .td files, probably should just delete
+    macro_value: null
+  - macro_name: ENOTSUP
+    macro_value: EOPNOTSUP
 types: []
 enums: []
 objects: []

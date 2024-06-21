@@ -1,8 +1,12 @@
 header: assert.h
 standard: stdc
 macros:
-  - static_assert # not in assert.h but in .td file dunno why
-  - assert
+    # API.td calls on AssertMacro and StaticAssertMacro,
+      # which define a special case 
+  - macro_name: static_assert
+    macro_value: null
+  - macro_name: assert
+    macro_value: null
 types: []
 enums: []
 objects: []

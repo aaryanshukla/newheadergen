@@ -215,8 +215,8 @@ functions:
     standard: POSIX
     return_type: void *
     arguments:
-      - type: void * __restrict
-      - type: const void * __restrict
+      - type: void *__restrict
+      - type: const void *__restrict
       - type: int
       - type: size_t
     guard: null
@@ -225,8 +225,8 @@ functions:
     standard: POSIX
     return_type: void *
     arguments:
-      - type: void * __restrict
-      - type: const void * __restrict
+      - type: void *__restrict
+      - type: const void *__restrict
       - type: size_t
     guard: null
     attributes: []
@@ -234,16 +234,16 @@ functions:
     standard: POSIX
     return_type: char *
     arguments:
-      - type: char * __restrict
-      - type: const char * __restrict
+      - type: char *__restrict
+      - type: const char *__restrict
     guard: null
     attributes: []
   - name: stpncpy
     standard: POSIX
     return_type: char *
     arguments:
-      - type: char * __restrict
-      - type: const char * __restrict
+      - type: char *__restrict
+      - type: const char *__restrict
       - type: size_t
     guard: null
     attributes: []
@@ -259,8 +259,8 @@ functions:
     standard: POSIX
     return_type: char *
     arguments:
-      - type: char * __restrict
-      - type: const char * __restrict
+      - type: char *__restrict
+      - type: const char *__restrict
       - type: char ** __restrict
     guard: null
     attributes: []
@@ -319,8 +319,8 @@ functions:
     standard: BSDExtensions
     return_type: size_t
     arguments:
-      - type: char * __restrict
-      - type: char * __restrict
+      - type: char *__restrict
+      - type: char *__restrict
       - type: size_t
     guard: null
     attributes: []
@@ -328,17 +328,17 @@ functions:
     standard: BSDExtensions
     return_type: size_t
     arguments:
-      - type: char * __restrict
-      - type: char * __restrict
+      - type: char *__restrict
+      - type: char *__restrict
       - type: size_t
     guard: null
     attributes: []
   - name: strsep
     standard: BSDExtensions
-    return_type: CharPtr
+    return_type: char *
     arguments:
-      - type: CharRestrictedPtrPtr
-      - type: char * __restrict
+      - type: char **__restrict
+      - type: char *__restrict
     guard: null
     attributes: []
 

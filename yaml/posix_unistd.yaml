@@ -1,6 +1,6 @@
-#need to add standard posix for the rest
+#need to add standard POSIX for the rest
 header: unistd.h
-standard: posix
+standard: POSIX
 macros: []
 types:
   - type_name: uid_t
@@ -15,7 +15,7 @@ enums: []
 objects: []
 functions:
   - name: access
-    standard: posix
+    standard: POSIX
     return_type: int
     arguments:
       - type: const char *
@@ -23,28 +23,28 @@ functions:
     guard: null
     attributes: []
   - name: chdir
-    standard: posix
+    standard: POSIX
     return_type: int
     arguments:
       - type: const char *
     guard: null
     attributes: []
   - name: close
-    standard: posix
+    standard: POSIX
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: dup
-    standard: posix
+    standard: POSIX
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: dup2
-    standard: posix
+    standard: POSIX
     return_type: int
     arguments:
       - type: int
@@ -52,7 +52,7 @@ functions:
     guard: null
     attributes: []
   - name: dup3
-    standard: posix
+    standard: POSIX
     return_type: int
     arguments:
       - type: int
@@ -61,7 +61,7 @@ functions:
     guard: null
     attributes: []
   - name: execve
-    standard: posix
+    standard: POSIX
     return_type: int
     arguments:
       - type: const char *
@@ -70,21 +70,21 @@ functions:
     guard: null
     attributes: []
   - name: fchdir
-    standard: posix
+    standard: POSIX
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: fsync
-    standard: posix
+    standard: POSIX
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: ftruncate
-    standard: posix
+    standard: POSIX
     return_type: int
     arguments:
       - type: int
@@ -92,7 +92,7 @@ functions:
     guard: null
     attributes: []
   - name: getcwd
-    standard: posix
+    standard: POSIX
     return_type: char *
     arguments:
       - type: char *
@@ -100,38 +100,38 @@ functions:
     guard: null
     attributes: []
   - name: geteuid
-    standard: posix
+    standard: POSIX
     return_type: uid_t
     arguments: []
     guard: null
     attributes: []
   - name: getpid
-    standard: posix
+    standard: POSIX
     return_type: int
     arguments: []
     guard: null
     attributes: []
   - name: getppid
-    standard: posix
+    standard: POSIX
     return_type: int
     arguments: []
     guard: null
     attributes: []
   - name: getuid
-    standard: posix
+    standard: POSIX
     return_type: uid_t
     arguments: []
     guard: null
     attributes: []
   - name: isatty
-    standard: posix
+    standard: POSIX
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: link
-    standard: posix
+    standard: POSIX
     return_type: int
     arguments:
       - type: const char *
@@ -139,7 +139,7 @@ functions:
     guard: null
     attributes: []
   - name: linkat
-    standard: posix
+    standard: POSIX
     return_type: int
     arguments:
       - type: int
@@ -150,7 +150,7 @@ functions:
     guard: null
     attributes: []
   - name: lseek 
-    standard: posix
+    standard: POSIX
     return_type: off_t
     arguments:
       - type: int
@@ -159,14 +159,14 @@ functions:
     guard: null
     attributes: []
   - name: pipe
-    standard: posix
+    standard: POSIX
     return_type: int
     arguments:
       - type: int *
     guard: null
     attributes: []
   - name: pread
-    standard: posix
+    standard: POSIX
     return_type: ssize_t
     arguments:
       - type: int
@@ -176,7 +176,7 @@ functions:
     guard: null
     attributes: []
   - name: pwrite
-    standard: posix
+    standard: POSIX
     return_type: ssize_t
     arguments:
       - type: int
