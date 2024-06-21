@@ -1,7 +1,0 @@
-header: StdInt.h # not in api.td
-standard: stdc
-macros: []
-types: []
-enums: []
-objects: []
-functions: []

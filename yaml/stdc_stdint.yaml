@@ -1,0 +1,9 @@
+header: stdint.h # not in api.td
+standard: stdc
+macros:
+  - macro_name: stdint-macros
+  - macro_value: null
+types: []
+enums: []
+objects: []
+functions: []
