@@ -1,4 +1,3 @@
-#All of this should already be in string.yaml
 header: strings.h
 standard: llvm_libc_ext
 macros: []
@@ -7,6 +6,7 @@ enums: []
 objects: []
 functions:
   - name: bcopy
+    standard: llvm_libc_ext
     return_type: void
     arguments:
       - type: const void *
@@ -15,6 +15,7 @@ functions:
     guard: null
     attributes: []
   - name: bzero
+    standard: llvm_libc_ext
     return_type: void
     arguments:
       - type: void *
@@ -22,6 +23,7 @@ functions:
     guard: null
     attributes: []
   - name: bcmp
+    standard: llvm_libc_ext
     return_type: int
     arguments:
       - type: const void *

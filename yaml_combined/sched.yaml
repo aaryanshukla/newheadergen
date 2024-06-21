@@ -1,0 +1,105 @@
+header: sched.h
+standard: POSIX
+macros: []
+types:
+  - type_name: struct_timespec
+  - type_name: time_t
+  - type_name: struct_sched_param
+  - type_name: size_t
+  - type_name: cpu_set_t
+  - type_name: pid_t
+enums: []
+objects: []
+functions:
+  - name: sched_get_priority_max
+    standard: POSIX
+    return_type: int
+    arguments:
+      - type: int
+    guard: null
+    attributes: []
+  - name: sched_get_priority_min
+    standard: POSIX
+    return_type: int
+    arguments:
+      - type: int
+    guard: null
+    attributes: []
+  - name: sched_getaffinity
+    standard: GNUExtensions
+    return_type: int
+    arguments:
+      - type: pid_t
+      - type: size_t
+      - type: cpu_set_t *
+    guard: null
+    attributes: []
+  - name: sched_getparam
+    standard: POSIX
+    return_type: int
+    arguments:
+      - type: pid_t
+      - type: struct sched_param *
+    guard: null
+    attributes: []
+  - name: sched_getscheduler
+    standard: POSIX
+    return_type: int
+    arguments:
+      - type: pid_t
+      - type: int
+      - type: const struct sched_param *
+    guard: null
+    attributes: []
+  - name: sched_rr_get_interval
+    standard: POSIX
+    return_type: int
+    arguments:
+      - type: pid_t
+      - type: struct timespec *
+    guard: null
+    attributes: []
+  - name: sched_setaffinity
+    standard: GNUExtensions
+    return_type: int
+    arguments:
+      - type: pid_t
+      - type: size_t
+      - type: const cpu_set_t *
+    guard: null
+    attributes: []
+  - name: sched_setparam
+    standard: POSIX
+    return_type: int
+    arguments:
+      - type: pid_t
+      - type: const struct sched_param *
+    guard: null
+    attributes: []
+  - name: sched_setscheduler
+    standard: POSIX
+    return_type: int
+    arguments:
+      - type: pid_t
+    guard: null
+    attributes: []
+  - name: sched_yield
+    standard: POSIX 
+    return_type: int
+    arguments: []
+    guard: null
+    attributes: []
+  - name: __sched_getcpucount
+    standard: llvm_libc_ext
+    return_type: int
+    arguments:
+      - type: size_t
+      - type: const cpu_set_t *
+    guard: null
+    attributes: []
+  - name: __sched_getcpucount
+    standard: llvm_libc_ext
+    return_type: int
+    arguments:
+      - type: size_t
+      - type: const cpu_set_t *
