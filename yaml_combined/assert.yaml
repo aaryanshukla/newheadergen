@@ -1,0 +1,21 @@
+header: assert.h
+macros:
+    # API.td calls on AssertMacro and StaticAssertMacro,
+      # which define a special case 
+      # these macros are from standard stdc
+  - macro_name: static_assert
+    macro_value: null
+  - macro_name: assert
+    macro_value: null
+types: []
+enums: []
+objects: []
+functions:
+  - name: __assert_fail
+    standard: llvm_libc_ext
+    return_type: "[[noreturn]]"
+    arguments:
+      - type: const char *
+      - type: const char *
+      - type: unsigned
+      - type: const char *
