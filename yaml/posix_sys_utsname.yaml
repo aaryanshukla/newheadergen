@@ -1,12 +1,13 @@
-#this is sys/utsname in the linux library
-header: utsname.h
-standard: Linux
+#this is sys/utsname
+header: sys-utsname.h
+standard: POSIX
 macros: []
 types:
   - type_name: struct_utsname
 enums: []
 functions:
   - name: uname
+    standard: POSIX
     return_type: int
     arguments:
       - type: struct utsname *
