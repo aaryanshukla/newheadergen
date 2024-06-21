@@ -1,9 +1,9 @@
 #this is sys/utsname in the linux library
 header: utsname.h
-standard: linux
+standard: Linux
 macros: []
 types:
-  - type_name: struct utsname
+  - type_name: struct_utsname
 enums: []
 functions:
   - name: uname

@@ -1,5 +1,5 @@
 # known as sys/resource within posix 
-header: resource.h
+header: sys-resource.h
 standard: posix
 macros: []
 types:

@@ -1,5 +1,5 @@
 #known as sys/mman in posix 
-header: mman.h
+header: sys-mman.h
 standard: posix
 macros: []
 types:

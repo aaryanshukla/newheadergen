@@ -1,5 +1,5 @@
 # this belongs to the sys in posix sys.stat.h
-header: stat.h
+header: sys-stat.h
 standard: posix
 macros: []
 types:

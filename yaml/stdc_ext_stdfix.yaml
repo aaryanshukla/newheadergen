@@ -1,6 +1,5 @@
 header: stdfix.h
-macros:
-  - macros/stdfix-macros
+macros: []
 types: []
 enums: []
 objects: []

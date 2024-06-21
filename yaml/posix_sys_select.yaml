@@ -1,5 +1,5 @@
 #this is sys/select from the posix library 
-header: select.h
+header: sys-select.h
 standard: posix
 macros: []
 types:

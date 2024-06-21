@@ -1,5 +1,5 @@
 #this is in sys/wait for posix
-header: wait.h
+header: sys-wait.h
 standard: posix
 macros: []
 types:

@@ -1,9 +1,7 @@
 #need to add standard posix for the rest
 header: unistd.h
 standard: posix
-macros:
-  - file-seek-macros
-  - unistd-macros
+macros: []
 types:
   - type_name: uid_t
   - type_name: ssize_t

@@ -1,4 +1,4 @@
-# should be in the assert.yal
+# should be in the assert.yaml
 header: assert.h
 standard: llvm_libc_ext
 macros: []

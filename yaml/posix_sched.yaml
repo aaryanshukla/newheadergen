@@ -1,11 +1,6 @@
 header: sched.h
-<<<<<<< Updated upstream
-macros:
-  - sched-macros
-=======
 standard: posix
 macros: []
->>>>>>> Stashed changes
 types:
   - type_name: struct_timespec
   - type_name: time_t
