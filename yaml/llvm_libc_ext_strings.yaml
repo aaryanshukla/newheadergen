@@ -1,3 +1,4 @@
+#All of this should already be in string.yaml
 header: strings.h
 standard: llvm_libc_ext
 macros: []

@@ -1,19 +1,19 @@
 header: inttypes.h
-standard: stdc
-macros: []
+macros: 
+  - inttypes-macros
 types:
-  - type_name: imaxdiv_t
-  - type_name: inttypes-macros # this should go in macros, but we put types in includes so it makes it easier 
-enums: []
+  - type_name: imaxdiv_t 
 objects: []
 functions:
   - name: imaxabs
+    standard: stdc
     return_type: intmax_t
     arguments:
       - type: intmax_t
     guard: null
     attributes: []
   - name: imaxdiv
+    standard: stdc
     return_type: imaxdiv_t
     arguments:
       - type: intmax_t
@@ -21,6 +21,7 @@ functions:
     guard: null
     attributes: []
   - name: strtoimax
+    standard: stdc
     return_type: intmax_t
     arguments:
       - type: const char *__restrict
@@ -29,6 +30,7 @@ functions:
     guard: null
     attributes: []
   - name: strtoumax
+    standard: stdc
     return_type: uintmax_t
     arguments:
       - type: const char *__restrict

@@ -1,5 +1,4 @@
 header: pthread.h
-standard: posix
 macros:
   - PTHREAD_STACK_MIN (1 << 14)
   - PTHREAD_MUTEX_INITIALIZER {0}
@@ -52,6 +51,7 @@ enums:
     value: 2
 functions:
   - name: pthread_atfork
+    standard: posix
     return_type: int
     arguments:
       - type: __atfork_callback_t
@@ -60,18 +60,21 @@ functions:
     guard: null
     attributes: []
   - name: pthread_attr_destroy
+    standard: posix
     return_type: int
     arguments:
       - type: pthread_attr_t *
     guard: null
     attributes: []
   - name: pthread_attr_init
+    standard: posix
     return_type: int
     arguments:
       - type: pthread_attr_t *
     guard: null
     attributes: []
   - name: pthread_attr_getdetachstate
+    standard: posix
     return_type: int
     arguments:
       - type: const pthread_attr_t *
@@ -79,6 +82,7 @@ functions:
     guard: null
     attributes: []
   - name: pthread_attr_getguardsize
+    standard: posix
     return_type: int
     arguments:
       - type: const pthread_attr_t * __restrict
@@ -86,6 +90,7 @@ functions:
     guard: null
     attributes: []
   - name: pthread_attr_getstack
+    standard: posix
     return_type: int
     arguments:
       - type: const pthread_attr_t * __restrict
@@ -94,6 +99,7 @@ functions:
     guard: null
     attributes: []
   - name: pthread_attr_getstacksize
+    standard: posix
     return_type: int
     arguments:
       - type: const pthread_attr_t * __restrict
@@ -101,6 +107,7 @@ functions:
     guard: null
     attributes: []
   - name: pthread_attr_setdetachstate
+    standard: posix
     return_type: int
     arguments:
       - type: pthread_attr_t *
@@ -108,6 +115,7 @@ functions:
     guard: null
     attributes: []
   - name: pthread_attr_setguardsize
+    standard: posix
     return_type: int
     arguments:
       - type: pthread_attr_t *
@@ -115,6 +123,7 @@ functions:
     guard: null
     attributes: []
   - name: pthread_attr_setstack
+    standard: posix
     return_type: int
     arguments:
       - type: pthread_attr_t *
@@ -123,6 +132,7 @@ functions:
     guard: null
     attributes: []
   - name: pthread_attr_setstacksize
+    standard: posix
     return_type: int
     arguments:
       - type: pthread_attr_t *
@@ -130,12 +140,14 @@ functions:
     guard: null
     attributes: []
   - name: pthread_condattr_destroy
+    standard: posix
     return_type: int
     arguments:
       - type: pthread_condattr_t *
     guard: null
     attributes: []
   - name: pthread_condattr_getclock
+    standard: posix
     return_type: int
     arguments:
       - type: const pthread_condattr_t * __restrict
@@ -143,6 +155,7 @@ functions:
     guard: null
     attributes: []
   - name: pthread_condattr_getpshared
+    standard: posix
     return_type: int
     arguments:
       - type: const pthread_condattr_t * __restrict
@@ -150,12 +163,14 @@ functions:
     guard: null
     attributes: []
   - name: pthread_condattr_init
+    standard: posix
     return_type: int
     arguments:
       - type: pthread_condattr_t *
     guard: null
     attributes: []
   - name: pthread_condattr_setclock
+    standard: posix
     return_type: int
     arguments:
       - type: pthread_condattr_t *
@@ -163,6 +178,7 @@ functions:
     guard: null
     attributes: []
   - name: pthread_condattr_setpshared
+    standard: posix
     return_type: int
     arguments:
       - type: pthread_condattr_t *
@@ -170,6 +186,7 @@ functions:
     guard: null
     attributes: []
   - name: pthread_create
+    standard: posix
     return_type: int
     arguments:
       - type: pthread_t * __restrict
@@ -179,12 +196,14 @@ functions:
     guard: null
     attributes: []
   - name: pthread_detach
+    standard: posix
     return_type: int
     arguments:
       - type: pthread_t
     guard: null
     attributes: []
   - name: pthread_equal
+    standard: posix
     return_type: int
     arguments:
       - type: pthread_t
@@ -192,14 +211,15 @@ functions:
     guard: null
     attributes: []
   - name: pthread_exit
+    standard: posix
     return_type: void
     arguments:
       - type: void *
     guard: null
     attributes:
       - noreturn
-    # this function is from gnu extension 
   - name: pthread_getname_np
+    standard: gnu
     return_type: int
     arguments:
       - type: pthread_t
@@ -208,12 +228,14 @@ functions:
     guard: null
     attributes: []
   - name: pthread_getspecific
+    standard: posix
     return_type: void *
     arguments:
       - type: pthread_key_t
     guard: null
     attributes: []
   - name: pthread_join
+    standard: posix
     return_type: int
     arguments:
       - type: pthread_t
@@ -221,6 +243,7 @@ functions:
     guard: null
     attributes: []
   - name: pthread_key_create
+    standard: posix
     return_type: int
     arguments:
       - type: pthread_key_t *
@@ -228,18 +251,20 @@ functions:
     guard: null
     attributes: []
   - name: pthread_key_delete
+    standard: posix
     return_type: int
     arguments:
       - type: pthread_key_t
     guard: null
     attributes: []
   - name: pthread_self
+    standard: posix
     return_type: pthread_t
     arguments: []
     guard: null
     attributes: []
-  # this function is from gnu extension 
   - name: pthread_setname_np
+    standard: gnu
     return_type: int
     arguments:
       - type: pthread_t
@@ -247,12 +272,14 @@ functions:
     guard: null
     attributes: []
   - name: pthread_mutex_destroy
+    standard: posix
     return_type: int
     arguments:
       - type: pthread_mutex_t *
     guard: null
     attributes: []
   - name: pthread_mutex_init
+    standard: posix
     return_type: int
     arguments:
       - type: pthread_mutex_t * __restrict
@@ -260,30 +287,35 @@ functions:
     guard: null
     attributes: []
   - name: pthread_mutex_lock
+    standard: posix
     return_type: int
     arguments:
       - type: pthread_mutex_t *
     guard: null
     attributes: []
   - name: pthread_mutex_unlock
+    standard: posix
     return_type: int
     arguments:
       - type: pthread_mutex_t *
     guard: null
     attributes: []
   - name: pthread_mutexattr_destroy
+    standard: posix
     return_type: int
     arguments:
       - type: pthread_mutexattr_t *
     guard: null
     attributes: []
   - name: pthread_mutexattr_init
+    standard: posix
     return_type: int
     arguments:
       - type: pthread_mutexattr_t *
     guard: null
     attributes: []
   - name: pthread_mutexattr_getpshared
+    standard: posix
     return_type: int
     arguments:
       - type: const pthread_mutexattr_t * __restrict
@@ -291,6 +323,7 @@ functions:
     guard: null
     attributes: []
   - name: pthread_mutexattr_getrobust
+    standard: posix
     return_type: int
     arguments:
       - type: const pthread_mutexattr_t * __restrict
@@ -298,6 +331,7 @@ functions:
     guard: null
     attributes: []
   - name: pthread_mutexattr_gettype
+    standard: posix
     return_type: int
     arguments:
       - type: const pthread_mutexattr_t * __restrict
@@ -305,6 +339,7 @@ functions:
     guard: null
     attributes: []
   - name: pthread_mutexattr_setpshared
+    standard: posix
     return_type: int
     arguments:
       - type: pthread_mutexattr_t * __restrict
@@ -312,13 +347,15 @@ functions:
     guard: null
     attributes: []
   - name: pthread_mutexattr_setrobust
+    standard: posix
     return_type: int
     arguments:
       - type: pthread_mutexattr_t * __restrict
       - type: int
-        guard: null
+    guard: null
     attributes: []
   - name: pthread_mutexattr_settype
+    standard: posix
     return_type: int
     arguments:
       - type: pthread_mutexattr_t * __restrict
@@ -326,6 +363,7 @@ functions:
     guard: null
     attributes: []
   - name: pthread_once
+    standard: posix
     return_type: int
     arguments:
       - type: pthread_once_t *
@@ -333,12 +371,14 @@ functions:
     guard: null
     attributes: []
   - name: pthread_rwlockattr_destroy
+    standard: posix 
     return_type: int
     arguments:
       - type: pthread_rwlockattr_t *
     guard: null
     attributes: []
   - name: pthread_rwlockattr_getkind_np
+    standard: posix
     return_type: int
     arguments:
       - type: pthread_rwlockattr_t *
@@ -346,6 +386,7 @@ functions:
     guard: null
     attributes: []
   - name: pthread_rwlockattr_getpshared
+    standard: posix
     return_type: int
     arguments:
       - type: const pthread_rwlockattr_t *
@@ -353,12 +394,14 @@ functions:
     guard: null
     attributes: []
   - name: pthread_rwlockattr_init
+    standard: posix
     return_type: int
     arguments:
       - type: pthread_rwlockattr_t *
     guard: null
     attributes: []
   - name: pthread_rwlockattr_setkind_np
+    standard: posix
     return_type: int
     arguments:
       - type: pthread_rwlockattr_t *
@@ -366,6 +409,7 @@ functions:
     guard: null
     attributes: []
   - name: pthread_rwlockattr_setpshared
+    standard: posix
     return_type: int
     arguments:
       - type: pthread_rwlockattr_t *
@@ -373,6 +417,7 @@ functions:
     guard: null
     attributes: []
   - name: pthread_setspecific
+    standard: posix
     return_type: void *
     arguments:
       - type: pthread_key_t

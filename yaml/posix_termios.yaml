@@ -1,5 +1,4 @@
 header: termios.h
-standard: posix
 macros:
   - termios-macros
 types:
@@ -12,18 +11,21 @@ enums: []
 objects: []
 functions:
   - name: cfgetispeed
+    standard: posix
     return_type: speed_t
     arguments:
       - type: const struct termios *
     guard: null
     attributes: []
   - name: cfgetospeed
+    standard: posix
     return_type: speed_t
     arguments:
       - type: const struct termios *
     guard: null
     attributes: []
   - name: cfsetispeed
+    standard: posix
     return_type: int
     arguments:
       - type: struct termios *
@@ -31,6 +33,7 @@ functions:
     guard: null
     attributes: []
   - name: cfsetospeed
+    standard: posix
     return_type: int
     arguments:
       - type: struct termios *
@@ -38,6 +41,7 @@ functions:
     guard: null
     attributes: []
   - name: tcgetattr
+    standard: posix
     return_type: int
     arguments:
       - type: int
@@ -45,18 +49,21 @@ functions:
     guard: null
     attributes: []
   - name: tcgetsid
+    standard: posix
     return_type: pid_t
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: tcdrain
+    standard: posix
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: tcflow
+    standard: posix 
     return_type: int
     arguments:
       - type: int
@@ -64,6 +71,7 @@ functions:
     guard: null
     attributes: []
   - name: tcflush
+    standard: posix
     return_type: int
     arguments:
       - type: int
@@ -71,6 +79,7 @@ functions:
     guard: null
     attributes: []
   - name: tcsendbreak
+    standard: posix
     return_type: int
     arguments:
       - type: int
@@ -78,6 +87,7 @@ functions:
     guard: null
     attributes: []
   - name: tcsetattr
+    standard: posix
     return_type: int
     arguments:
       - type: int

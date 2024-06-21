@@ -10,12 +10,14 @@ enums: []
 objects: []
 functions:
   - name: wait
+    standard: posix
     return_type: pid_t
     arguments:
       - type: int *
     guard: null
     attributes: []
   - name: wait4
+    standard: posix
     return_type: pid_t
     arguments:
       - type: pid_t
@@ -25,6 +27,7 @@ functions:
     guard: null
     attributes: []
   - name: waitpid
+    standard: posix
     return_type: pid_t
     arguments:
       - type: pid_t

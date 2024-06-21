@@ -6,84 +6,98 @@ enums: []
 objects: []
 functions:
   - name: isalnum
+    standard: stdc
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: isalpha
+    standard: stdc
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: isblank
+    standard: stdc
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: iscntrl
+    standard: stdc
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: isdigit
+    standard: stdc
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: isgraph
+    standard: stdc
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: islower
+    standard: stdc
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: isprint
+    standard: stdc
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: ispunct
+    standard: stdc
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: isspace
+    standard: stdc
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: isupper
+    standard: stdc
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: isxdigit
+    standard: stdc
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: tolower
+    standard: stdc
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: toupper
+    standard: stdc
     return_type: int
     arguments:
       - type: int
@@ -92,6 +106,7 @@ functions:
     # below is the only posix function
     functions:
   - name: isascii
+    standard: posix
     return_type: int
     arguments:
       - type: int
@@ -99,6 +114,7 @@ functions:
     attributes: []
   # this is a gnu extension function
   - name: toascii
+    standard: gnu
     return_type: int
     arguments:
       - type: int
