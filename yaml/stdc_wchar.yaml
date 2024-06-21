@@ -2,7 +2,8 @@
 header: wchar.h
 standard: stdc
 macros:
-  - wchar-macros
+  - macro_name: wchar-macros
+    macro_value: null
 types:
   - type_name: size_t
   - type_name: wint_t

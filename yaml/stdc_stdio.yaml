@@ -1,12 +1,16 @@
 header: stdio.h
 standard: stdc
 macros:
-  - _IONBF
-  - _IOLBF
-  - _IOFBF
-  - stdout
-  - stdin
-  - stderr
+  - macro_name: _IONBF
+    macro_value: 2
+  - macro_name: _IOLBF
+    macro_value: 1
+  - macro_name: _IOFBF
+    macro_value: 0
+  - macro_name: stdout
+    macro_value: stdout
+  - macro_name: stdin
+    macro_value: stdin
 types:
   - type_name: size_t
   - type_name: off_t
@@ -15,7 +19,7 @@ types:
 enums: []
 objects:
   - field_1: stdin
-    field_2: FILE * # what does this even do? Don't see on stdio.h file
+    field_2: FILE *
   - field_1: stdout
     field_2: FILE *
   - field_1: stderr

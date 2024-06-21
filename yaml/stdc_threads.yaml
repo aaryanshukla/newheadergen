@@ -1,7 +1,8 @@
 header: threads.h
 standard: stdc
 macros:
-  - ONCE_FLAG_INIT {0}
+  - macro_name: ONCE_FLAG_INIT
+  - macro_value: "{0}"
 types:
   - type_name: once_flag
   - type_name: __call_once_func_t
@@ -31,6 +32,7 @@ enums:
 objects: []
 functions:
   - name: call_once
+    standard: stdc
     return_type: void
     arguments:
       - type: once_flag *
@@ -38,30 +40,35 @@ functions:
     guard: null
     attributes: []
   - name: cnd_broadcast
+    standard: stdc
     return_type: int
     arguments:
       - type: cnd_t *
     guard: null
     attributes: []
   - name: cnd_destroy
+    standard: stdc
     return_type: void
     arguments:
       - type: cnd_t *
     guard: null
     attributes: []
   - name: cnd_init
+    standard: stdc
     return_type: int
     arguments:
       - type: cnd_t *
     guard: null
     attributes: []
   - name: cnd_signal
+    standard: stdc
     return_type: int
     arguments:
       - type: cnd_t *
     guard: null
     attributes: []
   - name: cnd_wait
+    standard: stdc
     return_type: int
     arguments:
       - type: cnd_t *
@@ -69,6 +76,7 @@ functions:
     guard: null
     attributes: []
   - name: mtx_init
+    standard: stdc
     return_type: int
     arguments:
       - type: mtx_t *
@@ -76,24 +84,28 @@ functions:
     guard: null
     attributes: []
   - name: mtx_destroy
+    standard: stdc
     return_type: int
     arguments:
       - type: void
     guard: null
     attributes: []
   - name: mtx_lock
+    standard: stdc
     return_type: int
     arguments:
       - type: mtx_t *
     guard: null
     attributes: []
   - name: mtx_unlock
+    standard: stdc
     return_type: int
     arguments:
       - type: mtx_t *
     guard: null
     attributes: []
   - name: thrd_create
+    standard: stdc
     return_type: int
     arguments:
       - type: thrd_t *
@@ -102,6 +114,7 @@ functions:
     guard: null
     attributes: []
   - name: thrd_join
+    standard: stdc
     return_type: int
     arguments:
       - type: thrd_t
@@ -109,18 +122,21 @@ functions:
     guard: null
     attributes: []
   - name: thrd_detach
+    standard: stdc
     return_type: int
     arguments:
       - type: thrd_t
     guard: null
     attributes: []
   - name: thrd_current
+    standard: stdc
     return_type: thrd_t
     arguments:
       - type: void
     guard: null
     attributes: []
   - name: thrd_equal
+    standard: stdc
     return_type: int
     arguments:
       - type: thrd_t
@@ -128,12 +144,14 @@ functions:
     guard: null
     attributes: []
   - name: thrd_exit
+    standard: stdc
     return_type: void
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: tss_create
+    standard: stdc
     return_type: int
     arguments:
       - type: tss_t *
@@ -141,6 +159,7 @@ functions:
     guard: null
     attributes: []
   - name: tss_delete
+    standard: stdc
     return_type: int
     arguments:
       - type: tss_t
