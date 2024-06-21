@@ -1,9 +1,6 @@
-#moved wchar-macros to types to get include formatting 
 header: wchar.h
 standard: stdc
-macros:
-  - macro_name: wchar-macros
-    macro_value: null
+macros: []
 types:
   - type_name: size_t
   - type_name: wint_t

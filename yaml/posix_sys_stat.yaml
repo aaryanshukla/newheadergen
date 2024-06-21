@@ -1,8 +1,7 @@
 # this belongs to the sys in posix sys.stat.h
 header: stat.h
 standard: posix
-macros:
-  - sys-stat-macros
+macros: []
 types:
   - type_name: blkcnt_t
   - type_name: blksize_t

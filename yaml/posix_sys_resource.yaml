@@ -1,8 +1,7 @@
 # known as sys/resource within posix 
 header: resource.h
 standard: posix
-macros:
-  - sys-resource-macros
+macros: []
 types:
   - type_name: struct_rlimit
   - type_name: rlim_t

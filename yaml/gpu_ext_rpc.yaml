@@ -1,12 +1,13 @@
 header: gpu-rpc.h # gpu/rpc.h
-standard: gpu_ext
+standard: GPUExtensions
 macros: []
 types: []
 enums: []
 objects: []
 functions:
   - name: rpc_host_call
-    return_type: VoidType
+    standard: GPUExtensions
+    return_type: void
     arguments:
       - type: void *
       - type: void *
@@ -14,7 +15,8 @@ functions:
     guard: null
     attributes: []
   - name: rpc_fprintf
-    return_type: IntType
+    standard: GPUExtensions
+    return_type: int
     arguments:
       - type: ::FILE *__restrict # FILE restricted pointer with ::?
       - type: const char *__restrict

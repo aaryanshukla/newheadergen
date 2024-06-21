@@ -1,5 +1,6 @@
+# there is posix sched
 header: sched.h
-standard: linux
+standard: Linux
 macros: []
 types: []
 enums: []

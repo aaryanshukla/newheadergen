@@ -1,8 +1,6 @@
 header: stdlib.h
 standard: stdc
-macros:
-  - macro_name: stdlib-macros
-    macro_value: null
+macros: []
 types:
   - type_name: __atexithandler_t
   - type_name: __qsortrcompare_t

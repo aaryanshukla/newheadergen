@@ -1,6 +1,11 @@
 header: termios.h
+<<<<<<< Updated upstream
 macros:
   - termios-macros
+=======
+standard: posix
+macros: []
+>>>>>>> Stashed changes
 types:
   - type_name: tcflag_t
   - type_name: struct_termios

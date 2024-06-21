@@ -1,9 +1,9 @@
-# this is in sys/prctl in the linux library
-header: prctl.h
-standard: linux
-#reminder: need to add include functionality for this case 
-macros:
-  - linux/prctl
+header: sys-prctl.h # sys/prctl.h
+standard: Linux
+#reminder: need to add include functionality for this case
+# there is also an #include <linux/prtl.h">
+macros: []
 types: []
 enums: []
+objects: []
 functions: []

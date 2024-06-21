@@ -1,7 +1,5 @@
 header: string.h
-macros:
-  - macro_name: null-macro
-    macro_value: null
+macros: []
 types:
   - type_name: size_t
 enums: []

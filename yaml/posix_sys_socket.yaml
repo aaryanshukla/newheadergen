@@ -1,8 +1,6 @@
-#this is in sys/socket in the posix library
-header: socket.h
+header: sys-socket.h # sys/socket
 standard: posix
-macros:
-  - sys-socket-macros
+macros: []
 types:
   - type_name: struct_sockaddr_un
   - type_name: struct_sockaddr

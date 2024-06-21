@@ -1,0 +1,28 @@
+header: sys-mman.h # sys/mman.h
+standard: Linux
+macros: []
+types:
+  - type_name: mode_t
+  - type_name: size_t
+  - type_name: off_t
+enums: []
+objects: []
+functions:
+  - name: mincore
+    standard: Linux
+    return_type: int
+    arguments:
+      - type: void *
+      - type: size_t
+      - type: unsigned char *
+    guard: null
+    attributes: []
+  - name: mlock2
+    standard: Linux
+    return_type: int
+    arguments:
+      - type: void *
+      - type: size_t
+      - type: unsigned int
+    guard: null
+    attributes: []

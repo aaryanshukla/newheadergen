@@ -1,8 +1,6 @@
 header: stdbit.h
 standard: stdc
-macros:
-  - macro_name: stdbit-macros
-    macro_value: null
+macros: []
 types: []
 enums: []
 objects: []

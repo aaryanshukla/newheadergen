@@ -1,10 +1,8 @@
-# this is sys/time from the linux library
-header: sys-time.h
+header: sys-time.h # sys/time
 standard: Linux
-macros:
-  - sys-time-macros
+macros: []
 types:
-  - type_name: struct timeval
+  - type_name: struct_timeval
 enums: []
 functions: []
 objects: []

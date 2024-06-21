@@ -1,8 +1,7 @@
 #this is sys/select from the posix library 
 header: select.h
 standard: posix
-macros:
-  - sys-select-macros
+macros: []
 types:
   - type_name: struct_timeval
   - type_name: struct_timespec

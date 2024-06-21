@@ -1,8 +1,7 @@
 #known as sys/mman in posix 
 header: mman.h
 standard: posix
-macros:
-  - sys-mman-macros
+macros: []
 types:
   - type_name: mode_t
   - type_name: size_t

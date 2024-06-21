@@ -1,5 +1,5 @@
 header: errno.h
-standard: linux
+standard: Linux
 macros: []
 types: []
 enums: []

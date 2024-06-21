@@ -1,8 +1,8 @@
 #this is part of sys/auxv from gnu  
 header: sys-auxv.h
-standard: gnu
-macros:
-  - sys-auxv-macros
+standard: GNUExtensions
+macros: []
 types: []
 enums: []
+objects: []
 functions: []
