@@ -3,12 +3,14 @@
 
 #include "__llvm-libc-common.h"
 
-#define _IONBF
-#define _IOLBF
-#define _IOFBF
+#define _IONBF 2
+#define _IOLBF 1
+#define _IOFBF 0
 #define stdout
 #define stdin
-#define stderr
+extern FILE * stdin
+extern FILE * stdout
+extern FILE * stderr
 #include <llvm-libc-types/size_t.h>
 #include <llvm-libc-types/off_t.h>
 #include <llvm-libc-types/cookie_io_functions_t.h>

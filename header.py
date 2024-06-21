@@ -5,6 +5,7 @@ class HeaderFile:
         self.macros = []
         self.types = []
         self.enumerations = []
+        self.objects = []
         self.functions = []
         self.includes = []
 
@@ -16,6 +17,10 @@ class HeaderFile:
 
     def add_enumeration(self, enumeration):
         self.enumerations.append(enumeration)
+    
+    
+    def add_object(self, object):
+        self.objects.append(object)
 
     def add_function(self, function):
         self.functions.append(function)
@@ -32,6 +37,9 @@ class HeaderFile:
 
         for macro in self.macros:
             content.append(str(macro))
+
+        for object in self.objects:
+            content.append(str(object))
 
         for type_ in self.types:
             content.append(str(type_))

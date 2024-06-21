@@ -6,29 +6,34 @@ from class_implementation.classes.type import Type
 from class_implementation.classes.function import Function
 from class_implementation.classes.include import Include
 from class_implementation.classes.enums import Enumeration
+from class_implementation.classes.object import Object
 
 def yaml_to_ir(yaml_data):
     header_name = yaml_data.get('header', 'unknown.h')
+    standard = yaml_data.get('standard', None)
     header = HeaderFile(header_name)
 
     for macro_data in yaml_data.get('macros', []):
-        header.add_macro(Macro(macro_data))
+        header.add_macro(Macro(macro_data['macro_name'], macro_data['macro_value']))
 
     for type_data in yaml_data.get('types', []):
-        header.add_type(Type(type_data['type_name']))
+         header.add_type(Type(type_data['type_name']))
 
     for enum_data in yaml_data.get('enums', []):
-        header.add_enumeration(Enumeration(enum_data['name'], enum_data['value']))
+        header.add_enumeration(Enumeration(enum_data['name'], enum_data.get('value', None)))
+
+    for object_data in yaml_data.get('objects', []):
+        header.add_object(Object(object_data['object_name'], object_data['object_type']))
 
     for function_data in yaml_data.get('functions', []):
-        arguments = [arg for arg in function_data['arguments']]
+        arguments = [arg['type'] for arg in function_data['arguments']]
         header.add_function(Function(
             function_data['return_type'],
             function_data['name'],
             arguments,
             function_data.get('guard'),
-            function_data.get('attributes'),
-            function_data.get('standard')
+            function_data.get('attributes', []),
+
         ))
 
     for include_data in yaml_data.get('includes', []):
