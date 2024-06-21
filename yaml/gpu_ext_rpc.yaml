@@ -1,4 +1,4 @@
-header: rpc.h # gpu/rpc.h
+header: gpu-rpc.h # gpu/rpc.h
 standard: gpu_ext
 macros: []
 types: []

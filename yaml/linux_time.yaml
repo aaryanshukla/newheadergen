@@ -1,6 +1,6 @@
 # this is sys/time from the linux library
 header: sys-time.h
-standard: posix
+standard: Linux
 macros:
   - sys-time-macros
 types:

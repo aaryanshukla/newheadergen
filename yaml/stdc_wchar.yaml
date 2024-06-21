@@ -11,6 +11,7 @@ enums: []
 objects: []
 functions:
   - name: wctob
+    standard: stdc
     return_type: int
     arguments:
       - type: wint_t

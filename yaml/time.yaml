@@ -1,31 +1,32 @@
 header: time.h
-standard: stdc
 macros: []
 types:
-  - struct timeval
-  - clockid_t
-  - struct timespec
-  - struct tm
-  - time_t
-  - clock_t
+  - named_type: clock_t
+  - named_type: struct_tm
+  - named_type: struct_timespec
+  - named_type: time_t
+  - named_type: struct_timeval
+  - named_type: clockid_t
 enums: []
 objects: []
 functions:
   - name: asctime
+    standard: stdc
     return_type: char *
     arguments:
       - type: struct tm *
     guard: null
     attributes: []
   - name: asctime_r
+    standard: stdc
     return_type: char *
     arguments:
       - type: struct tm *
       - type: char *
     guard: null
     attributes: []
-  #posix function 
   - name: clock_gettime
+    standard: POSIX
     return_type: int
     arguments:
       - type: clockid_t
@@ -33,19 +34,21 @@ functions:
     guard: null
     attributes: []
   - name: clock
+    standard: stdc
     return_type: clock_t
     arguments: []
     guard: null
     attributes: []
   - name: difftime
+    standard: stdc
     return_type: double
     arguments:
       - type: time_t
       - type: time_t
     guard: null
     attributes: []
-  #posix function
   - name: gettimeofday
+    standard: POSIX
     return_type: int
     arguments:
       - type: struct timeval *
@@ -53,12 +56,14 @@ functions:
     guard: null
     attributes: []
   - name: gmtime
+    standard: stdc
     return_type: struct tm *
     arguments:
       - type: time_t *
     guard: null
     attributes: []
   - name: gmtime_r
+    standard: stdc
     return_type: struct tm *
     arguments:
       - type: time_t *
@@ -66,13 +71,14 @@ functions:
     guard: null
     attributes: []
   - name: mktime
+    standard: stdc
     return_type: time_t
     arguments:
       - type: struct tm *
     guard: null
     attributes: []
-  #posix function
   - name: nanosleep
+    standard: POSIX
     return_type: int
     arguments:
       - type: const struct timespec *
@@ -80,6 +86,7 @@ functions:
     guard: null
     attributes: []
   - name: time
+    standard: stdc
     return_type: time_t
     arguments:
       - type: time_t *
