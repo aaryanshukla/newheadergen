@@ -3,14 +3,14 @@
 
 #include "__llvm-libc-common.h"
 
-#define __need_size_t
-#include <llvm-libc-types/size_t.h>
+#define __need_size_t None
+#include "llvm-libc-macros/signal-macros.h"
 #include <llvm-libc-types/pid_t.h>
 #include <llvm-libc-types/stack_t.h>
 #include <llvm-libc-types/siginfo_t.h>
-#include <llvm-libc-types/struct sigaction.h>
+#include <llvm-libc-types/struct_sigaction.h>
 #include <llvm-libc-types/sigset_t.h>
-#include <llvm-libc-types/union sigval.h>
+#include <llvm-libc-types/union_sigval.h>
 #include <llvm-libc-types/sig_atomic_t.h>
 __BEGIN_C_DECLS
 

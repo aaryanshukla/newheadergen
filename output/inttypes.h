@@ -3,8 +3,8 @@
 
 #include "__llvm-libc-common.h"
 
+#include "llvm-libc-macros/inttypes-macros.h"
 #include <llvm-libc-types/imaxdiv_t.h>
-#include <llvm-libc-types/inttypes-macros.h>
 __BEGIN_C_DECLS
 
 intmax_t imaxabs(intmax_t);

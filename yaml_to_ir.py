@@ -1,5 +1,7 @@
 import yaml
 import os
+import re
+
 from header import HeaderFile
 from class_implementation.classes.macro import Macro
 from class_implementation.classes.type import Type
@@ -17,7 +19,7 @@ def yaml_to_ir(yaml_data):
         header.add_macro(Macro(macro_data['macro_name'], macro_data['macro_value']))
 
     for type_data in yaml_data.get('types', []):
-         header.add_type(Type(type_data['type_name']))
+        header.add_type(Type(type_data['type_name']))
 
     for enum_data in yaml_data.get('enums', []):
         header.add_enumeration(Enumeration(enum_data['name'], enum_data.get('value', None)))
@@ -33,7 +35,6 @@ def yaml_to_ir(yaml_data):
             arguments,
             function_data.get('guard'),
             function_data.get('attributes', []),
-
         ))
 
     for include_data in yaml_data.get('includes', []):
@@ -54,37 +55,33 @@ def filter_functions(header, function_names):
             filtered_functions.append(func)
     return filtered_functions
 
-def main(yaml_files, function_names):
-    combined_headers = []
+def inject_public_api(header_str, h_def_content):
+    return re.sub(r'%%public_api\(\)', header_str, h_def_content)
 
-    for yaml_file in yaml_files:
-        header = load_yaml_file(yaml_file)
-        combined_headers.append(header)
+def main(yaml_file, h_def_file, output_dir):
+    header = load_yaml_file(yaml_file)
 
-    filtered_headers = []
+    with open(h_def_file, 'r') as f:
+        h_def_content = f.read()
 
-    for header in combined_headers:
-        if function_names:
-            header.functions = filter_functions(header, function_names)
-        filtered_headers.append(header)
+    header_str = str(header)
+    final_header_content = inject_public_api(header_str, h_def_content)
 
-    for header in filtered_headers:
-        output_dir = os.path.join(os.path.dirname(__file__), 'output')
-        os.makedirs(output_dir, exist_ok=True)
+    output_file_name = os.path.basename(h_def_file).replace('.def', '')
+    output_file_path = os.path.join(output_dir, output_file_name)
 
-        output_file = os.path.join(output_dir, header.name)
-        with open(output_file, "w") as header_file:
-            header_file.write(str(header))
+    with open(output_file_path, 'w') as f:
+        f.write(final_header_content)
 
-        print(f"Generated header for {header.name}")
-        print(str(header))
+    print(f"Generated header file: {output_file_path}")
 
 if __name__ == "__main__":
     import argparse
 
-    parser = argparse.ArgumentParser(description="Generate header files from YAML")
-    parser.add_argument("yaml_files", nargs='+', help="Paths to the YAML files containing header specification")
-    parser.add_argument("--functions", nargs='*', help="List of function names to include in the header")
+    parser = argparse.ArgumentParser(description="Generate header files from YAML and .h.def templates")
+    parser.add_argument("yaml_file", help="Path to the YAML file containing header specification")
+    parser.add_argument("h_def_file", help="Path to the .h.def template file")
+    parser.add_argument("--output_dir", default=".", help="Directory to output the generated header file")
     args = parser.parse_args()
 
-    main(args.yaml_files, args.functions)
+    main(args.yaml_file, args.h_def_file, args.output_dir)

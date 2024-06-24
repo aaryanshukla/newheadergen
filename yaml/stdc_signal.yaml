@@ -1,5 +1,9 @@
 header: signal.h
-macros: []
+macros:
+  - macro_name: __need_size_t
+    macro_value: null
+  - macro_name: signal-macros
+    macro_value: null
 types:
   - type_name: pid_t
   - type_name: stack_t

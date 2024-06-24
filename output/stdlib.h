@@ -1,9 +1,9 @@
-// getenv is part of posix library
 #ifndef LLVM_LIBC_STDLIB_H
 #define LLVM_LIBC_STDLIB_H
 
 #include "__llvm-libc-common.h"
 
+#include "llvm-libc-macros/stdlib-macros.h"
 #include <llvm-libc-types/__atexithandler_t.h>
 #include <llvm-libc-types/__qsortrcompare_t.h>
 #include <llvm-libc-types/__qsortcompare_t.h>

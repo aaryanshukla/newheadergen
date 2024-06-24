@@ -1,13 +1,10 @@
 header: inttypes.h
 macros: 
-  - inttypes-macros
+  - macro_name: inttypes-macros
+    macro_value:
 types:
-<<<<<<< Updated upstream
-  - type_name: imaxdiv_t 
-=======
   - type_name: imaxdiv_t
 enums: []
->>>>>>> Stashed changes
 objects: []
 functions:
   - name: imaxabs

@@ -1040,7 +1040,7 @@ functions:
       - type: float
     guard: null
     attributes: []
-   - name: log
+  - name: log
     standard: stdc
     return_type: double
     arguments:

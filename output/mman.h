@@ -3,7 +3,7 @@
 
 #include "__llvm-libc-common.h"
 
-#include "llvm-libc-macros/sys-mman-macros"
+#include "llvm-libc-macros/sys-mman-macros.h"
 #include <llvm-libc-types/mode_t.h>
 #include <llvm-libc-types/size_t.h>
 #include <llvm-libc-types/off_t.h>

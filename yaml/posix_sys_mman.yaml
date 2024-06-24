@@ -2,6 +2,9 @@
 header: sys-mman.h
 standard: posix
 macros: []
+macros:
+  - macro_name: sys-mman-macros
+    macro_value:
 types:
   - type_name: mode_t
   - type_name: size_t
@@ -116,30 +119,3 @@ functions:
       - type: const char *
     guard: null
     attributes: []
-
-  HeaderSpec SysMMan = HeaderSpec<
-      "sys/mman.h",
-      [Macro<"MAP_ANONYMOUS">],
-      [], // Types
-      [], // Enumerations
-      [
-        FunctionSpec<
-            "mincore",
-            RetValSpec<IntType>,
-            [
-              ArgSpec<VoidPtr>,
-              ArgSpec<SizeTType>,
-              ArgSpec<UnsignedCharPtr>,
-            ]
-        >,
-        FunctionSpec<
-          "mlock2",
-          RetValSpec<IntType>,
-          [
-            ArgSpec<VoidPtr>,
-            ArgSpec<SizeTType>,
-            ArgSpec<UnsignedIntType>,
-          ]
-        >,
-      ]  // Functions
-  >;

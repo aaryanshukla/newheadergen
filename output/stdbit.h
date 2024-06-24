@@ -1,14 +1,21 @@
+//===-- C standard library header stdbit.h --------------------------------===//
+//
+// Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
+// See https://llvm.org/LICENSE.txt for license information.
+// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+//
+//===----------------------------------------------------------------------===//
+
 #ifndef LLVM_LIBC_STDBIT_H
 #define LLVM_LIBC_STDBIT_H
 
 #include "__llvm-libc-common.h"
 
-#include <llvm-libc-types/unsigned char.h>
-#include <llvm-libc-types/unsigned short.h>
-#include <llvm-libc-types/unsigned int.h>
-#include <llvm-libc-types/unsigned long.h>
-#include <llvm-libc-types/unsigned long long.h>
-#include <llvm-libc-types/bool.h>
+#ifndef LLVM_LIBC_STDBIT_H
+#define LLVM_LIBC_STDBIT_H
+
+#include "__llvm-libc-common.h"
+
 __BEGIN_C_DECLS
 
 unsigned int stdc_leading_zeros_uc(unsigned char);
@@ -144,3 +151,7 @@ unsigned long long stdc_bit_ceil_ull(unsigned long long);
 __END_C_DECLS
 
  #endif // LLVM_LIBC_STDBIT_H
+
+#include "llvm-libc-macros/stdbit-macros.h"
+
+#endif // LLVM_LIBC_STDBIT_H
