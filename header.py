@@ -30,7 +30,7 @@ class HeaderFile:
 
     def __str__(self):
         header_guard = self.name.replace('.', '_').upper()
-        content = [f"#ifndef LLVM_LIBC_{header_guard}", f"#define LLVM_LIBC_{header_guard}", "", '#include "__llvm-libc-common.h"', ""]
+        content = [""]
 
         for include in self.includes:
             content.append(str(include))
@@ -56,6 +56,4 @@ class HeaderFile:
                 content.append(str(function))
                 content.append("")  
         content.append("__END_C_DECLS\n")
-
-        content.append(f" #endif // LLVM_LIBC_{header_guard}")
         return "\n".join(content)

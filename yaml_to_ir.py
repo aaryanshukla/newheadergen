@@ -85,3 +85,5 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     main(args.yaml_file, args.h_def_file, args.output_dir)
+
+#Example Command Line Arg: python3 yaml_to_ir.py yaml/stdc_stdbit.yaml h_def/stdbit.h.def --output_dir output
