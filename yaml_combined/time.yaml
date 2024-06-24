@@ -1,12 +1,12 @@
 header: time.h
 macros: []
 types:
-  - named_type: struct_timeval
-  - named_type: clockid_t
-  - named_type: struct_timespec
-  - named_type: struct_tm
-  - named_type: time_t
-  - named_type: clock_t
+  - type_name: struct_timeval
+  - type_name: clockid_t
+  - type_name: struct_timespec
+  - type_name: struct_tm
+  - type_name: time_t
+  - type_name: clock_t
 enums: []
 objects: []
 functions:

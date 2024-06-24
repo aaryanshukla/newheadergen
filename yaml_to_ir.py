@@ -12,7 +12,7 @@ from class_implementation.classes.object import Object
 
 def yaml_to_ir(yaml_data):
     header_name = yaml_data.get('header', 'unknown.h')
-    standard = yaml_data.get('standard', None)
+    # standard = yaml_data.get('standard', None)
     header = HeaderFile(header_name)
 
     for macro_data in yaml_data.get('macros', []):
