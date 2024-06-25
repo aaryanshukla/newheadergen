@@ -14,7 +14,7 @@
 #include <stdint.h>
 
 
-#include "llvm-libc-macros/inttypes-macros.h"
+#define inttypes-macros
 #include <llvm-libc-types/imaxdiv_t.h>
 __BEGIN_C_DECLS
 

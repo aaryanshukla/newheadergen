@@ -29,7 +29,6 @@ class HeaderFile:
         self.includes.append(include)
 
     def __str__(self):
-        header_guard = self.name.replace('.', '_').upper()
         content = [""]
 
         for include in self.includes:

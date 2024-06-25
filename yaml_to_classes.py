@@ -17,7 +17,7 @@ from class_implementation.classes.macro import Macro
 from class_implementation.classes.type import Type
 from class_implementation.classes.function import Function
 from class_implementation.classes.include import Include
-from newheadergen.class_implementation.classes.enumeration import Enumeration
+from class_implementation.classes.enumeration import Enumeration
 from class_implementation.classes.object import Object
 
 
@@ -46,9 +46,10 @@ def yaml_to_classes(yaml_data):
         )
 
     for function_data in yaml_data.get("functions", []):
-        arguments = [arg["type"] for arg in function_data["arguments"]]
+        arguments = function_data.get("arguments", [])
         header.add_function(
             Function(
+                function_data.get("standard", ""),
                 function_data["return_type"],
                 function_data["name"],
                 arguments,
@@ -66,6 +67,8 @@ def yaml_to_classes(yaml_data):
         header.add_include(Include(include_data))
 
     return header
+
+
 
 
 def load_yaml_file(yaml_file):
@@ -94,8 +97,7 @@ def fill_public_api(header_str, h_def_content):
     Returns:
         The final header content with the public API filled in.
     """
-    return re.sub(r"%%public_api\(\)", header_str, h_def_content)
-
+    return h_def_content.replace("%%public_api()", header_str, 1)
 
 def main(yaml_file, h_def_file, output_dir):
     """
