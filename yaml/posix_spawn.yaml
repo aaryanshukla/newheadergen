@@ -1,5 +1,5 @@
 header: spawn.h
-standard: posix
+standard: POSIX
 macros: []
 types:
   - type_name: posix_spawn_file_actions_t
@@ -10,6 +10,7 @@ enums: []
 objects: []
 functions:
   - name: posix_spawn
+    standard: POSIX
     return_type: int
     arguments:
       - type: pid_t *__restrict
@@ -21,6 +22,7 @@ functions:
     guard: null
     attributes: []
   - name: posix_spawn_file_actions_addclose
+    standard: POSIX
     return_type: int
     arguments:
       - type: posix_spawn_file_actions_t *
@@ -28,6 +30,7 @@ functions:
     guard: null
     attributes: []
   - name: posix_spawn_file_actions_adddup2
+    standard: POSIX
     return_type: int
     arguments:
       - type: posix_spawn_file_actions_t *
@@ -36,6 +39,7 @@ functions:
     guard: null
     attributes: []
   - name: posix_spawn_file_actions_addopen
+    standard: POSIX
     return_type: int
     arguments:
       - type: posix_spawn_file_actions_t *__restrict
@@ -46,12 +50,14 @@ functions:
     guard: null
     attributes: []
   - name: posix_spawn_file_actions_destroy
+    standard: POSIX
     return_type: int
     arguments:
       - type: posix_spawn_file_actions_t *
     guard: null
     attributes: []
   - name: posix_spawn_file_actions_init
+    standard: POSIX
     return_type: int
     arguments:
       - type: posix_spawn_file_actions_t *

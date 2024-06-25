@@ -1,5 +1,5 @@
 header: sys-socket.h # sys/socket
-standard: posix
+standard: POSIX
 macros: []
 types:
   - type_name: struct_sockaddr_un
@@ -9,6 +9,7 @@ types:
 enums: []
 functions:
   - name: socket
+    standard: POSIX
     return_type: int
     arguments:
       - type: int
@@ -17,6 +18,7 @@ functions:
     guard: null
     attributes: []
   - name: bind
+    standard: POSIX
     return_type: int
     arguments:
       - type: int

@@ -9,7 +9,7 @@ enums: []
 objects: []
 functions:
   - name: hcreate
-    standard: posix
+    standard: POSIX
     return_type: int
     arguments:
       - type: size_t
@@ -17,7 +17,7 @@ functions:
     attributes: []
   # this is function is from gnu extension
   - name: hcreate_r
-    standard: gnu
+    standard: GNUExtensions
     return_type: int
     arguments:
       - type: size_t
@@ -25,7 +25,7 @@ functions:
     guard: null
     attributes: []
   - name: hsearch
-    standard: posix
+    standard: POSIX
     return_type: ENTRY *
     arguments:
       - type: ENTRY
@@ -34,7 +34,7 @@ functions:
     attributes: []
   # this function is from gnu extenson 
   - name: hsearch_r
-    standard: gnu
+    standard: GNUExtensions
     return_type: int
     arguments:
       - type: ENTRY
@@ -45,20 +45,20 @@ functions:
     attributes: []
   # this function is from gnu extension 
   - name: hdestroy
-    standard: gnu 
+    standard: GNUExtensions 
     return_type: void
     arguments: []
     guard: null
     attributes: []
   - name: hdestroy_r
-    standard: posix
+    standard: POSIX
     return_type: void
     arguments:
       - type: struct hsearch_data *
     guard: null
     attributes: []
   - name: insque
-    standard: posix
+    standard: POSIX
     return_type: void
     arguments:
       - type: void *
@@ -66,7 +66,7 @@ functions:
     guard: null
     attributes: []
   - name: remque
-    standard: posix
+    standard: POSIX
     return_type: void
     arguments:
       - type: void *

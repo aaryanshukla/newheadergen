@@ -1,6 +1,6 @@
 #this is sys/select from the posix library 
 header: sys-select.h
-standard: posix
+standard: POSIX
 macros: []
 types:
   - type_name: struct_timeval
@@ -13,6 +13,7 @@ enums: []
 objects: []
 functions:
   - name: select
+    standard: POSIX
     return_type: int
     arguments:
       - type: int
