@@ -1,5 +1,5 @@
 import unittest
-from class_implementation.classes.enums import Enumeration
+from newheadergen.class_implementation.classes.enumeration import Enumeration
 
 class TestEnums(unittest.TestCase):
     def test_enum_definition(self):

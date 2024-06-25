@@ -17,7 +17,7 @@ from class_implementation.classes.macro import Macro
 from class_implementation.classes.type import Type
 from class_implementation.classes.function import Function
 from class_implementation.classes.include import Include
-from class_implementation.classes.enums import Enumeration
+from newheadergen.class_implementation.classes.enumeration import Enumeration
 from class_implementation.classes.object import Object
 
 
