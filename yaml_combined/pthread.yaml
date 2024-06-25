@@ -1,23 +1,5 @@
 header: pthread.h
-macros:
-  # these should be deleted since they are already in h.def
-  - macro_name: PTHREAD_STACK_MIN
-    macro_type: (1 << 14)
-  - macro_name: PTHREAD_MUTEX_INITIALIZER
-    macro_type: "{0}"
-  - macro_name: PTHREAD_ONCE_INIT
-    macro_type: "{0}"
-  - macro_name: PTHREAD_PROCESS_PRIVATE
-    macro_type: 0
-  - macro_name: PTHREAD_PROCESS_SHARED
-    macro_type: 1
-  - macro_name: PTHREAD_RWLOCK_PREFER_READER_NP
-    macro_type: 0
-  - macro_name: PTHREAD_RWLOCK_PREFER_WRITER_NP
-    macro_type: 1
-  - macro_name: PTHREAD_RWLOCK_PREFER_WRITER_NONRECURSIVE_NP
-    macro_type: 2
-
+macros: []
 types:
   - type_name: pthread_t
   - type_name: pthread_once_t
