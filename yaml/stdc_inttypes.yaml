@@ -1,4 +1,5 @@
 header: inttypes.h
+standard:stdc
 macros: 
   - macro_name: inttypes-macros
     macro_value:

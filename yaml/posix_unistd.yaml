@@ -1,4 +1,3 @@
-#need to add standard POSIX for the rest
 header: unistd.h
 standard: POSIX
 macros: []
@@ -12,7 +11,17 @@ types:
   - type_name: __exec_envp_t
   - type_name: __exec_argv_t
 enums: []
-objects: []
+objects:
+  - object_name: environ
+    object_type: char **
+  - object_name: optarg
+    object_type: char *
+  - object_name: optind
+    object_type: int
+  - object_name: opterr
+    object_type: int
+  - object_name: optopt
+  - object_type: int
 functions:
   - name: access
     standard: POSIX
@@ -186,6 +195,7 @@ functions:
     guard: null
     attributes: []
   - name: read
+    standard: POSIX
     return_type: ssize_t
     arguments:
       - type: int
@@ -194,6 +204,7 @@ functions:
     guard: null
     attributes: []
   - name: readlink
+    standard: POSIX
     return_type: ssize_t
     arguments:
       - type: const char * __restrict
@@ -202,6 +213,7 @@ functions:
     guard: null
     attributes: []
   - name: readlinkat
+    standard: POSIX
     return_type: ssize_t
     arguments:
       - type: const char * __restrict
@@ -210,12 +222,14 @@ functions:
     guard: null
     attributes: []
   - name: rmdir
+    standard: POSIX
     return_type: int
     arguments:
       - type: const char *
     guard: null
     attributes: []
   - name: symlink
+    standard: POSIX
     return_type: int
     arguments:
       - type: const char *
@@ -223,6 +237,7 @@ functions:
     guard: null
     attributes: []
   - name: symlinkat
+    standard: POSIX
     return_type: int
     arguments:
       - type: int
@@ -232,12 +247,14 @@ functions:
     guard: null
     attributes: []
   - name: sysconf
+    standard: POSIX
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: truncate
+    standard: POSIX
     return_type: int
     arguments:
       - type: const char *
@@ -245,12 +262,14 @@ functions:
     guard: null
     attributes: []
   - name: unlink
+    standard: POSIX
     return_type: int
     arguments:
       - type: const char *
     guard: null
     attributes: []
   - name: unlinkat
+    standard: POSIX
     return_type: int
     arguments:
       - type: int
@@ -259,6 +278,7 @@ functions:
     guard: null
     attributes: []
   - name: write
+    standard: POSIX
     return_type: ssize_t
     arguments:
       - type: int
@@ -267,6 +287,7 @@ functions:
     guard: null
     attributes: []
   - name: _exit
+    standard: POSIX
     return_type: void
     arguments:
       - type: int
@@ -274,6 +295,7 @@ functions:
     attributes:
       - noreturn
   - name: execv
+    standard: POSIX
     return_type: int
     arguments:
       - type: const char *
@@ -281,11 +303,13 @@ functions:
     guard: null
     attributes: []
   - name: fork
+    standard: POSIX
     return_type: pid_t
     arguments: []
     guard: null
     attributes: []
   - name: __llvm_libc_syscall
+    standard: POSIX
     return_type: long
     arguments:
       - type: long
@@ -298,6 +322,7 @@ functions:
     guard: null
     attributes: []
   - name: getopt
+    standard: POSIX
     return_type: int
     arguments:
       - type: int
@@ -306,6 +331,7 @@ functions:
     guard: null
     attributes: []
   - name: swab
+    standard: POSIX
     return_type: void
     arguments:
       - type: const void * __restrict
@@ -314,26 +340,31 @@ functions:
     guard: null
     attributes: []
   - name: enivron
+    standard: POSIX
     return_type: extern char **
     arguments: []
     guard: null
     attributes: []
   - name: optarg
+    standard: POSIX
     return_type: extern char *
     arguments: []
     guard: null
     attributes: []
   - name: optind
+    standard: POSIX
     return_type: extern int 
     arguments: []
     guard: null
     attributes: []
   - name: optopt
+    standard: POSIX
     return_type: extern int 
     arguments: []
     guard: null
     attributes: []
   - name: opterr
+    standard: POSIX
     return_type: extern int 
     arguments: []
     guard: null
