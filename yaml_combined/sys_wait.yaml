@@ -1,6 +1,4 @@
-#this is in sys/wait for POSIX
-header: sys-wait.h
-standard: POSIX
+header: sys-wait.h #sys/wait.h
 macros: []
 types:
   - type_name: siginfo_t
@@ -17,7 +15,7 @@ functions:
     guard: null
     attributes: []
   - name: wait4
-    standard: POSIX
+    standard: BSDExtensions # and POSIX
     return_type: pid_t
     arguments:
       - type: pid_t

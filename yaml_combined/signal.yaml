@@ -23,7 +23,7 @@ functions:
     guard: null
     attributes: []
   - name: kill
-    standard: posix 
+    standard: POSIX 
     return_type: int
     arguments:
       - type: pid_t
@@ -31,7 +31,7 @@ functions:
     guard: null
     attributes: []
   - name: sigaction
-    standard: posix
+    standard: POSIX
     return_type: int
     arguments:
       - type: int
@@ -40,7 +40,7 @@ functions:
     guard: null
     attributes: []
   - name: sigaltstack
-    standard: posix 
+    standard: POSIX 
     return_type: int
     arguments:
       - type: const stack_t * __restrict
@@ -48,7 +48,7 @@ functions:
     guard: null
     attributes: []
   - name: sigdelset
-    standard: posix 
+    standard: POSIX 
     return_type: int
     arguments:
       - type: sigset_t *
@@ -56,7 +56,7 @@ functions:
     guard: null
     attributes: []
   - name: sigaddset
-    standard: posix
+    standard: POSIX
     return_type: int
     arguments:
       - type: sigset_t *
@@ -64,14 +64,14 @@ functions:
     guard: null
     attributes: []
   - name: sigemptyset
-    standard: posix
+    standard: POSIX
     return_type: int
     arguments:
       - type: sigset_t *
     guard: null
     attributes: []
   - name: sigprocmask
-    standard: posix 
+    standard: POSIX 
     return_type: int
     arguments:
       - type: int
@@ -80,7 +80,7 @@ functions:
     guard: null
     attributes: []
   - name: sigfillset
-    standard: posix 
+    standard: POSIX 
     return_type: int
     arguments:
       - type: sigset_t *

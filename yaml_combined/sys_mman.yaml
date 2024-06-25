@@ -1,7 +1,7 @@
-#known as sys/mman in posix 
+#known as sys/mman in POSIX 
 #TODO: Needs to be moved to yaml_combined
 header: sys-mman.h
-standard: posix
+standard: POSIX
 macros: []
 macros:
   - macro_name: sys-mman-macros
@@ -51,7 +51,7 @@ functions:
       - type: size_t
     guard: null
     attributes: []
-  - name: posix_madvise
+  - name: POSIX_madvise
     standard: POSIX
     return_type: int
     arguments:

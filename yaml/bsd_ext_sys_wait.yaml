@@ -7,7 +7,7 @@ enums: []
 objects: []
 functions:
   - name: wait4
-    standard: BSDExtensions
+    standard: BSDExtensions # but also in POSIX
     return_type: pid_t
     arguments:
       - type: pid_t
