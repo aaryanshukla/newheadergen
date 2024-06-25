@@ -46,9 +46,10 @@ def yaml_to_classes(yaml_data):
         )
 
     for function_data in yaml_data.get("functions", []):
-        arguments = [arg["type"] for arg in function_data["arguments"]]
+        arguments = function_data.get("arguments", [])
         header.add_function(
             Function(
+                function_data.get("standard", ""),
                 function_data["return_type"],
                 function_data["name"],
                 arguments,
@@ -66,6 +67,8 @@ def yaml_to_classes(yaml_data):
         header.add_include(Include(include_data))
 
     return header
+
+
 
 
 def load_yaml_file(yaml_file):

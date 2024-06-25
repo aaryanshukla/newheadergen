@@ -24,27 +24,27 @@
 #include <llvm-libc-types/clock_t.h>
 __BEGIN_C_DECLS
 
-char * asctime(struct tm *);
+asctime ['struct tm *']();
 
-char * asctime_r(struct tm *, char *);
+asctime_r ['struct tm *', 'char *']();
 
-int clock_gettime(clockid_t, struct timespec *);
+clock_gettime ['clockid_t', 'struct timespec *']();
 
-clock_t clock();
+clock []();
 
-double difftime(time_t, time_t);
+difftime ['time_t', 'time_t']();
 
-int gettimeofday(struct timeval *, void *);
+gettimeofday ['struct timeval *', 'void *']();
 
-struct tm * gmtime(time_t *);
+gmtime ['time_t *']();
 
-struct tm * gmtime_r(time_t *, struct tm *);
+gmtime_r ['time_t *', 'struct tm *']();
 
-time_t mktime(struct tm *);
+mktime ['struct tm *']();
 
-int nanosleep(const struct timespec *, struct timespec *);
+nanosleep ['const struct timespec *', 'struct timespec *']();
 
-time_t time(time_t *);
+time ['time_t *']();
 
 __END_C_DECLS
 
