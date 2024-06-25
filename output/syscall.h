@@ -10,8 +10,6 @@
 #define LLVM_LIBC_SYS_SYSCALL_H
 
 
-%%begin()
-
 #include <asm/unistd.h>
 
 #ifdef __NR_FAST_atomic_update
@@ -2349,6 +2347,5 @@
 #ifdef __NR_writev
 #define SYS_writev __NR_writev
 #endif
-
 
 #endif // LLVM_LIBC_SYS_SYSCALL_H
