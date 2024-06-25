@@ -1,10 +1,19 @@
+//===-- C standard library header unistd.h --------------------------------===//
+//
+// Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
+// See https://llvm.org/LICENSE.txt for license information.
+// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+//
+//===----------------------------------------------------------------------===//
+
 #ifndef LLVM_LIBC_UNISTD_H
 #define LLVM_LIBC_UNISTD_H
 
 #include "__llvm-libc-common.h"
+#include "llvm-libc-macros/file-seek-macros.h"
+#include "llvm-libc-macros/unistd-macros.h"
 
-#include "llvm-libc-macros/file-seek-macros"
-#include "llvm-libc-macros/unistd-macros"
+
 #include <llvm-libc-types/uid_t.h>
 #include <llvm-libc-types/ssize_t.h>
 #include <llvm-libc-types/size_t.h>
@@ -105,4 +114,5 @@ extern int opterr();
 
 __END_C_DECLS
 
- #endif // LLVM_LIBC_UNISTD_H
+
+#endif // LLVM_LIBC_UNISTD_H

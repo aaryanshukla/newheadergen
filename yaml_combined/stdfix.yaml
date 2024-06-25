@@ -191,6 +191,13 @@ functions:
       - type: unsigned long fract
     guard: LIBC_COMPILER_HAS_FIXED_POINT
     attributes: []
+  - name: sqrtulk
+    standard: llvm_libc_stdfix_ext
+    return_type: unsigned long accum
+    arguments:
+      - type: unsigned long accum
+    guard: LIBC_COMPILER_HAS_FIXED_POINT
+    attributes: []
   - name: uhksqrtus # and llvm_libc_stdfix_ext
     standard: stdc_ext
     return_type: unsigned short accum
