@@ -4,9 +4,9 @@ class Macro:
         self.value = value
 
     def __str__(self):
-        if self.name.endswith("-macros") or self.name.endswith("-macro"):
-            return f'#include "llvm-libc-macros/{self.name}.h"'
-        elif self.value != self.name:
+        # if self.name.endswith("-macros") or self.name.endswith("-macro"):
+        #     return f'#include "llvm-libc-macros/{self.name}.h"'
+        if self.value != None:
             return f'#define {self.name} {self.value}'
         else:
             return f"#define {self.name}"
