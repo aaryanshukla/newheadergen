@@ -51,9 +51,8 @@ class HeaderFile:
             content.append("};")
         
         content.append("__BEGIN_C_DECLS\n")
-        if self.functions:
-            for function in self.functions:
-                content.append(str(function))
-                content.append("")  
+        for function in self.functions:
+            content.append(str(function))
+            content.append("")  
         content.append("__END_C_DECLS\n")
         return "\n".join(content)
