@@ -21,7 +21,7 @@ objects:
   - object_name: opterr
     object_type: int
   - object_name: optopt
-  - object_type: int
+    object_type: int
 functions:
   - name: access
     standard: POSIX

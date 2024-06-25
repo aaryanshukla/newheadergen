@@ -38,9 +38,6 @@ class HeaderFile:
         for macro in self.macros:
             content.append(str(macro))
 
-        for object in self.objects:
-            content.append(str(object))
-
         for type_ in self.types:
             content.append(str(type_))
 
@@ -53,6 +50,9 @@ class HeaderFile:
         content.append("__BEGIN_C_DECLS\n")
         for function in self.functions:
             content.append(str(function))
-            content.append("")  
+            content.append("") 
+        for object in self.objects:
+            content.append(str(object))
         content.append("__END_C_DECLS\n")
+        
         return "\n".join(content)

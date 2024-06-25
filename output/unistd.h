@@ -112,6 +112,11 @@ extern int optopt();
 
 extern int opterr();
 
+extern char ** environ
+extern char * optarg
+extern int optind
+extern int opterr
+extern int optopt
 __END_C_DECLS
 
 
