@@ -1,7 +1,7 @@
 header: stdckdint.h
 standard: stdc
 macros: []
-types:
+types: []
 enums: []
 objects: []
 functions: []

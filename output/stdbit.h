@@ -11,10 +11,6 @@
 
 #include "__llvm-libc-common.h"
 
-#ifndef LLVM_LIBC_STDBIT_H
-#define LLVM_LIBC_STDBIT_H
-
-#include "__llvm-libc-common.h"
 
 __BEGIN_C_DECLS
 
@@ -150,7 +146,6 @@ unsigned long long stdc_bit_ceil_ull(unsigned long long);
 
 __END_C_DECLS
 
- #endif // LLVM_LIBC_STDBIT_H
 
 #include "llvm-libc-macros/stdbit-macros.h"
 

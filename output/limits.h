@@ -1,4 +1,4 @@
-//===-- C standard library header stdckdint.h -----------------------------===//
+//===-- C standard library header limits.h --------------------------------===//
 //
 // Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
 // See https://llvm.org/LICENSE.txt for license information.
@@ -6,17 +6,9 @@
 //
 //===----------------------------------------------------------------------===//
 
-#ifndef LLVM_LIBC_STDCKDINT_H
-#define LLVM_LIBC_STDCKDINT_H
+#ifndef LLVM_LIBC_LIMITS_H
+#define LLVM_LIBC_LIMITS_H
 
-#include "__llvm-libc-common.h"
+#include "llvm-libc-macros/limits-macros.h"
 
-
-__BEGIN_C_DECLS
-
-__END_C_DECLS
-
-
-#include "llvm-libc-macros/stdckdint-macros.h"
-
-#endif // LLVM_LIBC_STDCKDINT_H
+#endif // LLVM_LIBC_LIMITS_H
