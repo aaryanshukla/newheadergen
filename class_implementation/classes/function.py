@@ -8,7 +8,9 @@ class Function:
         self.attributes = attributes or []
 
     def __str__(self):
-        result = f"{self.return_type} {self.name}({', '.join(self.arguments)});"
+        args_str = ", ".join(self.arguments)
+        attributes_str = " ".join(self.attributes)
+        result = f"{self.return_type} {self.name}({args_str}){attributes_str};"
         if self.guard:
-            return f"#ifdef {self.guard}\n{result}\n#endif // {self.guard}"
+            result = f"#ifdef {self.guard}\n{result}\n#endif // {self.guard}"
         return result
