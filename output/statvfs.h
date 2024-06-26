@@ -11,6 +11,15 @@
 
 #include <__llvm-libc-common.h>
 
-%%public_api()
+
+#include <llvm-libc-types/StructStatvfs.h>
+__BEGIN_C_DECLS
+
+int statvfs(const char *__restrict, struct statvfs *__restrict);
+
+int fstatvfs(int, struct statvfs *);
+
+__END_C_DECLS
+
 
 #endif // LLVM_LIBC_SYS_STATVFS_H

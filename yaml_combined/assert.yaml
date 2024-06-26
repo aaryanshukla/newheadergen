@@ -1,3 +1,4 @@
+#TODO: Assert.h has a lot of weird looking ifdef and undef need to add that 
 header: assert.h
 macros:
     # API.td calls on AssertMacro and StaticAssertMacro,
@@ -19,3 +20,20 @@ functions:
       - type: const char *
       - type: unsigned
       - type: const char *
+
+#ifndef __cplusplus
+#undef static_assert
+#define static_assert _Static_assert
+#endif
+
+#undef assert
+#ifdef NDEBUG
+#define assert(e) (void)0
+#else
+#ifdef __cplusplus
+extern "C"
+#endif
+_Noreturn void __assert_fail(const char *, const char *, unsigned, const char *) __NOEXCEPT;
+#define assert(e)  \
+  ((e) ? (void)0 : __assert_fail(#e, __FILE__, __LINE__, __PRETTY_FUNCTION__))
+#endif

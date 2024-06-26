@@ -12,10 +12,12 @@
 // This file may be usefully included multiple times to change assert()'s
 // definition based on NDEBUG.
 
+#define static_assert
+#define assert
 
-#define static_assert None
-#define assert None
 __BEGIN_C_DECLS
+
+[[noreturn]] __assert_fail(const char *, const char *, unsigned, const char *);
 
 __END_C_DECLS
 
