@@ -1,5 +1,4 @@
 header: fcntl.h
-standard: POSIX
 macros: []
 types: 
   - type_name: off_t
@@ -8,7 +7,8 @@ enums: []
 objects: []
 functions:
   - name: creat
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: const char *
@@ -16,7 +16,8 @@ functions:
     guard: null
     attributes: []
   - name: fcntl
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: int
@@ -25,7 +26,8 @@ functions:
     guard: null
     attributes: []
   - name: open
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: const char *
@@ -34,7 +36,8 @@ functions:
     guard: null
     attributes: []
   - name: openat
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: int

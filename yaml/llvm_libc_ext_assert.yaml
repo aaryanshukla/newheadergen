@@ -7,7 +7,8 @@ enums: []
 objects: []
 functions:
   - name: __assert_fail
-    standard: llvm_libc_ext
+    standard: 
+      - llvm_libc_ext
     return_type: "[[noreturn]]"
     arguments:
       - type: const char *

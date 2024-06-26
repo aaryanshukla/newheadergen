@@ -1,6 +1,5 @@
 # known as sys/resource within posix 
 header: sys-resource.h
-standard: POSIX
 macros: []
 types:
   - type_name: struct_rlimit
@@ -9,14 +8,16 @@ enums: []
 objects: []
 functions:
   - name: getrlimit
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: struct rlimit *
     guard: null
     attributes: []
   - name: setrlimit
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: const struct rlimit

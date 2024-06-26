@@ -16,14 +16,16 @@ enums: []
 objects: []
 functions:
   - name: raise
-    standard: stdc 
+    standard: 
+      - stdc 
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: kill
-    standard: POSIX 
+    standard: 
+      - POSIX 
     return_type: int
     arguments:
       - type: pid_t
@@ -31,7 +33,8 @@ functions:
     guard: null
     attributes: []
   - name: sigaction
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: int
@@ -40,7 +43,8 @@ functions:
     guard: null
     attributes: []
   - name: sigaltstack
-    standard: POSIX 
+    standard: 
+      - POSIX 
     return_type: int
     arguments:
       - type: const stack_t * __restrict
@@ -48,7 +52,8 @@ functions:
     guard: null
     attributes: []
   - name: sigdelset
-    standard: POSIX 
+    standard: 
+      - POSIX 
     return_type: int
     arguments:
       - type: sigset_t *
@@ -56,7 +61,8 @@ functions:
     guard: null
     attributes: []
   - name: sigaddset
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: sigset_t *
@@ -64,14 +70,16 @@ functions:
     guard: null
     attributes: []
   - name: sigemptyset
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: sigset_t *
     guard: null
     attributes: []
   - name: sigprocmask
-    standard: POSIX 
+    standard: 
+      - POSIX 
     return_type: int
     arguments:
       - type: int
@@ -80,14 +88,16 @@ functions:
     guard: null
     attributes: []
   - name: sigfillset
-    standard: POSIX 
+    standard: 
+      - POSIX 
     return_type: int
     arguments:
       - type: sigset_t *
     guard: null
     attributes: []
   - name: signal
-    standard: stdc
+    standard: 
+      - stdc
     return_type: __sighandler_t
     arguments:
       - type: int

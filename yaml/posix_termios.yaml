@@ -10,21 +10,24 @@ enums: []
 objects: []
 functions:
   - name: cfgetispeed
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: speed_t
     arguments:
       - type: const struct termios *
     guard: null
     attributes: []
   - name: cfgetospeed
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: speed_t
     arguments:
       - type: const struct termios *
     guard: null
     attributes: []
   - name: cfsetispeed
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: struct termios *
@@ -32,7 +35,8 @@ functions:
     guard: null
     attributes: []
   - name: cfsetospeed
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: struct termios *
@@ -40,7 +44,8 @@ functions:
     guard: null
     attributes: []
   - name: tcgetattr
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: int
@@ -48,21 +53,24 @@ functions:
     guard: null
     attributes: []
   - name: tcgetsid
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: pid_t
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: tcdrain
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: tcflow
-    standard: POSIX 
+    standard: 
+      - POSIX 
     return_type: int
     arguments:
       - type: int
@@ -70,7 +78,8 @@ functions:
     guard: null
     attributes: []
   - name: tcflush
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: int
@@ -78,7 +87,8 @@ functions:
     guard: null
     attributes: []
   - name: tcsendbreak
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: int
@@ -86,7 +96,8 @@ functions:
     guard: null
     attributes: []
   - name: tcsetattr
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: int

@@ -9,7 +9,8 @@ enums: []
 objects: []
 functions:
   - name: mincore
-    standard: Linux
+    standard: 
+      - Linux
     return_type: int
     arguments:
       - type: void *
@@ -18,7 +19,8 @@ functions:
     guard: null
     attributes: []
   - name: mlock2
-    standard: Linux
+    standard: 
+      - Linux
     return_type: int
     arguments:
       - type: void *

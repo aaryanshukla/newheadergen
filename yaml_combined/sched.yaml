@@ -1,5 +1,4 @@
 header: sched.h
-standard: POSIX
 macros: []
 types:
   - type_name: struct_timespec
@@ -12,21 +11,24 @@ enums: []
 objects: []
 functions:
   - name: sched_get_priority_max
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: sched_get_priority_min
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: sched_getaffinity
-    standard: GNUExtensions
+    standard: 
+      - GNUExtensions
     return_type: int
     arguments:
       - type: pid_t
@@ -35,7 +37,8 @@ functions:
     guard: null
     attributes: []
   - name: sched_getparam
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: pid_t
@@ -43,7 +46,8 @@ functions:
     guard: null
     attributes: []
   - name: sched_getscheduler
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: pid_t
@@ -52,7 +56,8 @@ functions:
     guard: null
     attributes: []
   - name: sched_rr_get_interval
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: pid_t
@@ -60,7 +65,8 @@ functions:
     guard: null
     attributes: []
   - name: sched_setaffinity
-    standard: GNUExtensions
+    standard: 
+      - GNUExtensions
     return_type: int
     arguments:
       - type: pid_t
@@ -69,7 +75,8 @@ functions:
     guard: null
     attributes: []
   - name: sched_setparam
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: pid_t
@@ -77,20 +84,23 @@ functions:
     guard: null
     attributes: []
   - name: sched_setscheduler
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: pid_t
     guard: null
     attributes: []
   - name: sched_yield
-    standard: POSIX 
+    standard: 
+      - POSIX 
     return_type: int
     arguments: []
     guard: null
     attributes: []
   - name: __sched_getcpucount
-    standard: llvm_libc_ext
+    standard: 
+      - llvm_libc_ext
     return_type: int
     arguments:
       - type: size_t

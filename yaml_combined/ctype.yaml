@@ -1,103 +1,116 @@
 header: ctype.h
-standard: stdc
 macros: []
 types: []
 enums: []
 objects: []
 functions:
   - name: isalnum
-    standard: stdc
+    standard: 
+      - stdc
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: isalpha
-    standard: stdc
+    standard: 
+      - stdc
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: isblank
-    standard: stdc
+    standard: 
+      - stdc
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: iscntrl
-    standard: stdc
+    standard: 
+      - stdc
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: isdigit
-    standard: stdc
+    standard: 
+      - stdc
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: isgraph
-    standard: stdc
+    standard: 
+      - stdc
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: islower
-    standard: stdc
+    standard: 
+      - stdc
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: isprint
-    standard: stdc
+    standard: 
+      - stdc
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: ispunct
-    standard: stdc
+    standard: 
+      - stdc
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: isspace
-    standard: stdc
+    standard: 
+      - stdc
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: isupper
-    standard: stdc
+    standard: 
+      - stdc
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: isxdigit
-    standard: stdc
+    standard: 
+      - stdc
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: tolower
-    standard: stdc
+    standard: 
+      - stdc
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: toupper
-    standard: stdc
+    standard: 
+      - stdc
     return_type: int
     arguments:
       - type: int
@@ -106,7 +119,8 @@ functions:
     # below is the only posix function
     functions:
   - name: isascii
-    standard: posix
+    standard: 
+      - posix
     return_type: int
     arguments:
       - type: int
@@ -114,7 +128,8 @@ functions:
     attributes: []
   # this is a gnu extension function
   - name: toascii
-    standard: gnu
+    standard: 
+      - gnu
     return_type: int
     arguments:
       - type: int

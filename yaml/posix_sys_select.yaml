@@ -13,7 +13,8 @@ enums: []
 objects: []
 functions:
   - name: select
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: int

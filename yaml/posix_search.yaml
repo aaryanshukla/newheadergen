@@ -9,7 +9,8 @@ enums: []
 objects: []
 functions:
   - name: hcreate
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: size_t
@@ -25,7 +26,8 @@ functions:
     guard: null
     attributes: []
   - name: hsearch
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: ENTRY *
     arguments:
       - type: ENTRY
@@ -51,14 +53,16 @@ functions:
     guard: null
     attributes: []
   - name: hdestroy_r
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: void
     arguments:
       - type: struct hsearch_data *
     guard: null
     attributes: []
   - name: insque
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: void
     arguments:
       - type: void *
@@ -66,7 +70,8 @@ functions:
     guard: null
     attributes: []
   - name: remque
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: void
     arguments:
       - type: void *

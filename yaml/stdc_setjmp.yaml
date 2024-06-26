@@ -7,12 +7,15 @@ enums: []
 objects: []
 functions:
   - name: longjmp
-    standard: stdc
+    standard: 
+      - stdc
     return_type: void
     arguments:
       - type: _jmp_buf 
       - type: int
   - name: setjmp
+    standard: 
+      - stdc
     return_type: int
     arguments:
       - type: _jmp_buf

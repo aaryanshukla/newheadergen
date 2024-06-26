@@ -1,5 +1,4 @@
 header: inttypes.h
-standard: stdc
 macros: 
   - macro_name: inttypes-macros
     macro_value:
@@ -9,14 +8,16 @@ enums: []
 objects: []
 functions:
   - name: imaxabs
-    standard: stdc
+    standard: 
+      - stdc
     return_type: intmax_t
     arguments:
       - type: intmax_t
     guard: null
     attributes: []
   - name: imaxdiv
-    standard: stdc
+    standard: 
+      - stdc
     return_type: imaxdiv_t
     arguments:
       - type: intmax_t
@@ -24,7 +25,8 @@ functions:
     guard: null
     attributes: []
   - name: strtoimax
-    standard: stdc
+    standard: 
+      - stdc
     return_type: intmax_t
     arguments:
       - type: const char *__restrict
@@ -33,7 +35,8 @@ functions:
     guard: null
     attributes: []
   - name: strtoumax
-    standard: stdc
+    standard: 
+      - stdc
     return_type: uintmax_t
     arguments:
       - type: const char *__restrict

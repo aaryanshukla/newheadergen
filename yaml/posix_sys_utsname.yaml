@@ -7,7 +7,8 @@ types:
 enums: []
 functions:
   - name: uname
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: struct utsname *

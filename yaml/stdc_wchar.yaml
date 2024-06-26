@@ -1,5 +1,4 @@
 header: wchar.h
-standard: stdc
 macros: []
 types:
   - type_name: size_t
@@ -9,7 +8,8 @@ enums: []
 objects: []
 functions:
   - name: wctob
-    standard: stdc
+    standard: 
+      - stdc
     return_type: int
     arguments:
       - type: wint_t

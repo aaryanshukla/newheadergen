@@ -6,7 +6,8 @@ enums: []
 objects: []
 functions:
   - name: rpc_host_call
-    standard: GPUExtensions
+    standard: 
+      - GPUExtensions
     return_type: void
     arguments:
       - type: void *
@@ -15,7 +16,8 @@ functions:
     guard: null
     attributes: []
   - name: rpc_fprintf
-    standard: GPUExtensions
+    standard: 
+      - GPUExtensions
     return_type: int
     arguments:
       - type: ::FILE *__restrict # FILE restricted pointer with ::?

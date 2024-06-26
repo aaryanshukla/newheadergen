@@ -1,5 +1,4 @@
 header: sys-wait.h #sys/wait.h
-standard: BSDExtensions
 macros: []
 types:
   - type_name: struct_rusage
@@ -7,7 +6,9 @@ enums: []
 objects: []
 functions:
   - name: wait4
-    standard: BSDExtensions # but also in POSIX
+    standard: 
+      - BSDExtensions  
+      - POSIX
     return_type: pid_t
     arguments:
       - type: pid_t

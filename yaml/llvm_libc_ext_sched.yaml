@@ -11,7 +11,8 @@ functions:
 # actual function header file is just sched_getcpucount.h,
 # but the function in the header file is still __sched_getcpucount
   - name: __sched_getcpucount
-    standard: llvm_libc_ext
+    standard: 
+      - llvm_libc_ext
     return_type: int
     arguments:
       - type: size_t

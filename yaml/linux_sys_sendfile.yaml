@@ -9,7 +9,8 @@ enums: []
 objects: []
 functions: 
   - name: sendfile
-    standard: Linux
+    standard: 
+      - Linux
     return_type: ssize_t
     arguments: 
       - type: int 

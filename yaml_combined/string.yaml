@@ -6,7 +6,8 @@ enums: []
 objects: []
 functions:
   - name: memcpy
-    standard: stdc
+    standard: 
+      - stdc
     return_type: void *
     arguments:
       - type: void *__restrict
@@ -15,7 +16,8 @@ functions:
     guard: null
     attributes: []
   - name: memmove
-    standard: stdc
+    standard: 
+      - stdc
     return_type: void *
     arguments:
       - type: void *
@@ -24,7 +26,8 @@ functions:
     guard: null
     attributes: []
   - name: memcmp
-    standard: stdc
+    standard: 
+      - stdc
     return_type: int
     arguments:
       - type: const void *
@@ -33,7 +36,8 @@ functions:
     guard: null
     attributes: []
   - name: memchr
-    standard: stdc
+    standard: 
+      - stdc
     return_type: void *
     arguments:
       - type: const void *
@@ -42,7 +46,8 @@ functions:
     guard: null
     attributes: []
   - name: memset
-    standard: stdc
+    standard: 
+      - stdc
     return_type: void *
     arguments:
       - type: void *
@@ -51,7 +56,8 @@ functions:
     guard: null
     attributes: []
   - name: memset_explicit
-    standard: stdc
+    standard: 
+      - stdc
     return_type: void *
     arguments:
       - type: void *
@@ -60,7 +66,8 @@ functions:
     guard: null
     attributes: []
   - name: strcpy
-    standard: stdc
+    standard: 
+      - stdc
     return_type: char
     arguments:
       - type: char *__restrict
@@ -68,7 +75,8 @@ functions:
     guard: null
     attributes: []
   - name: strncpy
-    standard: stdc
+    standard: 
+      - stdc
     return_type: char *
     arguments:
       - type: char *__restrict
@@ -77,7 +85,8 @@ functions:
     guard: null
     attributes: []
   - name: strcat
-    standard: stdc
+    standard: 
+      - stdc
     return_type: char *
     arguments:
       - type: char *__restrict
@@ -85,7 +94,8 @@ functions:
     guard: null
     attributes: []
   - name: strncat
-    standard: stdc
+    standard: 
+      - stdc
     return_type: char *
     arguments:
       - type: char *
@@ -94,7 +104,8 @@ functions:
     guard: null
     attributes: []
   - name: strcmp
-    standard: stdc
+    standard: 
+      - stdc
     return_type: int
     arguments:
       - type: const char *
@@ -102,7 +113,8 @@ functions:
     guard: null
     attributes: []
   - name: strcoll
-    standard: stdc
+    standard: 
+      - stdc
     return_type: int
     arguments:
       - type: const char *
@@ -110,7 +122,8 @@ functions:
     guard: null
     attributes: []
   - name: strncmp
-    standard: stdc
+    standard: 
+      - stdc
     return_type: int
     arguments:
       - type: const char *
@@ -119,7 +132,8 @@ functions:
     guard: null
     attributes: []
   - name: strxfrm
-    standard: stdc
+    standard: 
+      - stdc
     return_type: size_t
     arguments:
       - type: char *__restrict
@@ -128,7 +142,8 @@ functions:
     guard: null
     attributes: []
   - name: strchr
-    standard: stdc
+    standard: 
+      - stdc
     return_type: char *
     arguments:
       - type: const char *
@@ -136,7 +151,8 @@ functions:
     guard: null
     attributes: []
   - name: strcspn
-    standard: stdc
+    standard: 
+      - stdc
     return_type: size_t
     arguments:
       - type: const char *
@@ -150,7 +166,8 @@ functions:
     guard: null
     attributes: []
   - name: strndup
-    standard: stdc
+    standard: 
+      - stdc
     return_type: char *
     arguments:
       - type: const char *
@@ -158,7 +175,8 @@ functions:
     guard: null
     attributes: []
   - name: strpbrk
-    standard: stdc
+    standard: 
+      - stdc
     return_type: char *
     arguments:
       - type: const char *
@@ -166,7 +184,8 @@ functions:
     guard: null
     attributes: []
   - name: strrchr
-    standard: stdc
+    standard: 
+      - stdc
     return_type: char *
     arguments:
       - type: const char *
@@ -174,7 +193,8 @@ functions:
     guard: null
     attributes: []
   - name: strspn
-    standard: stdc
+    standard: 
+      - stdc
     return_type: size_t
     arguments:
       - type: const char *
@@ -182,7 +202,8 @@ functions:
     guard: null
     attributes: []
   - name: strstr
-    standard: stdc
+    standard: 
+      - stdc
     return_type: char *
     arguments:
       - type: const char *
@@ -190,7 +211,8 @@ functions:
     guard: null
     attributes: []
   - name: strtok
-    standard: stdc
+    standard: 
+      - stdc
     return_type: char *
     arguments:
       - type: char *__restrict
@@ -198,21 +220,24 @@ functions:
     guard: null
     attributes: []
   - name: strerror
-    standard: stdc
+    standard: 
+      - stdc
     return_type: char *
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: strlen
-    standard: stdc
+    standard: 
+      - stdc
     return_type: size_t
     arguments:
       - type: const char *
     guard: null
     attributes: []
   - name: memccpy
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: void *
     arguments:
       - type: void *__restrict
@@ -222,7 +247,8 @@ functions:
     guard: null
     attributes: []
   - name: mempcpy
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: void *
     arguments:
       - type: void *__restrict
@@ -231,7 +257,8 @@ functions:
     guard: null
     attributes: []
   - name: stpcpy
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: char *
     arguments:
       - type: char *__restrict
@@ -239,7 +266,8 @@ functions:
     guard: null
     attributes: []
   - name: stpncpy
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: char *
     arguments:
       - type: char *__restrict
@@ -248,7 +276,8 @@ functions:
     guard: null
     attributes: []
   - name: strnlen
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: size_t
     arguments:
       - type: const char *
@@ -256,7 +285,8 @@ functions:
     guard: null
     attributes: []
   - name: strtok_r
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: char *
     arguments:
       - type: char *__restrict
@@ -265,14 +295,16 @@ functions:
     guard: null
     attributes: []
   - name: strsignal
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: char *
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: memmem
-    standard: GNUExtensions
+    standard: 
+      - GNUExtensions
     return_type: void *
     arguments:
       - type: const void *
@@ -282,7 +314,8 @@ functions:
     guard: null
     attributes: []
   - name: memrchr
-    standard: GNUExtensions
+    standard: 
+      - GNUExtensions
     return_type: void *
     arguments:
       - type: const void *
@@ -291,7 +324,8 @@ functions:
     guard: null
     attributes: []
   - name: strerror_r
-    standard: GNUExtensions
+    standard: 
+      - GNUExtensions
     return_type: char *
     arguments:
       - type: int
@@ -300,7 +334,8 @@ functions:
     guard: null
     attributes: []
   - name: strcasestr
-    standard: GNUExtensions
+    standard: 
+      - GNUExtensions
     return_type: char *
     arguments:
       - type: const char *
@@ -308,7 +343,8 @@ functions:
     guard: null
     attributes: []
   - name: strchrnul
-    standard: GNUExtensions
+    standard: 
+      - GNUExtensions
     return_type: char *
     arguments:
       - type: const char *
@@ -316,7 +352,8 @@ functions:
     guard: null
     attributes: []
   - name: strlcat
-    standard: BSDExtensions
+    standard: 
+      - BSDExtensions
     return_type: size_t
     arguments:
       - type: char *__restrict
@@ -325,7 +362,8 @@ functions:
     guard: null
     attributes: []
   - name: strlcpy
-    standard: BSDExtensions
+    standard: 
+      - BSDExtensions
     return_type: size_t
     arguments:
       - type: char *__restrict
@@ -334,7 +372,8 @@ functions:
     guard: null
     attributes: []
   - name: strsep
-    standard: BSDExtensions
+    standard: 
+      - BSDExtensions
     return_type: char *
     arguments:
       - type: char **__restrict

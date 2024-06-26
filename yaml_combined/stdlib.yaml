@@ -1,5 +1,6 @@
 header: stdlib.h
-standard: stdc
+standard: 
+      - stdc
 macros: []
 types:
   - type_name: __atexithandler_t
@@ -14,42 +15,48 @@ enums: []
 objects: []
 functions:
   - name: abs
-    standard: stdc
+    standard: 
+      - stdc
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: atoi
-    standard: stdc
+    standard: 
+      - stdc
     return_type: int
     arguments:
       - type: const char *
     guard: null
     attributes: []
   - name: atof
-    standard: stdc
+    standard: 
+      - stdc
     return_type: double
     arguments:
       - type: const char * __restrict
     guard: null
     attributes: []
   - name: atol
-    standard: stdc
+    standard: 
+      - stdc
     return_type: long
     arguments:
       - type: const char *
     guard: null
     attributes: []
   - name: atoll
-    standard: stdc
+    standard: 
+      - stdc
     return_type: long long
     arguments:
       - type: const char *
     guard: null
     attributes: []
   - name: bsearch
-    standard: stdc
+    standard: 
+      - stdc
     return_type: void *
     arguments:
       - type: const void *
@@ -60,7 +67,8 @@ functions:
     guard: null
     attributes: []
   - name: div
-    standard: stdc
+    standard: 
+      - stdc
     return_type: div_t
     arguments:
       - type: int
@@ -68,14 +76,16 @@ functions:
     guard: null
     attributes: []
   - name: labs
-    standard: stdc
+    standard: 
+      - stdc
     return_type: long
     arguments:
       - type: long
     guard: null
     attributes: []
   - name: ldiv
-    standard: stdc
+    standard: 
+      - stdc
     return_type: ldiv_t
     arguments:
       - type: long
@@ -83,14 +93,16 @@ functions:
     guard: null
     attributes: []
   - name: llabs
-    standard: stdc
+    standard: 
+      - stdc
     return_type: long long
     arguments:
       - type: long long
     guard: null
     attributes: []
   - name: lldiv
-    standard: stdc
+    standard: 
+      - stdc
     return_type: lldiv_t
     arguments:
       - type: long long
@@ -98,7 +110,8 @@ functions:
     guard: null
     attributes: []
   - name: qsort
-    standard: stdc
+    standard: 
+      - stdc
     return_type: void
     arguments:
       - type: void *
@@ -109,7 +122,8 @@ functions:
     attributes: []
   # this function is from gnu extension 
   - name: qsort_r
-    standard: gnu 
+    standard: 
+      - gnu 
     return_type: void
     arguments:
       - type: void *
@@ -120,19 +134,23 @@ functions:
     guard: null
     attributes: []
   - name: rand
+    standard: 
+      - stdc
     return_type: int
     arguments: []
     guard: null
     attributes: []
   - name: srand
-    standard: stdc
+    standard: 
+      - stdc
     return_type: void
     arguments:
       - type: unsigned int
     guard: null
     attributes: []
   - name: strfromd
-    standard: stdc
+    standard: 
+      - stdc
     return_type: int
     arguments:
       - type: char * __restrict
@@ -142,7 +160,8 @@ functions:
     guard: null
     attributes: []
   - name: strfromf
-    standard: stdc
+    standard: 
+      - stdc
     return_type: int
     arguments:
       - type: char * __restrict
@@ -152,7 +171,8 @@ functions:
     guard: null
     attributes: []
   - name: strfroml
-    standard: stdc
+    standard: 
+      - stdc
     return_type: int
     arguments:
       - type: char * __restrict
@@ -162,7 +182,8 @@ functions:
     guard: null
     attributes: []
   - name: strtod
-    standard: stdc
+    standard: 
+      - stdc
     return_type: double
     arguments:
       - type: const char * __restrict
@@ -170,7 +191,8 @@ functions:
     guard: null
     attributes: []
   - name: strtof
-    standard: stdc
+    standard: 
+      - stdc
     return_type: float
     arguments:
       - type: const char * __restrict
@@ -178,7 +200,8 @@ functions:
     guard: null
     attributes: []
   - name: strtol
-    standard: stdc
+    standard: 
+      - stdc
     return_type: long
     arguments:
       - type: const char * __restrict
@@ -187,7 +210,8 @@ functions:
     guard: null
     attributes: []
   - name: strtold
-    standard: stdc
+    standard: 
+      - stdc
     return_type: long double
     arguments:
       - type: const char * __restrict
@@ -195,7 +219,8 @@ functions:
     guard: null
     attributes: []
   - name: strtoll
-    standard: stdc
+    standard: 
+      - stdc
     return_type: long long
     arguments:
       - type: const char * __restrict
@@ -204,7 +229,8 @@ functions:
     guard: null
     attributes: []
   - name: strtoul
-    standard: stdc
+    standard: 
+      - stdc
     return_type: unsigned long
     arguments:
       - type: const char * __restrict
@@ -213,7 +239,8 @@ functions:
     guard: null
     attributes: []
   - name: strtoull
-    standard: stdc
+    standard: 
+      - stdc
     return_type: unsigned long long
     arguments:
       - type: const char * __restrict
@@ -222,14 +249,16 @@ functions:
     guard: null
     attributes: []
   - name: malloc
-    standard: stdc
+    standard: 
+      - stdc
     return_type: void *
     arguments:
       - type: size_t
     guard: null
     attributes: []
   - name: calloc
-    standard: stdc
+    standard: 
+      - stdc
     return_type: void *
     arguments:
       - type: size_t
@@ -237,7 +266,8 @@ functions:
     guard: null
     attributes: []
   - name: realloc
-    standard: stdc
+    standard: 
+      - stdc
     return_type: void *
     arguments:
       - type: void *
@@ -245,7 +275,8 @@ functions:
     guard: null
     attributes: []
   - name: aligned_alloc
-    standard: stdc
+    standard: 
+      - stdc
     return_type: void *
     arguments:
       - type: size_t
@@ -253,55 +284,63 @@ functions:
     guard: null
     attributes: []
   - name: free
-    standard: stdc
+    standard: 
+      - stdc
     return_type: void
     arguments:
       - type: void *
     guard: null
     attributes: []
   - name: _Exit
-    standard: stdc
+    standard: 
+      - stdc
     return_type: _Noreturn void
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: abort
-    standard: stdc
+    standard: 
+      - stdc
     return_type: _Noreturn void
     arguments: []
     guard: null
     attributes: []
   - name: at_quick_exit
-    standard: stdc
+    standard: 
+      - stdc
     return_type: int
     arguments:
       - type: __atexithandler_t
     guard: null
     attributes: []
   - name: atexit
-    standard: stdc
+    standard: 
+      - stdc
     return_type: int
     arguments:
       - type: __atexithandler_t
     guard: null
     attributes: []
   - name: exit
-    standard: stdc
+    standard: 
+      - stdc
     return_type: _Noreturn void
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: getenv
-    standard: stdc
+    standard: 
+      - stdc
     return_type: char *
     arguments:
       - type: const char *
     guard: null
     attributes: []
   - name: quick_exit
-    standard: stdc
+    standard: 
+      - stdc
     return_type: _Noreturn void
     arguments:
       - type: int

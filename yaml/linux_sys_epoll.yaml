@@ -1,5 +1,4 @@
 header: sys-epoll.h # sys/epoll
-standard: Linux
 macros: []
 types:
   - type_name: struct_epoll_event
@@ -10,21 +9,24 @@ enums: []
 objects: []
 functions:
   - name: epoll_create
-    standard: Linux
+    standard: 
+      - Linux
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: epoll_create1
-    standard: Linux
+    standard: 
+      - Linux
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: epoll_ctl
-    standard: Linux
+    standard: 
+      - Linux
     return_type: int
     arguments:
       - type: int
@@ -34,7 +36,8 @@ functions:
     guard: null
     attributes: []
   - name: epoll_wait
-    standard: Linux
+    standard: 
+      - Linux
     return_type: int
     arguments:
       - type: int
@@ -44,7 +47,8 @@ functions:
     guard: null
     attributes: []
   - name: epoll_pwait
-    standard: Linux
+    standard: 
+      - Linux
     return_type: int
     arguments:
       - type: int
@@ -55,7 +59,8 @@ functions:
     guard: null
     attributes: []
   - name: epoll_pwait2
-    standard: Linux
+    standard: 
+      - Linux
     return_type: int
     arguments:
       - type: int

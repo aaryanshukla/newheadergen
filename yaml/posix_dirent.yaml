@@ -1,5 +1,4 @@
 header: dirent.h
-standard: POSIX
 macros: []
 types:
   - type_name: struct_dirent
@@ -8,7 +7,8 @@ types:
 enums: []
 functions:
   - name: alphasort
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: const struct dirent **
@@ -16,35 +16,40 @@ functions:
     guard: null
     attributes: []
   - name: closedir
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: DIR *
     guard: null
     attributes: []
   - name: dirfd
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: DIR *
     guard: null
     attributes: []
   - name: fdopendir
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: DIR *
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: opendir
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: DIR *
     arguments:
       - type: const char *
     guard: null
     attributes: []
   - name: readdir
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: struct dirent *
     arguments:
       - type: DIR *

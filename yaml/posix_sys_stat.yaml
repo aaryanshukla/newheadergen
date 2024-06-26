@@ -1,6 +1,7 @@
 # this belongs to the sys in posix sys.stat.h
 header: sys-stat.h
-standard: POSIX
+standard: 
+      - POSIX
 macros: []
 types:
   - type_name: blkcnt_t
@@ -20,7 +21,8 @@ enums: []
 objects: []
 functions:
   - name: chmod
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: const char *
@@ -28,7 +30,8 @@ functions:
     guard: null
     attributes: []
   - name: fchmod
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: int
@@ -36,7 +39,8 @@ functions:
     guard: null
     attributes: []
   - name: fchmodat
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: int
@@ -46,7 +50,8 @@ functions:
     guard: null
     attributes: []
   - name: fstat
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: int
@@ -54,7 +59,8 @@ functions:
     guard: null
     attributes: []
   - name: lstat
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: const char *__restrict
@@ -62,7 +68,8 @@ functions:
     guard: null
     attributes: []
   - name: mkdir
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: const char *
@@ -70,7 +77,8 @@ functions:
     guard: null
     attributes: []
   - name: mkdirat
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: int
@@ -79,7 +87,8 @@ functions:
     guard: null
     attributes: []
   - name: stat
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: const char *__restrict

@@ -5,70 +5,80 @@ enums: []
 objects: []
 functions:
   - name: exphk
-    standard: llvm_libc_stdfix_ext
+    standard: 
+      - llvm_libc_stdfix_ext
     return_type: short accum
     arguments:
       - type: short accum
     guard: LIBC_COMPILER_HAS_FIXED_POINT
     attributes: []
   - name: expk
-    standard: llvm_libc_stdfix_ext
+    standard: 
+      - llvm_libc_stdfix_ext
     return_type: accum
     arguments:
       - type: accum
     guard: LIBC_COMPILER_HAS_FIXED_POINT
     attributes: []
   - name: sqrtuhr
-    standard: llvm_libc_stdfix_ext
+    standard: 
+      - llvm_libc_stdfix_ext
     return_type: unsigned short fract
     arguments:
       - type: unsigned short fract
     guard: LIBC_COMPILER_HAS_FIXED_POINT
     attributes: []
   - name: sqrtur
-    standard: llvm_libc_stdfix_ext
+    standard: 
+      - llvm_libc_stdfix_ext
     return_type: unsigned fract
     arguments:
       - type: unsigned fract
     guard: LIBC_COMPILER_HAS_FIXED_POINT
     attributes: []
   - name: sqrtulr
-    standard: llvm_libc_stdfix_ext
+    standard: 
+      - llvm_libc_stdfix_ext
     return_type: unsigned long fract
     arguments:
       - type: unsigned long fract
     guard: LIBC_COMPILER_HAS_FIXED_POINT
     attributes: []
   - name: sqrtuhk
-    standard: llvm_libc_stdfix_ext
+    standard: 
+      - llvm_libc_stdfix_ext
     return_type: unsigned short accum
     arguments:
       - type: unsigned short accum
     guard: LIBC_COMPILER_HAS_FIXED_POINT
     attributes: []
   - name: sqrtuk
-    standard: llvm_libc_stdfix_ext
+    standard: 
+      - llvm_libc_stdfix_ext
     return_type: unsigned accum
     arguments:
       - type: unsigned accum
     guard: LIBC_COMPILER_HAS_FIXED_POINT
     attributes: []
   - name: sqrtulk
-    standard: llvm_libc_stdfix_ext
+    standard: 
+      - llvm_libc_stdfix_ext
     return_type: unsigned long accum
     arguments:
       - type: unsigned long accum
     guard: LIBC_COMPILER_HAS_FIXED_POINT
     attributes: []
   - name: uhksqrtus
-    standard: llvm_libc_stdfix_ext
+    standard: 
+      - llvm_libc_stdfix_ext
     return_type: unsigned short accum
     arguments:
       - type: unsigned short
     guard: LIBC_COMPILER_HAS_FIXED_POINT
     attributes: []
   - name: uksqrtui
-    standard: llvm_libc_stdfix_ext
+    standard: 
+      - llvm_libc_stdfix_ext
     return_type: unsigned accum
     arguments:
       - type: unsigned int

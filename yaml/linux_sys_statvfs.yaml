@@ -7,7 +7,8 @@ enums: []
 objects: []
 functions:
   - name: statvfs
-    standard: Linux
+    standard: 
+      - Linux
     return_type: int
     arguments:
       - type: const char *__restrict
@@ -15,7 +16,8 @@ functions:
     guard: null
     attributes: []
   - name: fstatvfs
-    standard: Linux
+    standard: 
+      - Linux
     return_type: int
     arguments: 
       - type: int

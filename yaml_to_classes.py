@@ -57,7 +57,7 @@ def yaml_to_classes(yaml_data):
                 function_data.get("attributes", []),
             )
         )
-    
+    print(function_data.get("standard", "")),
     for object_data in yaml_data.get("objects", []):
         header.add_object(
             Object(object_data["object_name"], object_data["object_type"])

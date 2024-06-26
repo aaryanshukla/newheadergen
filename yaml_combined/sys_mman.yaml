@@ -14,7 +14,8 @@ enums: []
 objects: []
 functions:
   - name: madvise
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: void *
@@ -23,7 +24,8 @@ functions:
     guard: null
     attributes: []
   - name: mmap
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: void *
     arguments:
       - type: void *
@@ -35,7 +37,8 @@ functions:
     guard: null
     attributes: []
   - name: mprotect
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: void *
@@ -44,7 +47,8 @@ functions:
     guard: null
     attributes: []
   - name: munmap
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: void *
@@ -52,7 +56,8 @@ functions:
     guard: null
     attributes: []
   - name: POSIX_madvise
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: void *
@@ -62,7 +67,8 @@ functions:
     attributes: []
   # this is a linux function
   - name: mincore
-    standard: Linux
+    standard: 
+      - Linux
     return_type: int
     arguments:
       - type: void *
@@ -71,7 +77,8 @@ functions:
     guard: null
     attributes: []
   - name: mlock
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: void *
@@ -80,7 +87,8 @@ functions:
     attributes: []
   #this is a linux function
   - name: mlock2
-    standard: Linux
+    standard: 
+      - Linux
     return_type: int
     arguments:
       - type: void *
@@ -97,20 +105,23 @@ functions:
     guard: null
     attributes: []
   - name: mlockall
-    standard: POSIX
+    standard: 
+      -POSIX
     return_type: int
     arguments:
       - type: int
     guard: null
     attributes: []
   - name: munlockall
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments: []
     guard: null
     attributes: []
   - name: msync
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: void *
@@ -119,7 +130,8 @@ functions:
     guard: null
     attributes: []
   - name: shm_open
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: const char *
@@ -128,7 +140,8 @@ functions:
     guard: null
     attributes: []
   - name: shm_unlink
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: const char *
