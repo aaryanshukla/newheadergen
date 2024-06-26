@@ -11,14 +11,16 @@ enums: []
 objects: []
 functions:
   - name: asctime
-    standard: stdc
+    standard:
+      - stdc
     return_type: char *
     arguments:
       - type: struct tm *
     guard: null
     attributes: []
   - name: asctime_r
-    standard: stdc
+    standard: 
+      - stdc
     return_type: char *
     arguments:
       - type: struct tm *
@@ -26,7 +28,8 @@ functions:
     guard: null
     attributes: []
   - name: clock_gettime
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: clockid_t
@@ -34,13 +37,15 @@ functions:
     guard: null
     attributes: []
   - name: clock
-    standard: stdc
+    standard: 
+      - stdc
     return_type: clock_t
     arguments: []
     guard: null
     attributes: []
   - name: difftime
-    standard: stdc
+    standard: 
+      - stdc
     return_type: double
     arguments:
       - type: time_t
@@ -48,7 +53,8 @@ functions:
     guard: null
     attributes: []
   - name: gettimeofday
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: struct timeval *
@@ -56,14 +62,16 @@ functions:
     guard: null
     attributes: []
   - name: gmtime
-    standard: stdc
+    standard: 
+      - stdc
     return_type: struct tm *
     arguments:
       - type: time_t *
     guard: null
     attributes: []
   - name: gmtime_r
-    standard: stdc
+    standard: 
+      - stdc
     return_type: struct tm *
     arguments:
       - type: time_t *
@@ -71,14 +79,16 @@ functions:
     guard: null
     attributes: []
   - name: mktime
-    standard: stdc
+    standard: 
+      - stdc
     return_type: time_t
     arguments:
       - type: struct tm *
     guard: null
     attributes: []
   - name: nanosleep
-    standard: POSIX
+    standard: 
+      - POSIX
     return_type: int
     arguments:
       - type: const struct timespec *
@@ -86,7 +96,8 @@ functions:
     guard: null
     attributes: []
   - name: time
-    standard: stdc
+    standard: 
+      - stdc
     return_type: time_t
     arguments:
       - type: time_t *
