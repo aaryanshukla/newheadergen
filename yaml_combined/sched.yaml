@@ -11,7 +11,7 @@ enums: []
 objects: []
 functions:
   - name: sched_get_priority_max
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -19,7 +19,7 @@ functions:
     guard: null
     attributes: []
   - name: sched_get_priority_min
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -27,7 +27,7 @@ functions:
     guard: null
     attributes: []
   - name: sched_getaffinity
-    standard: 
+    standards: 
       - GNUExtensions
     return_type: int
     arguments:
@@ -37,7 +37,7 @@ functions:
     guard: null
     attributes: []
   - name: sched_getparam
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -46,7 +46,7 @@ functions:
     guard: null
     attributes: []
   - name: sched_getscheduler
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -56,7 +56,7 @@ functions:
     guard: null
     attributes: []
   - name: sched_rr_get_interval
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -65,7 +65,7 @@ functions:
     guard: null
     attributes: []
   - name: sched_setaffinity
-    standard: 
+    standards: 
       - GNUExtensions
     return_type: int
     arguments:
@@ -75,7 +75,7 @@ functions:
     guard: null
     attributes: []
   - name: sched_setparam
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -84,7 +84,7 @@ functions:
     guard: null
     attributes: []
   - name: sched_setscheduler
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -92,14 +92,14 @@ functions:
     guard: null
     attributes: []
   - name: sched_yield
-    standard: 
+    standards: 
       - POSIX 
     return_type: int
     arguments: []
     guard: null
     attributes: []
   - name: __sched_getcpucount
-    standard: 
+    standards: 
       - llvm_libc_ext
     return_type: int
     arguments:

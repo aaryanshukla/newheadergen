@@ -6,7 +6,7 @@ enums: []
 objects: []
 functions:
   - name: memcpy
-    standard: 
+    standards: 
       - stdc
     return_type: void *
     arguments:
@@ -16,7 +16,7 @@ functions:
     guard: null
     attributes: []
   - name: memmove
-    standard: 
+    standards: 
       - stdc
     return_type: void *
     arguments:
@@ -26,7 +26,7 @@ functions:
     guard: null
     attributes: []
   - name: memcmp
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -36,7 +36,7 @@ functions:
     guard: null
     attributes: []
   - name: memchr
-    standard: 
+    standards: 
       - stdc
     return_type: void *
     arguments:
@@ -46,7 +46,7 @@ functions:
     guard: null
     attributes: []
   - name: memset
-    standard: 
+    standards: 
       - stdc
     return_type: void *
     arguments:
@@ -56,7 +56,7 @@ functions:
     guard: null
     attributes: []
   - name: memset_explicit
-    standard: 
+    standards: 
       - stdc
     return_type: void *
     arguments:
@@ -66,7 +66,7 @@ functions:
     guard: null
     attributes: []
   - name: strcpy
-    standard: 
+    standards: 
       - stdc
     return_type: char
     arguments:
@@ -75,7 +75,7 @@ functions:
     guard: null
     attributes: []
   - name: strncpy
-    standard: 
+    standards: 
       - stdc
     return_type: char *
     arguments:
@@ -85,7 +85,7 @@ functions:
     guard: null
     attributes: []
   - name: strcat
-    standard: 
+    standards: 
       - stdc
     return_type: char *
     arguments:
@@ -94,7 +94,7 @@ functions:
     guard: null
     attributes: []
   - name: strncat
-    standard: 
+    standards: 
       - stdc
     return_type: char *
     arguments:
@@ -104,7 +104,7 @@ functions:
     guard: null
     attributes: []
   - name: strcmp
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -113,7 +113,7 @@ functions:
     guard: null
     attributes: []
   - name: strcoll
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -122,7 +122,7 @@ functions:
     guard: null
     attributes: []
   - name: strncmp
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -132,7 +132,7 @@ functions:
     guard: null
     attributes: []
   - name: strxfrm
-    standard: 
+    standards: 
       - stdc
     return_type: size_t
     arguments:
@@ -142,7 +142,7 @@ functions:
     guard: null
     attributes: []
   - name: strchr
-    standard: 
+    standards: 
       - stdc
     return_type: char *
     arguments:
@@ -151,7 +151,7 @@ functions:
     guard: null
     attributes: []
   - name: strcspn
-    standard: 
+    standards: 
       - stdc
     return_type: size_t
     arguments:
@@ -166,7 +166,7 @@ functions:
     guard: null
     attributes: []
   - name: strndup
-    standard: 
+    standards: 
       - stdc
     return_type: char *
     arguments:
@@ -175,7 +175,7 @@ functions:
     guard: null
     attributes: []
   - name: strpbrk
-    standard: 
+    standards: 
       - stdc
     return_type: char *
     arguments:
@@ -184,7 +184,7 @@ functions:
     guard: null
     attributes: []
   - name: strrchr
-    standard: 
+    standards: 
       - stdc
     return_type: char *
     arguments:
@@ -193,7 +193,7 @@ functions:
     guard: null
     attributes: []
   - name: strspn
-    standard: 
+    standards: 
       - stdc
     return_type: size_t
     arguments:
@@ -202,7 +202,7 @@ functions:
     guard: null
     attributes: []
   - name: strstr
-    standard: 
+    standards: 
       - stdc
     return_type: char *
     arguments:
@@ -211,7 +211,7 @@ functions:
     guard: null
     attributes: []
   - name: strtok
-    standard: 
+    standards: 
       - stdc
     return_type: char *
     arguments:
@@ -220,7 +220,7 @@ functions:
     guard: null
     attributes: []
   - name: strerror
-    standard: 
+    standards: 
       - stdc
     return_type: char *
     arguments:
@@ -228,7 +228,7 @@ functions:
     guard: null
     attributes: []
   - name: strlen
-    standard: 
+    standards: 
       - stdc
     return_type: size_t
     arguments:
@@ -236,7 +236,7 @@ functions:
     guard: null
     attributes: []
   - name: memccpy
-    standard: 
+    standards: 
       - POSIX
     return_type: void *
     arguments:
@@ -247,7 +247,7 @@ functions:
     guard: null
     attributes: []
   - name: mempcpy
-    standard: 
+    standards: 
       - POSIX
     return_type: void *
     arguments:
@@ -257,7 +257,7 @@ functions:
     guard: null
     attributes: []
   - name: stpcpy
-    standard: 
+    standards: 
       - POSIX
     return_type: char *
     arguments:
@@ -266,7 +266,7 @@ functions:
     guard: null
     attributes: []
   - name: stpncpy
-    standard: 
+    standards: 
       - POSIX
     return_type: char *
     arguments:
@@ -276,7 +276,7 @@ functions:
     guard: null
     attributes: []
   - name: strnlen
-    standard: 
+    standards: 
       - POSIX
     return_type: size_t
     arguments:
@@ -285,7 +285,7 @@ functions:
     guard: null
     attributes: []
   - name: strtok_r
-    standard: 
+    standards: 
       - POSIX
     return_type: char *
     arguments:
@@ -295,7 +295,7 @@ functions:
     guard: null
     attributes: []
   - name: strsignal
-    standard: 
+    standards: 
       - POSIX
     return_type: char *
     arguments:
@@ -303,7 +303,7 @@ functions:
     guard: null
     attributes: []
   - name: memmem
-    standard: 
+    standards: 
       - GNUExtensions
     return_type: void *
     arguments:
@@ -314,7 +314,7 @@ functions:
     guard: null
     attributes: []
   - name: memrchr
-    standard: 
+    standards: 
       - GNUExtensions
     return_type: void *
     arguments:
@@ -324,7 +324,7 @@ functions:
     guard: null
     attributes: []
   - name: strerror_r
-    standard: 
+    standards: 
       - GNUExtensions
     return_type: char *
     arguments:
@@ -334,7 +334,7 @@ functions:
     guard: null
     attributes: []
   - name: strcasestr
-    standard: 
+    standards: 
       - GNUExtensions
     return_type: char *
     arguments:
@@ -343,7 +343,7 @@ functions:
     guard: null
     attributes: []
   - name: strchrnul
-    standard: 
+    standards: 
       - GNUExtensions
     return_type: char *
     arguments:
@@ -352,7 +352,7 @@ functions:
     guard: null
     attributes: []
   - name: strlcat
-    standard: 
+    standards: 
       - BSDExtensions
     return_type: size_t
     arguments:
@@ -362,7 +362,7 @@ functions:
     guard: null
     attributes: []
   - name: strlcpy
-    standard: 
+    standards: 
       - BSDExtensions
     return_type: size_t
     arguments:
@@ -372,7 +372,7 @@ functions:
     guard: null
     attributes: []
   - name: strsep
-    standard: 
+    standards: 
       - BSDExtensions
     return_type: char *
     arguments:

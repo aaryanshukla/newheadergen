@@ -2,8 +2,6 @@ header: signal.h
 macros:
   - macro_name: __need_size_t
     macro_value: null
-  - macro_name: signal-macros
-    macro_value: null
 types:
   - type_name: pid_t
   - type_name: stack_t
@@ -16,7 +14,7 @@ enums: []
 objects: []
 functions:
   - name: raise
-    standard: 
+    standards: 
       - stdc 
     return_type: int
     arguments:
@@ -24,7 +22,7 @@ functions:
     guard: null
     attributes: []
   - name: kill
-    standard: 
+    standards: 
       - POSIX 
     return_type: int
     arguments:
@@ -33,7 +31,7 @@ functions:
     guard: null
     attributes: []
   - name: sigaction
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -43,7 +41,7 @@ functions:
     guard: null
     attributes: []
   - name: sigaltstack
-    standard: 
+    standards: 
       - POSIX 
     return_type: int
     arguments:
@@ -52,7 +50,7 @@ functions:
     guard: null
     attributes: []
   - name: sigdelset
-    standard: 
+    standards: 
       - POSIX 
     return_type: int
     arguments:
@@ -61,7 +59,7 @@ functions:
     guard: null
     attributes: []
   - name: sigaddset
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -70,7 +68,7 @@ functions:
     guard: null
     attributes: []
   - name: sigemptyset
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -78,7 +76,7 @@ functions:
     guard: null
     attributes: []
   - name: sigprocmask
-    standard: 
+    standards: 
       - POSIX 
     return_type: int
     arguments:
@@ -88,7 +86,7 @@ functions:
     guard: null
     attributes: []
   - name: sigfillset
-    standard: 
+    standards: 
       - POSIX 
     return_type: int
     arguments:
@@ -96,7 +94,7 @@ functions:
     guard: null
     attributes: []
   - name: signal
-    standard: 
+    standards: 
       - stdc
     return_type: __sighandler_t
     arguments:

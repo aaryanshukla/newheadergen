@@ -5,7 +5,7 @@ enums: []
 objects: []
 functions:
   - name: bcopy
-    standard: 
+    standards: 
       - llvm_libc_ext
     return_type: void
     arguments:
@@ -15,7 +15,7 @@ functions:
     guard: null
     attributes: []
   - name: bzero
-    standard: 
+    standards: 
       - llvm_libc_ext
     return_type: void
     arguments:
@@ -24,7 +24,7 @@ functions:
     guard: null
     attributes: []
   - name: bcmp
-    standard: 
+    standards: 
       - llvm_libc_ext
     return_type: int
     arguments:
@@ -34,7 +34,7 @@ functions:
     guard: null
     attributes: []
   - name: strcasecmp
-    standard: 
+    standards: 
       - BSDExtensions
     return_type: int
     arguments:
@@ -43,7 +43,7 @@ functions:
     guard: null
     attributes: []
   - name: strncasecmp
-    standard: 
+    standards: 
       - BSDExtensions
     return_type: int
     arguments:
@@ -53,7 +53,7 @@ functions:
     guard: null
     attributes: []
   - name: index
-    standard: 
+    standards: 
       - BSDExtensions
     return_type: char *
     arguments:
@@ -62,7 +62,7 @@ functions:
     guard: null
     attributes: []
   - name: rindex
-    standard: 
+    standards: 
       - BSDExtensions
     return_type: char *
     arguments:

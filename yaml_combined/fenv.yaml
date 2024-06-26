@@ -7,7 +7,7 @@ enums: []
 objects: []
 functions:
   - name: feclearexcept
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -15,7 +15,7 @@ functions:
     guard: null
     attributes: []
   - name: fetestexcept
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -23,7 +23,7 @@ functions:
     guard: null
     attributes: []
   - name: fetestexceptflag
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -32,7 +32,7 @@ functions:
     guard: null
     attributes: []
   - name: feraiseexcept
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -40,7 +40,7 @@ functions:
     guard: null
     attributes: []
   - name: fesetround
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -48,14 +48,14 @@ functions:
     guard: null
     attributes: []
   - name: fegetround
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments: []
     guard: null
     attributes: []
   - name: fegetenv
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -63,7 +63,7 @@ functions:
     guard: null
     attributes: []
   - name: fesetenv
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -71,7 +71,7 @@ functions:
     guard: null
     attributes: []
   - name: fegetexceptflag
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -80,7 +80,7 @@ functions:
     guard: null
     attributes: []
   - name: fesetexcept
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -88,7 +88,7 @@ functions:
     guard: null
     attributes: []
   - name: fesetexceptflag
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -97,7 +97,7 @@ functions:
     guard: null
     attributes: []
   - name: feholdexcept
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -105,31 +105,30 @@ functions:
     guard: null
     attributes: []
   - name: feupdateenv
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
       - type: const fenv_t *
     guard: null
     attributes: []
-  # these are functions from gnu extension
   - name: fedisableexcept
-    standard: 
-      - gnu
+    standards: 
+      - GNUExtensions
     return_type: int 
     arguments: 
       - type: int 
     guard: null
   - name: feenableexcept
-    standard: 
-      - gnu
+    standards: 
+      - GNUExtensions
     return_type: int 
     arguments:
       - type: int
     attributes: []
   - name: fegetexcept
-    standard: 
-      - gnu
+    standards: 
+      - GNUExtensions
     return_type: int
     arguments: []
     guard: null

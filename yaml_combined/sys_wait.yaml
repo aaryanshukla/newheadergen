@@ -8,7 +8,7 @@ enums: []
 objects: []
 functions:
   - name: wait
-    standard: 
+    standards: 
       - POSIX
     return_type: pid_t
     arguments:
@@ -16,7 +16,7 @@ functions:
     guard: null
     attributes: []
   - name: wait4
-    standard: 
+    standards: 
       - BSDExtensions
       - POSIX 
     return_type: pid_t
@@ -28,7 +28,7 @@ functions:
     guard: null
     attributes: []
   - name: waitpid
-    standard: 
+    standards: 
       - POSIX
     return_type: pid_t
     arguments:

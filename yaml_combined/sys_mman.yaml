@@ -1,11 +1,8 @@
 #known as sys/mman in POSIX 
-#TODO: Needs to be moved to yaml_combined
 header: sys-mman.h
-standard: POSIX
+standards: POSIX
 macros: []
-macros:
-  - macro_name: sys-mman-macros
-    macro_value:
+macros: []
 types:
   - type_name: mode_t
   - type_name: size_t
@@ -14,7 +11,7 @@ enums: []
 objects: []
 functions:
   - name: madvise
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -24,7 +21,7 @@ functions:
     guard: null
     attributes: []
   - name: mmap
-    standard: 
+    standards: 
       - POSIX
     return_type: void *
     arguments:
@@ -37,7 +34,7 @@ functions:
     guard: null
     attributes: []
   - name: mprotect
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -47,7 +44,7 @@ functions:
     guard: null
     attributes: []
   - name: munmap
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -56,7 +53,7 @@ functions:
     guard: null
     attributes: []
   - name: POSIX_madvise
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -67,7 +64,7 @@ functions:
     attributes: []
   # this is a linux function
   - name: mincore
-    standard: 
+    standards: 
       - Linux
     return_type: int
     arguments:
@@ -77,7 +74,7 @@ functions:
     guard: null
     attributes: []
   - name: mlock
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -85,9 +82,8 @@ functions:
       - type: size_t
     guard: null
     attributes: []
-  #this is a linux function
   - name: mlock2
-    standard: 
+    standards: 
       - Linux
     return_type: int
     arguments:
@@ -97,7 +93,7 @@ functions:
     guard: null
     attributes: []
   - name: munlock
-    standard: POSIX
+    standards: POSIX
     return_type: int
     arguments:
       - type: void *
@@ -105,7 +101,7 @@ functions:
     guard: null
     attributes: []
   - name: mlockall
-    standard: 
+    standards: 
       -POSIX
     return_type: int
     arguments:
@@ -113,14 +109,14 @@ functions:
     guard: null
     attributes: []
   - name: munlockall
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments: []
     guard: null
     attributes: []
   - name: msync
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -130,7 +126,7 @@ functions:
     guard: null
     attributes: []
   - name: shm_open
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -140,7 +136,7 @@ functions:
     guard: null
     attributes: []
   - name: shm_unlink
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:

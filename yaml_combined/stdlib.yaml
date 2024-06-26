@@ -1,5 +1,5 @@
 header: stdlib.h
-standard: 
+standards: 
       - stdc
 macros: []
 types:
@@ -15,7 +15,7 @@ enums: []
 objects: []
 functions:
   - name: abs
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -23,7 +23,7 @@ functions:
     guard: null
     attributes: []
   - name: atoi
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -31,7 +31,7 @@ functions:
     guard: null
     attributes: []
   - name: atof
-    standard: 
+    standards: 
       - stdc
     return_type: double
     arguments:
@@ -39,7 +39,7 @@ functions:
     guard: null
     attributes: []
   - name: atol
-    standard: 
+    standards: 
       - stdc
     return_type: long
     arguments:
@@ -47,7 +47,7 @@ functions:
     guard: null
     attributes: []
   - name: atoll
-    standard: 
+    standards: 
       - stdc
     return_type: long long
     arguments:
@@ -55,7 +55,7 @@ functions:
     guard: null
     attributes: []
   - name: bsearch
-    standard: 
+    standards: 
       - stdc
     return_type: void *
     arguments:
@@ -67,7 +67,7 @@ functions:
     guard: null
     attributes: []
   - name: div
-    standard: 
+    standards: 
       - stdc
     return_type: div_t
     arguments:
@@ -76,7 +76,7 @@ functions:
     guard: null
     attributes: []
   - name: labs
-    standard: 
+    standards: 
       - stdc
     return_type: long
     arguments:
@@ -84,7 +84,7 @@ functions:
     guard: null
     attributes: []
   - name: ldiv
-    standard: 
+    standards: 
       - stdc
     return_type: ldiv_t
     arguments:
@@ -93,7 +93,7 @@ functions:
     guard: null
     attributes: []
   - name: llabs
-    standard: 
+    standards: 
       - stdc
     return_type: long long
     arguments:
@@ -101,7 +101,7 @@ functions:
     guard: null
     attributes: []
   - name: lldiv
-    standard: 
+    standards: 
       - stdc
     return_type: lldiv_t
     arguments:
@@ -110,7 +110,7 @@ functions:
     guard: null
     attributes: []
   - name: qsort
-    standard: 
+    standards: 
       - stdc
     return_type: void
     arguments:
@@ -120,10 +120,9 @@ functions:
       - type: __qsortcompare_t
     guard: null
     attributes: []
-  # this function is from gnu extension 
   - name: qsort_r
-    standard: 
-      - gnu 
+    standards: 
+      - GNUExtensions 
     return_type: void
     arguments:
       - type: void *
@@ -134,14 +133,14 @@ functions:
     guard: null
     attributes: []
   - name: rand
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments: []
     guard: null
     attributes: []
   - name: srand
-    standard: 
+    standards: 
       - stdc
     return_type: void
     arguments:
@@ -149,7 +148,7 @@ functions:
     guard: null
     attributes: []
   - name: strfromd
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -160,7 +159,7 @@ functions:
     guard: null
     attributes: []
   - name: strfromf
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -171,7 +170,7 @@ functions:
     guard: null
     attributes: []
   - name: strfroml
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -182,7 +181,7 @@ functions:
     guard: null
     attributes: []
   - name: strtod
-    standard: 
+    standards: 
       - stdc
     return_type: double
     arguments:
@@ -191,7 +190,7 @@ functions:
     guard: null
     attributes: []
   - name: strtof
-    standard: 
+    standards: 
       - stdc
     return_type: float
     arguments:
@@ -200,7 +199,7 @@ functions:
     guard: null
     attributes: []
   - name: strtol
-    standard: 
+    standards: 
       - stdc
     return_type: long
     arguments:
@@ -210,7 +209,7 @@ functions:
     guard: null
     attributes: []
   - name: strtold
-    standard: 
+    standards: 
       - stdc
     return_type: long double
     arguments:
@@ -219,7 +218,7 @@ functions:
     guard: null
     attributes: []
   - name: strtoll
-    standard: 
+    standards: 
       - stdc
     return_type: long long
     arguments:
@@ -229,7 +228,7 @@ functions:
     guard: null
     attributes: []
   - name: strtoul
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned long
     arguments:
@@ -239,7 +238,7 @@ functions:
     guard: null
     attributes: []
   - name: strtoull
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned long long
     arguments:
@@ -249,7 +248,7 @@ functions:
     guard: null
     attributes: []
   - name: malloc
-    standard: 
+    standards: 
       - stdc
     return_type: void *
     arguments:
@@ -257,7 +256,7 @@ functions:
     guard: null
     attributes: []
   - name: calloc
-    standard: 
+    standards: 
       - stdc
     return_type: void *
     arguments:
@@ -266,7 +265,7 @@ functions:
     guard: null
     attributes: []
   - name: realloc
-    standard: 
+    standards: 
       - stdc
     return_type: void *
     arguments:
@@ -275,7 +274,7 @@ functions:
     guard: null
     attributes: []
   - name: aligned_alloc
-    standard: 
+    standards: 
       - stdc
     return_type: void *
     arguments:
@@ -284,7 +283,7 @@ functions:
     guard: null
     attributes: []
   - name: free
-    standard: 
+    standards: 
       - stdc
     return_type: void
     arguments:
@@ -292,7 +291,7 @@ functions:
     guard: null
     attributes: []
   - name: _Exit
-    standard: 
+    standards: 
       - stdc
     return_type: _Noreturn void
     arguments:
@@ -300,14 +299,14 @@ functions:
     guard: null
     attributes: []
   - name: abort
-    standard: 
+    standards: 
       - stdc
     return_type: _Noreturn void
     arguments: []
     guard: null
     attributes: []
   - name: at_quick_exit
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -315,7 +314,7 @@ functions:
     guard: null
     attributes: []
   - name: atexit
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -323,7 +322,7 @@ functions:
     guard: null
     attributes: []
   - name: exit
-    standard: 
+    standards: 
       - stdc
     return_type: _Noreturn void
     arguments:
@@ -331,7 +330,7 @@ functions:
     guard: null
     attributes: []
   - name: getenv
-    standard: 
+    standards: 
       - stdc
     return_type: char *
     arguments:
@@ -339,7 +338,7 @@ functions:
     guard: null
     attributes: []
   - name: quick_exit
-    standard: 
+    standards: 
       - stdc
     return_type: _Noreturn void
     arguments:

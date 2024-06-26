@@ -25,7 +25,7 @@ objects:
     object_type: FILE *
 functions:
   - name: remove
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -33,7 +33,7 @@ functions:
     guard: null
     attributes: []
   - name: rename
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -42,7 +42,7 @@ functions:
     guard: null
     attributes: []
   - name: sprintf
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -52,7 +52,7 @@ functions:
     guard: null
     attributes: []
   - name: snprintf
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -63,7 +63,7 @@ functions:
     guard: null
     attributes: []
   - name: fprintf
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -73,7 +73,7 @@ functions:
     guard: null
     attributes: []
   - name: printf
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -82,7 +82,7 @@ functions:
     guard: null
     attributes: []
   - name: vsprintf
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -92,7 +92,7 @@ functions:
     guard: null
     attributes: []
   - name: vsnprintf
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -103,7 +103,7 @@ functions:
     guard: null
     attributes: []
   - name: vfprintf
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -113,7 +113,7 @@ functions:
     guard: null
     attributes: []
   - name: vprintf
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -122,7 +122,7 @@ functions:
     guard: null
     attributes: []
   - name: sscanf
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -132,7 +132,7 @@ functions:
     guard: null
     attributes: []
   - name: scanf
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -141,7 +141,7 @@ functions:
     guard: null
     attributes: []
   - name: fscanf
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -149,103 +149,97 @@ functions:
       - type: const char * __restrict
       - type: ...
     guard: null
-    attributes: []
-  #this is a posix function  
+    attributes: [] 
   - name: fileno
-    standard: 
-      - posix
+    standards: 
+      - POSIX
     return_type: int
     arguments:
       - type: FILE *
     guard: null
     attributes: []
   - name: clearerr
-    standard: 
+    standards: 
       - stdc
     return_type: void
     arguments:
       - type: FILE *
     guard: null
     attributes: []
-  # this function is from gnu extension 
   - name: clearerr_unlocked
-    standard: 
-      - gnu
+    standards: 
+      - GNUExtensions
     return_type: void
     arguments:
       - type: FILE *
     guard: null
     attributes: []
   - name: fclose
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
       - type: FILE *
     guard: null
     attributes: []
-  # this is a posix function
   - name: flockfile
-    standard: 
-      - posix 
+    standards: 
+      - POSIX 
     return_type: void
     arguments:
       - type: FILE *
     guard: null
     attributes: []
   - name: feof
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
       - type: FILE *
     guard: null
     attributes: []
-  # this function is from gnu extension 
   - name: feof_unlocked
-    standard: 
-      - gnu
+    standards: 
+      - GNUExtensions
     return_type: int
     arguments:
       - type: FILE *
     guard: null
     attributes: []
   - name: ferror
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
       - type: FILE *
     guard: null
     attributes: []
-  # this function is from gnu extension 
   - name: ferror_unlocked
-    standard: 
-      - gnu
+    standards: 
+      - GNUExtensions
     return_type: int
     arguments:
       - type: FILE *
     guard: null
     attributes: []
   - name: fgetc
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
       - type: FILE *
     guard: null
     attributes: []
-  # this function is from gnu extension 
   - name: fgetc_unlocked
-    standard: 
-      - gnu
+    standards: 
+      - GNUExtensions
     return_type: int
     arguments:
       - type: FILE *
     guard: null
     attributes: []
   - name: fgets
-    standard: 
+    standards: 
       - stdc 
     return_type: char *
     arguments:
@@ -255,7 +249,7 @@ functions:
     guard: null
     attributes: []
   - name: fflush
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -263,7 +257,7 @@ functions:
     guard: null
     attributes: []
   - name: fopen
-    standard: 
+    standards: 
       - stdc 
     return_type: FILE *
     arguments:
@@ -272,7 +266,7 @@ functions:
     guard: null
     attributes: []
   - name: fputc
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -281,7 +275,7 @@ functions:
     guard: null
     attributes: []
   - name: fputs
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -289,10 +283,9 @@ functions:
       - type: FILE * __restrict
     guard: null
     attributes: []
-  # this function is from gnu extension 
   - name: fopencookie
-    standard: 
-      - gnu
+    standards: 
+      - GNUExtensions
     return_type: FILE *
     arguments:
       - type: void *
@@ -301,7 +294,7 @@ functions:
     guard: null
     attributes: []
   - name: fread
-    standard: 
+    standards: 
       - stdc
     return_type: size_t
     arguments:
@@ -311,10 +304,9 @@ functions:
       - type: FILE * __restrict
     guard: null
     attributes: []
-  # this function is from gnu extension 
   - name: fread_unlocked
-    standard: 
-      - gnu
+    standards: 
+      - GNUExtensions
     return_type: size_t
     arguments:
       - type: void * __restrict
@@ -324,7 +316,7 @@ functions:
     guard: null
     attributes: []
   - name: fseek
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -334,24 +326,23 @@ functions:
     guard: null
     attributes: []
   - name: ftell 
-    standard: 
+    standards: 
       - stdc
     return_type: long
     arguments:
       - type: FILE *
     guard: null
     attributes: []
-  # this is a posix function
   - name: funlockfile
-    standard: 
-      - posix
+    standards: 
+      - POSIX
     return_type: void
     arguments:
       - type: FILE *
     guard: null
     attributes: []
   - name: fwrite
-    standard: 
+    standards: 
       - stdc
     return_type: size_t
     arguments:
@@ -361,10 +352,9 @@ functions:
       - type: FILE * __restrict
     guard: null
     attributes: []
-  # this function is from gnu extension 
   - name: fwrite_unlocked
-    standard: 
-      - gnu
+    standards: 
+      - GNUExtensions
     return_type: size_t
     arguments:
       - type: const void * __restrict
@@ -374,39 +364,37 @@ functions:
     guard: null
     attributes: []
   - name: getc
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
       - type: FILE *
     guard: null
     attributes: []
-  #this is a posix function
   - name: getc_unlocked
-    standard: 
-      - posix
+    standards: 
+      - POSIX
     return_type: int
     arguments:
       - type: FILE *
     guard: null
     attributes: []
   - name: getchar
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments: []
     guard: null
     attributes: []
-  #this is a posix function
   - name: getchar_unlocked
-    standard: 
-      - posix
+    standards: 
+      - POSIX
     return_type: int
     arguments: []
     guard: null
     attributes: []
   - name: putc
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -415,7 +403,7 @@ functions:
     guard: null
     attributes: []
   - name: putchar
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -423,7 +411,7 @@ functions:
     guard: null
     attributes: []
   - name: puts
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -431,7 +419,7 @@ functions:
     guard: null
     attributes: []
   - name: setbuf
-    standard: 
+    standards: 
       - stdc
     return_type: void
     arguments:
@@ -440,7 +428,7 @@ functions:
     guard: null
     attributes: []
   - name: setvbuf
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -451,7 +439,7 @@ functions:
     guard: null
     attributes: []
   - name: ungetc
-    standard: 
+    standards: 
       - stdc
     return_type: int
     arguments:
@@ -460,21 +448,21 @@ functions:
     guard: null
     attributes: []
   - name: stderr
-    standard: 
+    standards: 
       - stdc
     return_type: extern FILE *
     arguments: []
     guard: null
     attributes: []
   - name: stdin
-    standard: 
+    standards: 
       - stdc
     return_type: extern FILE *
     arguments: []
     guard: null
     attributes: []
   - name: stdout
-    standard: 
+    standards: 
       - stdc 
     return_type: extern FILE *
     arguments: []
