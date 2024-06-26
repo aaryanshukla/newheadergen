@@ -1,5 +1,6 @@
 header: ctype.h
-standard: stdc
+standard: 
+  - stdc
 macros: []
 types: []
 enums: []

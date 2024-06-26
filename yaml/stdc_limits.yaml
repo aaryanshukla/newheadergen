@@ -1,5 +1,6 @@
 header: limits.h # not in api.td
-standard: stdc
+standard: 
+  - stdc
 macros: []
 types: []
 enums: []

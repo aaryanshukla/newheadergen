@@ -1,5 +1,6 @@
 header: assert.h
-standard: stdc
+standard: 
+  - stdc
 macros:
     # API.td calls on AssertMacro and StaticAssertMacro,
       # which define a special case 

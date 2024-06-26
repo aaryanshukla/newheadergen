@@ -1,5 +1,6 @@
 header: uchar.h
-standard: stdc
+standard: 
+  - stdc
 macros: []
 types:
   - type_name: char32_t

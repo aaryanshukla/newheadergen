@@ -1,5 +1,6 @@
 header: stdckdint.h
-standard: stdc
+standard: 
+  - stdc
 macros: []
 types: []
 enums: []
