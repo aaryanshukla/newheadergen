@@ -4,6 +4,7 @@ types:
   - type_name: ssize_t
   - type_name: size_t
 enums: []
+objects: []
 functions:
   - name: getrandom
     standards: 

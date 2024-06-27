@@ -6,6 +6,7 @@ types:
   - type_name: socklen_t
   - type_name: sa_family_t
 enums: []
+objects: []
 functions:
   - name: socket
     standards: 

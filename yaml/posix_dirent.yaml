@@ -5,6 +5,7 @@ types:
   - type_name: DIR
   - type_name: ino_t
 enums: []
+objects: []
 functions:
   - name: alphasort
     standards: 

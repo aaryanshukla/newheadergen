@@ -4,6 +4,7 @@ macros: []
 types:
   - type_name: struct_utsname
 enums: []
+objects: []
 functions:
   - name: uname
     standards: 
