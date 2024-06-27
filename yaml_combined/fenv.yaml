@@ -7,129 +7,102 @@ enums: []
 objects: []
 functions:
   - name: feclearexcept
-    standards: 
+    standard: 
       - stdc
     return_type: int
     arguments:
       - type: int
-    guard: null
-    attributes: []
   - name: fetestexcept
-    standards: 
+    standard: 
       - stdc
     return_type: int
     arguments:
       - type: int
-    guard: null
-    attributes: []
   - name: fetestexceptflag
-    standards: 
+    standard: 
       - stdc
     return_type: int
     arguments:
       - type: const fexcept_t *
       - type: int
-    guard: null
-    attributes: []
   - name: feraiseexcept
-    standards: 
+    standard: 
       - stdc
     return_type: int
     arguments:
       - type: int
-    guard: null
-    attributes: []
   - name: fesetround
-    standards: 
+    standard: 
       - stdc
     return_type: int
     arguments:
       - type: int
-    guard: null
-    attributes: []
   - name: fegetround
-    standards: 
+    standard: 
       - stdc
     return_type: int
     arguments: []
-    guard: null
-    attributes: []
   - name: fegetenv
-    standards: 
+    standard: 
       - stdc
     return_type: int
     arguments:
       - type: fenv_t *
-    guard: null
-    attributes: []
   - name: fesetenv
-    standards: 
+    standard: 
       - stdc
     return_type: int
     arguments:
       - type: const fenv_t *
-    guard: null
-    attributes: []
   - name: fegetexceptflag
-    standards: 
+    standard: 
       - stdc
     return_type: int
     arguments:
       - type: fexcept_t *
       - type: int
-    guard: null
-    attributes: []
   - name: fesetexcept
-    standards: 
+    standard: 
       - stdc
     return_type: int
     arguments:
       - type: int
-    guard: null
-    attributes: []
   - name: fesetexceptflag
-    standards: 
+    standard: 
       - stdc
     return_type: int
     arguments:
       - type: const fexcept_t *
       - type: int
-    guard: null
-    attributes: []
   - name: feholdexcept
-    standards: 
+    standard: 
       - stdc
     return_type: int
     arguments:
       - type: fenv_t *
-    guard: null
-    attributes: []
   - name: feupdateenv
-    standards: 
+    standard: 
       - stdc
     return_type: int
     arguments:
       - type: const fenv_t *
-    guard: null
-    attributes: []
+  # these are functions from gnu extension
   - name: fedisableexcept
-    standards: 
-      - GNUExtensions
+    standard: 
+      - gnu
     return_type: int 
     arguments: 
       - type: int 
     guard: null
   - name: feenableexcept
-    standards: 
-      - GNUExtensions
+    standard: 
+      - gnu
     return_type: int 
     arguments:
       - type: int
-    attributes: []
   - name: fegetexcept
-    standards: 
-      - GNUExtensions
+    standard: 
+      - gnu
     return_type: int
-    arguments: []
-    guard: null
-    attributes: []
+    arguments: 
+      - type: const

@@ -46,17 +46,21 @@ def yaml_to_classes(yaml_data):
         )
 
     for function_data in yaml_data.get("functions", []):
-        arguments = function_data.get("arguments", [])
+        arguments = [arg["type"] for arg in function_data["arguments"]]
+        guard = function_data.get("guard", None)
+        attributes = function_data.get("attributes", None)
+        standards = function_data.get("standards", None),
         header.add_function(
             Function(
-                function_data.get("standard", ""),
+                standards,
                 function_data["return_type"],
                 function_data["name"],
                 arguments,
-                function_data.get("guard"),
-                function_data.get("attributes", []),
+                guard,
+                attributes,
             )
         )
+    
     for object_data in yaml_data.get("objects", []):
         header.add_object(
             Object(object_data["object_name"], object_data["object_type"])
@@ -66,6 +70,7 @@ def yaml_to_classes(yaml_data):
         header.add_include(Include(include_data))
 
     return header
+
 
 def load_yaml_file(yaml_file):
     """
@@ -120,15 +125,21 @@ def add_function_to_yaml(yaml_file, function_details):
     attributes = attributes.split(",") if attributes != "null" else []
     arguments = [{"type": arg.strip()} for arg in arguments.split(",")]
     standards = standards.split(",") if standards != "null" else []
+    
 
     new_function = {
-        "name": name,
-        "standard": standards,
-        "return_type": return_type,
-        "arguments": arguments,
-        "guard": guard if guard != "null" else None,
-        "attributes": attributes,
-    }
+    "name": name,
+    "standard": standards,
+    "return_type": return_type,
+    "arguments": arguments,
+}
+
+    if guard != "null":
+        new_function["guard"] = guard
+
+    if attributes:
+        new_function["attributes"] = attributes
+
 
     with open(yaml_file, "r") as f:
         yaml_data = yaml.safe_load(f)

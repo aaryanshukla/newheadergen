@@ -18,7 +18,6 @@
 
 
 #define __need_size_t
-#define signal-macros
 #include <llvm-libc-types/pid_t.h>
 #include <llvm-libc-types/stack_t.h>
 #include <llvm-libc-types/siginfo_t.h>

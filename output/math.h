@@ -735,6 +735,8 @@ int totalordermagf16(_Float16 *, _Float16 *);
 _Float16 f16sqrtf(float);
 #endif // LIBC_TYPES_HAS_FLOAT16
 
+float * sin128f(const void *, int, math);
+
 __END_C_DECLS
 
 

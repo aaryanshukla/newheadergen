@@ -42,159 +42,125 @@ enums:
     value: 2
 functions:
   - name: pthread_atfork
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
       - type: __atfork_callback_t
       - type: __atfork_callback_t
       - type: __atfork_callback_t
-    guard: null
-    attributes: []
   - name: pthread_attr_destroy
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
       - type: pthread_attr_t *
-    guard: null
-    attributes: []
   - name: pthread_attr_init
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
       - type: pthread_attr_t *
-    guard: null
-    attributes: []
   - name: pthread_attr_getdetachstate
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
       - type: const pthread_attr_t *
       - type: int *
-    guard: null
-    attributes: []
   - name: pthread_attr_getguardsize
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
       - type: const pthread_attr_t * __restrict
       - type: size_t * __restrict
-    guard: null
-    attributes: []
   - name: pthread_attr_getstack
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
       - type: const pthread_attr_t * __restrict
       - type: void * * __restrict
       - type: size_t * __restrict
-    guard: null
-    attributes: []
   - name: pthread_attr_getstacksize
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
       - type: const pthread_attr_t * __restrict
       - type: size_t * __restrict
-    guard: null
-    attributes: []
   - name: pthread_attr_setdetachstate
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
       - type: pthread_attr_t *
       - type: int
-    guard: null
-    attributes: []
   - name: pthread_attr_setguardsize
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
       - type: pthread_attr_t *
       - type: size_t
-    guard: null
-    attributes: []
   - name: pthread_attr_setstack
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
       - type: pthread_attr_t *
       - type: void *
       - type: size_t
-    guard: null
-    attributes: []
   - name: pthread_attr_setstacksize
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
       - type: pthread_attr_t *
       - type: size_t
-    guard: null
-    attributes: []
   - name: pthread_condattr_destroy
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
       - type: pthread_condattr_t *
-    guard: null
-    attributes: []
   - name: pthread_condattr_getclock
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
       - type: const pthread_condattr_t * __restrict
       - type: clockid_t * __restrict
-    guard: null
-    attributes: []
   - name: pthread_condattr_getpshared
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
       - type: const pthread_condattr_t * __restrict
       - type: int * __restrict
-    guard: null
-    attributes: []
   - name: pthread_condattr_init
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
       - type: pthread_condattr_t *
-    guard: null
-    attributes: []
   - name: pthread_condattr_setclock
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
       - type: pthread_condattr_t *
       - type: clockid_t
-    guard: null
-    attributes: []
   - name: pthread_condattr_setpshared
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
       - type: pthread_condattr_t *
       - type: int
-    guard: null
-    attributes: []
   - name: pthread_create
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
@@ -202,27 +168,21 @@ functions:
       - type: const pthread_attr_t * __restrict
       - type: __pthread_start_t
       - type: void *
-    guard: null
-    attributes: []
   - name: pthread_detach
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
       - type: pthread_t
-    guard: null
-    attributes: []
   - name: pthread_equal
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
       - type: pthread_t
       - type: pthread_t
-    guard: null
-    attributes: []
   - name: pthread_exit
-    standards: 
+    standard: 
       - POSIX
     return_type: void
     arguments:
@@ -231,237 +191,183 @@ functions:
     attributes:
       - noreturn
   - name: pthread_getname_np
-    standards:
-      - GNUExtensions
+    standard: 
+      - gnu
     return_type: int
     arguments:
       - type: pthread_t
       - type: char *
       - type: size_t
-    guard: null
-    attributes: []
   - name: pthread_getspecific
-    standards: 
+    standard: 
       - POSIX
     return_type: void *
     arguments:
       - type: pthread_key_t
-    guard: null
-    attributes: []
   - name: pthread_join
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
       - type: pthread_t
       - type: void * *
-    guard: null
-    attributes: []
   - name: pthread_key_create
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
       - type: pthread_key_t *
       - type: __pthread_tss_dtor_t
-    guard: null
-    attributes: []
   - name: pthread_key_delete
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
       - type: pthread_key_t
-    guard: null
-    attributes: []
   - name: pthread_self
-    standards: 
+    standard: 
       - POSIX
     return_type: pthread_t
     arguments: []
-    guard: null
-    attributes: []
   - name: pthread_setname_np
-    standards:
-      - GNUExtensions
+    standard: 
+      - gnu
     return_type: int
     arguments:
       - type: pthread_t
       - type: const char *
-    guard: null
-    attributes: []
   - name: pthread_mutex_destroy
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
       - type: pthread_mutex_t *
-    guard: null
-    attributes: []
   - name: pthread_mutex_init
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
       - type: pthread_mutex_t * __restrict
       - type: const pthread_mutexattr_t * __restrict
-    guard: null
-    attributes: []
   - name: pthread_mutex_lock
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
       - type: pthread_mutex_t *
-    guard: null
-    attributes: []
   - name: pthread_mutex_unlock
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
       - type: pthread_mutex_t *
-    guard: null
-    attributes: []
   - name: pthread_mutexattr_destroy
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
       - type: pthread_mutexattr_t *
-    guard: null
-    attributes: []
   - name: pthread_mutexattr_init
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
       - type: pthread_mutexattr_t *
-    guard: null
-    attributes: []
   - name: pthread_mutexattr_getpshared
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
       - type: const pthread_mutexattr_t * __restrict
       - type: int * __restrict
-    guard: null
-    attributes: []
   - name: pthread_mutexattr_getrobust
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
       - type: const pthread_mutexattr_t * __restrict
       - type: int * __restrict
-    guard: null
-    attributes: []
   - name: pthread_mutexattr_gettype
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
       - type: const pthread_mutexattr_t * __restrict
       - type: int * __restrict
-    guard: null
-    attributes: []
   - name: pthread_mutexattr_setpshared
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
       - type: pthread_mutexattr_t * __restrict
       - type: int
-    guard: null
-    attributes: []
   - name: pthread_mutexattr_setrobust
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
       - type: pthread_mutexattr_t * __restrict
       - type: int
-    guard: null
-    attributes: []
   - name: pthread_mutexattr_settype
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
       - type: pthread_mutexattr_t * __restrict
       - type: int
-    guard: null
-    attributes: []
   - name: pthread_once
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
       - type: pthread_once_t *
       - type: __pthread_once_func_t
-    guard: null
-    attributes: []
   - name: pthread_rwlockattr_destroy
-    standards: 
+    standard: 
       - POSIX 
     return_type: int
     arguments:
       - type: pthread_rwlockattr_t *
-    guard: null
-    attributes: []
   - name: pthread_rwlockattr_getkind_np
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
       - type: pthread_rwlockattr_t *
       - type: int *
-    guard: null
-    attributes: []
   - name: pthread_rwlockattr_getpshared
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
       - type: const pthread_rwlockattr_t *
       - type: int *
-    guard: null
-    attributes: []
   - name: pthread_rwlockattr_init
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
       - type: pthread_rwlockattr_t *
-    guard: null
-    attributes: []
   - name: pthread_rwlockattr_setkind_np
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
       - type: pthread_rwlockattr_t *
       - type: int
-    guard: null
-    attributes: []
   - name: pthread_rwlockattr_setpshared
-    standards: 
+    standard: 
       - POSIX
     return_type: int
     arguments:
       - type: pthread_rwlockattr_t *
       - type: int
-    guard: null
-    attributes: []
   - name: pthread_setspecific
-    standards: 
+    standard: 
       - POSIX
     return_type: void *
     arguments:
       - type: pthread_key_t
       - type: const void *
-    guard: null
-    attributes: []
 
    
