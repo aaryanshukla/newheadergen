@@ -1,17 +1,17 @@
 #!/usr/bin/env python
 #
-# ====- Generate headers for libc functions  ------------*- python -*--==#
+# ===- Generate headers for libc functions  -------------------*- python -*--==#
 #
 # Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
 # See https://llvm.org/LICENSE.txt for license information.
 # SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
 #
 # ==-------------------------------------------------------------------------==#
-import yaml
-import re
-import argparse
 
+import yaml
+import argparse
 from pathlib import Path
+
 from header import HeaderFile
 from class_implementation.classes.macro import Macro
 from class_implementation.classes.type import Type
@@ -57,7 +57,6 @@ def yaml_to_classes(yaml_data):
                 function_data.get("attributes", []),
             )
         )
-    print(function_data.get("standard", "")),
     for object_data in yaml_data.get("objects", []):
         header.add_object(
             Object(object_data["object_name"], object_data["object_type"])
@@ -67,9 +66,6 @@ def yaml_to_classes(yaml_data):
         header.add_include(Include(include_data))
 
     return header
-
-
-
 
 def load_yaml_file(yaml_file):
     """
@@ -86,6 +82,18 @@ def load_yaml_file(yaml_file):
     return yaml_to_classes(yaml_data)
 
 
+def save_yaml_file(yaml_file, yaml_data):
+    """
+    Save the YAML data back to a file.
+
+    Args:
+        yaml_file: The path to the YAML file.
+        yaml_data: The YAML data to save.
+    """
+    with open(yaml_file, "w") as f:
+        yaml.safe_dump(yaml_data, f)
+
+
 def fill_public_api(header_str, h_def_content):
     """
     Replace the %%public_api() placeholder in the .h.def content with the generated header content.
@@ -99,7 +107,44 @@ def fill_public_api(header_str, h_def_content):
     """
     return h_def_content.replace("%%public_api()", header_str, 1)
 
-def main(yaml_file, h_def_file, output_dir):
+
+def add_function_to_yaml(yaml_file, function_details):
+    """
+    Add a function to the YAML file.
+
+    Args:
+        yaml_file: The path to the YAML file.
+        function_details: A list containing function details (name, return_type, guard, attributes, arguments, standards).
+    """
+    name, return_type, guard, attributes, arguments, standards = function_details
+    attributes = attributes.split(",") if attributes != "null" else []
+    arguments = [{"type": arg.strip()} for arg in arguments.split(",")]
+    standards = standards.split(",") if standards != "null" else []
+
+    new_function = {
+        "name": name,
+        "standard": standards,
+        "return_type": return_type,
+        "arguments": arguments,
+        "guard": guard if guard != "null" else None,
+        "attributes": attributes,
+    }
+
+    with open(yaml_file, "r") as f:
+        yaml_data = yaml.safe_load(f)
+
+    if "functions" not in yaml_data:
+        yaml_data["functions"] = []
+
+    yaml_data["functions"].append(new_function)
+
+    with open(yaml_file, "w") as f:
+        yaml.dump(yaml_data, f, sort_keys=False)
+
+    print(f"Added function {name} to {yaml_file}")
+
+
+def main(yaml_file, h_def_file, output_dir, add_function=None):
     """
     Main function to generate header files from YAML and .h.def templates.
 
@@ -107,7 +152,11 @@ def main(yaml_file, h_def_file, output_dir):
         yaml_file: Path to the YAML file containing header specification.
         h_def_file: Path to the .h.def template file.
         output_dir: Directory to output the generated header file.
+        add_function: Details of the function to be added to the YAML file (if any).
     """
+
+    if add_function:
+        add_function_to_yaml(yaml_file, add_function)
 
     header = load_yaml_file(yaml_file)
 
@@ -117,7 +166,7 @@ def main(yaml_file, h_def_file, output_dir):
     header_str = str(header)
     final_header_content = fill_public_api(header_str, h_def_content)
 
-    output_file_name = Path(h_def_file).stem 
+    output_file_name = Path(h_def_file).stem
     output_file_path = Path(output_dir) / output_file_name
 
     with open(output_file_path, "w") as f:
@@ -139,6 +188,15 @@ if __name__ == "__main__":
         default=".",
         help="Directory to output the generated header file",
     )
+    parser.add_argument(
+        "--add_function",
+        nargs=6,
+        metavar=("NAME", "RETURN_TYPE", "GUARD", "ATTRIBUTES", "ARGUMENTS", "STANDARDS"),
+        help="Add a function to the YAML file",
+    )
     args = parser.parse_args()
 
-    main(args.yaml_file, args.h_def_file, args.output_dir)
+    main(args.yaml_file, args.h_def_file, args.output_dir, args.add_function)
+    
+# Example command line:
+# python3 yaml_to_classes.py yaml/linux_sys_epoll.yaml h_def/sys/epoll.h.def --output_dir output/sys --add_function "bcopy void* null null const void*,void*,size_t llvm_libc_ext"
