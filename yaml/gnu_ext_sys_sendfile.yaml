@@ -9,7 +9,7 @@ objects: []
 functions: 
   - name: sendfile
     standards: 
-      - Linux
+      - GNUExtensions
     return_type: ssize_t
     arguments: 
       - type: int 

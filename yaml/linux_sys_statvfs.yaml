@@ -1,7 +1,7 @@
 header: sys-statvfs.h # sys/statvfs
 macros: []
 types:
-  - type_name: StructStatvfs
+  - type_name: struct_statvfs
 enums: []
 objects: []
 functions:
