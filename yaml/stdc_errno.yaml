@@ -1,7 +1,7 @@
 #need to fix formatting compared to errno.h in the llvm-project
 #moved linux and generic macros to types to get include format 
 header: errno.h
-standard: 
+standards: 
   - stdc
 macros: 
   - macro_name: ENOTSUP # not on .td files, probably should just delete

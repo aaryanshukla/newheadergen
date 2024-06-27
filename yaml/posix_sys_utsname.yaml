@@ -1,13 +1,12 @@
 #this is sys/utsname
 header: sys-utsname.h
-standard: POSIX
 macros: []
 types:
   - type_name: struct_utsname
 enums: []
 functions:
   - name: uname
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:

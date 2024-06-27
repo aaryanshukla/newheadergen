@@ -1,6 +1,4 @@
 header: unistd.h
-standard: 
-      - POSIX
 macros: []
 types:
   - type_name: uid_t
@@ -25,7 +23,7 @@ objects:
     object_type: int
 functions:
   - name: access
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -34,7 +32,7 @@ functions:
     guard: null
     attributes: []
   - name: chdir
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -42,7 +40,7 @@ functions:
     guard: null
     attributes: []
   - name: close
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -50,7 +48,7 @@ functions:
     guard: null
     attributes: []
   - name: dup
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -58,7 +56,7 @@ functions:
     guard: null
     attributes: []
   - name: dup2
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -67,7 +65,7 @@ functions:
     guard: null
     attributes: []
   - name: dup3
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -77,7 +75,7 @@ functions:
     guard: null
     attributes: []
   - name: execve
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -87,7 +85,7 @@ functions:
     guard: null
     attributes: []
   - name: fchdir
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -95,7 +93,7 @@ functions:
     guard: null
     attributes: []
   - name: fsync
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -103,7 +101,7 @@ functions:
     guard: null
     attributes: []
   - name: ftruncate
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -112,7 +110,7 @@ functions:
     guard: null
     attributes: []
   - name: getcwd
-    standard: 
+    standards: 
       - POSIX
     return_type: char *
     arguments:
@@ -121,35 +119,35 @@ functions:
     guard: null
     attributes: []
   - name: geteuid
-    standard: 
+    standards: 
       - POSIX
     return_type: uid_t
     arguments: []
     guard: null
     attributes: []
   - name: getpid
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments: []
     guard: null
     attributes: []
   - name: getppid
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments: []
     guard: null
     attributes: []
   - name: getuid
-    standard: 
+    standards: 
       - POSIX
     return_type: uid_t
     arguments: []
     guard: null
     attributes: []
   - name: isatty
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -157,7 +155,7 @@ functions:
     guard: null
     attributes: []
   - name: link
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -166,7 +164,7 @@ functions:
     guard: null
     attributes: []
   - name: linkat
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -178,7 +176,7 @@ functions:
     guard: null
     attributes: []
   - name: lseek 
-    standard: 
+    standards: 
       - POSIX
     return_type: off_t
     arguments:
@@ -188,7 +186,7 @@ functions:
     guard: null
     attributes: []
   - name: pipe
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -196,7 +194,7 @@ functions:
     guard: null
     attributes: []
   - name: pread
-    standard: 
+    standards: 
       - POSIX
     return_type: ssize_t
     arguments:
@@ -207,7 +205,7 @@ functions:
     guard: null
     attributes: []
   - name: pwrite
-    standard: 
+    standards: 
       - POSIX
     return_type: ssize_t
     arguments:
@@ -218,7 +216,7 @@ functions:
     guard: null
     attributes: []
   - name: read
-    standard: 
+    standards: 
       - POSIX
     return_type: ssize_t
     arguments:
@@ -228,7 +226,7 @@ functions:
     guard: null
     attributes: []
   - name: readlink
-    standard: 
+    standards: 
       - POSIX
     return_type: ssize_t
     arguments:
@@ -238,7 +236,7 @@ functions:
     guard: null
     attributes: []
   - name: readlinkat
-    standard: 
+    standards: 
       - POSIX
     return_type: ssize_t
     arguments:
@@ -248,7 +246,7 @@ functions:
     guard: null
     attributes: []
   - name: rmdir
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -256,7 +254,7 @@ functions:
     guard: null
     attributes: []
   - name: symlink
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -265,7 +263,7 @@ functions:
     guard: null
     attributes: []
   - name: symlinkat
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -276,7 +274,7 @@ functions:
     guard: null
     attributes: []
   - name: sysconf
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -284,7 +282,7 @@ functions:
     guard: null
     attributes: []
   - name: truncate
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -293,7 +291,7 @@ functions:
     guard: null
     attributes: []
   - name: unlink
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -301,7 +299,7 @@ functions:
     guard: null
     attributes: []
   - name: unlinkat
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -311,7 +309,7 @@ functions:
     guard: null
     attributes: []
   - name: write
-    standard: 
+    standards: 
       - POSIX
     return_type: ssize_t
     arguments:
@@ -321,7 +319,7 @@ functions:
     guard: null
     attributes: []
   - name: _exit
-    standard: 
+    standards: 
       - POSIX
     return_type: void
     arguments:
@@ -330,7 +328,7 @@ functions:
     attributes:
       - noreturn
   - name: execv
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -339,14 +337,14 @@ functions:
     guard: null
     attributes: []
   - name: fork
-    standard: 
+    standards: 
       - POSIX
     return_type: pid_t
     arguments: []
     guard: null
     attributes: []
   - name: __llvm_libc_syscall
-    standard: 
+    standards: 
       - POSIX
     return_type: long
     arguments:
@@ -360,7 +358,7 @@ functions:
     guard: null
     attributes: []
   - name: getopt
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -370,7 +368,7 @@ functions:
     guard: null
     attributes: []
   - name: swab
-    standard: 
+    standards: 
       - POSIX
     return_type: void
     arguments:
@@ -380,35 +378,35 @@ functions:
     guard: null
     attributes: []
   - name: enivron
-    standard: 
+    standards: 
       - POSIX
     return_type: extern char **
     arguments: []
     guard: null
     attributes: []
   - name: optarg
-    standard: 
+    standards: 
       - POSIX
     return_type: extern char *
     arguments: []
     guard: null
     attributes: []
   - name: optind
-    standard: 
+    standards: 
       - POSIX
     return_type: extern int 
     arguments: []
     guard: null
     attributes: []
   - name: optopt
-    standard: 
+    standards: 
       - POSIX
     return_type: extern int 
     arguments: []
     guard: null
     attributes: []
   - name: opterr
-    standard: 
+    standards: 
       - POSIX
     return_type: extern int 
     arguments: []

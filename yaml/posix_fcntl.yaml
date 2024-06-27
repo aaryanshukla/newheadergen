@@ -7,7 +7,7 @@ enums: []
 objects: []
 functions:
   - name: creat
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -16,7 +16,7 @@ functions:
     guard: null
     attributes: []
   - name: fcntl
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -26,7 +26,7 @@ functions:
     guard: null
     attributes: []
   - name: open
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -36,7 +36,7 @@ functions:
     guard: null
     attributes: []
   - name: openat
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:

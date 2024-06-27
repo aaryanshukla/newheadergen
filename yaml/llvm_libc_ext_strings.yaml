@@ -5,7 +5,7 @@ enums: []
 objects: []
 functions:
   - name: bcopy
-    standard: 
+    standards: 
       - llvm_libc_ext
     return_type: void
     arguments:
@@ -15,7 +15,7 @@ functions:
     guard: null
     attributes: []
   - name: bzero
-    standard: 
+    standards: 
       - llvm_libc_ext
     return_type: void
     arguments:
@@ -24,7 +24,7 @@ functions:
     guard: null
     attributes: []
   - name: bcmp
-    standard: 
+    standards: 
       - llvm_libc_ext
     return_type: int
     arguments:

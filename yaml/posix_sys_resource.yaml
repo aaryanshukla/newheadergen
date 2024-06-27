@@ -8,7 +8,7 @@ enums: []
 objects: []
 functions:
   - name: getrlimit
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -16,7 +16,7 @@ functions:
     guard: null
     attributes: []
   - name: setrlimit
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:

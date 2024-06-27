@@ -1,5 +1,4 @@
 header: sched.h
-standard: llvm_libc_ext
 macros: []
 types:
   - type_name: pid_t
@@ -11,7 +10,7 @@ functions:
 # actual function header file is just sched_getcpucount.h,
 # but the function in the header file is still __sched_getcpucount
   - name: __sched_getcpucount
-    standard: 
+    standards: 
       - llvm_libc_ext
     return_type: int
     arguments:

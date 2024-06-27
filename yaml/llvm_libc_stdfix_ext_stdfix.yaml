@@ -5,7 +5,7 @@ enums: []
 objects: []
 functions:
   - name: exphk
-    standard: 
+    standards: 
       - llvm_libc_stdfix_ext
     return_type: short accum
     arguments:
@@ -13,7 +13,7 @@ functions:
     guard: LIBC_COMPILER_HAS_FIXED_POINT
     attributes: []
   - name: expk
-    standard: 
+    standards: 
       - llvm_libc_stdfix_ext
     return_type: accum
     arguments:
@@ -21,7 +21,7 @@ functions:
     guard: LIBC_COMPILER_HAS_FIXED_POINT
     attributes: []
   - name: sqrtuhr
-    standard: 
+    standards: 
       - llvm_libc_stdfix_ext
     return_type: unsigned short fract
     arguments:
@@ -29,7 +29,7 @@ functions:
     guard: LIBC_COMPILER_HAS_FIXED_POINT
     attributes: []
   - name: sqrtur
-    standard: 
+    standards: 
       - llvm_libc_stdfix_ext
     return_type: unsigned fract
     arguments:
@@ -37,7 +37,7 @@ functions:
     guard: LIBC_COMPILER_HAS_FIXED_POINT
     attributes: []
   - name: sqrtulr
-    standard: 
+    standards: 
       - llvm_libc_stdfix_ext
     return_type: unsigned long fract
     arguments:
@@ -45,7 +45,7 @@ functions:
     guard: LIBC_COMPILER_HAS_FIXED_POINT
     attributes: []
   - name: sqrtuhk
-    standard: 
+    standards: 
       - llvm_libc_stdfix_ext
     return_type: unsigned short accum
     arguments:
@@ -53,7 +53,7 @@ functions:
     guard: LIBC_COMPILER_HAS_FIXED_POINT
     attributes: []
   - name: sqrtuk
-    standard: 
+    standards: 
       - llvm_libc_stdfix_ext
     return_type: unsigned accum
     arguments:
@@ -61,7 +61,7 @@ functions:
     guard: LIBC_COMPILER_HAS_FIXED_POINT
     attributes: []
   - name: sqrtulk
-    standard: 
+    standards: 
       - llvm_libc_stdfix_ext
     return_type: unsigned long accum
     arguments:
@@ -69,7 +69,7 @@ functions:
     guard: LIBC_COMPILER_HAS_FIXED_POINT
     attributes: []
   - name: uhksqrtus
-    standard: 
+    standards: 
       - llvm_libc_stdfix_ext
     return_type: unsigned short accum
     arguments:
@@ -77,7 +77,7 @@ functions:
     guard: LIBC_COMPILER_HAS_FIXED_POINT
     attributes: []
   - name: uksqrtui
-    standard: 
+    standards: 
       - llvm_libc_stdfix_ext
     return_type: unsigned accum
     arguments:

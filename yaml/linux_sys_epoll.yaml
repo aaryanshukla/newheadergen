@@ -9,7 +9,7 @@ enums: []
 objects: []
 functions:
   - name: epoll_create
-    standard: 
+    standards: 
       - Linux
     return_type: int
     arguments:
@@ -17,7 +17,7 @@ functions:
     guard: null
     attributes: []
   - name: epoll_create1
-    standard: 
+    standards: 
       - Linux
     return_type: int
     arguments:
@@ -25,7 +25,7 @@ functions:
     guard: null
     attributes: []
   - name: epoll_ctl
-    standard: 
+    standards: 
       - Linux
     return_type: int
     arguments:
@@ -36,7 +36,7 @@ functions:
     guard: null
     attributes: []
   - name: epoll_wait
-    standard: 
+    standards: 
       - Linux
     return_type: int
     arguments:
@@ -47,7 +47,7 @@ functions:
     guard: null
     attributes: []
   - name: epoll_pwait
-    standard: 
+    standards: 
       - Linux
     return_type: int
     arguments:
@@ -59,7 +59,7 @@ functions:
     guard: null
     attributes: []
   - name: epoll_pwait2
-    standard: 
+    standards: 
       - Linux
     return_type: int
     arguments:

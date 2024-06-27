@@ -1,6 +1,6 @@
 #this is part of sys/auxv from gnu  
 header: sys-auxv.h
-standard: 
+standards: 
   - GNUExtensions
 macros: []
 types: []

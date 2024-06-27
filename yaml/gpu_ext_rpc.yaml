@@ -1,12 +1,11 @@
 header: gpu-rpc.h # gpu/rpc.h
-standard: GPUExtensions
 macros: []
 types: []
 enums: []
 objects: []
 functions:
   - name: rpc_host_call
-    standard: 
+    standards: 
       - GPUExtensions
     return_type: void
     arguments:
@@ -16,7 +15,7 @@ functions:
     guard: null
     attributes: []
   - name: rpc_fprintf
-    standard: 
+    standards: 
       - GPUExtensions
     return_type: int
     arguments:

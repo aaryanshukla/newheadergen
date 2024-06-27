@@ -8,7 +8,7 @@ types:
 enums: []
 functions:
   - name: socket
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -18,7 +18,7 @@ functions:
     guard: null
     attributes: []
   - name: bind
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:

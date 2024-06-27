@@ -1,5 +1,4 @@
 header: sys-statvfs.h # sys/statvfs
-standard: Linux
 macros: []
 types:
   - type_name: StructStatvfs
@@ -7,7 +6,7 @@ enums: []
 objects: []
 functions:
   - name: statvfs
-    standard: 
+    standards: 
       - Linux
     return_type: int
     arguments:
@@ -16,7 +15,7 @@ functions:
     guard: null
     attributes: []
   - name: fstatvfs
-    standard: 
+    standards: 
       - Linux
     return_type: int
     arguments: 

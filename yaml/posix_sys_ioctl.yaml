@@ -1,6 +1,6 @@
 #this is in sys/ioctl in the posix library
 header: sys-ioctl.h
-standard: POSIX
+standards: POSIX
 macros: []
 types: []
 enums: []

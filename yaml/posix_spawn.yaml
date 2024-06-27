@@ -9,7 +9,7 @@ enums: []
 objects: []
 functions:
   - name: posix_spawn
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -22,7 +22,7 @@ functions:
     guard: null
     attributes: []
   - name: posix_spawn_file_actions_addclose
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -31,7 +31,7 @@ functions:
     guard: null
     attributes: []
   - name: posix_spawn_file_actions_adddup2
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -41,7 +41,7 @@ functions:
     guard: null
     attributes: []
   - name: posix_spawn_file_actions_addopen
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -53,7 +53,7 @@ functions:
     guard: null
     attributes: []
   - name: posix_spawn_file_actions_destroy
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -61,7 +61,7 @@ functions:
     guard: null
     attributes: []
   - name: posix_spawn_file_actions_init
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:

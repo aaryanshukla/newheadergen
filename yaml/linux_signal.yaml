@@ -1,6 +1,6 @@
 # there is stdc signal
 header: signal.h
-standard: 
+standards: 
   - Linux
 macros: []
 types: []

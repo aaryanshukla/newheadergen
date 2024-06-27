@@ -1,5 +1,5 @@
 header: sys-time.h # sys/time
-standard: Linux
+standards: Linux
 macros: []
 types:
   - type_name: struct_timeval

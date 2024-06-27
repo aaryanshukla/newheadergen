@@ -8,7 +8,7 @@ enums: []
 objects: []
 functions:
   - name: imaxabs
-    standard: 
+    standards: 
       - stdc
     return_type: intmax_t
     arguments:
@@ -16,7 +16,7 @@ functions:
     guard: null
     attributes: []
   - name: imaxdiv
-    standard: 
+    standards: 
       - stdc
     return_type: imaxdiv_t
     arguments:
@@ -25,7 +25,7 @@ functions:
     guard: null
     attributes: []
   - name: strtoimax
-    standard: 
+    standards: 
       - stdc
     return_type: intmax_t
     arguments:
@@ -35,7 +35,7 @@ functions:
     guard: null
     attributes: []
   - name: strtoumax
-    standard: 
+    standards: 
       - stdc
     return_type: uintmax_t
     arguments:

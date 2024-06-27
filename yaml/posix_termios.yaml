@@ -10,7 +10,7 @@ enums: []
 objects: []
 functions:
   - name: cfgetispeed
-    standard: 
+    standards: 
       - POSIX
     return_type: speed_t
     arguments:
@@ -18,7 +18,7 @@ functions:
     guard: null
     attributes: []
   - name: cfgetospeed
-    standard: 
+    standards: 
       - POSIX
     return_type: speed_t
     arguments:
@@ -26,7 +26,7 @@ functions:
     guard: null
     attributes: []
   - name: cfsetispeed
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -35,7 +35,7 @@ functions:
     guard: null
     attributes: []
   - name: cfsetospeed
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -44,7 +44,7 @@ functions:
     guard: null
     attributes: []
   - name: tcgetattr
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -53,7 +53,7 @@ functions:
     guard: null
     attributes: []
   - name: tcgetsid
-    standard: 
+    standards: 
       - POSIX
     return_type: pid_t
     arguments:
@@ -61,7 +61,7 @@ functions:
     guard: null
     attributes: []
   - name: tcdrain
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -69,7 +69,7 @@ functions:
     guard: null
     attributes: []
   - name: tcflow
-    standard: 
+    standards: 
       - POSIX 
     return_type: int
     arguments:
@@ -78,7 +78,7 @@ functions:
     guard: null
     attributes: []
   - name: tcflush
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -87,7 +87,7 @@ functions:
     guard: null
     attributes: []
   - name: tcsendbreak
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -96,7 +96,7 @@ functions:
     guard: null
     attributes: []
   - name: tcsetattr
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:

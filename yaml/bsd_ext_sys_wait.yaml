@@ -6,7 +6,7 @@ enums: []
 objects: []
 functions:
   - name: wait4
-    standard: 
+    standards: 
       - BSDExtensions  
       - POSIX
     return_type: pid_t

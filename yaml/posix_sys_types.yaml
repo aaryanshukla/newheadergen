@@ -1,6 +1,6 @@
 #this is sys/types in the posix library
 header: sys-types.h
-standard: POSIX
+standards: POSIX
 macros: []
 types:
   - type_name: uid_t

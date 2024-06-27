@@ -5,7 +5,7 @@ enums: []
 objects: []
 functions:
   - name: stdc_leading_zeros_uc
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -13,7 +13,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_leading_zeros_us
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -21,7 +21,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_leading_zeros_ui
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -29,7 +29,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_leading_zeros_ul
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -37,7 +37,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_leading_zeros_ull
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -45,7 +45,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_leading_ones_uc
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -53,7 +53,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_leading_ones_us
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -61,7 +61,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_leading_ones_ui
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -69,7 +69,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_leading_ones_ul
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -77,7 +77,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_leading_ones_ull
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -85,7 +85,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_trailing_zeros_uc
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -93,7 +93,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_trailing_zeros_us
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -101,7 +101,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_trailing_zeros_ui
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -109,7 +109,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_trailing_zeros_ul
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -117,7 +117,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_trailing_zeros_ull
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -125,7 +125,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_trailing_ones_uc
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -133,7 +133,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_trailing_ones_us
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -141,7 +141,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_trailing_ones_ui
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -149,7 +149,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_trailing_ones_ul
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -157,7 +157,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_trailing_ones_ull
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -165,7 +165,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_first_leading_zero_uc
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -173,7 +173,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_first_leading_zero_us
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -181,7 +181,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_first_leading_zero_ui
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -189,7 +189,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_first_leading_zero_ul
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -197,7 +197,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_first_leading_zero_ull
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -205,7 +205,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_first_leading_one_uc
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -213,7 +213,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_first_leading_one_us
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -221,7 +221,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_first_leading_one_ui
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -229,7 +229,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_first_leading_one_ul
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -237,7 +237,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_first_leading_one_ull
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -245,7 +245,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_first_trailing_one_uc
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -253,7 +253,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_first_trailing_one_us
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -261,7 +261,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_first_trailing_one_ui
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -269,7 +269,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_first_trailing_one_ul
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -277,7 +277,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_first_trailing_one_ull
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -285,7 +285,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_count_zeros_uc
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -293,7 +293,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_count_zeros_us
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -301,7 +301,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_count_zeros_ui
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -309,7 +309,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_count_zeros_ul
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -317,7 +317,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_count_zeros_ull
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -325,7 +325,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_count_ones_uc
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -333,7 +333,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_count_ones_us
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -341,7 +341,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_count_ones_ui
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -349,7 +349,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_count_ones_ul
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -357,7 +357,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_count_ones_ull
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -365,7 +365,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_has_single_bit_uc
-    standard: 
+    standards: 
       - stdc
     return_type: bool
     arguments:
@@ -373,7 +373,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_has_single_bit_us
-    standard: 
+    standards: 
       - stdc
     return_type: bool
     arguments:
@@ -381,7 +381,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_has_single_bit_ui
-    standard: 
+    standards: 
       - stdc
     return_type: bool
     arguments:
@@ -389,7 +389,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_has_single_bit_ul
-    standard: 
+    standards: 
       - stdc
     return_type: bool
     arguments:
@@ -397,7 +397,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_has_single_bit_ull
-    standard: 
+    standards: 
       - stdc
     return_type: bool
     arguments:
@@ -405,7 +405,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_bit_width_uc
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -413,7 +413,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_bit_width_us
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -421,7 +421,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_bit_width_ui
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -429,7 +429,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_bit_width_ul
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -437,7 +437,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_bit_width_ull
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -445,7 +445,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_bit_floor_uc
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned char
     arguments:
@@ -453,7 +453,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_bit_floor_us
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned short
     arguments:
@@ -461,7 +461,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_bit_floor_ui
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -469,7 +469,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_bit_floor_ul
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned long
     arguments:
@@ -477,7 +477,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_bit_floor_ull
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned long long
     arguments:
@@ -485,7 +485,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_bit_ceil_uc
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned char
     arguments:
@@ -493,7 +493,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_bit_ceil_us
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned short
     arguments:
@@ -501,7 +501,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_bit_ceil_ui
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned int
     arguments:
@@ -509,7 +509,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_bit_ceil_ul
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned long
     arguments:
@@ -517,7 +517,7 @@ functions:
     guard: null
     attributes: []
   - name: stdc_bit_ceil_ull
-    standard: 
+    standards: 
       - stdc
     return_type: unsigned long long
     arguments:

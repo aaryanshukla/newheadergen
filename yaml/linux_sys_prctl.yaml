@@ -1,5 +1,5 @@
 header: sys-prctl.h # sys/prctl.h
-standard: Linux
+standards: Linux
 #reminder: need to add include functionality for this case
 # there is also an #include <linux/prtl.h">
 macros: []

@@ -7,7 +7,7 @@ types:
 enums: []
 functions:
   - name: alphasort
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -16,7 +16,7 @@ functions:
     guard: null
     attributes: []
   - name: closedir
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -24,7 +24,7 @@ functions:
     guard: null
     attributes: []
   - name: dirfd
-    standard: 
+    standards: 
       - POSIX
     return_type: int
     arguments:
@@ -32,7 +32,7 @@ functions:
     guard: null
     attributes: []
   - name: fdopendir
-    standard: 
+    standards: 
       - POSIX
     return_type: DIR *
     arguments:
@@ -40,7 +40,7 @@ functions:
     guard: null
     attributes: []
   - name: opendir
-    standard: 
+    standards: 
       - POSIX
     return_type: DIR *
     arguments:
@@ -48,7 +48,7 @@ functions:
     guard: null
     attributes: []
   - name: readdir
-    standard: 
+    standards: 
       - POSIX
     return_type: struct dirent *
     arguments:

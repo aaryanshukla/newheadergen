@@ -8,7 +8,7 @@ types:
 enums: []
 functions:
   - name: htonl
-    standard: 
+    standards: 
       - POSIX
     return_type: uint32_t
     arguments:
@@ -16,7 +16,7 @@ functions:
     guard: null
     attributes: []
   - name: htons
-    standard: 
+    standards: 
       - POSIX
     return_type: uint16_t
     arguments:
@@ -24,7 +24,7 @@ functions:
     guard: null
     attributes: []
   - name: ntohl
-    standard: 
+    standards: 
       - POSIX
     return_type: uint32_t
     arguments:
@@ -32,7 +32,7 @@ functions:
     guard: null
     attributes: []
   - name: ntohs
-    standard: 
+    standards: 
       - POSIX
     return_type: uint16_t
     arguments:

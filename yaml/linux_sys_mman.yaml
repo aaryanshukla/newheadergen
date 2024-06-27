@@ -1,5 +1,4 @@
 header: sys-mman.h # sys/mman.h
-standard: Linux
 macros: []
 types:
   - type_name: mode_t
@@ -9,7 +8,7 @@ enums: []
 objects: []
 functions:
   - name: mincore
-    standard: 
+    standards: 
       - Linux
     return_type: int
     arguments:
@@ -19,7 +18,7 @@ functions:
     guard: null
     attributes: []
   - name: mlock2
-    standard: 
+    standards: 
       - Linux
     return_type: int
     arguments:

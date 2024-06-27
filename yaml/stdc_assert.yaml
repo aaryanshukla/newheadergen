@@ -1,5 +1,5 @@
 header: assert.h
-standard: 
+standards: 
   - stdc
 macros:
     # API.td calls on AssertMacro and StaticAssertMacro,
