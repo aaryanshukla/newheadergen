@@ -1,0 +1,11 @@
+# errno.h has weird formatting like assert
+header: errno.h
+standards: 
+  - stdc
+  - Linux
+  - POSIX
+macros: []
+types: []
+enums: []
+objects: []
+functions: []
