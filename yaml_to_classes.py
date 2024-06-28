@@ -8,10 +8,11 @@
 #
 # ==-------------------------------------------------------------------------==#
 
+
 import yaml
 import argparse
-from pathlib import Path
 
+from pathlib import Path
 from header import HeaderFile
 from class_implementation.classes.macro import Macro
 from class_implementation.classes.type import Type
@@ -19,6 +20,10 @@ from class_implementation.classes.function import Function
 from class_implementation.classes.include import Include
 from class_implementation.classes.enumeration import Enumeration
 from class_implementation.classes.object import Object
+
+class MyDumper(yaml.Dumper):
+    def increase_indent(self, flow=False, indentless=False):
+        return super(MyDumper, self).increase_indent(flow, False)
 
 
 def yaml_to_classes(yaml_data):
@@ -49,7 +54,7 @@ def yaml_to_classes(yaml_data):
         arguments = [arg["type"] for arg in function_data["arguments"]]
         guard = function_data.get("guard", None)
         attributes = function_data.get("attributes", None)
-        standards = function_data.get("standards", None),
+        standards = (function_data.get("standards", None),)
         header.add_function(
             Function(
                 standards,
@@ -60,7 +65,7 @@ def yaml_to_classes(yaml_data):
                 attributes,
             )
         )
-    
+
     for object_data in yaml_data.get("objects", []):
         header.add_object(
             Object(object_data["object_name"], object_data["object_type"])
@@ -87,18 +92,6 @@ def load_yaml_file(yaml_file):
     return yaml_to_classes(yaml_data)
 
 
-def save_yaml_file(yaml_file, yaml_data):
-    """
-    Save the YAML data back to a file.
-
-    Args:
-        yaml_file: The path to the YAML file.
-        yaml_data: The YAML data to save.
-    """
-    with open(yaml_file, "w") as f:
-        yaml.safe_dump(yaml_data, f)
-
-
 def fill_public_api(header_str, h_def_content):
     """
     Replace the %%public_api() placeholder in the .h.def content with the generated header content.
@@ -119,7 +112,8 @@ def add_function_to_yaml(yaml_file, function_details):
 
     Args:
         yaml_file: The path to the YAML file.
-        function_details: A list containing function details (name, return_type, guard, attributes, arguments, standards).
+        function_details: A list containing function details:
+        (name, return_type, guard, attributes, arguments, standards).
     """
     name, return_type, guard, attributes, arguments, standards = function_details
     attributes = attributes.split(",") if attributes != "null" else []
@@ -150,7 +144,7 @@ def add_function_to_yaml(yaml_file, function_details):
     yaml_data["functions"].append(new_function)
 
     with open(yaml_file, "w") as f:
-        yaml.dump(yaml_data, f, sort_keys=False)
+        yaml.dump(yaml_data, f, Dumper=MyDumper, default_flow_style=False, sort_keys=False)
 
     print(f"Added function {name} to {yaml_file}")
 
@@ -208,6 +202,3 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     main(args.yaml_file, args.h_def_file, args.output_dir, args.add_function)
-    
-# Example command line:
-# python3 yaml_to_classes.py yaml/linux_sys_epoll.yaml h_def/sys/epoll.h.def --output_dir output/sys --add_function "bcopy void* null null const void*,void*,size_t llvm_libc_ext"
