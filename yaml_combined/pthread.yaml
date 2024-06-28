@@ -186,10 +186,9 @@ functions:
       - POSIX
     return_type: void
     arguments:
-      - type: void *
+      - type: __Noreturn void *
     guard: null
-    attributes:
-      - noreturn
+    attributes: []
   - name: pthread_getname_np
     standard: 
       - gnu

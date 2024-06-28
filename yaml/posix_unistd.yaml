@@ -321,12 +321,11 @@ functions:
   - name: _exit
     standards: 
       - POSIX
-    return_type: void
+    return_type: __Noreturn void
     arguments:
       - type: int
     guard: null
-    attributes:
-      - noreturn
+    attributes: []
   - name: execv
     standards: 
       - POSIX

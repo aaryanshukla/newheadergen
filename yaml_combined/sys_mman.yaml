@@ -2,7 +2,6 @@
 header: sys-mman.h
 standards: POSIX
 macros: []
-macros: []
 types:
   - type_name: mode_t
   - type_name: size_t
