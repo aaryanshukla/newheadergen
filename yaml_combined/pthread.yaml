@@ -186,7 +186,7 @@ functions:
       - POSIX
     return_type: void
     arguments:
-      - type: __Noreturn void *
+      - type: _Noreturn void *
     guard: null
     attributes: []
   - name: pthread_getname_np
