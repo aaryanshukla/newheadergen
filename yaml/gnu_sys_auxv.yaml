@@ -1,4 +1,3 @@
-#this is part of sys/auxv from gnu  
 header: sys-auxv.h
 standards: 
   - GNUExtensions
